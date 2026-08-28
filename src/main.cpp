@@ -4,6 +4,7 @@
 #include <QQmlContext>
 #include <QQmlApplicationEngine>
 
+#include "CCommManager.h"
 #include "CParameterStore.h"
 #include "CTheme.h"
 
@@ -43,9 +44,11 @@ int main(int argc, char *argv[])
     QGuiApplication::setOrganizationName(QStringLiteral("HostSoftware"));
 
     CTheme theme;
+    CCommManager commManager;
     QQmlApplicationEngine engine;
     qmlRegisterType<CParameterStore>("HostSoftware", 1, 0, "CParameterStore");
     engine.rootContext()->setContextProperty(QStringLiteral("theme"), &theme);
+    engine.rootContext()->setContextProperty(QStringLiteral("commManager"), &commManager);
     app.installEventFilter(new CThemeKeyFilter(&theme, &app));
 
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreationFailed, &app,

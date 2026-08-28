@@ -6,13 +6,14 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_AUTOMOC ON)
 
-find_package(Qt6 6.8 REQUIRED COMPONENTS Core Quick)
+find_package(Qt6 6.8 REQUIRED COMPONENTS Core Quick SerialPort)
 qt_standard_project_setup()
 qt_policy(SET QTP0001 NEW)
 qt_policy(SET QTP0004 NEW)
 
 qt_add_executable(HostSoftware WIN32
     src/main.cpp
+    src/CCommManager.cpp
     src/CParameterStore.cpp
     src/CTheme.cpp
 )
@@ -33,7 +34,7 @@ qt_add_qml_module(HostSoftware
         qml/CComboBox.qml
 )
 
-target_link_libraries(HostSoftware PRIVATE Qt6::Core Qt6::Quick)
+target_link_libraries(HostSoftware PRIVATE Qt6::Core Qt6::Quick Qt6::SerialPort)
 
 find_program(WINDEPLOYQT_EXECUTABLE windeployqt
     HINTS "${Qt6_DIR}/../../.."

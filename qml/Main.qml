@@ -13,7 +13,9 @@ ApplicationWindow {
     height: 900
     minimumWidth: 1280
     minimumHeight: 720
-    title: "HostSoftware"
+    title: commManager.connected
+        ? "HostSoftware - 已连接(" + commManager.currentPort + ")"
+        : "HostSoftware - 未连接"
     color: theme.windowBackground
     palette {
         window: theme.windowBackground
@@ -37,6 +39,9 @@ ApplicationWindow {
     property real simulatedSpeed: 15000
     property real simulatedExhaustTemp: 660
     property real simulatedEcuTemp: 62
+    property real displaySpeed: (commManager.controlEngaged && commManager.connected)
+        ? commManager.motorSpeedPercent * 700
+        : root.simulatedSpeed
 
     Timer {
         id: simulationTimer
@@ -102,9 +107,14 @@ ApplicationWindow {
                                 }
 
                                 CComboBox {
+                                    id: comPortCombo
                                     Layout.fillWidth: true
-                                    model: ["COM1", "COM2", "COM3", "COM4"]
+                                    model: commManager.portNames
                                     currentIndex: 0
+                                    onActivated: (index) => {
+                                        if (index >= 0 && index < commManager.portNames.length)
+                                            commManager.openPort(commManager.portNames[index])
+                                    }
                                 }
                             }
 
@@ -120,9 +130,14 @@ ApplicationWindow {
                                 }
 
                                 CComboBox {
+                                    id: baudCombo
                                     Layout.fillWidth: true
                                     model: ["9600", "19200", "38400", "115200"]
                                     currentIndex: 0
+                                    onActivated: (index) => {
+                                        if (index >= 0 && index < baudCombo.model.length)
+                                            commManager.setBaudRate(Number(baudCombo.model[index]))
+                                    }
                                 }
                             }
 
@@ -138,9 +153,14 @@ ApplicationWindow {
                                 }
 
                                 CComboBox {
+                                    id: dataBitsCombo
                                     Layout.fillWidth: true
                                     model: ["8", "7", "6", "5", "2"]
                                     currentIndex: 0
+                                    onActivated: (index) => {
+                                        if (index >= 0 && index < dataBitsCombo.model.length)
+                                            commManager.setDataBits(Number(dataBitsCombo.model[index]))
+                                    }
                                 }
                             }
                         }
@@ -167,7 +187,10 @@ ApplicationWindow {
                             text: "关闭控制"
                             buttonColor: theme.buttonGreen
                             pressedColor: theme.buttonGreenPressed
-                            onClicked: root.controlClosed = false
+                            onClicked: {
+                                root.controlClosed = false
+                                commManager.setControlEngaged(false)
+                            }
                         }
 
                         CActionButton {
@@ -178,7 +201,10 @@ ApplicationWindow {
                             text: "转速控制"
                             buttonColor: theme.buttonRed
                             pressedColor: theme.buttonRedPressed
-                            onClicked: root.controlClosed = true
+                            onClicked: {
+                                root.controlClosed = true
+                                commManager.setControlEngaged(true)
+                            }
                         }
 
                         CActionButton {
@@ -189,7 +215,10 @@ ApplicationWindow {
                             text: "油门控制"
                             buttonColor: theme.buttonRed
                             pressedColor: theme.buttonRedPressed
-                            onClicked: root.controlClosed = true
+                            onClicked: {
+                                root.controlClosed = true
+                                commManager.setControlEngaged(true)
+                            }
                         }
                     }
                 }
@@ -213,7 +242,10 @@ ApplicationWindow {
                             font.pixelSize: Math.max(17, Math.min(24, height * 0.32))
                             buttonColor: root.stateMode === "start" ? theme.buttonGreen : theme.stateInactive
                             pressedColor: theme.buttonGreenPressed
-                            onClicked: root.stateMode = "start"
+                            onClicked: {
+                                root.stateMode = "start"
+                                commManager.sendStart()
+                            }
                         }
 
                         CActionButton {
@@ -223,7 +255,10 @@ ApplicationWindow {
                             font.pixelSize: Math.max(17, Math.min(24, height * 0.32))
                             buttonColor: root.stateMode === "parkCool" ? theme.buttonGreen : theme.stateInactive
                             pressedColor: theme.buttonGreenPressed
-                            onClicked: root.stateMode = "parkCool"
+                            onClicked: {
+                                root.stateMode = "parkCool"
+                                commManager.sendStop()
+                            }
                         }
 
                         CActionButton {
@@ -233,7 +268,10 @@ ApplicationWindow {
                             font.pixelSize: Math.max(17, Math.min(24, height * 0.32))
                             buttonColor: root.stateMode === "emergencyStop" ? theme.buttonGreen : theme.stateInactive
                             pressedColor: theme.buttonGreenPressed
-                            onClicked: root.stateMode = "emergencyStop"
+                            onClicked: {
+                                root.stateMode = "emergencyStop"
+                                commManager.sendStop()
+                            }
                         }
                     }
                 }
@@ -266,10 +304,10 @@ ApplicationWindow {
                         spacing: 14
 
                         Text {
-                            text: "引擎状态：故障"
+                            text: "引擎状态：" + commManager.engineStateText
                             font.pixelSize: 16
                             font.bold: true
-                            color: theme.errorText
+                            color: commManager.engineState === 1 && commManager.connected ? theme.accentGreen : theme.errorText
                         }
 
                         Rectangle {
@@ -279,7 +317,7 @@ ApplicationWindow {
                         }
 
                         Text {
-                            text: "故障码：001，测试故障"
+                            text: "故障码：" + commManager.faultText
                             font.pixelSize: 15
                             color: theme.textPrimary
                         }
@@ -307,8 +345,8 @@ ApplicationWindow {
                             id: speedGauge
                             Layout.fillWidth: true
                             Layout.fillHeight: true
-                            value: root.simulatedSpeed
-                            targetValue: root.simulatedSpeed
+                            value: root.displaySpeed
+                            targetValue: root.displaySpeed
                         }
 
                         Thermometer {
@@ -433,6 +471,8 @@ ApplicationWindow {
                     ThrottleControl {
                         anchors.fill: parent
                         anchors.margins: 8
+                        onThrottlePercentChanged:
+                            commManager.setThrottlePercent(Math.round(throttlePercent * 100))
                     }
                 }
 

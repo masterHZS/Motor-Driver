@@ -13,7 +13,7 @@ if (-not $sourceRoot) {
 }
 
 $buildDir = Join-Path $sourceRoot "build"
-$qtPrefix = "D:/Qt/Qt6.8.1/6.8.3/msvc2022_64"
+$qtPrefix = "D:/Qt/Qt6.8.3/6.8.3/msvc2022_64"
 
 # Load the MSVC x64 environment before CMake and windeployqt run. Without
 # VCINSTALLDIR, windeployqt cannot deploy the VC runtime DLLs.
