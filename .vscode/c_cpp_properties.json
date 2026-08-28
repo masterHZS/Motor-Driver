@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "Win64",
+            "includePath": [
+                "${workspaceFolder}/src",
+                "D:/Qt/Qt6.8.1/6.8.3/msvc2022_64/include",
+                "D:/Qt/Qt6.8.1/6.8.3/msvc2022_64/include/QtCore",
+                "D:/Qt/Qt6.8.1/6.8.3/msvc2022_64/include/QtGui",
+                "D:/Qt/Qt6.8.1/6.8.3/msvc2022_64/include/QtQml",
+                "D:/Qt/Qt6.8.1/6.8.3/msvc2022_64/include/QtQuick"
+            ],
+            "defines": [
+                "UNICODE",
+                "_UNICODE",
+                "WIN32",
+                "_WIN64",
+                "QT_CORE_LIB",
+                "QT_GUI_LIB",
+                "QT_QML_LIB",
+                "QT_QUICK_LIB"
+            ],
+            "compilerPath": "D:/VS2022/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json"
+        }
+    ],
+    "version": 4
+}

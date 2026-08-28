@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Debug HostSoftware",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Debug/HostSoftware.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}/build/Debug",
+            "environment": [],
+            "console": "integratedTerminal",
+            "stopAtEntry": false,
+            "preLaunchTask": "Build HostSoftware (Debug)",
+            "visualizerFile": "c:\\Users\\Administrator\\AppData\\Roaming\\Code\\User\\workspaceStorage\\76f6e9c56741b4ccd38b56c265a65b4a\\tonka3000.qtvsctools\\qt.natvis.xml"
+        }
+    ]
+}
