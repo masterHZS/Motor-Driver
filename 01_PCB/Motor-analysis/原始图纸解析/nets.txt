@@ -1,0 +1,42 @@
+[10] lbl={HYG053N10NS1C2,ES1D,100uF,100nF} nm={} :: C14 C15 C16 C17 C2 D1 Q2 Q3 Q6 U2
+[ 9] lbl={HYG053N10NS1C2,ES1D,1uF,47uH} nm={} :: C10 C8 C9 D1 D2 D3 D5 L1 U2
+[ 5] lbl={100nF,8.66k,Ω,100uF} nm={} :: C1 C11 C12 L1 R10
+[ 4] lbl={HYG053N10NS1C2,B,10,Ω} nm={} :: D1 Q5 R2 R5
+[ 3] lbl={HYG053N10NS1C2,C,10,Ω} nm={} :: C7 Q3 Q4
+[ 3] lbl={ES1D,200nF} nm={} :: C6 D2 R2
+[ 3] lbl={20k,Ω} nm={} :: C5 D1 R2
+[ 3] lbl={} nm={} :: D3 Q4 R9
+[ 2] lbl={FD6288T} nm={} :: R1 R11
+[ 2] lbl={10,Ω} nm={} :: C6 R3
+[ 2] lbl={ES1D,200nF} nm={} :: C7 D3
+[ 2] lbl={10,Ω} nm={} :: R2 R5
+[ 2] lbl={HYG053N10NS1C2,A,10,Ω,200nF} nm={} :: C5 Q1
+[ 2] lbl={10,Ω} nm={} :: R2 R6
+[ 2] lbl={} nm={} :: Q1 R7
+[ 2] lbl={} nm={} :: Q1 R7
+[ 2] lbl={ES1D} nm={} :: Q5 R5
+[ 2] lbl={} nm={} :: Q4 R9
+[ 2] lbl={200nF} nm={} :: Q5 R2
+[ 2] lbl={} nm={} :: Q5 R8
+[ 2] lbl={} nm={} :: Q4 R4
+[ 2] lbl={20k,Ω,200nF} nm={} :: D1 R8
+[ 1] lbl={10,Ω} nm={} :: R2
+[ 1] lbl={10,Ω} nm={} :: R1
+[ 1] lbl={10,Ω} nm={} :: R4
+[ 1] lbl={1uF} nm={} :: C1
+[ 1] lbl={} nm={} :: Q1
+[ 1] lbl={20k,Ω} nm={} :: R7
+[ 1] lbl={47uF} nm={} :: C16
+[ 1] lbl={47uF} nm={} :: C15
+[ 1] lbl={47uF} nm={} :: C17
+[ 1] lbl={10,Ω,20k} nm={} :: R9
+[ 1] lbl={} nm={} :: C8
+[ 1] lbl={} nm={} :: C9
+[ 1] lbl={} nm={} :: C10
+[ 1] lbl={SS110-LTP} nm={} :: D5
+[ 1] lbl={} nm={} :: C11
+[ 1] lbl={} nm={} :: C2
+[ 1] lbl={} nm={} :: C14
+[ 1] lbl={} nm={} :: C12
+[ 1] lbl={FD6288T} nm={} :: R11
+[ 1] lbl={1k,Ω} nm={} :: R11

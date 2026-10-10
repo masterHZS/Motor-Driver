@@ -1,0 +1,8910 @@
+(export
+	(version "E")
+	(design
+		(source "C:\\Users\\limer\\Desktop\\motor-drive(1)\\motor-drive\\Project\\PCB\\01_工程\\motor-driver-V3.1.kicad_sch")
+		(date "2026-09-19T14:25:33")
+		(tool "Eeschema 10.0.6")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title "三相无刷电机驱动板 V3.1（HC32F005 片上主控 · 无感六步换向 + 反电动势过零检测）")
+				(company)
+				(rev "V3.1")
+				(date "2026-09-19")
+				(source "motor-driver-V3.1.kicad_sch")
+				(comment
+					(number "1")
+					(value "母线 12.0-16.8V(4S LiPo) / 无感六步换向 / 反电动势过零检测由片上 HC32F005 的 ADC 完成")
+				)
+				(comment
+					(number "2")
+					(value "★HC32F005C6PA 片上主控：TIM4/5/6 各一对硬件互补 PWM+硬件死区，直接驱动 FD6288T")
+				)
+				(comment
+					(number "3")
+					(value "PGND 与 AGND 经 R47(0R) 单点星接；P27/P31 支持 SWD 或 UART ISP")
+				)
+				(comment
+					(number "4")
+					(value "过流保护：软件限流(ADC 每 PWM 周期) + FD6288T 自带 SCP；无 VC 硬件刹车（引脚不足）")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "C1")
+			(value "1µF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000098")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C2")
+			(value "100nF")
+			(footprint "C0805")
+			(fields
+				(field
+					(name "Footprint") "C0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000011c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C5")
+			(value "470nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000009e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C6")
+			(value "470nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000a1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C7")
+			(value "470nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000a4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C8")
+			(value "1µF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000f0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C9")
+			(value "1µF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000f3")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C10")
+			(value "1µF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000f6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C11")
+			(value "100µF")
+			(footprint "CAP-TH_BD8.0-P3.50-D0.5-FD")
+			(fields
+				(field
+					(name "Footprint") "CAP-TH_BD8.0-P3.50-D0.5-FD")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "CP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000f9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C12")
+			(value "100nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000fc")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C13")
+			(value "100nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000009b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C14")
+			(value "100µF")
+			(footprint "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD-H7.7")
+			(fields
+				(field
+					(name "Footprint") "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD-H7.7")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "CP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000011f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C15")
+			(value "47µF")
+			(footprint "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD")
+			(fields
+				(field
+					(name "Footprint") "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "CP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000122")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C16")
+			(value "47µF")
+			(footprint "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD")
+			(fields
+				(field
+					(name "Footprint") "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "CP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000125")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C17")
+			(value "47µF")
+			(footprint "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD")
+			(fields
+				(field
+					(name "Footprint") "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "CP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000128")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C18")
+			(value "1µF")
+			(footprint "C1206")
+			(fields
+				(field
+					(name "Footprint") "C1206")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000012b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C19")
+			(value "1µF")
+			(footprint "C1206")
+			(fields
+				(field
+					(name "Footprint") "C1206")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000012e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C20")
+			(value "1µF")
+			(footprint "C1206")
+			(fields
+				(field
+					(name "Footprint") "C1206")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000131")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C21")
+			(value "1nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000013a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C22")
+			(value "1nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000143")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C23")
+			(value "1nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000014c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C24")
+			(value "270pF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000158")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C25")
+			(value "1nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000015e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C26")
+			(value "1nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000164")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C27")
+			(value "1nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000016a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C29")
+			(value "100nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000ed")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C30")
+			(value "1nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000173")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C31")
+			(value "100nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000185")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C32")
+			(value "1nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000179")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C33")
+			(value "100nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000018f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C34")
+			(value "1nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000195")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C40")
+			(value "10µF")
+			(footprint "C0805")
+			(fields
+				(field
+					(name "Footprint") "C0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000107")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C41")
+			(value "22µF")
+			(footprint "C0805")
+			(fields
+				(field
+					(name "Footprint") "C0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000010a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C42")
+			(value "100nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000010d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C43")
+			(value "4.7µF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001ad")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C44")
+			(value "100nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001b0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C45")
+			(value "1µF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001b3")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C46")
+			(value "100nF")
+			(footprint "C0603")
+			(fields
+				(field
+					(name "Footprint") "C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001b6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C47")
+			(value "10µF/50V")
+			(footprint "C1210")
+			(fields
+				(field
+					(name "Footprint") "C1210")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "C")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000ff")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D1")
+			(value "ES1D")
+			(footprint "SMA_L4.3-W2.6-LS5.0-RD")
+			(fields
+				(field
+					(name "Footprint") "SMA_L4.3-W2.6-LS5.0-RD")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "D")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000a7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D2")
+			(value "ES1D")
+			(footprint "SMA_L4.3-W2.6-LS5.0-RD")
+			(fields
+				(field
+					(name "Footprint") "SMA_L4.3-W2.6-LS5.0-RD")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "D")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000aa")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D3")
+			(value "ES1D")
+			(footprint "SMA_L4.3-W2.6-LS5.0-RD")
+			(fields
+				(field
+					(name "Footprint") "SMA_L4.3-W2.6-LS5.0-RD")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "D")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000ad")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D4")
+			(value "SMBJ33A")
+			(footprint "SMB_L4.6-W3.6-LS5.3-RD")
+			(fields
+				(field
+					(name "Footprint") "SMB_L4.6-W3.6-LS5.3-RD")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "DTVS")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000119")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D5")
+			(value "SS110-LTP")
+			(footprint "SMA_L4.3-W2.6-LS5.2-RD")
+			(fields
+				(field
+					(name "Footprint") "SMA_L4.3-W2.6-LS5.2-RD")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "DSCH")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000e1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "F1")
+			(value "FUSE-15A-T")
+			(footprint "F1206")
+			(fields
+				(field
+					(name "Footprint") "F1206")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "FUSE")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000116")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "L1")
+			(value "47µH")
+			(footprint "IND-SMD_L6.0-W6.0_LPS6225")
+			(fields
+				(field
+					(name "Footprint") "IND-SMD_L6.0-W6.0_LPS6225")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "L")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000de")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q1")
+			(value "HYG053N10NS1C2")
+			(footprint "PDFN-8_L5.8-W5.0-P1.27-LS6.2-BL")
+			(fields
+				(field
+					(name "Footprint") "PDFN-8_L5.8-W5.0-P1.27-LS6.2-BL")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "NMOS")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000023")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q2")
+			(value "HYG053N10NS1C2")
+			(footprint "PDFN-8_L5.8-W5.0-P1.27-LS6.2-BL")
+			(fields
+				(field
+					(name "Footprint") "PDFN-8_L5.8-W5.0-P1.27-LS6.2-BL")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "NMOS")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000002d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q3")
+			(value "HYG053N10NS1C2")
+			(footprint "PDFN-8_L5.8-W5.0-P1.27-LS6.2-BL")
+			(fields
+				(field
+					(name "Footprint") "PDFN-8_L5.8-W5.0-P1.27-LS6.2-BL")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "NMOS")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000037")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q4")
+			(value "HYG053N10NS1C2")
+			(footprint "PDFN-8_L5.8-W5.0-P1.27-LS6.2-BL")
+			(fields
+				(field
+					(name "Footprint") "PDFN-8_L5.8-W5.0-P1.27-LS6.2-BL")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "NMOS")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000055")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q5")
+			(value "HYG053N10NS1C2")
+			(footprint "PDFN-8_L5.8-W5.0-P1.27-LS6.2-BL")
+			(fields
+				(field
+					(name "Footprint") "PDFN-8_L5.8-W5.0-P1.27-LS6.2-BL")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "NMOS")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000041")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q6")
+			(value "HYG053N10NS1C2")
+			(footprint "PDFN-8_L5.8-W5.0-P1.27-LS6.2-BL")
+			(fields
+				(field
+					(name "Footprint") "PDFN-8_L5.8-W5.0-P1.27-LS6.2-BL")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "NMOS")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000004b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R1")
+			(value "10Ω")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000074")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "10Ω")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000077")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R3")
+			(value "10Ω")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000007a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R4")
+			(value "10Ω")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000007d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R5")
+			(value "10Ω")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000080")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R6")
+			(value "10Ω")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000083")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R7")
+			(value "20kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000086")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R8")
+			(value "20kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000089")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R9")
+			(value "20kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000008c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R10")
+			(value "8.66kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000e4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R11")
+			(value "1kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000e7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R12")
+			(value "20kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000008f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R13")
+			(value "20kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000092")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R14")
+			(value "20kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000095")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R16")
+			(value "15kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000ea")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R17")
+			(value "150kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000134")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R18")
+			(value "10kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000137")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R19")
+			(value "150kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000013d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R20")
+			(value "10kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000140")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R21")
+			(value "150kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000146")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R22")
+			(value "10kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000149")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R23")
+			(value "100kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000014f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R24")
+			(value "100kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000152")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R25")
+			(value "100kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000155")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R26")
+			(value "1kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000015b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R27")
+			(value "1kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000161")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R28")
+			(value "1kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000167")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R30")
+			(value "220kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000016d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R31")
+			(value "10kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000170")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R32")
+			(value "3mΩ")
+			(footprint "R2512")
+			(fields
+				(field
+					(name "Footprint") "R2512")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "RSHUNT")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000017c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R33")
+			(value "10Ω")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000017f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R34")
+			(value "10Ω")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000182")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R35")
+			(value "100Ω")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000b0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R36")
+			(value "100Ω")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000b3")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R37")
+			(value "100Ω")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000b6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R38")
+			(value "100Ω")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000b9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R39")
+			(value "100Ω")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000bc")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R40")
+			(value "100Ω")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000bf")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R41")
+			(value "10kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000c2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R42")
+			(value "10kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000c5")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R43")
+			(value "10kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000c8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R44")
+			(value "10kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000cb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R45")
+			(value "10kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000ce")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R46")
+			(value "10kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000d1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R47")
+			(value "0Ω")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001ea")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R48")
+			(value "1kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000176")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R49")
+			(value "1kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000192")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R50")
+			(value "10kΩ")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001b9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R52")
+			(value "0Ω")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000113")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R53")
+			(value "0Ω")
+			(footprint "R0603")
+			(fields
+				(field
+					(name "Footprint") "R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "R")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000110")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP1")
+			(value "TESTPOINT")
+			(footprint "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+			(fields
+				(field
+					(name "Footprint") "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "TP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001bc")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP2")
+			(value "TESTPOINT")
+			(footprint "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+			(fields
+				(field
+					(name "Footprint") "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "TP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001be")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP3")
+			(value "TESTPOINT")
+			(footprint "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+			(fields
+				(field
+					(name "Footprint") "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "TP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001c0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP4")
+			(value "TESTPOINT")
+			(footprint "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+			(fields
+				(field
+					(name "Footprint") "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "TP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001c2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP5")
+			(value "TESTPOINT")
+			(footprint "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+			(fields
+				(field
+					(name "Footprint") "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "TP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001c4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP6")
+			(value "TESTPOINT")
+			(footprint "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+			(fields
+				(field
+					(name "Footprint") "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "TP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001c6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP7")
+			(value "TESTPOINT")
+			(footprint "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+			(fields
+				(field
+					(name "Footprint") "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "TP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001c8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP8")
+			(value "TESTPOINT")
+			(footprint "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+			(fields
+				(field
+					(name "Footprint") "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "TP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001ca")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP9")
+			(value "TESTPOINT")
+			(footprint "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+			(fields
+				(field
+					(name "Footprint") "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "TP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001cc")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP10")
+			(value "TESTPOINT")
+			(footprint "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+			(fields
+				(field
+					(name "Footprint") "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "TP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001ce")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP11")
+			(value "TESTPOINT")
+			(footprint "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+			(fields
+				(field
+					(name "Footprint") "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "TP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001d0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP12")
+			(value "TESTPOINT")
+			(footprint "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+			(fields
+				(field
+					(name "Footprint") "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "TP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001d2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP13")
+			(value "TESTPOINT")
+			(footprint "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+			(fields
+				(field
+					(name "Footprint") "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "TP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001d4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP14")
+			(value "TESTPOINT")
+			(footprint "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+			(fields
+				(field
+					(name "Footprint") "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "TP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001d6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP15")
+			(value "TESTPOINT")
+			(footprint "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+			(fields
+				(field
+					(name "Footprint") "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "TP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001d8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP16")
+			(value "TESTPOINT")
+			(footprint "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+			(fields
+				(field
+					(name "Footprint") "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "TP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001da")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP17")
+			(value "TESTPOINT")
+			(footprint "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+			(fields
+				(field
+					(name "Footprint") "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "TP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001dc")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP18")
+			(value "TESTPOINT")
+			(footprint "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+			(fields
+				(field
+					(name "Footprint") "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "TP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001de")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP19")
+			(value "TESTPOINT")
+			(footprint "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+			(fields
+				(field
+					(name "Footprint") "TESTPOINT-SMD_L1.6-W0.8_RCU-0C")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "TP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000001e0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "FD6288T")
+			(footprint "TSSOP-20_L6.5-W4.4-P0.65-LS6.4-BL")
+			(fields
+				(field
+					(name "Footprint") "TSSOP-20_L6.5-W4.4-P0.65-LS6.4-BL")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "FD6288T")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-00000000005f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "17")
+						)
+						(pin
+							(num "18")
+						)
+						(pin
+							(num "19")
+						)
+						(pin
+							(num "20")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U2")
+			(value "XL7005A")
+			(footprint "SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL-EP3.1-1")
+			(fields
+				(field
+					(name "Footprint") "SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL-EP3.1-1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "XL7005A")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-0000000000d4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U3")
+			(value "INA181A2")
+			(footprint "SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL")
+			(fields
+				(field
+					(name "Footprint") "SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "INA181")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000188")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U4")
+			(value "AMS1117-3.3")
+			(footprint "SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR")
+			(fields
+				(field
+					(name "Footprint") "SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "LDO")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000102")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U5")
+			(value "HC32F005C6PA")
+			(footprint "TSSOP-20_L6.5-W4.4-P0.65-LS6.4-BL")
+			(fields
+				(field
+					(name "Footprint") "TSSOP-20_L6.5-W4.4-P0.65-LS6.4-BL")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "mdrive")
+				(part "MCU")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "motor-driver-V3.1.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0000000-0000-4000-8000-000000000198")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "20")
+						)
+						(pin
+							(num "19")
+						)
+						(pin
+							(num "18")
+						)
+						(pin
+							(num "17")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "11")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "mdrive")
+			(part "C")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mdrive")
+			(part "CP")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "CP")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mdrive")
+			(part "D")
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "D")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mdrive")
+			(part "DSCH")
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "DSCH")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mdrive")
+			(part "DTVS")
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "DTVS")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mdrive")
+			(part "FD6288T")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "FD6288T")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "HIN1")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "HIN2")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "HIN3")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "LIN1")
+					(type "input")
+				)
+				(pin
+					(num "5")
+					(name "LIN2")
+					(type "input")
+				)
+				(pin
+					(num "6")
+					(name "LIN3")
+					(type "input")
+				)
+				(pin
+					(num "7")
+					(name "VCC")
+					(type "input")
+				)
+				(pin
+					(num "8")
+					(name "COM")
+					(type "input")
+				)
+				(pin
+					(num "9")
+					(name "LO3")
+					(type "output")
+				)
+				(pin
+					(num "10")
+					(name "LO2")
+					(type "output")
+				)
+				(pin
+					(num "11")
+					(name "LO1")
+					(type "output")
+				)
+				(pin
+					(num "12")
+					(name "VS3")
+					(type "output")
+				)
+				(pin
+					(num "13")
+					(name "HO3")
+					(type "output")
+				)
+				(pin
+					(num "14")
+					(name "VB3")
+					(type "output")
+				)
+				(pin
+					(num "15")
+					(name "VS2")
+					(type "output")
+				)
+				(pin
+					(num "16")
+					(name "HO2")
+					(type "output")
+				)
+				(pin
+					(num "17")
+					(name "VB2")
+					(type "output")
+				)
+				(pin
+					(num "18")
+					(name "VS1")
+					(type "output")
+				)
+				(pin
+					(num "19")
+					(name "HO1")
+					(type "output")
+				)
+				(pin
+					(num "20")
+					(name "VB1")
+					(type "output")
+				)
+			)
+		)
+		(libpart
+			(lib "mdrive")
+			(part "FUSE")
+			(fields
+				(field
+					(name "Reference") "F")
+				(field
+					(name "Value") "FUSE")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mdrive")
+			(part "INA181")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "INA181")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "OUT")
+					(type "output")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "IN+")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "IN-")
+					(type "input")
+				)
+				(pin
+					(num "5")
+					(name "REF")
+					(type "input")
+				)
+				(pin
+					(num "6")
+					(name "VS")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "mdrive")
+			(part "L")
+			(fields
+				(field
+					(name "Reference") "L")
+				(field
+					(name "Value") "L")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mdrive")
+			(part "LDO")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "LDO")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "VIN")
+					(type "power_in")
+				)
+				(pin
+					(num "2")
+					(name "VOUT")
+					(type "power_out")
+				)
+				(pin
+					(num "3")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "4")
+					(name "VOUT")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mdrive")
+			(part "MCU")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "MCU")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "P34/AIN4")
+					(type "bidirectional")
+				)
+				(pin
+					(num "2")
+					(name "P35")
+					(type "bidirectional")
+				)
+				(pin
+					(num "3")
+					(name "P36")
+					(type "bidirectional")
+				)
+				(pin
+					(num "4")
+					(name "RESETB")
+					(type "bidirectional")
+				)
+				(pin
+					(num "5")
+					(name "P01/AIN7")
+					(type "bidirectional")
+				)
+				(pin
+					(num "6")
+					(name "P02/AIN8")
+					(type "bidirectional")
+				)
+				(pin
+					(num "7")
+					(name "DVSS")
+					(type "bidirectional")
+				)
+				(pin
+					(num "8")
+					(name "VCAP")
+					(type "bidirectional")
+				)
+				(pin
+					(num "9")
+					(name "DVCC")
+					(type "bidirectional")
+				)
+				(pin
+					(num "10")
+					(name "P03")
+					(type "bidirectional")
+				)
+				(pin
+					(num "11")
+					(name "P15/TIM4_CHB")
+					(type "bidirectional")
+				)
+				(pin
+					(num "12")
+					(name "P14")
+					(type "bidirectional")
+				)
+				(pin
+					(num "13")
+					(name "P23")
+					(type "bidirectional")
+				)
+				(pin
+					(num "14")
+					(name "P24/AIN0")
+					(type "bidirectional")
+				)
+				(pin
+					(num "15")
+					(name "P25")
+					(type "bidirectional")
+				)
+				(pin
+					(num "16")
+					(name "P26/AIN1")
+					(type "bidirectional")
+				)
+				(pin
+					(num "17")
+					(name "P27/SWDIO")
+					(type "bidirectional")
+				)
+				(pin
+					(num "18")
+					(name "P31/SWCLK")
+					(type "bidirectional")
+				)
+				(pin
+					(num "19")
+					(name "P32/AIN2")
+					(type "bidirectional")
+				)
+				(pin
+					(num "20")
+					(name "P33/AIN3")
+					(type "bidirectional")
+				)
+			)
+		)
+		(libpart
+			(lib "mdrive")
+			(part "NMOS")
+			(fields
+				(field
+					(name "Reference") "Q")
+				(field
+					(name "Value") "NMOS")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "S")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "S")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "S")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "G")
+					(type "input")
+				)
+				(pin
+					(num "5")
+					(name "D")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "D")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "D")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "D")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "D")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mdrive")
+			(part "R")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "R")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mdrive")
+			(part "RSHUNT")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "RSHUNT")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mdrive")
+			(part "TP")
+			(fields
+				(field
+					(name "Reference") "TP")
+				(field
+					(name "Value") "TP")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "mdrive")
+			(part "XL7005A")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "XL7005A")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "VIN")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "SW")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "FB")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "EN")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "EP")
+					(type "passive")
+				)
+			)
+		)
+	)
+	(libraries)
+	(nets
+		(net
+			(code "1")
+			(name "AGND")
+			(class "Default")
+			(node
+				(ref "C21")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C22")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C23")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C24")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C25")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C26")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C27")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C30")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C32")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C41")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C42")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C43")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C44")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C45")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C46")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R18")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R20")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R22")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R31")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R47")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "7")
+				(pinfunction "DVSS_7")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "2")
+			(name "AIN_A")
+			(class "Default")
+			(node
+				(ref "C25")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R26")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP7")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "14")
+				(pinfunction "P24/AIN0_14")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "3")
+			(name "AIN_B")
+			(class "Default")
+			(node
+				(ref "C26")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R27")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP8")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "20")
+				(pinfunction "P33/AIN3_20")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "4")
+			(name "AIN_C")
+			(class "Default")
+			(node
+				(ref "C27")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R28")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP9")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "6")
+				(pinfunction "P02/AIN8_6")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "5")
+			(name "AIN_ISENSE")
+			(class "Default")
+			(node
+				(ref "C34")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R49")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP10")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "2")
+				(pinfunction "P35_2")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "6")
+			(name "AIN_VBUS")
+			(class "Default")
+			(node
+				(ref "C32")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R48")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP11")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "5")
+				(pinfunction "P01/AIN7_5")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "7")
+			(name "A_DIV")
+			(class "Default")
+			(node
+				(ref "C21")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R17")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R18")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R23")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R26")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "8")
+			(name "B_DIV")
+			(class "Default")
+			(node
+				(ref "C22")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R19")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R20")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R24")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R27")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "9")
+			(name "C_DIV")
+			(class "Default")
+			(node
+				(ref "C23")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R21")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R22")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R25")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R28")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "10")
+			(name "DRV_HIN1")
+			(class "Default")
+			(node
+				(ref "R35")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R41")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "1")
+				(pinfunction "HIN1_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "11")
+			(name "DRV_HIN2")
+			(class "Default")
+			(node
+				(ref "R37")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R43")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "HIN2_2")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "12")
+			(name "DRV_HIN3")
+			(class "Default")
+			(node
+				(ref "R39")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R45")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "3")
+				(pinfunction "HIN3_3")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "13")
+			(name "DRV_LIN1")
+			(class "Default")
+			(node
+				(ref "R36")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R42")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "4")
+				(pinfunction "LIN1_4")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "14")
+			(name "DRV_LIN2")
+			(class "Default")
+			(node
+				(ref "R38")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R44")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "5")
+				(pinfunction "LIN2_5")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "15")
+			(name "DRV_LIN3")
+			(class "Default")
+			(node
+				(ref "R40")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R46")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "6")
+				(pinfunction "LIN3_6")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "16")
+			(name "EN")
+			(class "Default")
+			(node
+				(ref "C29")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R16")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "4")
+				(pinfunction "EN_4")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "17")
+			(name "FB")
+			(class "Default")
+			(node
+				(ref "R10")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R11")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "3")
+				(pinfunction "FB_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "18")
+			(name "GH_A")
+			(class "Default")
+			(node
+				(ref "Q2")
+				(pin "4")
+				(pinfunction "G_4")
+				(pintype "input")
+			)
+			(node
+				(ref "R12")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R6")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "19")
+			(name "GH_B")
+			(class "Default")
+			(node
+				(ref "Q3")
+				(pin "4")
+				(pinfunction "G_4")
+				(pintype "input")
+			)
+			(node
+				(ref "R13")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R5")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "20")
+			(name "GH_C")
+			(class "Default")
+			(node
+				(ref "Q6")
+				(pin "4")
+				(pinfunction "G_4")
+				(pintype "input")
+			)
+			(node
+				(ref "R14")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R4")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "21")
+			(name "GL_A")
+			(class "Default")
+			(node
+				(ref "Q1")
+				(pin "4")
+				(pinfunction "G_4")
+				(pintype "input")
+			)
+			(node
+				(ref "R1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "22")
+			(name "GL_B")
+			(class "Default")
+			(node
+				(ref "Q5")
+				(pin "4")
+				(pinfunction "G_4")
+				(pintype "input")
+			)
+			(node
+				(ref "R2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R8")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "23")
+			(name "GL_C")
+			(class "Default")
+			(node
+				(ref "Q4")
+				(pin "4")
+				(pinfunction "G_4")
+				(pintype "input")
+			)
+			(node
+				(ref "R3")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "24")
+			(name "HO1")
+			(class "Default")
+			(node
+				(ref "R6")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "19")
+				(pinfunction "HO1_19")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "25")
+			(name "HO2")
+			(class "Default")
+			(node
+				(ref "R5")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "16")
+				(pinfunction "HO2_16")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "26")
+			(name "HO3")
+			(class "Default")
+			(node
+				(ref "R4")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "13")
+				(pinfunction "HO3_13")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "27")
+			(name "ISENSE_N")
+			(class "Default")
+			(node
+				(ref "R34")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "4")
+				(pinfunction "IN-_4")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "28")
+			(name "ISENSE_P")
+			(class "Default")
+			(node
+				(ref "R33")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "3")
+				(pinfunction "IN+_3")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "29")
+			(name "I_SENSE")
+			(class "Default")
+			(node
+				(ref "C34")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R49")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "1")
+				(pinfunction "OUT_1")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "30")
+			(name "LDO_VIN")
+			(class "Default")
+			(node
+				(ref "C40")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R53")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U4")
+				(pin "1")
+				(pinfunction "VIN_1")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "31")
+			(name "LO1")
+			(class "Default")
+			(node
+				(ref "R1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "11")
+				(pinfunction "LO1_11")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "32")
+			(name "LO2")
+			(class "Default")
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "10")
+				(pinfunction "LO2_10")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "33")
+			(name "LO3")
+			(class "Default")
+			(node
+				(ref "R3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "9")
+				(pinfunction "LO3_9")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "34")
+			(name "LS_STAR")
+			(class "Default")
+			(node
+				(ref "C31")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q1")
+				(pin "1")
+				(pinfunction "S_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q1")
+				(pin "2")
+				(pinfunction "S_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q1")
+				(pin "3")
+				(pinfunction "S_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q4")
+				(pin "1")
+				(pinfunction "S_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q4")
+				(pin "2")
+				(pinfunction "S_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q4")
+				(pin "3")
+				(pinfunction "S_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q5")
+				(pin "1")
+				(pinfunction "S_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q5")
+				(pin "2")
+				(pinfunction "S_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q5")
+				(pin "3")
+				(pinfunction "S_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R32")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R33")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R8")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "35")
+			(name "MCU_NRST")
+			(class "Default")
+			(node
+				(ref "C46")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R50")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP5")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "4")
+				(pinfunction "RESETB_4")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "36")
+			(name "MCU_VCAP")
+			(class "Default")
+			(node
+				(ref "C43")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "8")
+				(pinfunction "VCAP_8")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "37")
+			(name "PGND")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C10")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C11")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C12")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C13")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C14")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C15")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C16")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C17")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C18")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C19")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C20")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C29")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C31")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C33")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C40")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C47")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C8")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C9")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "D4")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "D5")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R11")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R16")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R32")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R34")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R41")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R42")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R43")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R44")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R45")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R46")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R47")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP19")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "8")
+				(pinfunction "COM_8")
+				(pintype "input")
+			)
+			(node
+				(ref "U2")
+				(pin "5")
+				(pinfunction "GND_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "6")
+				(pinfunction "GND_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "7")
+				(pinfunction "GND_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "8")
+				(pinfunction "GND_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "9")
+				(pinfunction "EP_9")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U3")
+				(pin "5")
+				(pinfunction "REF_5")
+				(pintype "input")
+			)
+			(node
+				(ref "U4")
+				(pin "3")
+				(pinfunction "GND_3")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "38")
+			(name "PH_A")
+			(class "Default")
+			(node
+				(ref "C5")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q1")
+				(pin "5")
+				(pinfunction "D_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q1")
+				(pin "6")
+				(pinfunction "D_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q1")
+				(pin "7")
+				(pinfunction "D_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q1")
+				(pin "8")
+				(pinfunction "D_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q1")
+				(pin "9")
+				(pinfunction "D_9")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "1")
+				(pinfunction "S_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "2")
+				(pinfunction "S_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "3")
+				(pinfunction "S_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R12")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R17")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "18")
+				(pinfunction "VS1_18")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "39")
+			(name "PH_B")
+			(class "Default")
+			(node
+				(ref "C6")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q3")
+				(pin "1")
+				(pinfunction "S_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q3")
+				(pin "2")
+				(pinfunction "S_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q3")
+				(pin "3")
+				(pinfunction "S_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q5")
+				(pin "5")
+				(pinfunction "D_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q5")
+				(pin "6")
+				(pinfunction "D_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q5")
+				(pin "7")
+				(pinfunction "D_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q5")
+				(pin "8")
+				(pinfunction "D_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q5")
+				(pin "9")
+				(pinfunction "D_9")
+				(pintype "passive")
+			)
+			(node
+				(ref "R13")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R19")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "15")
+				(pinfunction "VS2_15")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "40")
+			(name "PH_C")
+			(class "Default")
+			(node
+				(ref "C7")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q4")
+				(pin "5")
+				(pinfunction "D_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q4")
+				(pin "6")
+				(pinfunction "D_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q4")
+				(pin "7")
+				(pinfunction "D_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q4")
+				(pin "8")
+				(pinfunction "D_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q4")
+				(pin "9")
+				(pinfunction "D_9")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q6")
+				(pin "1")
+				(pinfunction "S_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q6")
+				(pin "2")
+				(pinfunction "S_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q6")
+				(pin "3")
+				(pinfunction "S_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R14")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R21")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "12")
+				(pinfunction "VS3_12")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "41")
+			(name "PWM_AH")
+			(class "Default")
+			(node
+				(ref "R35")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP12")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "13")
+				(pinfunction "P23_13")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "42")
+			(name "PWM_AL")
+			(class "Default")
+			(node
+				(ref "R36")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP13")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "11")
+				(pinfunction "P15/TIM4_CHB_11")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "43")
+			(name "PWM_BH")
+			(class "Default")
+			(node
+				(ref "R37")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP14")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "15")
+				(pinfunction "P25_15")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "44")
+			(name "PWM_BL")
+			(class "Default")
+			(node
+				(ref "R38")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP15")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "16")
+				(pinfunction "P26/AIN1_16")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "45")
+			(name "PWM_CH")
+			(class "Default")
+			(node
+				(ref "R39")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP16")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "3")
+				(pinfunction "P36_3")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "46")
+			(name "PWM_CL")
+			(class "Default")
+			(node
+				(ref "R40")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP17")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "19")
+				(pinfunction "P32/AIN2_19")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "47")
+			(name "SW")
+			(class "Default")
+			(node
+				(ref "D5")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "2")
+				(pinfunction "SW_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "48")
+			(name "SWCLK")
+			(class "Default")
+			(node
+				(ref "TP4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "18")
+				(pinfunction "P31/SWCLK_18")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "49")
+			(name "SWDIO")
+			(class "Default")
+			(node
+				(ref "TP3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "17")
+				(pinfunction "P27/SWDIO_17")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "50")
+			(name "UART_TX")
+			(class "Default")
+			(node
+				(ref "TP6")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "12")
+				(pinfunction "P14_12")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "51")
+			(name "VB1")
+			(class "Default")
+			(node
+				(ref "C5")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "D1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "20")
+				(pinfunction "VB1_20")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "52")
+			(name "VB2")
+			(class "Default")
+			(node
+				(ref "C6")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "17")
+				(pinfunction "VB2_17")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "53")
+			(name "VB3")
+			(class "Default")
+			(node
+				(ref "C7")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "14")
+				(pinfunction "VB3_14")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "54")
+			(name "VBUS_IN")
+			(class "Default")
+			(node
+				(ref "F1")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "55")
+			(name "VBUS_SENSE")
+			(class "Default")
+			(node
+				(ref "C30")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R30")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R31")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R48")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "56")
+			(name "VCC")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C10")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C11")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C12")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C13")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C8")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C9")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "D2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "D3")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R10")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R53")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP18")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "7")
+				(pinfunction "VCC_7")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "57")
+			(name "VCC_BUS")
+			(class "Default")
+			(node
+				(ref "C14")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C15")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C16")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C17")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C18")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C19")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C20")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C47")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D4")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "F1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "5")
+				(pinfunction "D_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "6")
+				(pinfunction "D_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "7")
+				(pinfunction "D_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "8")
+				(pinfunction "D_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "9")
+				(pinfunction "D_9")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q3")
+				(pin "5")
+				(pinfunction "D_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q3")
+				(pin "6")
+				(pinfunction "D_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q3")
+				(pin "7")
+				(pinfunction "D_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q3")
+				(pin "8")
+				(pinfunction "D_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q3")
+				(pin "9")
+				(pinfunction "D_9")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q6")
+				(pin "5")
+				(pinfunction "D_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q6")
+				(pin "6")
+				(pinfunction "D_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q6")
+				(pin "7")
+				(pinfunction "D_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q6")
+				(pin "8")
+				(pinfunction "D_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q6")
+				(pin "9")
+				(pinfunction "D_9")
+				(pintype "passive")
+			)
+			(node
+				(ref "R30")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "1")
+				(pinfunction "VIN_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "58")
+			(name "VDD_3V3")
+			(class "Default")
+			(node
+				(ref "C33")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C44")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C45")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R50")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R52")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "6")
+				(pinfunction "VS_6")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U5")
+				(pin "9")
+				(pinfunction "DVCC_9")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "59")
+			(name "VDD_LDO")
+			(class "Default")
+			(node
+				(ref "C41")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C42")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R52")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U4")
+				(pin "2")
+				(pinfunction "VOUT_2")
+				(pintype "power_out")
+			)
+			(node
+				(ref "U4")
+				(pin "4")
+				(pinfunction "VOUT_4")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "60")
+			(name "VN")
+			(class "Default")
+			(node
+				(ref "C24")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R23")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R24")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R25")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "61")
+			(name "unconnected-(U5-P03-Pad10)")
+			(class "Default")
+			(node
+				(ref "U5")
+				(pin "10")
+				(pinfunction "P03_10")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "62")
+			(name "unconnected-(U5-P34{slash}AIN4-Pad1)")
+			(class "Default")
+			(node
+				(ref "U5")
+				(pin "1")
+				(pinfunction "P34/AIN4_1")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+	)
+)

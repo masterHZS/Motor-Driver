@@ -1,0 +1,34 @@
+0000776 I Loading C:\Users\limer\Desktop\motor-driver\02_�̼�\F005_Slave\build_firstspin\firstspin.hex [load_cmd]
+0000780 I Erasing... [loader]
+[---|---|---|---|---|---|---|---|---|----]
+[========================================]
+0001578 I Programming... [loader]
+[---|---|---|---|---|---|---|---|---|----]
+[========================================]
+0003110 I Erased 10240 bytes (20 sectors), programmed 10240 bytes (20 pages), identical 0 bytes (0 pages) at 4.29 kB/s [loader]
+0000818 I Loading C:\Users\limer\Desktop\motor-driver\02_�̼�\F005_Slave\build_gate\gate.hex [load_cmd]
+0000820 I Erasing... [loader]
+[---|---|---|---|---|---|---|---|---|----]
+[========================================]
+0001145 I Programming... [loader]
+[---|---|---|---|---|---|---|---|---|----]
+[========================================]
+0001648 I Erased 3072 bytes (6 sectors), programmed 3072 bytes (6 pages), identical 0 bytes (0 pages) at 3.62 kB/s [loader]
+[image] build_firstspin\firstspin.hex
+[flash] build_firstspin\firstspin.hex
+t= 0.03s state=0 fault=0x0000 vbus=14.89V peak= 0.01A hz=10 mode=0 zc=0 bemf=660/717 steps=0 tick=556ms
+t= 0.92s state=1 fault=0x0000 vbus=14.80V peak= 0.01A hz=10 mode=0 zc=0 bemf=21/715 steps=1 tick=1460ms
+t= 1.80s state=1 fault=0x0000 vbus=14.89V peak= 0.04A hz=20 mode=1 zc=0 bemf=587/717 steps=47 tick=2342ms
+ABORT: firmware fault 0x0040
+summary: reset-like samples=0 self-test-finished=False
+gate-input pad activity (PxIN, low fraction = duty is inverted for the low side):
+  HIN1: high     0/240   =   0.0%
+  LIN1: high     0/240   =   0.0%
+  HIN2: high     0/240   =   0.0%
+  LIN2: high     0/240   =   0.0%
+  HIN3: high     0/240   =   0.0%
+  LIN3: high     0/240   =   0.0%
+  expected while running: the high-side PWM phase follows the V/f duty, the low-side phase is ON, and both inputs of the floating phase are OFF,
+  the low-side phase 0 % on HIN and ~100 % on LIN, and BOTH inputs of the floating phase ~0 %.
+  state=0 fault=0x0040 vbus=14.78 V peak=0.02 A hz=21 mode=0 zc=0 bemf=252/711 steps=60 tick=2782 ms
+[flash] build_gate\gate.hex

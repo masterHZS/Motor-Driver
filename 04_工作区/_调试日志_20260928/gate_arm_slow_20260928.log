@@ -1,0 +1,29 @@
+﻿before:
+  markers: magic=0x0056A7E1 main=0x0000B105 stage=2 channel=4294967295 level=0 sweep=0 hb_ms=232096 safe_ticks=2321 arm=0x00000000 mode=4294967295
+armed in DMM slow mode; sampling GPIO output registers over SWD...
+ idx time   stage ch        level  active
+     1   2.10     3 PWM_AH        0  PWM_AH
+    22   5.11     3 all-low       0  -
+    23   7.13     3 PWM_AL        1  PWM_AL
+    44  10.10     3 all-low       1  -
+    45  12.16     3 PWM_BH        1  PWM_BH
+    66  15.20     3 all-low       0  -
+    67  17.13     3 PWM_BL        1  PWM_BL
+    88  20.18     3 all-low       0  -
+    89  22.11     3 PWM_CH        1  PWM_CH
+   110  25.10     3 all-low       0  -
+   111  27.17     3 PWM_CL        1  PWM_CL
+   131  30.09     3 all-low       0  -
+after:
+  markers: magic=0x0056A7E1 main=0x0000B105 stage=3 channel=4294967295 level=0 sweep=1 hb_ms=266096 safe_ticks=2322 arm=0x534C4F57 mode=1
+observed pulse samples:
+  TP12 PWM_AH: 22
+  TP13 PWM_AL: 22
+  TP14 PWM_BH: 22
+  TP15 PWM_BL: 22
+  TP16 PWM_CH: 22
+  TP17 PWM_CL: 21
+auto-disarmed: reset returned all six inputs to SAFE_WAIT
+PASS: one-hot sequence exercised all six MCU output pins, no overlap, heartbeat alive.
+Now verify TP12..TP17 on the external scope; measure the FD6288T input side of R35..R40 if possible.
+

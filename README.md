@@ -1,416 +1,134 @@
-# HostSoftware
+# 电机驱动项目 — 总索引
 
-HostSoftware 是 ECU 上位机界面工程，当前以界面原型为主，使用 Qt 6.8.3 + C++ + QML 开发，UI 全部由 QML 实现，C++ 负责参数存储和主题切换。
+**HC32F005 单板三相无刷电机驱动**
 
-## 技术栈
-
-- 开发语言：C++17 / QML / JavaScript
-- Qt 版本：Qt 6.8.3
-- Qt 模块：Core / Quick / SerialPort
-- 构建系统：CMake
-- 编译器：MSVC 2022 64-bit
-- 生成器：Visual Studio 17 2022 / x64
-- IDE：Visual Studio Code
-
-## 工程目录
+当前主线：
 
 ```text
-HostSoftware(codex)/
-├── .vscode/
-│   ├── c_cpp_properties.json
-│   ├── extensions.json
-│   ├── launch.json
-│   ├── settings.json
-│   └── tasks.json
-├── qml/
-│   ├── AirPressureGauge.qml
-│   ├── CActionButton.qml
-│   ├── CComboBox.qml
-│   ├── CParameterEditRow.qml
-│   ├── CParameterRow.qml
-│   ├── Main.qml
-│   ├── SpeedGauge.qml
-│   ├── Thermometer.qml
-│   └── ThrottleControl.qml
-├── scripts/
-│   └── build-vs.ps1
-├── src/
-│   ├── CParameterStore.cpp
-│   ├── CParameterStore.h
-│   ├── CTheme.cpp
-│   ├── CTheme.h
-│   └── main.cpp
-├── CMakeLists.txt
-├── CMakePresets.json
-├── ParaSetttings.ini
-├── README.md
-├── Readme.txt
-└── ToolChain.docx
+上位机 HostSoftware
+  -> USB-TTL / DAPLink 虚拟串口
+  -> F005_Slave（Modbus-RTU 从站，地址 1）
+  -> 20 kHz PWM 三相功率级
+  -> 2216-730KV 三相无刷电机
 ```
 
-## 工具链
+工作方法见 `工作流程.txt`。每个顶层目录均有本地 `00_索引.md`。
+
+> 🤖 **AI / 自动化代理首次进入请先读 `00_AI/START_HERE.md`**（入口与硬禁令）；
+> 机器可读清单在 `00_AI/manifest.json`，根目录 `AGENTS.md` 是自动加载的入口钩子。
+
+---
+
+## 1. 顶层顺序与标签
+
+| 顺序 | 目录 | 标签 | 内容 |
+|---:|---|---|---|
+| 00 | `00_AI/` | AI 入口、现状快照 | ★ **AI 首读**：入口说明、项目地图、当前状态、权威文件速查、构建命令、踩坑与硬约束 |
+| 01 | `01_PCB/` | 主设计、已冻结、审核 | V3.1 原理图、网表、BOM、生成器、审核报告 |
+| 02 | `02_固件/` | 主固件、通信、台架 | F005 从机、F072 桥/旧控制器参考 |
+| 03 | `03_上位机/` | 主软件、Modbus 主站 | Qt 6 + QML 源码与 Release |
+| 04 | `04_工作区/` | 调试、波形、审核、工具 | 波形、日志、Gerber 审核、ISP 工具 |
+| 05 | `05_采购清单/` | 采购、执行记录 | 采购申请单 |
+| 06 | `06_参考资料/` | 唯一资料库 | 芯片知识库、开源参考、EasyEDA、历史会话 |
+| 99 | `99_归档/` | 历史、待评估删除 | 旧固件和旧版图备份 |
+
+标签含义：
+
+- `[主]`：当前维护和交付入口。
+- `[冻结]`：已作为当前硬件依据，不随意修改。
+- `[参考]`：用于查阅或对照，不进入主构建。
+- `[调试]`：实测数据和过程记录。
+- `[历史]`：只作追溯，可能清理。
+- `[可重建]`：构建产物、缓存或派生产物。
+
+---
+
+## 2. 推荐查看顺序
+
+0. `00_AI/START_HERE.md` → `00_AI/02_当前状态.md`（AI 与首次接触者入口）
+1. `01_PCB/00_索引.md`
+2. `01_PCB/说明.md`
+3. `01_PCB/Motor-project/V3.1_升级说明.md`
+4. `01_PCB/Motor-project/V3.0_设计规格与计算书.md`
+5. `01_PCB/Motor-project/motor-driver-V3.1.*`
+6. `01_PCB/Motor-analysis/HC32F005_引脚分配.md`
+7. `02_固件/00_索引.md`
+8. `02_固件/F005_COMMS.md`
+9. `02_固件/F072_MotorCtrl/README.md`
+10. `03_上位机/00_索引.md` 与 `03_上位机/HostSoftware/README.md`
+11. `04_工作区/00_索引.md`
+12. `06_参考资料/00_索引.md`
+
+> ⚠️ **路径提示**：旧文档里写的 `01_PCB/01_工程/` = 现在的 **`01_PCB/Motor-project/`**，
+> `01_PCB/03_审核/` = 现在的 **`01_PCB/Motor-analysis/`**（2026-10 改名，历史记录未逐一改写）。
+
+---
+
+## 3. 当前主链路
+
+### 硬件
+
+- 当前版本：**V3.1**（原理图冻结、PCB 已打样；板上 F005 已拆除，改外接 F072 直驱）
+- 母线：12.0–16.8 V，4S（有效窗口 13.5–16.8 V）
+- 主控：HC32F005C6PA（板上位号 U5，**当前空位**）
+- 栅驱动：FD6288T
+- 当前控制器：外接 **HC32F072JATA** → `TP12`–`TP17`（见 `02_固件/F072_MotorCtrl/`）
+
+### F005 从机
+
+- 默认构建：`02_固件/F005_Slave/build_comms.ps1`
+- 默认输出：`02_固件/F005_Slave/build_comms/comms.hex`
+- 通信：UART0，`9600-8N1`，Modbus-RTU 地址 1
+- 控制：`0x0002` 油门 0～100
+- 实际占空比：默认限幅到 25%
+- 开环电换相范围：默认 10～120 Hz
+- 非零油门隐式启动，零油门停止
+- 烧录恢复：`flash_under_reset.ps1`
+
+### 上位机
+
+- 源码：`03_上位机/HostSoftware/`
+- 发布版：`03_上位机/release/HostSoftware/`
+- 功能码：`0x03` 读寄存器、`0x06` 写单寄存器
+- 状态轮询：`0x0000～0x0009`
+
+---
+
+## 4. 目录维护规则
+
+1. 顶层目录保持两位数字前缀，按开发顺序排列。
+2. 每个顶层目录使用 `00_索引.md` 说明标签、内容、顺序和清理规则。
+3. 源码工程不按外观随意改名；优先通过索引分类，防止硬编码路径失效。
+4. 数据手册和芯片结论只写入 `06_参考资料/芯片知识库/`。
+5. 第三方完整工程只写入 `06_参考资料/开源参考工程/`。
+6. 构建产物、`__pycache__`、`.pyc`、临时日志可重建或可删除。
+7. 历史版本进入 `99_归档/`，不要与当前版本混放。
+8. 同内容文件不再保存多份实体副本。
+9. `00_AI/` 是 AI 入口与现状快照，只写「指针 + 状态」，不复制权威数据；状态变化后同步更新。
+
+---
+
+## 5. 2026-09-30 整理结果
+
+- F005 主目录收敛为：`build_comms + cmsis + core + ldscripts + port + third_party + user`。
+- 删除另一套精简 DDL，只保留官方完整 DDL。
+- 删除历史 `build_*`、探针源码、旧 release、便携 Python、测试临时文件。
+- 删除根 `$null`、`02_固件/%SystemDrive%`、旧锁文件和可重建缓存。
+- `asac-esc` 从固件主目录移到 `06_参考资料/开源参考工程/`。
+- 重复 HC32F005 手册合并到 `06_参考资料/芯片知识库/_datasheet/`。
+- 所有顶层目录增加 `00_索引.md`，统一标签和推荐查看顺序。
 
-当前工程按以下本机路径配置：
+---
 
-- Qt：`D:/Qt/Qt6.8.1/6.8.3/msvc2022_64`
-- Visual Studio 2022：`D:/VS2022`
-- CMake：系统 `cmake`
-- VSCode C++ 编译器路径：`D:/VS2022/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe`
+## 6. 当前状态
 
-如需迁移到其他电脑，需要同步修改以下文件中的路径：
-
-- `CMakePresets.json`
-- `.vscode/c_cpp_properties.json`
-- `scripts/build-vs.ps1`
-
-## 项目路径说明
-
-当前工程根目录为：
-
-```text
-E:\Project\HostSoftware(codex)
-```
-
-请使用 VSCode 直接打开该目录，`.vscode` 中的任务和调试配置都使用 `${workspaceFolder}`，会自动跟随当前工作区路径。
-
-如果工程目录曾从其他名称改名而来，请关闭仍指向旧路径的 VSCode 窗口，重新打开新目录。构建脚本会自动检测失效的 CMake 缓存并重新配置。
-
-## 构建方式
-
-### 1. VSCode 构建
-
-在 VSCode 中按 `Ctrl+Shift+B`，默认任务为：
-
-- `Build HostSoftware (Debug)`
-
-也可在“终端 -> 运行任务”中选择：
-
-- `Build HostSoftware (Debug)`
-- `Build HostSoftware (Release)`
-- `Run HostSoftware (Debug)`
-
-### 2. 命令行构建
-
-Debug：
-
-```powershell
-cd E:\Project\HostSoftware(codex)
-powershell -ExecutionPolicy Bypass -File .\scripts\build-vs.ps1 -Configuration Debug
-```
-
-Release：
-
-```powershell
-cd E:\Project\HostSoftware(codex)
-powershell -ExecutionPolicy Bypass -File .\scripts\build-vs.ps1 -Configuration Release
-```
-
-### 3. CMake Presets
-
-工程同时提供 CMake Presets：
-
-- `msvc-debug`
-- `msvc-release`
-
-在已加载 MSVC x64 环境的终端中可以执行：
-
-```powershell
-cmake --preset msvc-debug
-cmake --build --preset debug
-```
-
-## 运行与调试
-
-### Debug 模式
-
-Debug 可执行文件：
-
-```text
-E:\Project\HostSoftware(codex)\build\Debug\HostSoftware.exe
-```
-
-VSCode 调试方式：
-
-1. 按 `Ctrl+Shift+B` 构建 Debug。
-2. 按 `F5` 启动 `Debug HostSoftware`。
-
-Debug 构建包含 `.pdb` 调试符号，可正常打断点调试。
-
-### Release 模式
-
-Release 可执行文件：
-
-```text
-E:\Project\HostSoftware(codex)\build\Release\HostSoftware.exe
-```
-
-Release 用于最终交付和性能测试，不包含调试符号。
-
-## 界面布局
-
-主界面采用左中右水平布局：
-
-- 左侧：连接属性、控制按钮、状态机控制，约占 1/4。
-- 中间：数据监控，约占 1/2。
-- 右侧：参数设置、功能测试、油门推杆、气压表，约占 1/4。
-
-窗口最小尺寸为 1280 x 720。
-
-### 左侧区域
-
-通信设置包含三个下拉菜单：
-
-- COM 口选择
-- 波特率
-- 数据位
-
-宽度比例为 `3 : 2 : 1`。
-
-控制区域包含：
-
-- 转速控制
-- 油门控制
-- 关闭控制
-
-初始显示“转速控制”和“油门控制”，点击任一按钮后切换为绿色“关闭控制”按钮。
-
-状态机控制包含：
-
-- 启动
-- 停车/散热
-- 紧急停车
-
-三种状态同时只能生效一种，初始为“紧急停车”。
-
-### 中间区域
-
-引擎状态区域显示：
-
-- 引擎状态
-- 故障码
-
-转速、温度区域包含：
-
-- 转速表：量程 0-70000 rpm，表盘标题为 `x1000 rpm`，刻度值为 0-70，LCD 显示实际转速。
-- 排气温：量程 0-1000。
-- ECU 温度：量程 0.0-100.0。
-
-详细参数矩阵包含 10 个参数：
-
-- 当前油泵电压
-- 控制电压
-- 动力电压
-- 电流
-- 油泵最大电压
-- 油泵点火电压
-- 转速加速系数
-- 启动时间
-- 最高转速
-- 怠速转速
-
-### 右侧区域
-
-参数设置按钮会打开模态参数窗口，参数窗口包含 10 个参数，每行包含：
-
-- 参数名
-- 当前值
-- 修改值输入框
-
-窗口底部按钮：
-
-- 应用
-- 完成
-- 取消
-
-功能测试按钮会打开模态功能测试窗口，包含：
-
-- 测试主油路电磁阀
-- 测试热火头
-- 燃油清零
-- 油泵排除空气
-- 测试点火电磁阀
-- 测试启动电机
-- 推力清零
-- 测试油泵(短时)
-- 测试油泵(长时)
-- 关闭油泵
-- 返回
-
-油门推杆组件：
-
-- 推杆初始位于轨道底部。
-- 可通过鼠标拖动改变油门百分比。
-- 轨道宽度为推杆宽度的 0.8 倍。
-- LCD 宽度为推杆宽度的 1.2 倍。
-
-气压表组件：
-
-- 名称：气压（kPa）
-- LCD 显示当前气压。
-
-## 主题切换
-
-程序内置两套主题：
-
-- 亮色主题
-- 工业风暗色主题
-
-按键盘 `Tab` 键即可切换。
-
-主题由 `CTheme` 统一管理，所有界面元素均读取主题颜色，包括：
-
-- 窗口背景
-- 面板和版块背景
-- 文字颜色
-- 转速表、温度计
-- LCD 显示
-- 按钮
-- 输入框
-- 下拉菜单
-
-## 参数保存
-
-参数保存在应用程序运行目录下的 `ParaSetttings.ini` 中：
-
-```text
-build\Debug\ParaSetttings.ini
-```
-
-文件格式示例：
-
-```ini
-[Parameters]
-currentOilPumpVoltage=0
-controlVoltage=0
-powerVoltage=0
-current=0
-oilPumpMaxVoltage=0
-oilPumpIgnitionVoltage=0
-speedAccelerationCoefficient=0
-startTime=0
-maxSpeed=0
-idleSpeed=0
-```
-
-参数窗口操作逻辑：
-
-- 修改参数后，“应用”按钮变为可用。
-- 点击“应用”弹出确认框，确认后保存到 ini。
-- 点击“完成”先应用，再关闭窗口。
-- 点击“取消”不保存，直接退出。
-
-## 模拟数据
-
-转速表、排气温、ECU 温度使用模拟数据动态显示：
-
-- 每 250ms 更新一次模拟目标值。
-- LCD 数字显示实时目标值。
-- 指针和温度柱使用平滑动画过渡。
-
-油门推杆不使用模拟数据，完全由用户手动拖动控制。
-
-## 自定义组件
-
-- `CActionButton`：统一风格的操作按钮。
-- `CComboBox`：完全自绘下拉菜单，避免默认样式高亮遮挡文字。
-- `CParameterRow`：参数矩阵行。
-- `CParameterEditRow`：参数设置窗口编辑行。
-- `SpeedGauge`：转速表。
-- `Thermometer`：温度计。
-- `ThrottleControl`：油门推杆。
-- `AirPressureGauge`：气压表。
-
-## 代码规范
-
-- 类名使用大驼峰，并加前缀 `C`。
-- 成员变量加前缀 `m_`。
-- 局部变量和函数使用小驼峰。
-
-示例：
-
-```cpp
-class CMyClassName
-{
-private:
-    int m_memberName = 0;
-};
-```
-
-## 常见问题
-
-### 1. 构建时报 qmlimportscanner 路径错误
-
-如果工程目录包含中文或特殊字符，Qt 的 `qmlimportscanner` 可能无法处理长路径。当前构建脚本已自动使用 8.3 短路径调用 CMake。
-
-### 2. 应用后参数没有立即刷新
-
-参数矩阵和参数窗口当前值通过 `CParameterStore.currentValues` 绑定，点击应用后会立即刷新。
-
-### 3. 构建时提示 CMake 缓存路径不匹配
-
-构建脚本会自动检测 `CMakeCache.txt` 中的旧源码路径并清理缓存。
-
-### 4. 如何确认当前运行的是 Debug 还是 Release
-
-查看运行的可执行文件路径：
-
-- Debug：`build\Debug\HostSoftware.exe`
-- Release：`build\Release\HostSoftware.exe`
-
-## 串口通信(Modbus-RTU)
-
-上位机通过 RS485(Modbus-RTU 主站)与 MCU 下位机通信, 控制电机启停与转速。
-通信协议与下位机保持一致, 详见 `E:/Project/ECU/MCU/README.md` 第 5 章。
-
-### 通信参数
-
-| 参数 | 值 |
+| 项目 | 状态 |
 |---|---|
-| 接口 | RS485(经 USB 转串口/RS485 适配器) |
-| 波特率 | 9600(界面可切换 19200/38400/115200) |
-| 数据位 | 8(界面可选, 与 MCU 通信需 8) |
-| 校验 | 偶校验(固定 8E1, 与 MCU 默认一致) |
-| 停止位 | 1 |
-| 从站地址 | 1(与 MCU 默认一致) |
-
-### 功能与界面对应
-
-| 界面操作 | 下位机动作 |
-|---|---|
-| 启动 | 写寄存器 0x0001 = 1 |
-| 停车/散热、紧急停车 | 写寄存器 0x0001 = 0 |
-| 转速控制 / 油门控制 | 开启控制: 油门推杆实时写 0x0002(0~100) |
-| 关闭控制 | 关闭控制并写 0x0001 = 0(安全停止) |
-| 周期轮询 | 每 250ms 读 0x0000~0x0009, 刷新运行状态/转速/占空比/故障/通信计数 |
-
-### 连接方式
-
-- 界面无独立"连接"按钮, 采用自动连接:
-  - 启动后自动枚举可用串口并打开第一个可用端口
-  - 在"COM口选择"下拉框切换端口时自动重连
-  - 串口热插拔自动刷新端口列表; 端口被拔出时自动断开
-- 连接状态显示在窗口标题栏与中间"引擎状态"区域
-- 运行/停止状态、故障码、转速(占空比映射)、通信成功/失败计数实时显示
-
-### 帧示例(与下位机互通)
-
-```text
-读状态:  01 03 00 00 00 0A C5 CD
-启动:    01 06 00 01 00 01 19 CA
-停止:    01 06 00 01 00 00 D8 0A
-转速50:  01 06 00 02 00 32 A9 DF
-转速80:  01 06 00 02 00 50 28 36
-频率5k:  01 06 00 03 13 88 74 9C
-```
-
-### 代码结构
-
-- `src/CCommManager.h/cpp`：串口管理 + Modbus-RTU 主站(组帧/CRC16/响应解析/轮询), 通过上下文属性 `commManager` 暴露给 QML
-- `qml/Main.qml`：仅新增控件 id、信号连接与属性绑定, **未改动任何 UI 布局**
-
-### 与 MCU 联调步骤
-
-1. 将下位机程序烧录到 HC32F072 核心板, 通过 RS485 适配器连接电脑
-2. 打开上位机, 确认窗口标题显示"已连接(COMx)"
-3. 点击"转速控制"或"油门控制"开启控制, 拖动油门推杆 → MCU 输出 PWM
-4. 点击"启动"/"停车"切换运行状态; 中间区域显示运行状态与转速
+| PCB V3.1 | 已冻结并打样，实板调试中（详见 `01_PCB/说明.md`） |
+| 板上 F005 | **已拆除**（UART 固件释放 P27 后 SWD 无法恢复，板上无 nRESET 可用） |
+| 当前主链路 | HostSoftware → DAPLink 串口 → **外接 F072_MotorCtrl (`-Direct`)** → V3.1 功率级 |
+| F005 直连 Modbus 从站 | 已实现并成功构建（005 拆板前验证通过，保留参考） |
+| 上位机油门写 `0x0002` | 已接通 F072 直接油门控制 |
+| 电机带载验证 | 尚未完成，必须限流并从低油门开始 |
+| 开环版带电机 | ⛔ **已明令禁止**（2026-10-08 剧烈震动事故），必须用 BEMF 闭环 |
+| BEMF 闭环 | `F072_MotorCtrl -BEMF`，ADC 通道映射已验证，待整机联调 |

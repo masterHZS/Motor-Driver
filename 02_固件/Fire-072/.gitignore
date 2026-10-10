@@ -1,0 +1,27 @@
+# Build outputs
+build/
+.toolchain/
+
+# VS Code
+.vscode/*.log
+.vscode/launch.json.bak
+
+# IDE
+*.uvguix.*
+*.uvoptx
+*.uvprojx
+*.eww
+*.ewp
+*.ewd
+Debug/
+Release/
+
+# Misc
+*.o
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.d
+*.bak

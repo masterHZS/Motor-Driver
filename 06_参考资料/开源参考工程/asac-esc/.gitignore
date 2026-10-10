@@ -1,0 +1,4 @@
+*kicad/*/*backups/*.zip
+*-cache
+build/
+CUBEMX_GENERATE

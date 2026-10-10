@@ -1,0 +1,52 @@
+HIN1 @480,469  -> wire at 453,469 but no node
+HIN2 @480,505  -> no wire found near 461,505
+HIN3 @480,541  -> no wire found near 461,541
+LIN1 @480,462  -> wire at 453,462 but no node
+LIN2 @480,498  -> no wire found near 461,498
+LIN3 @480,534  -> no wire found near 461,534
+VCC @480,440  -> wire at 461,442 but no node
+COM @551,433  -> wire at 570,424 but no node
+LO3    @554,519 wire@579,522 -> net(3 nodes) bbox=579,522,615,612
+        comps: R3
+        vals : 10 Ω
+LO2    @554,483 wire@579,486 -> net(2 nodes) bbox=579,486,604,486
+        comps: R2
+        vals : 10 Ω
+LO1    @554,447 wire@579,450 -> net(3 nodes) bbox=579,356,601,450
+        comps: R1
+        vals : 10 Ω
+VS3    @554,527 wire@579,529 -> net(15 nodes) bbox=579,529,709,640
+        comps: C7
+        vals : 10 Ω
+HO3    @553,534 wire@579,536 -> net(4 nodes) bbox=579,536,612,640
+        comps: R4
+        vals : 10 Ω
+VB3    @554,541 wire@579,543 -> net(4 nodes) bbox=579,543,640,586
+        comps: C7 D3
+        vals : ES1D
+VS2    @554,491 wire@579,493 -> net(14 nodes) bbox=579,442,734,507
+        comps: Q5 R5
+        vals : HYG053N10NS1C2 10 Ω
+HO2    @553,498 wire@579,500 -> net(2 nodes) bbox=579,500,648,500
+        comps: R5
+        vals : 10 Ω
+VB2    @554,505 wire@579,507 -> net(5 nodes) bbox=579,507,658,518
+        comps: C6 D2
+        vals : ES1D
+VS1    @554,455 wire@579,457 -> net(16 nodes) bbox=579,320,702,457
+        comps: C5
+        vals : HYG053N10NS1C2
+HO1    @553,462 wire@579,464 -> net(3 nodes) bbox=579,381,615,464
+        comps: R6
+        vals : 10 Ω
+VB1    @554,469 wire@579,471 -> net(5 nodes) bbox=579,435,662,471
+        comps: C5 D1
+        vals : 20k Ω
+VIN    @501,354 wire@486,354 -> net(36 nodes) bbox=486,259,795,684
+        comps: C14 C15 C16 C17 C2 D1 Q2 Q3 Q6 U2
+        vals : HYG053N10NS1C2 ES1D 100uF
+SW @501,368  -> wire at 482,370 but no node
+FB @501,383  -> wire at 482,385 but no node
+EN     @501,397 wire@486,399 -> net(10 nodes) bbox=486,356,579,435
+        comps: 
+        vals : FD6288T

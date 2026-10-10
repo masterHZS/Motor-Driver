@@ -1,0 +1,24 @@
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+tables found: 1
+============================================================
+TABLE 0 rows 20 cols 14
+ | ģ�� |  |  |  | ���� |  |  |  |  |  |  |  | 
+PxADS=1 |  |  |  | PxADS=0 |  |  |  |  |  |  |  |  | 
+ |  |  |  | Pxsel=0 _ |  | Pxsel=1 _ | Pxsel=2 _ | Pxsel=3 _ | Pxsel=4 _ | Pxsel=5 _ | Pxsel=6 _ | Pxsel=7 _ | 
+AIN4 |  | VCIN4 |  | P34 |  | PCA_CH0 |  | TIM5_CHA | TIM0_EXT | TIM4_CHA |  | TIM1_TOG | 
+AIN5 |  | VCIN5 |  | P35 |  | UART1_TXD | TIM6_CHB | UART0_TXD | TIM0_GATE | TIM4_CHB | SPI_MISO | I2C_SDA | 
+AIN6 ADC_VREF |  | VCIN6 |  | P36 |  | UART1_RXD | TIM6_CHA | UART0_RXD | PCA_CH4 | TIM5_CHA | SPI_MOSI | I2C_SCL | 
+AIN7 XTHI |  | VCIN7 |  | P01 |  | UART0_RXD | I2C_SDA | UART1_TXD | TIM0_TOG | TIM5_CHB | SPI_SCK | TIM2_EXT | 
+AIN8 XTHO |  |  |  | P02 |  | UART0_TXD | I2C_SCL | UART1_RXD | TIM0_TOGN | TIM6_CHA | SPI_CS | TIM2_GATE | 
+LVDIN1 |  |  |  | P03 |  | PCA_CH3 | SPI_CS | TIM6_CHB |  |  | PCA_ECI | VC0_OUT | 
+XTLO |  |  |  | P15 |  | I2C_SDA | TIM2_TOG | TIM4_CHB |  | SPI_SCK | UART0_RXD | LVD_OUT | 
+XTLI |  |  |  | P14 |  | I2C_SCL | TIM2_TOGN | PCA_ECI | ADC_RDY | SPI_CS | UART0_TXD | NC | 
+LVDIN2 |  | VCIN0 |  | P23 |  | TIM6_CHA | TIM4_CHB | TIM4_CHA | PCA_CH0 | SPI_MISO | UART1_TXD | IR_OUT | 
+AIN0 |  |  |  | P24 |  | TIM4_CHB | TIM5_CHB | HCLK_OUT | PCA_CH1 | SPI_MOSI | UART1_RXD | VC1_OUT | 
+LVDIN3 |  | VCIN1 |  | P25 |  | SPI_SCK | PCA_CH0 | TIM5_CHA | LVD_OUT |  | I2C_SDA | TIM1_GATE | 
+AIN1 |  |  |  | P26 |  | SPI_MOSI | TIM4_CHA | TIM5_CHB | PCA_CH2 |  | I2C_SCL | TIM1_EXT | 
+ |  |  |  | P27/SWDIO |  | SPI_MISO | TIM5_CHA | TIM6_CHA | PCA_CH3 | UART0_RXD | RCH_OUT | XTH_OUT | 
+ |  |  |  | P31/SWCLK |  |  | PCA_ECI | PCLK_OUT | VC0_OUT | UART0_TXD | RCL_OUT | HCLK_OUT | 
+AIN2 |  | VCIN2 |  | P32 |  |  | PCA_CH2 | TIM6_CHB | VC1_OUT | UART1_TXD | PCA_CH4 |  | 
+AIN3 |  | VCIN3 |  | P33 |  |  | PCA_CH1 | TIM5_CHB | PCA_ECI | UART1_RXD | XTL_OUT | TIM1_TOGN | 
+ |  |  |  | P00 Reset |  |  |  |  |  |  |  |  | 

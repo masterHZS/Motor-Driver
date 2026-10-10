@@ -1,0 +1,1335 @@
+%%%OBJ 19679
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo
+<< /Registry (Adobe)
+/Ordering (UCS)
+/Supplement 0
+>> def
+/CMapName /Adobe-Identity-UCS def
+/CMapType 2 def
+1 begincodespacerange
+<0000> <FFFF>
+endcodespacerange
+4 beginbfchar
+<0003> <0020>
+<000E> <002B>
+<0010> <002D>
+<0013> <0030>
+endbfchar
+1 beginbfrange
+<0015> <0016> <0032>
+endbfrange
+13 beginbfchar
+<001A> <0037>
+<0024> <0041>
+<0026> <0043>
+<0029> <0046>
+<002B> <0048>
+<0030> <004D>
+<0035> <0052>
+<0048> <0065>
+<0052> <006F>
+<0055> <0072>
+<0057> <0074>
+<005B> <0078>
+<008A> <00AE>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+%%%OBJ 19683
+/CIDInit /ProcSet findresource begin
+14 dict begin
+begincmap
+/CIDSystemInfo
+<< /Registry (Adobe)
+/Ordering (UCS)
+/Supplement 0
+>> def
+/CMapName /Adobe-Identity-UCS def
+/CMapType 2 def
+1 begincodespacerange
+<0000> <FFFF>
+endcodespacerange
+1 beginbfchar
+<023E> <3002>
+endbfchar
+1 beginbfrange
+<03B4> <03B5> <FF08>
+endbfrange
+45 beginbfchar
+<03B8> <FF0C>
+<03C6> <FF1A>
+<0440> <4E0A>
+<0444> <4E0E>
+<0450> <4E1A>
+<0452> <4E1C>
+<0463> <4E2D>
+<04A6> <4E70>
+<04DD> <4EA7>
+<0522> <4EEC>
+<0531> <4EFB>
+<0583> <4F4D>
+<0589> <4F53>
+<058B> <4F55>
+<05B5> <4F7F>
+<0617> <4FE1>
+<07C2> <518C>
+<0830> <51FA>
+<084D> <5217>
+<0861> <522B>
+<086C> <5236>
+<08D5> <529F>
+<0970> <533A>
+<0980> <534A>
+<0984> <534E>
+<09D0> <539A>
+<0A25> <53EF>
+<0A2D> <53F7>
+<0AF7> <54C1>
+<0C9E> <5668>
+<0D2A> <56F4>
+<0D5E> <5728>
+<0D66> <5730>
+<0D76> <5740>
+<0DC1> <578B>
+<0EB9> <5883>
+<0FB8> <5982>
+<11EF> <5BB9>
+<11F3> <5BBD>
+<1232> <5BFC>
+<1237> <5C01>
+<1245> <5C0F>
+<1278> <5C42>
+<141B> <5DE5>
+<1438> <5E02>
+endbfchar
+1 beginbfrange
+<14DC> <14DD> <5EA6>
+endbfrange
+57 beginbfchar
+<1530> <5EFA>
+<1545> <5F0F>
+<154B> <5F15>
+<1598> <5F62>
+<15E4> <5FAE>
+<165D> <6027>
+<16DE> <60A8>
+<1745> <610F>
+<1847> <6211>
+<184C> <6216>
+<1881> <624B>
+<1937> <6301>
+<19A4> <636E>
+<19DD> <63A7>
+<1B65> <652F>
+<1BA6> <6570>
+<1BE6> <65B0>
+<1C2C> <65F6>
+<1D3F> <6709>
+<1DD2> <679C>
+<239C> <6D66>
+<23AD> <6D77>
+<245F> <6E29>
+<29E5> <73AF>
+<2B5E> <7528>
+<2E37> <7801>
+<3007> <79D1>
+<3041> <7A0B>
+<3162> <7B2C>
+<32B1> <7C7B>
+<3331> <7CFB>
+<34DD> <7EA7>
+<354C> <7F16>
+<3587> <7F51>
+<35A4> <7F6E>
+<368A> <8054>
+<3733> <80FD>
+<3750> <811A>
+<3939> <8303>
+<3EFB> <88C5>
+<3FF7> <89C1>
+<41E4> <8BAE>
+<41FC> <8BC6>
+<422D> <8BF7>
+<435D> <8D27>
+<4363> <8D2D>
+<4413> <8DDD>
+<4425> <8DEF>
+<45FD> <8FC7>
+<463F> <9009>
+<4650> <901A>
+<46E4> <90AE>
+<4783> <914D>
+<4805> <91CF>
+<4C2A> <95F4>
+<4CC5> <968F>
+<510E> <9AD8>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+%%%OBJ 19687
+/CIDInit /ProcSet findresource begin
+18 dict begin
+begincmap
+/CIDSystemInfo
+<< /Registry (Adobe)
+/Ordering (UCS)
+/Supplement 0
+>> def
+/CMapName /Adobe-Identity-UCS def
+/CMapType 2 def
+1 begincodespacerange
+<0000> <FFFF>
+endcodespacerange
+1 beginbfchar
+<0003> <0020>
+endbfchar
+5 beginbfrange
+<0008> <0009> <0025>
+<000B> <000C> <0028>
+<000E> <001D> <002B>
+<001F> <0021> <003C>
+<0023> <003C> <0040>
+endbfrange
+1 beginbfchar
+<0042> <005F>
+endbfchar
+2 beginbfrange
+<0044> <0053> <0061>
+<0055> <005D> <0072>
+endbfrange
+2 beginbfchar
+<005F> <007C>
+<0061> <007E>
+endbfchar
+1 beginbfrange
+<008A> <008C> [<00AE> <00A9> <2122>]
+endbfrange
+1 beginbfchar
+<009F> <2126>
+endbfchar
+2 beginbfrange
+<00B1> <00B2> <2013>
+<00B3> <00B4> <201C>
+endbfrange
+6 beginbfchar
+<00B6> <2019>
+<01FB> <0394>
+<020D> <03A9>
+<0219> <03B8>
+<021D> <03BC>
+<108F> <2103>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+%%%OBJ 19691
+/CIDInit /ProcSet findresource begin
+132 dict begin
+begincmap
+/CIDSystemInfo
+<< /Registry (Adobe)
+/Ordering (UCS)
+/Supplement 0
+>> def
+/CMapName /Adobe-Identity-UCS def
+/CMapType 2 def
+1 begincodespacerange
+<0000> <FFFF>
+endcodespacerange
+8 beginbfchar
+<000C> <0029>
+<0014> <0031>
+<0019> <0036>
+<0025> <0042>
+<002E> <004B>
+<0048> <0065>
+<0057> <0074>
+<005C> <0079>
+endbfchar
+1 beginbfrange
+<0065> <0066> <00B0>
+endbfrange
+3 beginbfchar
+<0068> <00D7>
+<009B> <03A3>
+<00FC> <2014>
+endbfchar
+1 beginbfrange
+<0100> <0101> <201C>
+endbfrange
+1 beginbfchar
+<0107> <2103>
+endbfchar
+1 beginbfrange
+<011B> <011C> [<2211> <221A>]
+endbfrange
+1 beginbfchar
+<0130> <2264>
+endbfchar
+3 beginbfrange
+<0137> <013C> <2460>
+<01C3> <01C4> <3001>
+<02C4> <02C5> <FF08>
+endbfrange
+2 beginbfchar
+<02C8> <FF0C>
+<02CA> <FF0E>
+endbfchar
+1 beginbfrange
+<02D6> <02D7> <FF1A>
+endbfrange
+2 beginbfchar
+<0430> <4E00>
+<0437> <4E07>
+endbfchar
+3 beginbfrange
+<0439> <043B> <4E09>
+<043D> <043E> <4E0D>
+<0443> <0444> <4E13>
+endbfrange
+6 beginbfchar
+<044D> <4E1D>
+<0454> <4E24>
+<045A> <4E2A>
+<045D> <4E2D>
+<0460> <4E30>
+<0462> <4E32>
+endbfchar
+1 beginbfrange
+<046A> <046B> <4E3A>
+endbfrange
+12 beginbfchar
+<0475> <4E45>
+<0479> <4E49>
+<047B> <4E4B>
+<0488> <4E58>
+<048F> <4E5F>
+<04B6> <4E86>
+<04B8> <4E88>
+<04BB> <4E8B>
+<04BE> <4E8E>
+<04C2> <4E92>
+<04CB> <4E9B>
+<04D4> <4EA4>
+endbfchar
+1 beginbfrange
+<04D6> <04D7> <4EA6>
+endbfrange
+5 beginbfchar
+<04EA> <4EBA>
+<04F5> <4EC5>
+<04FB> <4ECB>
+<04FE> <4ECE>
+<0506> <4ED6>
+endbfchar
+1 beginbfrange
+<0513> <0515> <4EE3>
+endbfrange
+7 beginbfchar
+<0526> <4EF6>
+<052B> <4EFB>
+<0541> <4F11>
+<0548> <4F18>
+<054A> <4F1A>
+<0550> <4F20>
+<0560> <4F30>
+endbfchar
+1 beginbfrange
+<057D> <057E> <4F4D>
+endbfrange
+28 beginbfchar
+<0583> <4F53>
+<0585> <4F55>
+<0589> <4F59>
+<058C> <4F5C>
+<05AF> <4F7F>
+<05BB> <4F8B>
+<05CB> <4F9B>
+<05CD> <4F9D>
+<05D6> <4FA6>
+<05EF> <4FBF>
+<060D> <4FDD>
+<0611> <4FE1>
+<061E> <4FEE>
+<063D> <500D>
+<066C> <503C>
+<067F> <504F>
+<068A> <505A>
+<068C> <505C>
+<06A6> <5076>
+<06D8> <50A8>
+<0771> <5141>
+<0773> <5143>
+<0778> <5148>
+<0795> <5165>
+<0798> <5168>
+<079C> <516C>
+<07A1> <5171>
+<07A3> <5173>
+endbfchar
+1 beginbfrange
+<07A6> <07A8> <5176>
+endbfrange
+1 beginbfchar
+<07B5> <5185>
+endbfchar
+1 beginbfrange
+<07BC> <07BD> <518C>
+endbfrange
+2 beginbfchar
+<07C7> <5197>
+<07C9> <5199>
+endbfchar
+1 beginbfrange
+<07E2> <07E3> <51B2>
+endbfrange
+5 beginbfchar
+<07E5> <51B5>
+<07F6> <51C6>
+<07FF> <51CF>
+<0810> <51E0>
+<082A> <51FA>
+endbfchar
+1 beginbfrange
+<0836> <0837> <5206>
+endbfrange
+11 beginbfchar
+<0847> <5217>
+<0849> <5219>
+<084D> <521D>
+<0859> <5229>
+<085B> <522B>
+<0860> <5230>
+<0866> <5236>
+<0869> <5239>
+<086B> <523B>
+<087D> <524D>
+<08CB> <529B>
+endbfchar
+1 beginbfrange
+<08CF> <08D1> <529F>
+endbfrange
+3 beginbfchar
+<08D8> <52A8>
+<0935> <5305>
+<0946> <5316>
+endbfchar
+1 beginbfrange
+<0969> <096A> <5339>
+endbfrange
+2 beginbfchar
+<0977> <5347>
+<097A> <534A>
+endbfchar
+1 beginbfrange
+<097E> <097F> <534E>
+endbfrange
+10 beginbfchar
+<0985> <5355>
+<0990> <5360>
+<09A0> <5370>
+<09A3> <5373>
+<09A7> <5377>
+<09B2> <5382>
+<09BB> <538B>
+<09EB> <53BB>
+<09F2> <53C2>
+<09FA> <53CA>
+endbfchar
+1 beginbfrange
+<09FC> <09FD> <53CC>
+endbfrange
+1 beginbfchar
+<0A01> <53D1>
+endbfchar
+1 beginbfrange
+<0A06> <0A08> <53D6>
+endbfrange
+3 beginbfchar
+<0A13> <53E3>
+<0A16> <53E6>
+<0A1A> <53EA>
+endbfchar
+2 beginbfrange
+<0A1F> <0A20> <53EF>
+<0A27> <0A28> <53F7>
+endbfrange
+2 beginbfchar
+<0A34> <5404>
+<0A38> <5408>
+endbfchar
+1 beginbfrange
+<0A3C> <0A3E> <540C>
+endbfrange
+12 beginbfchar
+<0A41> <5411>
+<0A56> <5426>
+<0A5B> <542B>
+<0A5F> <542F>
+<0A7A> <544A>
+<0A98> <5468>
+<0AA3> <5473>
+<0ABC> <548C>
+<0AD8> <54A8>
+<0AF1> <54C1>
+<0AFD> <54CD>
+<0B54> <5524>
+endbfchar
+1 beginbfrange
+<0B5E> <0B5F> <552E>
+endbfrange
+7 beginbfchar
+<0B76> <5546>
+<0C98> <5668>
+<0C9A> <566A>
+<0D0B> <56DB>
+<0D10> <56E0>
+<0D24> <56F4>
+<0D2A> <56FA>
+endbfchar
+1 beginbfrange
+<0D2D> <0D2E> <56FD>
+endbfrange
+5 beginbfchar
+<0D58> <5728>
+<0D60> <5730>
+<0D6A> <573A>
+<0D70> <5740>
+<0D77> <5747>
+endbfchar
+1 beginbfrange
+<0D7F> <0D80> <574F>
+endbfrange
+20 beginbfchar
+<0D87> <5757>
+<0DBB> <578B>
+<0E0F> <57DF>
+<0E2A> <57FA>
+<0EB3> <5883>
+<0ECE> <589E>
+<0F20> <58F0>
+<0F34> <5904>
+<0F37> <5907>
+<0F3D> <590D>
+<0F46> <5916>
+<0F4A> <591A>
+<0F4F> <591F>
+<0F57> <5927>
+<0F61> <5931>
+<0F77> <5947>
+<0F87> <5957>
+<0FB2> <5982>
+<0FFB> <59CB>
+<1180> <5B50>
+endbfchar
+1 beginbfrange
+<1187> <1188> <5B57>
+endbfrange
+5 beginbfchar
+<11B3> <5B83>
+<11B9> <5B89>
+<11BC> <5B8C>
+<11CA> <5B9A>
+<11CE> <5B9E>
+endbfchar
+1 beginbfrange
+<11D2> <11D3> <5BA2>
+endbfrange
+7 beginbfchar
+<11E6> <5BB6>
+<11E9> <5BB9>
+<11ED> <5BBD>
+<11F4> <5BC4>
+<11F6> <5BC6>
+<11FC> <5BCC>
+<120F> <5BDF>
+endbfchar
+2 beginbfrange
+<1228> <1229> <5BF8>
+<122B> <122C> <5BFB>
+endbfrange
+6 beginbfchar
+<1231> <5C01>
+<1234> <5C04>
+<1236> <5C06>
+<123F> <5C0F>
+<1241> <5C11>
+<126A> <5C3A>
+endbfchar
+1 beginbfrange
+<126C> <126D> <5C3C>
+endbfrange
+7 beginbfchar
+<1270> <5C40>
+<1275> <5C45>
+<1285> <5C55>
+<137C> <5D4C>
+<1415> <5DE5>
+<141E> <5DEE>
+<1422> <5DF2>
+endbfchar
+2 beginbfrange
+<1432> <1433> <5E02>
+<1456> <1457> <5E26>
+endbfrange
+1 beginbfchar
+<1468> <5E38>
+endbfchar
+1 beginbfrange
+<14A2> <14A4> <5E72>
+endbfrange
+37 beginbfchar
+<14A6> <5E76>
+<14AF> <5E7F>
+<14BF> <5E8F>
+<14C4> <5E94>
+<14D6> <5EA6>
+<152A> <5EFA>
+<1530> <5F00>
+<1532> <5F02>
+<153F> <5F0F>
+<1545> <5F15>
+<1561> <5F31>
+<156A> <5F3A>
+<1583> <5F53>
+<1585> <5F55>
+<1592> <5F62>
+<15A1> <5F71>
+<15B5> <5F85>
+<15B8> <5F88>
+<15C7> <5F97>
+<15DA> <5FAA>
+<15DE> <5FAE>
+<15F3> <5FC3>
+<15F5> <5FC5>
+<1607> <5FD7>
+<161B> <5FEB>
+<162D> <5FFD>
+<1631> <6001>
+<1657> <6027>
+<166B> <603B>
+<1685> <6055>
+<1692> <6062>
+<169F> <606F>
+<16D8> <60A8>
+<16DC> <60AC>
+<16F5> <60C5>
+<173F> <610F>
+<174F> <611F>
+endbfchar
+1 beginbfrange
+<183F> <1840> <620F>
+endbfrange
+11 beginbfchar
+<1846> <6216>
+<1867> <6237>
+<1870> <6240>
+<187B> <624B>
+<187D> <624D>
+<1883> <6253>
+<1897> <6267>
+<1899> <6269>
+<189B> <626B>
+<18A0> <6270>
+<18A9> <6279>
+endbfchar
+1 beginbfrange
+<18AF> <18B0> <627F>
+endbfrange
+1 beginbfchar
+<18BA> <628A>
+endbfchar
+1 beginbfrange
+<18C6> <18C7> <6296>
+endbfrange
+17 beginbfchar
+<18D4> <62A4>
+<18F5> <62C5>
+<18F9> <62C9>
+<190F> <62DF>
+<1919> <62E9>
+<191C> <62EC>
+<1931> <6301>
+<1937> <6307>
+<1939> <6309>
+<195F> <632F>
+<196D> <633D>
+<1979> <6349>
+<1985> <6355>
+<198F> <635F>
+<1992> <6362>
+<199E> <636E>
+<19A7> <6377>
+endbfchar
+1 beginbfrange
+<19B8> <19B9> <6388>
+endbfrange
+1 beginbfchar
+<19D5> <63A5>
+endbfchar
+2 beginbfrange
+<19D7> <19D8> <63A7>
+<19FF> <19FF> <63CF>
+endbfrange
+38 beginbfchar
+<1A00> <63D0>
+<1A02> <63D2>
+<1A11> <63E1>
+<1A6A> <643A>
+<1A76> <6446>
+<1A88> <6458>
+<1ADD> <64AD>
+<1AFD> <64CD>
+<1B16> <64E6>
+<1B5F> <652F>
+<1B66> <6536>
+<1B69> <6539>
+<1B6E> <653E>
+<1B78> <6548>
+<1B7F> <654F>
+<1B93> <6563>
+<1BA0> <6570>
+<1BA4> <6574>
+<1BB7> <6587>
+<1BDD> <65AD>
+<1BE0> <65B0>
+<1BE9> <65B9>
+<1BED> <65BD>
+<1C10> <65E0>
+<1C15> <65E5>
+<1C26> <65F6>
+<1C32> <6602>
+<1C3E> <660E>
+<1C43> <6613>
+<1C50> <6620>
+<1C5F> <662F>
+<1C6E> <663E>
+<1CA6> <6676>
+<1CAA> <667A>
+<1CB2> <6682>
+<1CC7> <6697>
+<1D22> <66F2>
+<1D24> <66F4>
+endbfchar
+1 beginbfrange
+<1D2F> <1D2F> <66FF>
+endbfrange
+1 beginbfchar
+<1D30> <6700>
+endbfchar
+1 beginbfrange
+<1D38> <1D39> <6708>
+endbfrange
+6 beginbfchar
+<1D3D> <670D>
+<1D4F> <671F>
+<1D5A> <672A>
+<1D5C> <672C>
+<1D5F> <672F>
+<1D6A> <673A>
+endbfchar
+1 beginbfrange
+<1D72> <1D73> <6742>
+endbfrange
+9 beginbfchar
+<1D8F> <675F>
+<1D91> <6761>
+<1D95> <6765>
+<1DB1> <6781>
+<1DB4> <6784>
+<1DCC> <679C>
+<1E15> <67E5>
+<1E37> <6807>
+<1E51> <6821>
+endbfchar
+1 beginbfrange
+<1E67> <1E69> <6837>
+endbfrange
+8 beginbfchar
+<1E6C> <683C>
+<1E76> <6846>
+<1E78> <6848>
+<1E93> <6863>
+<1EF0> <68C0>
+<2051> <6A21>
+<2151> <6B21>
+<216E> <6B3E>
+endbfchar
+1 beginbfrange
+<2192> <2195> <6B62>
+endbfrange
+36 beginbfchar
+<21AB> <6B7B>
+<21E5> <6BB5>
+<21FF> <6BCF>
+<2204> <6BD4>
+<2244> <6C14>
+<2264> <6C34>
+<2268> <6C38>
+<2272> <6C42>
+<2277> <6C47>
+<22D1> <6CA1>
+<22EF> <6CBF>
+<2305> <6CD5>
+<230B> <6CDB>
+<2312> <6CE2>
+<2318> <6CE8>
+<236B> <6D3B>
+<2371> <6D41>
+<237B> <6D4B>
+<23B8> <6D88>
+<2421> <6DF1>
+<2435> <6E05>
+<2459> <6E29>
+<2468> <6E38>
+<24C0> <6E90>
+<24D2> <6EA2>
+<250E> <6EDE>
+<2511> <6EE1>
+<2514> <6EE4>
+<253F> <6F0F>
+<267C> <704C>
+<26A5> <7075>
+<26E9> <70B9>
+<271D> <70ED>
+<273A> <710A>
+<2797> <7167>
+<27CF> <719F>
+endbfchar
+1 beginbfrange
+<2877> <2878> <7247>
+endbfrange
+5 beginbfchar
+<28A9> <7279>
+<28E6> <72B6>
+<2907> <72D7>
+<291C> <72EC>
+<29B7> <7387>
+endbfchar
+1 beginbfrange
+<29DF> <29E0> <73AF>
+endbfrange
+19 beginbfchar
+<2A33> <7403>
+<2A36> <7406>
+<2B27> <74F7>
+<2B4F> <751F>
+<2B58> <7528>
+<2B61> <7531>
+<2B65> <7535>
+<2B7C> <754C>
+<2B89> <7559>
+<2B95> <7565>
+<2CAD> <767D>
+<2CB4> <7684>
+<2CFA> <76CA>
+<2D01> <76D1>
+<2D08> <76D8>
+<2D1E> <76EE>
+<2D24> <76F4>
+<2D28> <76F8>
+<2D3B> <770B>
+endbfchar
+1 beginbfrange
+<2D4F> <2D50> <771F>
+endbfrange
+62 beginbfchar
+<2E15> <77E5>
+<2E31> <7801>
+<2E44> <7814>
+<2E64> <7834>
+<2E70> <7840>
+<2E9C> <786C>
+<2E9E> <786E>
+<2F6A> <793A>
+<2FEB> <79BB>
+<2FFD> <79CD>
+<3020> <79F0>
+<303B> <7A0B>
+<3063> <7A33>
+<306F> <7A3F>
+<30A6> <7A76>
+<30AA> <7A7A>
+<30C7> <7A97>
+<30FB> <7ACB>
+<311F> <7AEF>
+<3144> <7B14>
+<3156> <7B26>
+<315C> <7B2C>
+<3179> <7B49>
+<31AE> <7B7E>
+<31B0> <7B80>
+<31C7> <7B97>
+<31D1> <7BA1>
+<32AB> <7C7B>
+<32EE> <7CBE>
+<332B> <7CFB>
+<3350> <7D20>
+<335F> <7D2F>
+<34D7> <7EA7>
+<34E3> <7EB3>
+<34EF> <7EBF>
+<34F4> <7EC4>
+<34F6> <7EC6>
+<34F8> <7EC8>
+<34FF> <7ECF>
+<3503> <7ED3>
+<3509> <7ED9>
+<350D> <7EDD>
+<350F> <7EDF>
+<3517> <7EE7>
+<351D> <7EED>
+<352C> <7EFC>
+<3543> <7F13>
+<3546> <7F16>
+<3581> <7F51>
+<359E> <7F6E>
+<35BE> <7F8E>
+<362B> <7FFB>
+<3633> <8003>
+<3635> <8005>
+<363C> <800C>
+<3647> <8017>
+<3656> <8026>
+<3684> <8054>
+<372D> <80FD>
+<3739> <8109>
+<374A> <811A>
+<381A> <81EA>
+endbfchar
+1 beginbfrange
+<3823> <3824> <81F3>
+endbfrange
+17 beginbfchar
+<38AA> <827A>
+<38B2> <8282>
+<38DF> <82AF>
+<3915> <82E5>
+<3933> <8303>
+<3991> <8361>
+<39A7> <8377>
+<39E7> <83B7>
+<3C81> <8651>
+<3D32> <8702>
+<3E7C> <884C>
+<3E95> <8865>
+<3E98> <8868>
+<3EDB> <88AB>
+<3EF5> <88C5>
+<3F05> <88D5>
+<3FB1> <8981>
+endbfchar
+1 beginbfrange
+<3FF1> <3FF2> <89C1>
+endbfrange
+7 beginbfchar
+<3FF4> <89C4>
+<3FF6> <89C6>
+<4002> <89D2>
+<4013> <89E3>
+<4016> <89E6>
+<4030> <8A00>
+<4196> <8B66>
+endbfchar
+1 beginbfrange
+<41D1> <41D2> <8BA1>
+endbfrange
+2 beginbfchar
+<41D4> <8BA4>
+<41D9> <8BA9>
+endbfchar
+1 beginbfrange
+<41DE> <41E0> <8BAE>
+endbfrange
+2 beginbfchar
+<41E2> <8BB2>
+<41E8> <8BB8>
+endbfchar
+1 beginbfrange
+<41EE> <41EF> <8BBE>
+endbfrange
+5 beginbfchar
+<41F1> <8BC1>
+<41F4> <8BC4>
+<41F6> <8BC6>
+<4205> <8BD5>
+<4212> <8BE2>
+endbfchar
+1 beginbfrange
+<4215> <4216> <8BE5>
+endbfrange
+4 beginbfchar
+<421D> <8BED>
+<421F> <8BEF>
+<4224> <8BF4>
+<4227> <8BF7>
+endbfchar
+1 beginbfrange
+<422A> <422B> <8BFA>
+endbfrange
+3 beginbfchar
+<4233> <8C03>
+<4240> <8C10>
+<434F> <8D1F>
+endbfchar
+1 beginbfrange
+<4352> <4353> <8D22>
+endbfrange
+22 beginbfchar
+<4358> <8D28>
+<435D> <8D2D>
+<4365> <8D35>
+<43A7> <8D77>
+<43B5> <8D85>
+<43E3> <8DB3>
+<4401> <8DD1>
+<440F> <8DDF>
+<4418> <8DE8>
+<441F> <8DEF>
+<445A> <8E2A>
+<4596> <8F66>
+<459C> <8F6C>
+<459F> <8F6F>
+<45AD> <8F7D>
+<45B3> <8F83>
+<45C1> <8F91>
+<45C3> <8F93>
+<45D8> <8FA8>
+<45E9> <8FB9>
+<45EE> <8FBE>
+<45F7> <8FC7>
+endbfchar
+2 beginbfrange
+<4600> <4601> <8FD0>
+<4608> <4609> <8FD8>
+endbfrange
+1 beginbfchar
+<460B> <8FDB>
+endbfchar
+1 beginbfrange
+<460E> <460F> <8FDE>
+endbfrange
+2 beginbfchar
+<4620> <8FF0>
+<462D> <8FFD>
+endbfchar
+1 beginbfrange
+<4631> <4632> <9001>
+endbfrange
+4 beginbfchar
+<4639> <9009>
+<4640> <9010>
+<4642> <9012>
+<464A> <901A>
+endbfchar
+2 beginbfrange
+<464F> <4650> <901F>
+<466B> <466C> <903B>
+endbfrange
+8 beginbfchar
+<4683> <9053>
+<46A5> <9075>
+<4718> <90E8>
+<472D> <90FD>
+<477D> <914D>
+<47C2> <9192>
+<47F7> <91C7>
+<47FA> <91CA>
+endbfchar
+1 beginbfrange
+<47FC> <47FD> <91CC>
+endbfrange
+4 beginbfchar
+<47FF> <91CF>
+<4AB8> <9488>
+<4ACF> <949F>
+<4AD5> <94A5>
+endbfchar
+1 beginbfrange
+<4B30> <4B31> <9500>
+endbfrange
+1 beginbfchar
+<4B49> <9519>
+endbfchar
+1 beginbfrange
+<4B5E> <4B5F> <952E>
+endbfrange
+3 beginbfchar
+<4BAF> <957F>
+<4C18> <95E8>
+<4C1A> <95EA>
+endbfchar
+1 beginbfrange
+<4C1D> <4C1E> <95ED>
+endbfrange
+5 beginbfchar
+<4C22> <95F2>
+<4C24> <95F4>
+<4C38> <9608>
+<4C4F> <961F>
+<4C62> <9632>
+endbfchar
+1 beginbfrange
+<4C65> <4C66> <9635>
+endbfrange
+16 beginbfchar
+<4C6B> <963B>
+<4C74> <9644>
+<4C7D> <964D>
+<4C80> <9650>
+<4C94> <9664>
+<4CA6> <9676>
+<4CBF> <968F>
+<4CF6> <96C6>
+<4D26> <96F6>
+<4D30> <9700>
+<4D89> <9759>
+<4D8E> <975E>
+<4D90> <9760>
+<4D92> <9762>
+<4E23> <97F3>
+<4EA5> <9875>
+endbfchar
+1 beginbfrange
+<4EA9> <4EAB> <9879>
+endbfrange
+12 beginbfchar
+<4EB4> <9884>
+<4EC1> <9891>
+<4EC7> <9897>
+<4ECD> <989D>
+<4F0E> <98DE>
+<4FB8> <9988>
+<50A1> <9A71>
+<50BC> <9A8C>
+<5108> <9AD8>
+<5453> <9E23>
+<5580> <9F50>
+<55AF> <9F7F>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+%%%OBJ 19695
+/CIDInit /ProcSet findresource begin
+11 dict begin
+begincmap
+/CIDSystemInfo
+<< /Registry (Adobe)
+/Ordering (UCS)
+/Supplement 0
+>> def
+/CMapName /Adobe-Identity-UCS def
+/CMapType 2 def
+1 begincodespacerange
+<0000> <FFFF>
+endcodespacerange
+1 beginbfrange
+<0079> <007A> [<F09F> <26AB>]
+endbfrange
+1 beginbfchar
+<00BE> <27A2>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+%%%OBJ 19698
+/CIDInit /ProcSet findresource begin
+15 dict begin
+begincmap
+/CIDSystemInfo
+<< /Registry (Adobe)
+/Ordering (UCS)
+/Supplement 0
+>> def
+/CMapName /Adobe-Identity-UCS def
+/CMapType 2 def
+1 begincodespacerange
+<0000> <FFFF>
+endcodespacerange
+1 beginbfchar
+<0010> <002D>
+endbfchar
+2 beginbfrange
+<0013> <0017> <0030>
+<0019> <001B> <0036>
+endbfrange
+4 beginbfchar
+<0024> <0041>
+<0026> <0043>
+<0029> <0046>
+<002B> <0048>
+endbfchar
+1 beginbfrange
+<002D> <002F> <004A>
+endbfrange
+1 beginbfchar
+<0031> <004E>
+endbfchar
+2 beginbfrange
+<0033> <0035> <0050>
+<0037> <0038> <0054>
+endbfrange
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+%%%OBJ 19702
+/CIDInit /ProcSet findresource begin
+18 dict begin
+begincmap
+/CIDSystemInfo
+<< /Registry (Adobe)
+/Ordering (UCS)
+/Supplement 0
+>> def
+/CMapName /Adobe-Identity-UCS def
+/CMapType 2 def
+1 begincodespacerange
+<0000> <FFFF>
+endcodespacerange
+1 beginbfchar
+<0003> <0020>
+endbfchar
+1 beginbfrange
+<000B> <000C> <0028>
+endbfrange
+1 beginbfchar
+<000E> <002B>
+endbfchar
+1 beginbfrange
+<0010> <001B> <002D>
+endbfrange
+2 beginbfchar
+<001D> <003A>
+<0020> <003D>
+endbfchar
+1 beginbfrange
+<0024> <003B> <0041>
+endbfrange
+2 beginbfchar
+<0042> <005F>
+<0044> <0061>
+endbfchar
+5 beginbfrange
+<0046> <0049> <0063>
+<004B> <004C> <0068>
+<004E> <0053> <006B>
+<0055> <0059> <0072>
+<005B> <005D> <0078>
+endbfrange
+2 beginbfchar
+<0061> <007E>
+<00B2> <2014>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+%%%OBJ 19706
+/CIDInit /ProcSet findresource begin
+10 dict begin
+begincmap
+/CIDSystemInfo
+<< /Registry (Adobe)
+/Ordering (UCS)
+/Supplement 0
+>> def
+/CMapName /Adobe-Identity-UCS def
+/CMapType 2 def
+1 begincodespacerange
+<0000> <FFFF>
+endcodespacerange
+3 beginbfchar
+<2E30> <5F31>
+<2E39> <5F3A>
+<6970> <9A71>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+%%%OBJ 19716
+/CIDInit /ProcSet findresource begin
+21 dict begin
+begincmap
+/CIDSystemInfo
+<< /Registry (Adobe)
+/Ordering (UCS)
+/Supplement 0
+>> def
+/CMapName /Adobe-Identity-UCS def
+/CMapType 2 def
+1 begincodespacerange
+<0000> <FFFF>
+endcodespacerange
+1 beginbfchar
+<0003> <0020>
+endbfchar
+1 beginbfrange
+<0010> <0011> <004D>
+endbfrange
+3 beginbfchar
+<0015> <0052>
+<008E> <006C>
+<0090> <006E>
+endbfchar
+1 beginbfrange
+<0373> <0374> <0031>
+endbfrange
+10 beginbfchar
+<05DB> <2217>
+<0723> <D835DC34>
+<0725> <D835DC36>
+<0728> <D835DC39>
+<072B> <D835DC3C>
+<0730> <D835DC41>
+<0734> <D835DC45>
+<0738> <D835DC49>
+<0750> <D835DC61>
+<0B45> <0041>
+endbfchar
+1 beginbfrange
+<0B47> <0B48> <0043>
+endbfrange
+3 beginbfchar
+<0B4D> <0049>
+<0B52> <004E>
+<0BBA> <D835DC34>
+endbfchar
+1 beginbfrange
+<0BBC> <0BBD> <D835DC36>
+endbfrange
+8 beginbfchar
+<0BC2> <D835DC3C>
+<0BC7> <D835DC41>
+<0BC9> <D835DC43>
+<0BCB> <D835DC45>
+<0BCD> <D835DC47>
+<0BD1> <D835DC4B>
+<0BD4> <D835DC4E>
+<0BE6> <D835DC60>
+endbfchar
+1 beginbfrange
+<0D45> <0D46> [<002B> <2212>]
+endbfrange
+1 beginbfchar
+<0D4C> <003D>
+endbfchar
+1 beginbfrange
+<123A> <123B> <0028>
+endbfrange
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end

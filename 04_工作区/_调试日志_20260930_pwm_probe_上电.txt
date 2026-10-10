@@ -1,0 +1,137 @@
+0000804 I Loading C:\Users\limer\Desktop\motor-driver\02_�̼�\F005_Slave\build_pwmprobe\pwmprobe.hex [load_cmd]
+0000813 I Erasing... [loader]
+[---|---|---|---|---|---|---|---|---|----]
+[========================================]
+0001374 I Programming... [loader]
+[---|---|---|---|---|---|---|---|---|----]
+[========================================]
+0001892 I Erased 3072 bytes (6 sectors), programmed 3072 bytes (6 pages), identical 3072 bytes (6 pages) at 5.56 kB/s [loader]
+0000817 I Loading C:\Users\limer\Desktop\motor-driver\02_�̼�\F005_Slave\build_gate\gate.hex [load_cmd]
+0000822 I Erasing... [loader]
+[---|---|---|---|---|---|---|---|---|----]
+[========================================]
+0001187 I Programming... [loader]
+[---|---|---|---|---|---|---|---|---|----]
+[========================================]
+0001702 I Erased 3072 bytes (6 sectors), programmed 3072 bytes (6 pages), identical 0 bytes (0 pages) at 3.41 kB/s [loader]
+[flash] build_pwmprobe\pwmprobe.hex
+magic @0x20000F00 = 0x005A5A07 (pwmprobe)
+probe finished: stage=255
+
+--- probe self-diagnostics ---
+  CNT at start               = 354
+  CNT 50us later             = 158
+  ADC vbus probe             = 1073
+  UDF set in 32 probes       = 31
+  wait_valley timeouts       = 0
+  wait_offset timeouts       = 0
+  UDF still set after clear  = 0
+  adc timeouts               = 0
+
+--- static DC states (volts on each phase node) ---
+  bus = 1050 counts = 14.74 V
+  state                               phA      phB      phC    isense     bus
+  all off (caps empty)              0.55V    6.53V    6.60V    0.004A  14.78V
+  all low sides ON (ADT)            0.21V    0.05V    0.03V    0.020A  14.74V
+  A high side static ON (ADT)       0.33V    3.44V    3.45V    0.020A  14.75V
+  all off (caps charged)            0.44V    4.90V    4.93V    0.037A  14.78V
+  A high side ON (plain GPIO!)      0.49V    5.66V    5.69V    0.016A  14.78V
+  A low side ON (plain GPIO!)       0.47V    6.18V    6.21V    0.016A  14.75V
+  B high side ON (plain GPIO!)      0.51V    6.46V    6.50V    0.024A  14.77V
+  C high side ON (plain GPIO!)      0.54V    6.51V    6.56V    0.012A  14.75V
+
+  WARN: a phase node does not sit at 0 V with its low side on
+
+  high-side DC test, bus rail = 14.74 V
+    via ADT  : phase A = 0.33 V (2 %)
+    via GPIO : phase A = 0.49 V (3 %)
+    low side : phase A = 0.47 V
+  FAIL: even with the gate input driven straight high the node only reaches 3 % of the bus.
+      -> the fault is in the POWER STAGE, downstream of the MCU:
+         FD6288T high-side bootstrap / VB-VS supply, the high-side MOSFET, or HIN1 is not actually wired to P23.
+  phases B/C follow A to 5.69 V (1166 % of A)
+
+  high-side ON via plain GPIO, per phase (bus rail 14.74 V):
+    phase A:  0.49 V   [DEAD]
+    phase B:  6.46 V   [DEAD]
+    phase C:  6.56 V   [DEAD]
+    -> ALL THREE high sides are dead => one common cause: the bootstrap charge path (D1-D3 / C5-C7 / VB pins), the FD6288T high-side block, or its VCC.
+
+--- high-side turn-on, both orders (~200 us/sample, bus rail 14.74 V) ---
+  One phase's high side is driven per case, but ALL THREE phase-node
+  channels are recorded: the motor windings tie the nodes together,
+  so if any high side works every channel rises.  A channel that
+  stays flat while others rise means the ADC channel is dead, NOT
+  that its high side is dead.
+
+  case 0 (pass 1, drive phase A):
+    AIN0 (phase A) peak  0.50 V : 0.5 0.3 0.3 0.4 0.4 0.4 0.4 0.5 0.4 0.5 0.5 0.5 0.5 0.5 0.5 0.5  <-- driven
+    AIN1 (phase B) peak  6.55 V : 6.5 6.5 6.5 6.5 6.5 6.5 6.5 6.5 6.5 6.5 6.5 6.5 6.5 6.5 6.5 6.5
+    AIN2 (phase C) peak  6.61 V : 6.6 6.6 6.5 6.6 6.6 6.6 6.6 6.6 6.6 6.6 6.6 6.6 6.6 6.6 6.6 6.6
+
+  case 1 (pass 1, drive phase B):
+    AIN0 (phase A) peak  0.36 V : 0.4 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3
+    AIN1 (phase B) peak  1.49 V : 0.2 0.4 0.4 0.5 0.5 0.6 0.6 0.7 0.7 0.8 0.8 0.9 0.9 1.0 1.1 1.1  <-- driven
+    AIN2 (phase C) peak  6.40 V : 6.4 6.4 6.4 6.4 6.4 6.4 6.4 6.4 6.4 6.4 6.4 6.4 6.4 6.4 6.4 6.4
+
+  case 2 (pass 1, drive phase C):
+    AIN0 (phase A) peak  1.13 V : 0.4 1.1 1.0 1.0 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.8 0.9 0.8 0.7
+    AIN1 (phase B) peak  6.82 V : 6.6 6.8 6.8 6.8 6.8 6.8 6.8 6.8 6.8 6.8 6.8 6.8 6.8 6.8 6.8 6.7
+    AIN2 (phase C) peak 15.25 V : 13.0 15.2 15.2 15.2 15.2 15.2 15.2 15.2 15.2 15.2 15.2 15.2 15.2 15.2 14.5 10.5  <-- driven
+
+  case 3 (pass 2, drive phase C):
+    AIN0 (phase A) peak  1.10 V : 0.5 1.1 1.0 1.0 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.8 0.9 0.7
+    AIN1 (phase B) peak  6.82 V : 6.6 6.8 6.8 6.8 6.8 6.8 6.8 6.8 6.8 6.8 6.8 6.8 6.8 6.8 6.8 6.7
+    AIN2 (phase C) peak 15.25 V : 13.1 15.2 15.2 15.2 15.2 15.2 15.2 15.2 15.2 15.2 15.2 15.2 15.2 15.2 14.5 10.4  <-- driven
+
+  case 4 (pass 2, drive phase B):
+    AIN0 (phase A) peak  0.37 V : 0.4 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3
+    AIN1 (phase B) peak  1.52 V : 0.2 0.3 0.4 0.5 0.5 0.6 0.6 0.7 0.7 0.8 0.9 0.9 0.9 1.0 1.0 1.1  <-- driven
+    AIN2 (phase C) peak  6.41 V : 6.3 6.4 6.4 6.4 6.4 6.4 6.4 6.4 6.4 6.4 6.4 6.4 6.4 6.4 6.4 6.4
+
+  case 5 (pass 2, drive phase A):
+    AIN0 (phase A) peak  0.50 V : 0.4 0.3 0.3 0.4 0.4 0.4 0.4 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5  <-- driven
+    AIN1 (phase B) peak  6.55 V : 6.5 6.5 6.5 6.5 6.5 6.5 6.5 6.5 6.5 6.5 6.5 6.5 6.5 6.5 6.5 6.5
+    AIN2 (phase C) peak  6.62 V : 6.6 6.6 6.6 6.6 6.6 6.6 6.6 6.6 6.6 6.6 6.6 6.6 6.6 6.6 6.6 6.6
+
+  summary (does the driven phase's OWN node reach the rail?):
+    phase A: pass1=no, pass2=no
+    phase B: pass1=no, pass2=no
+    phase C: pass1=YES, pass2=YES
+
+  => consistently dead in both orders: phase A,B.
+     Check with the board OFF (continuity, ohmmeter):
+       HO1 net = R6.1 <-> U1.19   (A)
+       HO2 net = R5.1 <-> U1.16   (B)
+       HO3 net = R4.1 <-> U1.13   (C, reference)
+     Open  => broken track / solder joint, rework it.
+     Closed while HIN arrives and VB is charged => the FD6288T
+     high-side output itself is dead.
+
+GCMAR=300  points=121 x step=5 counts  sweeps=6 x 8 averages
+vbus=1051 counts = 14.75 V   isense=0 counts = 0.000 A
+phase-A node, sweep 0: low=38 counts (0.39 V) high=42 counts (0.44 V)
+
+--- pulse geometry per sweep (offset counted from the triangle valley) ---
+sweep   high    low  first_hi  last_hi  width(cts)     duty
+    0     42     38         0      595         600   50.00%
+    1     42     39         0      595         600   50.00%
+    2     42     39         0      595         600   50.00%
+    3     42     39         0      595         600   50.00%
+    4     42     39         0      595         600   50.00%
+    5     42     39         0      595         600   50.00%
+
+[1] high-side rail: measured 0.44 V, bus would give 14.75 V
+    FAIL: the node never rises - the high side is not turning on
+
+[2] pulse position: high counts 0..595 of 0..600 in the up-count half
+    -> output goes HIGH at the triangle valley (PERCA = PeriodHigh acts at the valley, as the app note says)
+
+[3] duty: measured 50.00%  (firmware formula 'cmp = PERAR*duty/100' implies 25.00%; a duty of 50.00% was requested)
+    => pulse width == 2*GCMAR counts: the duty mapping is correct.
+
+[4] bootstrap droop (high level per sweep, ~150 ms apart):
+    s0=42  s1=42  s2=42  s3=42  s4=42  s5=42
+    width 600 -> 600 counts over the run (+0.0 %)
+    OK: the pulse holds up over ~1 s of continuous PWM
+[flash] build_gate\gate.hex

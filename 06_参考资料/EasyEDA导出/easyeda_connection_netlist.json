@@ -1,0 +1,3214 @@
+{
+  "netlist": {
+    "component": {
+      "gge1": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "MCU_NRST",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge2": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "B_DIV",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "gge3": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "A_DIV",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge4": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "A_DIV",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PH_A",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge5": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "MCU_VCAP",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "gge6": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "GH_C",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "HO3",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge7": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "GL_A",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "LO1",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge8": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "GH_A",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "HO1",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge9": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "MCU_NRST",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "gge10": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "C_DIV",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "gge11": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "B_DIV",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge12": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "B_DIV",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PH_B",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge13": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PH_C",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "GH_C",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge14": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "LS_STAR",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "GL_A",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge15": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PH_A",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "GH_A",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge16": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "AIN_A",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "gge17": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "C_DIV",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge18": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "C_DIV",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PH_C",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge19": {
+        "pinInfoMap": {
+          "9": {
+            "name": "D",
+            "number": "9",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "9"
+            }
+          },
+          "8": {
+            "name": "D",
+            "number": "8",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "8"
+            }
+          },
+          "7": {
+            "name": "D",
+            "number": "7",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "7"
+            }
+          },
+          "6": {
+            "name": "D",
+            "number": "6",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "6"
+            }
+          },
+          "5": {
+            "name": "D",
+            "number": "5",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "5"
+            }
+          },
+          "4": {
+            "name": "G",
+            "number": "4",
+            "net": "GH_C",
+            "props": {
+              "Pin Number": "4"
+            }
+          },
+          "3": {
+            "name": "S",
+            "number": "3",
+            "net": "PH_C",
+            "props": {
+              "Pin Number": "3"
+            }
+          },
+          "2": {
+            "name": "S",
+            "number": "2",
+            "net": "PH_C",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "S",
+            "number": "1",
+            "net": "PH_C",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge20": {
+        "pinInfoMap": {
+          "9": {
+            "name": "D",
+            "number": "9",
+            "net": "PH_A",
+            "props": {
+              "Pin Number": "9"
+            }
+          },
+          "8": {
+            "name": "D",
+            "number": "8",
+            "net": "PH_A",
+            "props": {
+              "Pin Number": "8"
+            }
+          },
+          "7": {
+            "name": "D",
+            "number": "7",
+            "net": "PH_A",
+            "props": {
+              "Pin Number": "7"
+            }
+          },
+          "6": {
+            "name": "D",
+            "number": "6",
+            "net": "PH_A",
+            "props": {
+              "Pin Number": "6"
+            }
+          },
+          "5": {
+            "name": "D",
+            "number": "5",
+            "net": "PH_A",
+            "props": {
+              "Pin Number": "5"
+            }
+          },
+          "4": {
+            "name": "G",
+            "number": "4",
+            "net": "GL_A",
+            "props": {
+              "Pin Number": "4"
+            }
+          },
+          "3": {
+            "name": "S",
+            "number": "3",
+            "net": "LS_STAR",
+            "props": {
+              "Pin Number": "3"
+            }
+          },
+          "2": {
+            "name": "S",
+            "number": "2",
+            "net": "LS_STAR",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "S",
+            "number": "1",
+            "net": "LS_STAR",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge21": {
+        "pinInfoMap": {
+          "9": {
+            "name": "D",
+            "number": "9",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "9"
+            }
+          },
+          "8": {
+            "name": "D",
+            "number": "8",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "8"
+            }
+          },
+          "7": {
+            "name": "D",
+            "number": "7",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "7"
+            }
+          },
+          "6": {
+            "name": "D",
+            "number": "6",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "6"
+            }
+          },
+          "5": {
+            "name": "D",
+            "number": "5",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "5"
+            }
+          },
+          "4": {
+            "name": "G",
+            "number": "4",
+            "net": "GH_A",
+            "props": {
+              "Pin Number": "4"
+            }
+          },
+          "3": {
+            "name": "S",
+            "number": "3",
+            "net": "PH_A",
+            "props": {
+              "Pin Number": "3"
+            }
+          },
+          "2": {
+            "name": "S",
+            "number": "2",
+            "net": "PH_A",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "S",
+            "number": "1",
+            "net": "PH_A",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge22": {
+        "pinInfoMap": {
+          "2": {
+            "name": "AIN5/VCIN5/P35",
+            "number": "2",
+            "net": "AIN_ISENSE",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "3": {
+            "name": "AIN6/VCIN6/AVREF/P36",
+            "number": "3",
+            "net": "PWM_CH",
+            "props": {
+              "Pin Number": "3"
+            }
+          },
+          "4": {
+            "name": "RESETB/P00",
+            "number": "4",
+            "net": "MCU_NRST",
+            "props": {
+              "Pin Number": "4"
+            }
+          },
+          "5": {
+            "name": "XTHI/AIN7/VCIN7/P01",
+            "number": "5",
+            "net": "AIN_VBUS",
+            "props": {
+              "Pin Number": "5"
+            }
+          },
+          "6": {
+            "name": "XTHO/AIN8/P02",
+            "number": "6",
+            "net": "AIN_C",
+            "props": {
+              "Pin Number": "6"
+            }
+          },
+          "7": {
+            "name": "AVSS/DVSS",
+            "number": "7",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "7"
+            }
+          },
+          "8": {
+            "name": "VCAP",
+            "number": "8",
+            "net": "MCU_VCAP",
+            "props": {
+              "Pin Number": "8"
+            }
+          },
+          "9": {
+            "name": "AVCC/DVCC",
+            "number": "9",
+            "net": "VDD_3V3",
+            "props": {
+              "Pin Number": "9"
+            }
+          },
+          "11": {
+            "name": "P15",
+            "number": "11",
+            "net": "PWM_AL",
+            "props": {
+              "Pin Number": "11"
+            }
+          },
+          "12": {
+            "name": "P14",
+            "number": "12",
+            "net": "UART_TX",
+            "props": {
+              "Pin Number": "12"
+            }
+          },
+          "13": {
+            "name": "P23/LVDIN2/VCIN0",
+            "number": "13",
+            "net": "PWM_AH",
+            "props": {
+              "Pin Number": "13"
+            }
+          },
+          "14": {
+            "name": "P24/AIN0",
+            "number": "14",
+            "net": "AIN_A",
+            "props": {
+              "Pin Number": "14"
+            }
+          },
+          "15": {
+            "name": "P25/LVDIN3/VC1",
+            "number": "15",
+            "net": "PWM_BH",
+            "props": {
+              "Pin Number": "15"
+            }
+          },
+          "16": {
+            "name": "P26/AIN1",
+            "number": "16",
+            "net": "PWM_BL",
+            "props": {
+              "Pin Number": "16"
+            }
+          },
+          "17": {
+            "name": "P27/SWDIO",
+            "number": "17",
+            "net": "SWDIO",
+            "props": {
+              "Pin Number": "17"
+            }
+          },
+          "18": {
+            "name": "P31/SWCLK",
+            "number": "18",
+            "net": "SWCLK",
+            "props": {
+              "Pin Number": "18"
+            }
+          },
+          "19": {
+            "name": "P32/AIN2/VCIN2",
+            "number": "19",
+            "net": "PWM_CL",
+            "props": {
+              "Pin Number": "19"
+            }
+          },
+          "20": {
+            "name": "P33/AIN3/VCIN3",
+            "number": "20",
+            "net": "AIN_B",
+            "props": {
+              "Pin Number": "20"
+            }
+          }
+        }
+      },
+      "gge23": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "AIN_B",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "gge24": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AIN_A",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "A_DIV",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge25": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "VN",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "A_DIV",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge26": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "GL_C",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "LO3",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge27": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "GL_B",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "LO2",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge28": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "GH_B",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "HO2",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge29": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "UART_TX",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge30": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "SWDIO",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge31": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "AIN_C",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "gge32": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AIN_B",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "B_DIV",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge33": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "VN",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "B_DIV",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge34": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "LS_STAR",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "GL_C",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge35": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "LS_STAR",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "GL_B",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge36": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PH_B",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "GH_B",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge37": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "SWCLK",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge38": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AIN_C",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "C_DIV",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge39": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "VN",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "C_DIV",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge40": {
+        "pinInfoMap": {
+          "9": {
+            "name": "D",
+            "number": "9",
+            "net": "PH_C",
+            "props": {
+              "Pin Number": "9"
+            }
+          },
+          "8": {
+            "name": "D",
+            "number": "8",
+            "net": "PH_C",
+            "props": {
+              "Pin Number": "8"
+            }
+          },
+          "7": {
+            "name": "D",
+            "number": "7",
+            "net": "PH_C",
+            "props": {
+              "Pin Number": "7"
+            }
+          },
+          "6": {
+            "name": "D",
+            "number": "6",
+            "net": "PH_C",
+            "props": {
+              "Pin Number": "6"
+            }
+          },
+          "5": {
+            "name": "D",
+            "number": "5",
+            "net": "PH_C",
+            "props": {
+              "Pin Number": "5"
+            }
+          },
+          "4": {
+            "name": "G",
+            "number": "4",
+            "net": "GL_C",
+            "props": {
+              "Pin Number": "4"
+            }
+          },
+          "3": {
+            "name": "S",
+            "number": "3",
+            "net": "LS_STAR",
+            "props": {
+              "Pin Number": "3"
+            }
+          },
+          "2": {
+            "name": "S",
+            "number": "2",
+            "net": "LS_STAR",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "S",
+            "number": "1",
+            "net": "LS_STAR",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge41": {
+        "pinInfoMap": {
+          "9": {
+            "name": "D",
+            "number": "9",
+            "net": "PH_B",
+            "props": {
+              "Pin Number": "9"
+            }
+          },
+          "8": {
+            "name": "D",
+            "number": "8",
+            "net": "PH_B",
+            "props": {
+              "Pin Number": "8"
+            }
+          },
+          "7": {
+            "name": "D",
+            "number": "7",
+            "net": "PH_B",
+            "props": {
+              "Pin Number": "7"
+            }
+          },
+          "6": {
+            "name": "D",
+            "number": "6",
+            "net": "PH_B",
+            "props": {
+              "Pin Number": "6"
+            }
+          },
+          "5": {
+            "name": "D",
+            "number": "5",
+            "net": "PH_B",
+            "props": {
+              "Pin Number": "5"
+            }
+          },
+          "4": {
+            "name": "G",
+            "number": "4",
+            "net": "GL_B",
+            "props": {
+              "Pin Number": "4"
+            }
+          },
+          "3": {
+            "name": "S",
+            "number": "3",
+            "net": "LS_STAR",
+            "props": {
+              "Pin Number": "3"
+            }
+          },
+          "2": {
+            "name": "S",
+            "number": "2",
+            "net": "LS_STAR",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "S",
+            "number": "1",
+            "net": "LS_STAR",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge42": {
+        "pinInfoMap": {
+          "9": {
+            "name": "D",
+            "number": "9",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "9"
+            }
+          },
+          "8": {
+            "name": "D",
+            "number": "8",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "8"
+            }
+          },
+          "7": {
+            "name": "D",
+            "number": "7",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "7"
+            }
+          },
+          "6": {
+            "name": "D",
+            "number": "6",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "6"
+            }
+          },
+          "5": {
+            "name": "D",
+            "number": "5",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "5"
+            }
+          },
+          "4": {
+            "name": "G",
+            "number": "4",
+            "net": "GH_B",
+            "props": {
+              "Pin Number": "4"
+            }
+          },
+          "3": {
+            "name": "S",
+            "number": "3",
+            "net": "PH_B",
+            "props": {
+              "Pin Number": "3"
+            }
+          },
+          "2": {
+            "name": "S",
+            "number": "2",
+            "net": "PH_B",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "S",
+            "number": "1",
+            "net": "PH_B",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge43": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "A_DIV",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "gge44": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VN",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "gge45": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PWM_BL",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge46": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "AIN_B",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge47": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VDD_3V3",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge48": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VDD_3V3",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "gge49": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "DRV_HIN1",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge50": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "DRV_HIN1",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PWM_AH",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge51": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VDD_3V3",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge52": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PWM_CH",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge53": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "AIN_C",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge54": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge55": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "DRV_LIN1",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge56": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "DRV_LIN1",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PWM_AL",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge57": {
+        "pinInfoMap": {
+          "1": {
+            "name": "HIN1",
+            "number": "1",
+            "net": "DRV_HIN1",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "HIN2",
+            "number": "2",
+            "net": "DRV_HIN2",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "3": {
+            "name": "HIN3",
+            "number": "3",
+            "net": "DRV_HIN3",
+            "props": {
+              "Pin Number": "3"
+            }
+          },
+          "4": {
+            "name": "LIN1",
+            "number": "4",
+            "net": "DRV_LIN1",
+            "props": {
+              "Pin Number": "4"
+            }
+          },
+          "5": {
+            "name": "LIN2",
+            "number": "5",
+            "net": "DRV_LIN2",
+            "props": {
+              "Pin Number": "5"
+            }
+          },
+          "6": {
+            "name": "LIN3",
+            "number": "6",
+            "net": "DRV_LIN3",
+            "props": {
+              "Pin Number": "6"
+            }
+          },
+          "7": {
+            "name": "VCC",
+            "number": "7",
+            "net": "VCC",
+            "props": {
+              "Pin Number": "7"
+            }
+          },
+          "8": {
+            "name": "COM",
+            "number": "8",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "8"
+            }
+          },
+          "9": {
+            "name": "LO3",
+            "number": "9",
+            "net": "LO3",
+            "props": {
+              "Pin Number": "9"
+            }
+          },
+          "10": {
+            "name": "LO2",
+            "number": "10",
+            "net": "LO2",
+            "props": {
+              "Pin Number": "10"
+            }
+          },
+          "11": {
+            "name": "LO1",
+            "number": "11",
+            "net": "LO1",
+            "props": {
+              "Pin Number": "11"
+            }
+          },
+          "12": {
+            "name": "VS3",
+            "number": "12",
+            "net": "PH_C",
+            "props": {
+              "Pin Number": "12"
+            }
+          },
+          "13": {
+            "name": "HO3",
+            "number": "13",
+            "net": "HO3",
+            "props": {
+              "Pin Number": "13"
+            }
+          },
+          "14": {
+            "name": "VB3",
+            "number": "14",
+            "net": "VB3",
+            "props": {
+              "Pin Number": "14"
+            }
+          },
+          "15": {
+            "name": "VS2",
+            "number": "15",
+            "net": "PH_B",
+            "props": {
+              "Pin Number": "15"
+            }
+          },
+          "16": {
+            "name": "HO2",
+            "number": "16",
+            "net": "HO2",
+            "props": {
+              "Pin Number": "16"
+            }
+          },
+          "17": {
+            "name": "VB2",
+            "number": "17",
+            "net": "VB2",
+            "props": {
+              "Pin Number": "17"
+            }
+          },
+          "18": {
+            "name": "VS1",
+            "number": "18",
+            "net": "PH_A",
+            "props": {
+              "Pin Number": "18"
+            }
+          },
+          "19": {
+            "name": "HO1",
+            "number": "19",
+            "net": "HO1",
+            "props": {
+              "Pin Number": "19"
+            }
+          },
+          "20": {
+            "name": "VB1",
+            "number": "20",
+            "net": "VB1",
+            "props": {
+              "Pin Number": "20"
+            }
+          }
+        }
+      },
+      "gge58": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "DRV_HIN2",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge59": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "DRV_HIN2",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PWM_BH",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge60": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PWM_CL",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge61": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "AIN_ISENSE",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge62": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge63": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "DRV_LIN2",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge64": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "DRV_LIN2",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PWM_BL",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge65": {
+        "pinInfoMap": {
+          "2": {
+            "name": "A",
+            "number": "2",
+            "net": "VCC",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "K",
+            "number": "1",
+            "net": "VB3",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge66": {
+        "pinInfoMap": {
+          "2": {
+            "name": "A",
+            "number": "2",
+            "net": "VCC",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "K",
+            "number": "1",
+            "net": "VB2",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge67": {
+        "pinInfoMap": {
+          "2": {
+            "name": "A",
+            "number": "2",
+            "net": "VCC",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "K",
+            "number": "1",
+            "net": "VB1",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge68": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "DRV_HIN3",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge69": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "DRV_HIN3",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PWM_CH",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge70": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VB3",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PH_C",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "gge71": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VB2",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PH_B",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "gge72": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PH_A",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "VB1",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "gge73": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VCC",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge74": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "AIN_VBUS",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge75": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "VCC",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge76": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "DRV_LIN3",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge77": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "DRV_LIN3",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PWM_CL",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge78": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "VCC",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "gge79": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge80": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PWM_AH",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge81": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "LS_STAR",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge82": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "EN",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge83": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "FB",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VCC",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge84": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VCC",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "gge85": {
+        "pinInfoMap": {
+          "1": {
+            "name": "VIN",
+            "number": "1",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "SW",
+            "number": "2",
+            "net": "SW",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "3": {
+            "name": "FB",
+            "number": "3",
+            "net": "FB",
+            "props": {
+              "Pin Number": "3"
+            }
+          },
+          "4": {
+            "name": "EN",
+            "number": "4",
+            "net": "EN",
+            "props": {
+              "Pin Number": "4"
+            }
+          },
+          "5": {
+            "name": "GND",
+            "number": "5",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "5"
+            }
+          },
+          "6": {
+            "name": "GND",
+            "number": "6",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "6"
+            }
+          },
+          "7": {
+            "name": "GND",
+            "number": "7",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "7"
+            }
+          },
+          "8": {
+            "name": "GND",
+            "number": "8",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "8"
+            }
+          },
+          "9": {
+            "name": "9",
+            "number": "9",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "9"
+            }
+          }
+        }
+      },
+      "gge86": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AIN_VBUS",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VBUS_SENSE",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "R30": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "VBUS_SENSE",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "R34": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "ISENSE_N",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "R33": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "ISENSE_P",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "LS_STAR",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "C29": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "EN",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "R11": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "FB",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "C9": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VCC",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "C47": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "TP13": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PWM_AL",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "C10": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VCC",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "C31": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "LS_STAR",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "L1": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "VCC",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "SW",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "C32": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "AIN_VBUS",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "R31": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VBUS_SENSE",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "U3": {
+        "pinInfoMap": {
+          "1": {
+            "name": "OUT",
+            "number": "1",
+            "net": "I_SENSE",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "GND",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "3": {
+            "name": "IN+",
+            "number": "3",
+            "net": "ISENSE_P",
+            "props": {
+              "Pin Number": "3"
+            }
+          },
+          "4": {
+            "name": "IN-",
+            "number": "4",
+            "net": "ISENSE_N",
+            "props": {
+              "Pin Number": "4"
+            }
+          },
+          "5": {
+            "name": "REF",
+            "number": "5",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "5"
+            }
+          },
+          "6": {
+            "name": "VS",
+            "number": "6",
+            "net": "VDD_3V3",
+            "props": {
+              "Pin Number": "6"
+            }
+          }
+        }
+      },
+      "C11": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VCC",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "TP14": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "PWM_BH",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "TP7": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "AIN_A",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "D5": {
+        "pinInfoMap": {
+          "1": {
+            "name": "C",
+            "number": "1",
+            "net": "SW",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "A",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "C33": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VDD_3V3",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "R49": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AIN_ISENSE",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "I_SENSE",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "C30": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VBUS_SENSE",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "C12": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VCC",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "C34": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "AIN_ISENSE",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "I_SENSE",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "R50": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "VDD_3V3",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "MCU_NRST",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "U4": {
+        "pinInfoMap": {
+          "1": {
+            "name": "GND",
+            "number": "1",
+            "net": "LDO_VIN",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "VOUT",
+            "number": "2",
+            "net": "VDD_LDO",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "3": {
+            "name": "VIN",
+            "number": "3",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "3"
+            }
+          },
+          "4": {
+            "name": "VOUT",
+            "number": "4",
+            "net": "VDD_LDO",
+            "props": {
+              "Pin Number": "4"
+            }
+          }
+        }
+      },
+      "R53": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "LDO_VIN",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VCC",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "C19": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "C17": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "C15": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "C2": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "F1": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VBUS_IN",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "R52": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "VDD_3V3",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VDD_LDO",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "C40": {
+        "pinInfoMap": {
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "LDO_VIN",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      },
+      "C42": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VDD_LDO",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "C41": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VDD_LDO",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "AGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "C20": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "C18": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "C16": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "C14": {
+        "pinInfoMap": {
+          "1": {
+            "name": "1",
+            "number": "1",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "1"
+            }
+          },
+          "2": {
+            "name": "2",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          }
+        }
+      },
+      "D4": {
+        "pinInfoMap": {
+          "2": {
+            "name": "A",
+            "number": "2",
+            "net": "PGND",
+            "props": {
+              "Pin Number": "2"
+            }
+          },
+          "1": {
+            "name": "C",
+            "number": "1",
+            "net": "VCC_BUS",
+            "props": {
+              "Pin Number": "1"
+            }
+          }
+        }
+      }
+    }
+  },
+  "designatorDeviceTypeMap": {
+    "TP5": "otherDevice",
+    "C22": "capacitor",
+    "R18": "resistor",
+    "R17": "resistor",
+    "C43": "capacitor",
+    "R4": "resistor",
+    "R1": "resistor",
+    "R6": "resistor",
+    "C46": "capacitor",
+    "C23": "capacitor",
+    "R20": "resistor",
+    "R19": "resistor",
+    "R14": "resistor",
+    "R7": "resistor",
+    "R12": "resistor",
+    "C25": "capacitor",
+    "R22": "resistor",
+    "R21": "resistor",
+    "Q6": "triode",
+    "Q1": "triode",
+    "Q2": "triode",
+    "U5": "chip",
+    "C26": "capacitor",
+    "R26": "resistor",
+    "R23": "resistor",
+    "R3": "resistor",
+    "R2": "resistor",
+    "R5": "resistor",
+    "TP6": "otherDevice",
+    "TP3": "otherDevice",
+    "C27": "capacitor",
+    "R27": "resistor",
+    "R24": "resistor",
+    "R9": "resistor",
+    "R8": "resistor",
+    "R13": "resistor",
+    "TP4": "otherDevice",
+    "R28": "resistor",
+    "R25": "resistor",
+    "Q4": "triode",
+    "Q5": "triode",
+    "Q3": "triode",
+    "C21": "capacitor",
+    "C24": "capacitor",
+    "TP15": "otherDevice",
+    "TP8": "otherDevice",
+    "TP1": "otherDevice",
+    "C44": "capacitor",
+    "R41": "resistor",
+    "R35": "resistor",
+    "C45": "capacitor",
+    "TP16": "otherDevice",
+    "TP9": "otherDevice",
+    "TP2": "otherDevice",
+    "R42": "resistor",
+    "R36": "resistor",
+    "U1": "chip",
+    "R43": "resistor",
+    "R37": "resistor",
+    "TP17": "otherDevice",
+    "TP10": "otherDevice",
+    "R47": "resistor",
+    "R44": "resistor",
+    "R38": "resistor",
+    "D3": "diode",
+    "D2": "diode",
+    "D1": "diode",
+    "R45": "resistor",
+    "R39": "resistor",
+    "C7": "capacitor",
+    "C6": "capacitor",
+    "C5": "capacitor",
+    "TP18": "otherDevice",
+    "TP11": "otherDevice",
+    "C1": "capacitor",
+    "R46": "resistor",
+    "R40": "resistor",
+    "C13": "capacitor",
+    "TP19": "otherDevice",
+    "TP12": "otherDevice",
+    "R32": "resistor",
+    "R16": "resistor",
+    "R10": "resistor",
+    "C8": "capacitor",
+    "U2": "chip",
+    "R48": "resistor",
+    "R30": "resistor",
+    "R34": "resistor",
+    "R33": "resistor",
+    "C29": "capacitor",
+    "R11": "resistor",
+    "C9": "capacitor",
+    "C47": "capacitor",
+    "TP13": "otherDevice",
+    "C10": "capacitor",
+    "C31": "capacitor",
+    "L1": "inductive",
+    "C32": "capacitor",
+    "R31": "resistor",
+    "U3": "chip",
+    "C11": "capacitor",
+    "TP14": "otherDevice",
+    "TP7": "otherDevice",
+    "D5": "diode",
+    "C33": "capacitor",
+    "R49": "resistor",
+    "C30": "capacitor",
+    "C12": "capacitor",
+    "C34": "capacitor",
+    "R50": "resistor",
+    "U4": "chip",
+    "R53": "resistor",
+    "C19": "capacitor",
+    "C17": "capacitor",
+    "C15": "capacitor",
+    "C2": "capacitor",
+    "F1": "otherDevice",
+    "R52": "resistor",
+    "C40": "capacitor",
+    "C42": "capacitor",
+    "C41": "capacitor",
+    "C20": "capacitor",
+    "C18": "capacitor",
+    "C16": "capacitor",
+    "C14": "capacitor",
+    "D4": "diode"
+  }
+}

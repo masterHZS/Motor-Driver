@@ -1,0 +1,1885 @@
+ERC report (2026-09-13T17:15:17, Encoding UTF8)
+Report includes: Errors, Warnings, Exclusions
+
+***** Sheet /
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(24.92 mm, 54.00 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(24.92 mm, 92.00 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(24.92 mm, 130.00 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(26.92 mm, 330.19 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 46.38 mm): Symbol R6 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 46.38 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(30.00 mm, 50.19 mm): Symbol R6 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(30.00 mm, 50.19 mm): Symbol R6 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 54.00 mm): Horizontal Wire, length 16.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 84.38 mm): Symbol R1 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 84.38 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(30.00 mm, 88.19 mm): Symbol R1 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(30.00 mm, 88.19 mm): Symbol R1 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 92.00 mm): Horizontal Wire, length 16.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 122.38 mm): Symbol R4 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 122.38 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(30.00 mm, 126.19 mm): Symbol R4 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(30.00 mm, 126.19 mm): Symbol R4 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 130.00 mm): Horizontal Wire, length 16.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(32.00 mm, 330.19 mm): Symbol TP5 Pin 1 [1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(32.00 mm, 330.19 mm): Horizontal Wire, length 24.00 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(32.00 mm, 332.73 mm): Symbol TP5 [TP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(32.00 mm, 332.73 mm): Symbol TP5 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(38.92 mm, 340.35 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(42.14 mm, 195.19 mm): Symbol R17 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(42.14 mm, 195.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(42.14 mm, 199.00 mm): Symbol R17 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(42.14 mm, 199.00 mm): Symbol R17 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(42.14 mm, 202.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(42.14 mm, 221.19 mm): Symbol R18 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(42.14 mm, 221.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(42.14 mm, 225.00 mm): Symbol R18 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(42.14 mm, 225.00 mm): Symbol R18 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(42.14 mm, 228.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(42.14 mm, 247.19 mm): Symbol C22 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(42.14 mm, 247.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(42.14 mm, 251.00 mm): Symbol C22 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(42.14 mm, 251.00 mm): Symbol C22 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(42.14 mm, 254.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(44.00 mm, 340.35 mm): Symbol C43 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(44.00 mm, 340.35 mm): Horizontal Wire, length 30.76 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(44.00 mm, 344.16 mm): Symbol C43 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(44.00 mm, 344.16 mm): Symbol C43 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(44.00 mm, 347.97 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(46.00 mm, 54.00 mm): Symbol R12 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(46.00 mm, 54.00 mm): Horizontal Wire, length 19.65 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(46.00 mm, 57.81 mm): Symbol R12 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(46.00 mm, 57.81 mm): Symbol R12 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(46.00 mm, 61.62 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(46.00 mm, 92.00 mm): Symbol R7 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(46.00 mm, 92.00 mm): Horizontal Wire, length 19.65 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(46.00 mm, 95.81 mm): Symbol R7 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(46.00 mm, 95.81 mm): Symbol R7 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(46.00 mm, 99.62 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(46.00 mm, 130.00 mm): Symbol R14 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(46.00 mm, 130.00 mm): Horizontal Wire, length 19.65 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(46.00 mm, 133.81 mm): Symbol R14 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(46.00 mm, 133.81 mm): Symbol R14 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(46.00 mm, 137.62 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(56.00 mm, 330.19 mm): Symbol C46 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(56.00 mm, 330.19 mm): Horizontal Wire, length 18.76 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(56.00 mm, 334.00 mm): Symbol C46 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(56.00 mm, 334.00 mm): Symbol C46 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(56.00 mm, 337.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(65.65 mm, 54.00 mm): Symbol Q2 Pin 4 [G, Input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(65.65 mm, 92.00 mm): Symbol Q1 Pin 4 [G, Input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(65.65 mm, 130.00 mm): Symbol Q6 Pin 4 [G, Input, Line]
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(72.00 mm, 54.00 mm): Symbol Q2 [NMOS]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(72.00 mm, 54.00 mm): Symbol Q2 [NMOS]
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(72.00 mm, 92.00 mm): Symbol Q1 [NMOS]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(72.00 mm, 92.00 mm): Symbol Q1 [NMOS]
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(72.00 mm, 130.00 mm): Symbol Q6 [NMOS]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(72.00 mm, 130.00 mm): Symbol Q6 [NMOS]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(74.76 mm, 322.57 mm): Symbol U5 Pin 1 [P34/AIN4, Bidirectional, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(74.76 mm, 322.57 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(74.76 mm, 325.11 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(74.76 mm, 327.65 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(74.76 mm, 332.73 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(74.76 mm, 335.27 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(74.76 mm, 337.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(74.76 mm, 342.89 mm): Horizontal Wire, length 5.08 mm
+[pin_to_pin]: 类型为 Bidirectional 和 Power output 的引脚已连接
+    ; warning
+    @(74.76 mm, 342.89 mm): Symbol U5 Pin 9 [DVCC, Bidirectional, Line]
+    @(359.62 mm, 187.46 mm): Symbol U4 Pin 2 [VOUT, Power output, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(77.08 mm, 48.92 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(77.08 mm, 59.08 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(77.08 mm, 86.92 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(77.08 mm, 97.08 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(77.08 mm, 124.92 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(77.08 mm, 135.08 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(82.43 mm, 195.19 mm): Symbol R19 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(82.43 mm, 195.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(82.43 mm, 199.00 mm): Symbol R19 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(82.43 mm, 199.00 mm): Symbol R19 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(82.43 mm, 202.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(82.43 mm, 221.19 mm): Symbol R20 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(82.43 mm, 221.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(82.43 mm, 225.00 mm): Symbol R20 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(82.43 mm, 225.00 mm): Symbol R20 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(82.43 mm, 228.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(82.43 mm, 247.19 mm): Symbol C23 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(82.43 mm, 247.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(82.43 mm, 251.00 mm): Symbol C23 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(82.43 mm, 251.00 mm): Symbol C23 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(82.43 mm, 254.81 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(90.00 mm, 334.00 mm): Symbol U5 [MCU]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(90.00 mm, 334.00 mm): Symbol U5 [MCU]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(96.92 mm, 54.00 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(96.92 mm, 92.00 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(96.92 mm, 130.00 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(102.00 mm, 46.38 mm): Symbol R5 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(102.00 mm, 46.38 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(102.00 mm, 50.19 mm): Symbol R5 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(102.00 mm, 50.19 mm): Symbol R5 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(102.00 mm, 54.00 mm): Horizontal Wire, length 16.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(102.00 mm, 84.38 mm): Symbol R2 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(102.00 mm, 84.38 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(102.00 mm, 88.19 mm): Symbol R2 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(102.00 mm, 88.19 mm): Symbol R2 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(102.00 mm, 92.00 mm): Horizontal Wire, length 16.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(102.00 mm, 122.38 mm): Symbol R3 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(102.00 mm, 122.38 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(102.00 mm, 126.19 mm): Symbol R3 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(102.00 mm, 126.19 mm): Symbol R3 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(102.00 mm, 130.00 mm): Horizontal Wire, length 16.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(105.24 mm, 322.57 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(105.24 mm, 325.11 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(105.24 mm, 327.65 mm): Horizontal Wire, length 39.76 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(105.24 mm, 330.19 mm): Horizontal Wire, length 24.76 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(105.24 mm, 332.73 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(105.24 mm, 335.27 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(105.24 mm, 337.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(105.24 mm, 340.35 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(105.24 mm, 342.89 mm): Horizontal Wire, length 24.76 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(118.00 mm, 54.00 mm): Symbol R13 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(118.00 mm, 54.00 mm): Horizontal Wire, length 19.65 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(118.00 mm, 57.81 mm): Symbol R13 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(118.00 mm, 57.81 mm): Symbol R13 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(118.00 mm, 61.62 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(118.00 mm, 92.00 mm): Symbol R8 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(118.00 mm, 92.00 mm): Horizontal Wire, length 19.65 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(118.00 mm, 95.81 mm): Symbol R8 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(118.00 mm, 95.81 mm): Symbol R8 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(118.00 mm, 99.62 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(118.00 mm, 130.00 mm): Symbol R9 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(118.00 mm, 130.00 mm): Horizontal Wire, length 19.65 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(118.00 mm, 133.81 mm): Symbol R9 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(118.00 mm, 133.81 mm): Symbol R9 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(118.00 mm, 137.62 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(122.71 mm, 195.19 mm): Symbol R21 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(122.71 mm, 195.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(122.71 mm, 199.00 mm): Symbol R21 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(122.71 mm, 199.00 mm): Symbol R21 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(122.71 mm, 202.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(122.71 mm, 221.19 mm): Symbol R22 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(122.71 mm, 221.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(122.71 mm, 225.00 mm): Symbol R22 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(122.71 mm, 225.00 mm): Symbol R22 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(122.71 mm, 228.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(122.71 mm, 247.19 mm): Symbol C25 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(122.71 mm, 247.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(122.71 mm, 251.00 mm): Symbol C25 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(122.71 mm, 251.00 mm): Symbol C25 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(122.71 mm, 254.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(130.00 mm, 330.19 mm): Symbol TP3 Pin 1 [1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(130.00 mm, 330.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(130.00 mm, 332.73 mm): Symbol TP3 [TP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(130.00 mm, 332.73 mm): Symbol TP3 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(130.00 mm, 342.89 mm): Symbol TP6 Pin 1 [1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(130.00 mm, 342.89 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(130.00 mm, 345.43 mm): Symbol TP6 [TP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(130.00 mm, 345.43 mm): Symbol TP6 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(137.65 mm, 54.00 mm): Symbol Q3 Pin 4 [G, Input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(137.65 mm, 92.00 mm): Symbol Q5 Pin 4 [G, Input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(137.65 mm, 130.00 mm): Symbol Q4 Pin 4 [G, Input, Line]
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(144.00 mm, 54.00 mm): Symbol Q3 [NMOS]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(144.00 mm, 54.00 mm): Symbol Q3 [NMOS]
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(144.00 mm, 92.00 mm): Symbol Q5 [NMOS]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(144.00 mm, 92.00 mm): Symbol Q5 [NMOS]
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(144.00 mm, 130.00 mm): Symbol Q4 [NMOS]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(144.00 mm, 130.00 mm): Symbol Q4 [NMOS]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(145.00 mm, 327.65 mm): Symbol TP4 Pin 1 [1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(145.00 mm, 327.65 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(145.00 mm, 330.19 mm): Symbol TP4 [TP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(145.00 mm, 330.19 mm): Symbol TP4 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(149.08 mm, 48.92 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(149.08 mm, 59.08 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(149.08 mm, 86.92 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(149.08 mm, 97.08 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(149.08 mm, 124.92 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(149.08 mm, 135.08 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(163.00 mm, 195.19 mm): Symbol R23 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(163.00 mm, 195.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(163.00 mm, 199.00 mm): Symbol R23 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(163.00 mm, 199.00 mm): Symbol R23 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(163.00 mm, 202.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(163.00 mm, 221.19 mm): Symbol R26 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(163.00 mm, 221.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(163.00 mm, 225.00 mm): Symbol R26 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(163.00 mm, 225.00 mm): Symbol R26 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(163.00 mm, 228.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(163.00 mm, 247.19 mm): Symbol C26 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(163.00 mm, 247.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(163.00 mm, 251.00 mm): Symbol C26 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(163.00 mm, 251.00 mm): Symbol C26 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(163.00 mm, 254.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(200.00 mm, 325.46 mm): Symbol TP1 Pin 1 [1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(200.00 mm, 325.46 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(200.00 mm, 328.00 mm): Symbol TP1 [TP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(200.00 mm, 328.00 mm): Symbol TP1 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(200.00 mm, 349.46 mm): Symbol TP8 Pin 1 [1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(200.00 mm, 349.46 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(200.00 mm, 352.00 mm): Symbol TP8 [TP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(200.00 mm, 352.00 mm): Symbol TP8 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(200.00 mm, 372.46 mm): Symbol TP15 Pin 1 [1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(200.00 mm, 372.46 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(200.00 mm, 375.00 mm): Symbol TP15 [TP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(200.00 mm, 375.00 mm): Symbol TP15 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(203.29 mm, 195.19 mm): Symbol R24 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(203.29 mm, 195.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(203.29 mm, 199.00 mm): Symbol R24 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(203.29 mm, 199.00 mm): Symbol R24 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(203.29 mm, 202.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(203.29 mm, 221.19 mm): Symbol R27 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(203.29 mm, 221.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(203.29 mm, 225.00 mm): Symbol R27 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(203.29 mm, 225.00 mm): Symbol R27 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(203.29 mm, 228.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(203.29 mm, 247.19 mm): Symbol C27 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(203.29 mm, 247.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(203.29 mm, 251.00 mm): Symbol C27 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(203.29 mm, 251.00 mm): Symbol C27 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(203.29 mm, 254.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.30 mm, 83.11 mm): Symbol U1 Pin 1 [HIN1, Input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.30 mm, 83.11 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.30 mm, 85.65 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.30 mm, 88.19 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.30 mm, 90.73 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.30 mm, 93.27 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.30 mm, 95.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.30 mm, 98.35 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.30 mm, 100.89 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(207.67 mm, 191.19 mm): Symbol R35 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(207.67 mm, 191.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(207.67 mm, 195.00 mm): Symbol R35 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(207.67 mm, 195.00 mm): Symbol R35 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(207.67 mm, 198.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(207.67 mm, 209.19 mm): Symbol R38 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(207.67 mm, 209.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(207.67 mm, 213.00 mm): Symbol R38 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(207.67 mm, 213.00 mm): Symbol R38 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(207.67 mm, 216.81 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(218.00 mm, 92.00 mm): Symbol U1 [FD6288T]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(218.00 mm, 92.00 mm): Symbol U1 [FD6288T]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(226.00 mm, 300.19 mm): Symbol C44 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(226.00 mm, 300.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(226.00 mm, 304.00 mm): Symbol C44 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(226.00 mm, 304.00 mm): Symbol C44 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(226.00 mm, 307.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(230.70 mm, 78.03 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(230.70 mm, 80.57 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(230.70 mm, 83.11 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(230.70 mm, 85.65 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(230.70 mm, 88.19 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(230.70 mm, 90.73 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(230.70 mm, 93.27 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(230.70 mm, 95.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(230.70 mm, 98.35 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(230.70 mm, 100.89 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(230.70 mm, 103.43 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(230.70 mm, 105.97 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(243.57 mm, 195.19 mm): Symbol R25 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(243.57 mm, 195.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(243.57 mm, 199.00 mm): Symbol R25 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(243.57 mm, 199.00 mm): Symbol R25 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(243.57 mm, 202.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(243.57 mm, 221.19 mm): Symbol R28 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(243.57 mm, 221.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(243.57 mm, 225.00 mm): Symbol R28 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(243.57 mm, 225.00 mm): Symbol R28 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(243.57 mm, 228.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(247.00 mm, 191.19 mm): Symbol R36 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(247.00 mm, 191.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(247.00 mm, 195.00 mm): Symbol R36 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(247.00 mm, 195.00 mm): Symbol R36 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(247.00 mm, 198.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(247.00 mm, 209.19 mm): Symbol R39 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(247.00 mm, 209.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(247.00 mm, 213.00 mm): Symbol R39 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(247.00 mm, 213.00 mm): Symbol R39 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(247.00 mm, 216.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(250.00 mm, 300.19 mm): Symbol C45 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(250.00 mm, 300.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(250.00 mm, 304.00 mm): Symbol C45 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(250.00 mm, 304.00 mm): Symbol C45 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(250.00 mm, 307.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(254.00 mm, 325.46 mm): Symbol TP2 Pin 1 [1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(254.00 mm, 325.46 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(254.00 mm, 328.00 mm): Symbol TP2 [TP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(254.00 mm, 328.00 mm): Symbol TP2 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(254.00 mm, 349.46 mm): Symbol TP9 Pin 1 [1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(254.00 mm, 349.46 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(254.00 mm, 352.00 mm): Symbol TP9 [TP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(254.00 mm, 352.00 mm): Symbol TP9 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(254.00 mm, 372.46 mm): Symbol TP16 Pin 1 [1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(254.00 mm, 372.46 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(254.00 mm, 375.00 mm): Symbol TP16 [TP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(254.00 mm, 375.00 mm): Symbol TP16 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(270.00 mm, 44.19 mm): Symbol D1 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(270.00 mm, 44.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(270.00 mm, 48.00 mm): Symbol D1 [D]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(270.00 mm, 48.00 mm): Symbol D1 [D]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(270.00 mm, 51.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(270.00 mm, 74.19 mm): Symbol D2 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(270.00 mm, 74.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(270.00 mm, 78.00 mm): Symbol D2 [D]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(270.00 mm, 78.00 mm): Symbol D2 [D]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(270.00 mm, 81.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(270.00 mm, 104.19 mm): Symbol D3 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(270.00 mm, 104.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(270.00 mm, 108.00 mm): Symbol D3 [D]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(270.00 mm, 108.00 mm): Symbol D3 [D]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(270.00 mm, 111.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(274.00 mm, 132.19 mm): Symbol C1 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(274.00 mm, 132.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(274.00 mm, 136.00 mm): Symbol C1 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(274.00 mm, 136.00 mm): Symbol C1 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(274.00 mm, 139.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(283.86 mm, 195.19 mm): Symbol C24 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(283.86 mm, 195.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(283.86 mm, 199.00 mm): Symbol C24 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(283.86 mm, 199.00 mm): Symbol C24 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(283.86 mm, 202.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(283.86 mm, 221.19 mm): Symbol C21 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(283.86 mm, 221.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(283.86 mm, 225.00 mm): Symbol C21 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(283.86 mm, 225.00 mm): Symbol C21 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(283.86 mm, 228.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(286.33 mm, 191.19 mm): Symbol R37 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(286.33 mm, 191.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(286.33 mm, 195.00 mm): Symbol R37 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(286.33 mm, 195.00 mm): Symbol R37 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(286.33 mm, 198.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(286.33 mm, 209.19 mm): Symbol R40 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(286.33 mm, 209.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(286.33 mm, 213.00 mm): Symbol R40 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(286.33 mm, 213.00 mm): Symbol R40 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(286.33 mm, 216.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(292.00 mm, 44.19 mm): Symbol C5 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(292.00 mm, 44.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(292.00 mm, 48.00 mm): Symbol C5 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(292.00 mm, 48.00 mm): Symbol C5 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(292.00 mm, 51.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(292.00 mm, 74.19 mm): Symbol C6 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(292.00 mm, 74.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(292.00 mm, 78.00 mm): Symbol C6 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(292.00 mm, 78.00 mm): Symbol C6 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(292.00 mm, 81.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(292.00 mm, 104.19 mm): Symbol C7 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(292.00 mm, 104.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(292.00 mm, 108.00 mm): Symbol C7 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(292.00 mm, 108.00 mm): Symbol C7 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(292.00 mm, 111.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(296.00 mm, 132.19 mm): Symbol C13 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(296.00 mm, 132.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(296.00 mm, 136.00 mm): Symbol C13 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(296.00 mm, 136.00 mm): Symbol C13 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(296.00 mm, 139.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(308.00 mm, 349.46 mm): Symbol TP10 Pin 1 [1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(308.00 mm, 349.46 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(308.00 mm, 352.00 mm): Symbol TP10 [TP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(308.00 mm, 352.00 mm): Symbol TP10 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(308.00 mm, 372.46 mm): Symbol TP17 Pin 1 [1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(308.00 mm, 372.46 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(308.00 mm, 375.00 mm): Symbol TP17 [TP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(308.00 mm, 375.00 mm): Symbol TP17 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(312.00 mm, 300.19 mm): Symbol R47 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(312.00 mm, 300.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(312.00 mm, 304.00 mm): Symbol R47 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(312.00 mm, 304.00 mm): Symbol R47 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(312.00 mm, 307.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(344.00 mm, 92.19 mm): Symbol C8 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(344.00 mm, 92.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(344.00 mm, 96.00 mm): Symbol C8 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(344.00 mm, 96.00 mm): Symbol C8 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(344.00 mm, 99.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(344.00 mm, 126.19 mm): Symbol R10 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(344.00 mm, 126.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(344.00 mm, 130.00 mm): Symbol R10 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(344.00 mm, 130.00 mm): Symbol R10 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(344.00 mm, 133.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(344.00 mm, 150.19 mm): Symbol R16 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(344.00 mm, 150.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(344.00 mm, 154.00 mm): Symbol R16 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(344.00 mm, 154.00 mm): Symbol R16 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(344.00 mm, 157.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(344.38 mm, 187.46 mm): Symbol U4 Pin 1 [VIN, Power input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(344.38 mm, 187.46 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(344.38 mm, 192.54 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(345.84 mm, 54.19 mm): Symbol U2 Pin 1 [VIN, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(345.84 mm, 54.19 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(345.84 mm, 56.73 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(345.84 mm, 59.27 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(345.84 mm, 61.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(349.33 mm, 254.19 mm): Symbol R30 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(349.33 mm, 254.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(349.33 mm, 258.00 mm): Symbol R30 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(349.33 mm, 258.00 mm): Symbol R30 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(349.33 mm, 258.19 mm): Symbol R48 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(349.33 mm, 258.19 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(349.33 mm, 261.81 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(349.33 mm, 262.00 mm): Symbol R48 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(349.33 mm, 262.00 mm): Symbol R48 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(349.33 mm, 265.81 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(352.00 mm, 190.00 mm): Symbol U4 [LDO]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(352.00 mm, 190.00 mm): Symbol U4 [LDO]
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(356.00 mm, 58.00 mm): Symbol U2 [XL7005A]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(356.00 mm, 58.00 mm): Symbol U2 [XL7005A]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(359.62 mm, 187.46 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(359.62 mm, 192.54 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(362.00 mm, 349.46 mm): Symbol TP11 Pin 1 [1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(362.00 mm, 349.46 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(362.00 mm, 352.00 mm): Symbol TP11 [TP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(362.00 mm, 352.00 mm): Symbol TP11 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(362.00 mm, 372.46 mm): Symbol TP18 Pin 1 [1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(362.00 mm, 372.46 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(362.00 mm, 375.00 mm): Symbol TP18 [TP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(362.00 mm, 375.00 mm): Symbol TP18 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(366.00 mm, 92.19 mm): Symbol C9 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(366.00 mm, 92.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(366.00 mm, 96.00 mm): Symbol C9 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(366.00 mm, 96.00 mm): Symbol C9 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(366.00 mm, 99.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(366.00 mm, 126.19 mm): Symbol R11 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(366.00 mm, 126.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(366.00 mm, 130.00 mm): Symbol R11 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(366.00 mm, 130.00 mm): Symbol R11 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(366.00 mm, 133.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(366.00 mm, 150.19 mm): Symbol C29 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(366.00 mm, 150.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(366.00 mm, 154.00 mm): Symbol C29 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(366.00 mm, 154.00 mm): Symbol C29 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(366.00 mm, 157.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(366.16 mm, 52.92 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(366.16 mm, 55.46 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(366.16 mm, 58.00 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(366.16 mm, 60.54 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(366.16 mm, 63.08 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(384.00 mm, 254.19 mm): Symbol R31 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(384.00 mm, 254.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(384.00 mm, 258.00 mm): Symbol R31 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(384.00 mm, 258.00 mm): Symbol R31 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(384.00 mm, 258.19 mm): Symbol C32 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(384.00 mm, 258.19 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(384.00 mm, 261.81 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(384.00 mm, 262.00 mm): Symbol C32 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(384.00 mm, 262.00 mm): Symbol C32 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(384.00 mm, 265.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(388.00 mm, 92.19 mm): Symbol C10 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(388.00 mm, 92.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(388.00 mm, 96.00 mm): Symbol C10 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(388.00 mm, 96.00 mm): Symbol C10 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(388.00 mm, 99.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(394.00 mm, 182.19 mm): Symbol C40 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(394.00 mm, 182.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(394.00 mm, 186.00 mm): Symbol C40 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(394.00 mm, 186.00 mm): Symbol C40 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(394.00 mm, 189.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(408.00 mm, 46.19 mm): Symbol L1 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(408.00 mm, 46.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(408.00 mm, 50.00 mm): Symbol L1 [L]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(408.00 mm, 50.00 mm): Symbol L1 [L]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(408.00 mm, 53.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(412.00 mm, 92.19 mm): Symbol C11 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(412.00 mm, 92.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(412.00 mm, 96.00 mm): Symbol C11 [CP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(412.00 mm, 96.00 mm): Symbol C11 [CP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(412.00 mm, 99.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(416.00 mm, 182.19 mm): Symbol C41 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(416.00 mm, 182.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(416.00 mm, 186.00 mm): Symbol C41 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(416.00 mm, 186.00 mm): Symbol C41 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(416.00 mm, 189.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(416.00 mm, 208.19 mm): Symbol C42 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(416.00 mm, 208.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(416.00 mm, 212.00 mm): Symbol C42 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(416.00 mm, 212.00 mm): Symbol C42 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(416.00 mm, 215.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(416.00 mm, 349.46 mm): Symbol TP12 Pin 1 [1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(416.00 mm, 349.46 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(416.00 mm, 352.00 mm): Symbol TP12 [TP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(416.00 mm, 352.00 mm): Symbol TP12 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(416.00 mm, 372.46 mm): Symbol TP19 Pin 1 [1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(416.00 mm, 372.46 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(416.00 mm, 375.00 mm): Symbol TP19 [TP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(416.00 mm, 375.00 mm): Symbol TP19 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(418.67 mm, 254.19 mm): Symbol C30 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(418.67 mm, 254.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(418.67 mm, 258.00 mm): Symbol C30 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(418.67 mm, 258.00 mm): Symbol C30 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(418.67 mm, 261.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(428.00 mm, 46.19 mm): Symbol D5 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(428.00 mm, 46.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(428.00 mm, 50.00 mm): Symbol D5 [DSCH]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(428.00 mm, 50.00 mm): Symbol D5 [DSCH]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(428.00 mm, 53.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(432.00 mm, 92.19 mm): Symbol C12 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(432.00 mm, 92.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(432.00 mm, 96.00 mm): Symbol C12 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(432.00 mm, 96.00 mm): Symbol C12 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(432.00 mm, 99.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(470.00 mm, 349.46 mm): Symbol TP13 Pin 1 [1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(470.00 mm, 349.46 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(470.00 mm, 352.00 mm): Symbol TP13 [TP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(470.00 mm, 352.00 mm): Symbol TP13 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(481.11 mm, 232.21 mm): Symbol U3 Pin 1 [IN+, Input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(481.11 mm, 232.21 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(481.11 mm, 237.29 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(486.19 mm, 225.86 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 47.39 mm): Symbol F1 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 47.39 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(490.00 mm, 51.20 mm): Symbol F1 [FUSE]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(490.00 mm, 51.20 mm): Symbol F1 [FUSE]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 55.01 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 69.79 mm): Symbol C2 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 69.79 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(490.00 mm, 73.60 mm): Symbol C2 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(490.00 mm, 73.60 mm): Symbol C2 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 77.41 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 92.19 mm): Symbol C15 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 92.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(490.00 mm, 96.00 mm): Symbol C15 [CP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(490.00 mm, 96.00 mm): Symbol C15 [CP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 99.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 114.59 mm): Symbol C17 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 114.59 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(490.00 mm, 118.40 mm): Symbol C17 [CP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(490.00 mm, 118.40 mm): Symbol C17 [CP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 122.21 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 136.99 mm): Symbol C19 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 136.99 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(490.00 mm, 140.80 mm): Symbol C19 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(490.00 mm, 140.80 mm): Symbol C19 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 144.61 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 191.94 mm): Symbol R32 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 191.94 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(490.00 mm, 195.75 mm): Symbol R32 [RSHUNT]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(490.00 mm, 195.75 mm): Symbol R32 [RSHUNT]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 199.56 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 211.44 mm): Symbol R34 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 211.44 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(490.00 mm, 215.25 mm): Symbol R34 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(490.00 mm, 215.25 mm): Symbol R34 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 219.06 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 225.86 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(490.00 mm, 234.75 mm): Symbol U3 [INA181]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(490.00 mm, 234.75 mm): Symbol U3 [INA181]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 243.64 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 250.44 mm): Symbol R49 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 250.44 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(490.00 mm, 254.25 mm): Symbol R49 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(490.00 mm, 254.25 mm): Symbol R49 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(490.00 mm, 258.06 mm): Horizontal Wire, length 5.08 mm
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(495.08 mm, 47.39 mm): Global Label 'VBUS_IN'
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(498.00 mm, 308.00 mm): Symbol #FLG1 Pin 1 [Power output, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(498.00 mm, 308.00 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(498.00 mm, 308.00 mm): Symbol #FLG1 [PWRFLAG]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(498.00 mm, 308.00 mm): Symbol #FLG1 [PWRFLAG]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(498.89 mm, 234.75 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(524.00 mm, 325.46 mm): Symbol TP7 Pin 1 [1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(524.00 mm, 325.46 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(524.00 mm, 328.00 mm): Symbol TP7 [TP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(524.00 mm, 328.00 mm): Symbol TP7 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(524.00 mm, 349.46 mm): Symbol TP14 Pin 1 [1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(524.00 mm, 349.46 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(524.00 mm, 352.00 mm): Symbol TP14 [TP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(524.00 mm, 352.00 mm): Symbol TP14 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(536.00 mm, 308.00 mm): Symbol #FLG2 Pin 1 [Power output, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(536.00 mm, 308.00 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(536.00 mm, 308.00 mm): Symbol #FLG2 [PWRFLAG]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(536.00 mm, 308.00 mm): Symbol #FLG2 [PWRFLAG]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 47.39 mm): Symbol D4 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 47.39 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(546.00 mm, 51.20 mm): Symbol D4 [DTVS]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(546.00 mm, 51.20 mm): Symbol D4 [DTVS]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 55.01 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 69.79 mm): Symbol C14 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 69.79 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(546.00 mm, 73.60 mm): Symbol C14 [CP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(546.00 mm, 73.60 mm): Symbol C14 [CP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 77.41 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 92.19 mm): Symbol C16 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 92.19 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(546.00 mm, 96.00 mm): Symbol C16 [CP]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(546.00 mm, 96.00 mm): Symbol C16 [CP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 99.81 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 114.59 mm): Symbol C18 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 114.59 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(546.00 mm, 118.40 mm): Symbol C18 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(546.00 mm, 118.40 mm): Symbol C18 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 122.21 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 136.99 mm): Symbol C20 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 136.99 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(546.00 mm, 140.80 mm): Symbol C20 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(546.00 mm, 140.80 mm): Symbol C20 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 144.61 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 191.94 mm): Symbol R33 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 191.94 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(546.00 mm, 195.75 mm): Symbol R33 [R]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(546.00 mm, 195.75 mm): Symbol R33 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 199.56 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 211.44 mm): Symbol C31 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 211.44 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(546.00 mm, 215.25 mm): Symbol C31 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(546.00 mm, 215.25 mm): Symbol C31 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 219.06 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 230.94 mm): Symbol C33 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 230.94 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(546.00 mm, 234.75 mm): Symbol C33 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(546.00 mm, 234.75 mm): Symbol C33 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 238.56 mm): Horizontal Wire, length 5.08 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 250.44 mm): Symbol C34 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 250.44 mm): Horizontal Wire, length 5.08 mm
+[footprint_link_issues]: 当前配置中不包含封装库 ''
+    ; warning
+    @(546.00 mm, 254.25 mm): Symbol C34 [C]
+[lib_symbol_issues]: 当前配置不包含符号库 'mdrive'
+    ; warning
+    @(546.00 mm, 254.25 mm): Symbol C34 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(546.00 mm, 258.06 mm): Horizontal Wire, length 5.08 mm
+
+ ** ERC messages: 624  Errors 0  Warnings 624
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

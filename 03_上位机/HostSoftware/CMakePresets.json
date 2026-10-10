@@ -1,0 +1,70 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 21,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "msvc-debug",
+      "displayName": "Qt 6.8.3 MSVC 2022 64-bit (Debug)",
+      "generator": "Visual Studio 17 2022",
+      "architecture": "x64",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_PREFIX_PATH": "D:/Qt/6.8.3/msvc2022_64"
+      }
+    },
+    {
+      "name": "msvc-release",
+      "displayName": "Qt 6.8.3 MSVC 2022 64-bit (Release)",
+      "inherits": "msvc-debug"
+    },
+    {
+      "name": "mingw-debug",
+      "displayName": "Qt 6.8.3 MinGW 13.1 64-bit (Debug)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/mingw-debug",
+      "environment": {
+        "PATH": "D:/Qt/6.8.3/mingw_64/bin;D:/Qt/Tools/mingw1310_64/bin;$penv{PATH}"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_PREFIX_PATH": "D:/Qt/6.8.3/mingw_64",
+        "CMAKE_CXX_COMPILER": "D:/Qt/Tools/mingw1310_64/bin/g++.exe",
+        "CMAKE_MAKE_PROGRAM": "D:/VS/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      }
+    },
+    {
+      "name": "mingw-release",
+      "displayName": "Qt 6.8.3 MinGW 13.1 64-bit (Release)",
+      "inherits": "mingw-debug",
+      "binaryDir": "${sourceDir}/build/mingw-release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "debug",
+      "configurePreset": "msvc-debug",
+      "configuration": "Debug"
+    },
+    {
+      "name": "release",
+      "configurePreset": "msvc-release",
+      "configuration": "Release"
+    },
+    {
+      "name": "mingw-debug",
+      "configurePreset": "mingw-debug"
+    },
+    {
+      "name": "mingw-release",
+      "configurePreset": "mingw-release"
+    }
+  ]
+}

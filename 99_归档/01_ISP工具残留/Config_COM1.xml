@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SystemConfig>
+  <EnglishLanguage>true</EnglishLanguage>
+  <TargetMCU>
+    <Index>0</Index>
+  </TargetMCU>
+  <CrystalIndex>0</CrystalIndex>
+  <HexFile></HexFile>
+  <Com>COM1</Com>
+  <AutoNumber>
+    <AutoNumberSelected>false</AutoNumberSelected>
+    <AotuNumberStartAddr></AotuNumberStartAddr>
+    <Length></Length>
+    <StartNum></StartNum>
+    <Interval></Interval>
+    <CurrentNum></CurrentNum>
+    <HistoryNum></HistoryNum>
+  </AutoNumber>
+  <ChipErase>true</ChipErase>
+  <FullDuplex>true</FullDuplex>
+  <Erase>false</Erase>
+  <BlankCheck>true</BlankCheck>
+  <Program>false</Program>
+  <Verify>false</Verify>
+  <Encrypt>false</Encrypt>
+  <Encrypt2>false</Encrypt2>
+  <Disorder></Disorder>
+  <Pcrop>false</Pcrop>
+  <BS></BS>
+  <ES></ES>
+</SystemConfig>

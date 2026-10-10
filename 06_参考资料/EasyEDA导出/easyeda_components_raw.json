@@ -1,0 +1,6129 @@
+{
+  "success": true,
+  "result": {
+    "count": 126,
+    "components": [
+      {
+        "id": "f98c4b2e4ef44649",
+        "uniqueId": "gge1",
+        "designator": "TP5",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 110.23622047,
+        "y": -1701.2992126,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "456342b52546487b",
+          "name": "S2761-46R"
+        },
+        "symbol": {
+          "uuid": "1de82f477bef688f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2761-46R"
+        },
+        "footprint": {
+          "uuid": "de84ff422b608a17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TESTPOINT-SMD_L1.6-W0.8_RCU-0C"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 90.23622047,
+            "y": -1701.2992126,
+            "id": "f98c4b2e4ef44649-e5"
+          }
+        ]
+      },
+      {
+        "id": "bdcc6c71da52f01a",
+        "uniqueId": "gge2",
+        "designator": "C22",
+        "name": "={Value}",
+        "value": "",
+        "x": 125.70866142,
+        "y": -1362.00787402,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b9bf7cde621c4291",
+          "name": "CL10B102KB8NNNC"
+        },
+        "symbol": {
+          "uuid": "35e361f08321d40c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B102KB8NNNC"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 125.70866142,
+            "y": -1347.00787402,
+            "id": "bdcc6c71da52f01a-e5"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 125.70866142,
+            "y": -1377.00787402,
+            "id": "bdcc6c71da52f01a-e9"
+          }
+        ]
+      },
+      {
+        "id": "196a97c2c53a22ef",
+        "uniqueId": "gge3",
+        "designator": "R18",
+        "name": "={Value}",
+        "value": "",
+        "x": 125.70866142,
+        "y": -1161.61417323,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "926548c082090d92",
+          "name": "0603WAF1002T5E"
+        },
+        "symbol": {
+          "uuid": "792c2d457a78af4c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1002T5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 125.70866142,
+            "y": -1181.61417323,
+            "id": "196a97c2c53a22ef-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 125.70866142,
+            "y": -1141.61417323,
+            "id": "196a97c2c53a22ef-e7"
+          }
+        ]
+      },
+      {
+        "id": "68902bf43c7641c4",
+        "uniqueId": "gge4",
+        "designator": "R17",
+        "name": "={Value}",
+        "value": "",
+        "x": 125.70866142,
+        "y": -961.22047244,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "a9c9cec2b8411534",
+          "name": "FRC0603F1503TS"
+        },
+        "symbol": {
+          "uuid": "a0d9fea26d8b4ba8",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F1503TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 125.70866142000011,
+            "y": -981.2204724399999,
+            "id": "68902bf43c7641c4-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 125.70866142000011,
+            "y": -941.2204724399999,
+            "id": "68902bf43c7641c4-e8"
+          }
+        ]
+      },
+      {
+        "id": "90388dd2b3a4e52c",
+        "uniqueId": "gge5",
+        "designator": "C43",
+        "name": "={Value}",
+        "value": "",
+        "x": 149.60629921,
+        "y": -1746.2992126,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "ad41a7d2fb07490b",
+          "name": "CL10A475KA8NQNC"
+        },
+        "symbol": {
+          "uuid": "a5bd3d6c8011d996",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10A475KA8NQNC"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 149.6062992100001,
+            "y": -1731.2992126,
+            "id": "90388dd2b3a4e52c-e5"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 149.6062992100001,
+            "y": -1761.2992126,
+            "id": "90388dd2b3a4e52c-e9"
+          }
+        ]
+      },
+      {
+        "id": "84c0bb3cefaf5918",
+        "uniqueId": "gge6",
+        "designator": "R4",
+        "name": "={Value}",
+        "value": "",
+        "x": 157.48031496,
+        "y": -640.98425197,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "d7030197892f4edf",
+          "name": "0603WAF100JT5E"
+        },
+        "symbol": {
+          "uuid": "e98f7277cf33ef78",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF100JT5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 157.48031496,
+            "y": -660.98425197,
+            "id": "84c0bb3cefaf5918-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 157.48031496,
+            "y": -620.98425197,
+            "id": "84c0bb3cefaf5918-e7"
+          }
+        ]
+      },
+      {
+        "id": "55faa07ee55bb0d5",
+        "uniqueId": "gge7",
+        "designator": "R1",
+        "name": "={Value}",
+        "value": "",
+        "x": 157.48031496,
+        "y": -467.75590551,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "d7030197892f4edf",
+          "name": "0603WAF100JT5E"
+        },
+        "symbol": {
+          "uuid": "e98f7277cf33ef78",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF100JT5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 157.48031496,
+            "y": -487.75590550999993,
+            "id": "55faa07ee55bb0d5-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 157.48031496,
+            "y": -447.75590550999993,
+            "id": "55faa07ee55bb0d5-e7"
+          }
+        ]
+      },
+      {
+        "id": "e6d3c1c632eab298",
+        "uniqueId": "gge8",
+        "designator": "R6",
+        "name": "={Value}",
+        "value": "",
+        "x": 157.48031496,
+        "y": -294.52755906,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "d7030197892f4edf",
+          "name": "0603WAF100JT5E"
+        },
+        "symbol": {
+          "uuid": "e98f7277cf33ef78",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF100JT5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 157.48031496,
+            "y": -314.52755906,
+            "id": "e6d3c1c632eab298-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 157.48031496,
+            "y": -274.52755906,
+            "id": "e6d3c1c632eab298-e7"
+          }
+        ]
+      },
+      {
+        "id": "b47d2f8128d01cc3",
+        "uniqueId": "gge9",
+        "designator": "C46",
+        "name": "={Value}",
+        "value": "",
+        "x": 196.8503937,
+        "y": -1706.2992126,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "29415c0175ee489e",
+          "name": "FCC0603B104K500CT"
+        },
+        "symbol": {
+          "uuid": "8593560617e7a582",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FCC0603B104K500CT"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 196.85039370000004,
+            "y": -1686.2992126,
+            "id": "b47d2f8128d01cc3-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 196.85039370000004,
+            "y": -1726.2992126,
+            "id": "b47d2f8128d01cc3-e10"
+          }
+        ]
+      },
+      {
+        "id": "6f2598157f68ce4c",
+        "uniqueId": "gge10",
+        "designator": "C23",
+        "name": "={Value}",
+        "value": "",
+        "x": 219.64566929,
+        "y": -1362.00787402,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b9bf7cde621c4291",
+          "name": "CL10B102KB8NNNC"
+        },
+        "symbol": {
+          "uuid": "35e361f08321d40c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B102KB8NNNC"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 219.6456692899999,
+            "y": -1347.00787402,
+            "id": "6f2598157f68ce4c-e5"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 219.6456692899999,
+            "y": -1377.00787402,
+            "id": "6f2598157f68ce4c-e9"
+          }
+        ]
+      },
+      {
+        "id": "498d309c255de84d",
+        "uniqueId": "gge11",
+        "designator": "R20",
+        "name": "={Value}",
+        "value": "",
+        "x": 219.64566929,
+        "y": -1161.61417323,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "926548c082090d92",
+          "name": "0603WAF1002T5E"
+        },
+        "symbol": {
+          "uuid": "792c2d457a78af4c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1002T5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 219.6456692899999,
+            "y": -1181.61417323,
+            "id": "498d309c255de84d-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 219.6456692899999,
+            "y": -1141.61417323,
+            "id": "498d309c255de84d-e7"
+          }
+        ]
+      },
+      {
+        "id": "ef20fd82d532cef1",
+        "uniqueId": "gge12",
+        "designator": "R19",
+        "name": "={Value}",
+        "value": "",
+        "x": 219.64566929,
+        "y": -961.22047244,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "a9c9cec2b8411534",
+          "name": "FRC0603F1503TS"
+        },
+        "symbol": {
+          "uuid": "a0d9fea26d8b4ba8",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F1503TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 219.64566929,
+            "y": -981.2204724400001,
+            "id": "ef20fd82d532cef1-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 219.64566929,
+            "y": -941.2204724400001,
+            "id": "ef20fd82d532cef1-e8"
+          }
+        ]
+      },
+      {
+        "id": "bfe2a6ade992e2f8",
+        "uniqueId": "gge13",
+        "designator": "R14",
+        "name": "={Value}",
+        "value": "",
+        "x": 220.47244094,
+        "y": -670.98425197,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "4795ea800451f1a3",
+          "name": "0603WAF2002T5E"
+        },
+        "symbol": {
+          "uuid": "cb034f8a7fcdb0d7",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF2002T5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 220.47244093999996,
+            "y": -690.98425197,
+            "id": "bfe2a6ade992e2f8-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 220.47244093999996,
+            "y": -650.98425197,
+            "id": "bfe2a6ade992e2f8-e7"
+          }
+        ]
+      },
+      {
+        "id": "9bb5ba7b2d9d70f9",
+        "uniqueId": "gge14",
+        "designator": "R7",
+        "name": "={Value}",
+        "value": "",
+        "x": 220.47244094,
+        "y": -497.75590551,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "4795ea800451f1a3",
+          "name": "0603WAF2002T5E"
+        },
+        "symbol": {
+          "uuid": "cb034f8a7fcdb0d7",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF2002T5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 220.47244094000007,
+            "y": -517.75590551,
+            "id": "9bb5ba7b2d9d70f9-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 220.47244094000007,
+            "y": -477.75590551000005,
+            "id": "9bb5ba7b2d9d70f9-e7"
+          }
+        ]
+      },
+      {
+        "id": "f5d5aebdbe0ba9d7",
+        "uniqueId": "gge15",
+        "designator": "R12",
+        "name": "={Value}",
+        "value": "",
+        "x": 220.47244094,
+        "y": -324.52755906,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "4795ea800451f1a3",
+          "name": "0603WAF2002T5E"
+        },
+        "symbol": {
+          "uuid": "cb034f8a7fcdb0d7",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF2002T5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 220.47244093999996,
+            "y": -344.52755906,
+            "id": "f5d5aebdbe0ba9d7-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 220.47244093999996,
+            "y": -304.52755906,
+            "id": "f5d5aebdbe0ba9d7-e7"
+          }
+        ]
+      },
+      {
+        "id": "dacbac3dc3141d95",
+        "uniqueId": "gge16",
+        "designator": "C25",
+        "name": "={Value}",
+        "value": "",
+        "x": 313.54330709,
+        "y": -1362.00787402,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b9bf7cde621c4291",
+          "name": "CL10B102KB8NNNC"
+        },
+        "symbol": {
+          "uuid": "35e361f08321d40c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B102KB8NNNC"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 313.5433070900001,
+            "y": -1347.0078740200001,
+            "id": "dacbac3dc3141d95-e5"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 313.5433070900001,
+            "y": -1377.0078740200001,
+            "id": "dacbac3dc3141d95-e9"
+          }
+        ]
+      },
+      {
+        "id": "cef85fe9888e0cb9",
+        "uniqueId": "gge17",
+        "designator": "R22",
+        "name": "={Value}",
+        "value": "",
+        "x": 313.54330709,
+        "y": -1161.61417323,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "926548c082090d92",
+          "name": "0603WAF1002T5E"
+        },
+        "symbol": {
+          "uuid": "792c2d457a78af4c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1002T5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 313.5433070900001,
+            "y": -1181.61417323,
+            "id": "cef85fe9888e0cb9-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 313.5433070900001,
+            "y": -1141.61417323,
+            "id": "cef85fe9888e0cb9-e7"
+          }
+        ]
+      },
+      {
+        "id": "3d69b82c10f73888",
+        "uniqueId": "gge18",
+        "designator": "R21",
+        "name": "={Value}",
+        "value": "",
+        "x": 313.54330709,
+        "y": -961.22047244,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "a9c9cec2b8411534",
+          "name": "FRC0603F1503TS"
+        },
+        "symbol": {
+          "uuid": "a0d9fea26d8b4ba8",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F1503TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 313.5433070900001,
+            "y": -981.2204724400001,
+            "id": "3d69b82c10f73888-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 313.5433070900001,
+            "y": -941.2204724400001,
+            "id": "3d69b82c10f73888-e8"
+          }
+        ]
+      },
+      {
+        "id": "06ada1f0170bf27a",
+        "uniqueId": "gge19",
+        "designator": "Q6",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 322.83464567,
+        "y": -655.98425197,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "07421eb8bf5c9cab",
+          "name": "HYG053N10NS1C2"
+        },
+        "symbol": {
+          "uuid": "1203c2cbe9e7bf88",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "HYG053N10NS1C2"
+        },
+        "footprint": {
+          "uuid": "171caa8ca9fc7927",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "PDFN-8_L5.8-W5.0-P1.27-LS6.2-BL"
+        },
+        "pins": [
+          {
+            "number": "9",
+            "name": "D",
+            "type": "Undefined",
+            "x": 322.83464567,
+            "y": -625.98425197,
+            "id": "06ada1f0170bf27a-e3"
+          },
+          {
+            "number": "8",
+            "name": "D",
+            "type": "Undefined",
+            "x": 352.83464567,
+            "y": -645.98425197,
+            "id": "06ada1f0170bf27a-e8"
+          },
+          {
+            "number": "7",
+            "name": "D",
+            "type": "Undefined",
+            "x": 352.83464567,
+            "y": -655.98425197,
+            "id": "06ada1f0170bf27a-e12"
+          },
+          {
+            "number": "6",
+            "name": "D",
+            "type": "Undefined",
+            "x": 352.83464567,
+            "y": -665.98425197,
+            "id": "06ada1f0170bf27a-e16"
+          },
+          {
+            "number": "5",
+            "name": "D",
+            "type": "Undefined",
+            "x": 352.83464567,
+            "y": -675.98425197,
+            "id": "06ada1f0170bf27a-e20"
+          },
+          {
+            "number": "4",
+            "name": "G",
+            "type": "Undefined",
+            "x": 292.83464567,
+            "y": -675.98425197,
+            "id": "06ada1f0170bf27a-e24"
+          },
+          {
+            "number": "3",
+            "name": "S",
+            "type": "Undefined",
+            "x": 292.83464567,
+            "y": -665.98425197,
+            "id": "06ada1f0170bf27a-e28"
+          },
+          {
+            "number": "2",
+            "name": "S",
+            "type": "Undefined",
+            "x": 292.83464567,
+            "y": -655.98425197,
+            "id": "06ada1f0170bf27a-e32"
+          },
+          {
+            "number": "1",
+            "name": "S",
+            "type": "Undefined",
+            "x": 292.83464567,
+            "y": -645.98425197,
+            "id": "06ada1f0170bf27a-e36"
+          }
+        ]
+      },
+      {
+        "id": "0f05192bdf7c7dc4",
+        "uniqueId": "gge20",
+        "designator": "Q1",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 322.83464567,
+        "y": -482.75590551,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "07421eb8bf5c9cab",
+          "name": "HYG053N10NS1C2"
+        },
+        "symbol": {
+          "uuid": "1203c2cbe9e7bf88",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "HYG053N10NS1C2"
+        },
+        "footprint": {
+          "uuid": "171caa8ca9fc7927",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "PDFN-8_L5.8-W5.0-P1.27-LS6.2-BL"
+        },
+        "pins": [
+          {
+            "number": "9",
+            "name": "D",
+            "type": "Undefined",
+            "x": 322.83464567,
+            "y": -452.75590551,
+            "id": "0f05192bdf7c7dc4-e3"
+          },
+          {
+            "number": "8",
+            "name": "D",
+            "type": "Undefined",
+            "x": 352.83464567,
+            "y": -472.75590551,
+            "id": "0f05192bdf7c7dc4-e8"
+          },
+          {
+            "number": "7",
+            "name": "D",
+            "type": "Undefined",
+            "x": 352.83464567,
+            "y": -482.75590551,
+            "id": "0f05192bdf7c7dc4-e12"
+          },
+          {
+            "number": "6",
+            "name": "D",
+            "type": "Undefined",
+            "x": 352.83464567,
+            "y": -492.75590551,
+            "id": "0f05192bdf7c7dc4-e16"
+          },
+          {
+            "number": "5",
+            "name": "D",
+            "type": "Undefined",
+            "x": 352.83464567,
+            "y": -502.75590551,
+            "id": "0f05192bdf7c7dc4-e20"
+          },
+          {
+            "number": "4",
+            "name": "G",
+            "type": "Undefined",
+            "x": 292.83464567,
+            "y": -502.75590551,
+            "id": "0f05192bdf7c7dc4-e24"
+          },
+          {
+            "number": "3",
+            "name": "S",
+            "type": "Undefined",
+            "x": 292.83464567,
+            "y": -492.75590551,
+            "id": "0f05192bdf7c7dc4-e28"
+          },
+          {
+            "number": "2",
+            "name": "S",
+            "type": "Undefined",
+            "x": 292.83464567,
+            "y": -482.75590551,
+            "id": "0f05192bdf7c7dc4-e32"
+          },
+          {
+            "number": "1",
+            "name": "S",
+            "type": "Undefined",
+            "x": 292.83464567,
+            "y": -472.75590551,
+            "id": "0f05192bdf7c7dc4-e36"
+          }
+        ]
+      },
+      {
+        "id": "aae5b8153837d454",
+        "uniqueId": "gge21",
+        "designator": "Q2",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 322.83464567,
+        "y": -309.52755906,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "07421eb8bf5c9cab",
+          "name": "HYG053N10NS1C2"
+        },
+        "symbol": {
+          "uuid": "1203c2cbe9e7bf88",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "HYG053N10NS1C2"
+        },
+        "footprint": {
+          "uuid": "171caa8ca9fc7927",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "PDFN-8_L5.8-W5.0-P1.27-LS6.2-BL"
+        },
+        "pins": [
+          {
+            "number": "9",
+            "name": "D",
+            "type": "Undefined",
+            "x": 322.83464567,
+            "y": -279.52755906,
+            "id": "aae5b8153837d454-e3"
+          },
+          {
+            "number": "8",
+            "name": "D",
+            "type": "Undefined",
+            "x": 352.83464567,
+            "y": -299.52755906,
+            "id": "aae5b8153837d454-e8"
+          },
+          {
+            "number": "7",
+            "name": "D",
+            "type": "Undefined",
+            "x": 352.83464567,
+            "y": -309.52755906,
+            "id": "aae5b8153837d454-e12"
+          },
+          {
+            "number": "6",
+            "name": "D",
+            "type": "Undefined",
+            "x": 352.83464567,
+            "y": -319.52755906,
+            "id": "aae5b8153837d454-e16"
+          },
+          {
+            "number": "5",
+            "name": "D",
+            "type": "Undefined",
+            "x": 352.83464567,
+            "y": -329.52755906,
+            "id": "aae5b8153837d454-e20"
+          },
+          {
+            "number": "4",
+            "name": "G",
+            "type": "Undefined",
+            "x": 292.83464567,
+            "y": -329.52755906,
+            "id": "aae5b8153837d454-e24"
+          },
+          {
+            "number": "3",
+            "name": "S",
+            "type": "Undefined",
+            "x": 292.83464567,
+            "y": -319.52755906,
+            "id": "aae5b8153837d454-e28"
+          },
+          {
+            "number": "2",
+            "name": "S",
+            "type": "Undefined",
+            "x": 292.83464567,
+            "y": -309.52755906,
+            "id": "aae5b8153837d454-e32"
+          },
+          {
+            "number": "1",
+            "name": "S",
+            "type": "Undefined",
+            "x": 292.83464567,
+            "y": -299.52755906,
+            "id": "aae5b8153837d454-e36"
+          }
+        ]
+      },
+      {
+        "id": "b16e77f406534dff",
+        "uniqueId": "gge22",
+        "designator": "U5",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 330.70866142,
+        "y": -1706.2992126,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "abbdb8ac587d23c9",
+          "name": "HC32F005C6PA-TSSOP20TR"
+        },
+        "symbol": {
+          "uuid": "8349d6346a6b5f24",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "HC32F005C6PA-TSSOP20TR"
+        },
+        "footprint": {
+          "uuid": "7807f990e1999885",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TSSOP-20_L6.5-W4.4-P0.65-LS6.4-BL"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "AIN4/VCIN4/P34",
+            "type": "Undefined",
+            "x": 190.70866142,
+            "y": -1661.2992126,
+            "id": "b16e77f406534dff-e5"
+          },
+          {
+            "number": "2",
+            "name": "AIN5/VCIN5/P35",
+            "type": "Undefined",
+            "x": 190.70866142,
+            "y": -1671.2992126,
+            "id": "b16e77f406534dff-e9"
+          },
+          {
+            "number": "3",
+            "name": "AIN6/VCIN6/AVREF/P36",
+            "type": "Undefined",
+            "x": 190.70866142,
+            "y": -1681.2992126,
+            "id": "b16e77f406534dff-e13"
+          },
+          {
+            "number": "4",
+            "name": "RESETB/P00",
+            "type": "Undefined",
+            "x": 190.70866142,
+            "y": -1691.2992126,
+            "id": "b16e77f406534dff-e17"
+          },
+          {
+            "number": "5",
+            "name": "XTHI/AIN7/VCIN7/P01",
+            "type": "Undefined",
+            "x": 190.70866142,
+            "y": -1701.2992126,
+            "id": "b16e77f406534dff-e21"
+          },
+          {
+            "number": "6",
+            "name": "XTHO/AIN8/P02",
+            "type": "Undefined",
+            "x": 190.70866142,
+            "y": -1711.2992126,
+            "id": "b16e77f406534dff-e25"
+          },
+          {
+            "number": "7",
+            "name": "AVSS/DVSS",
+            "type": "Undefined",
+            "x": 190.70866142,
+            "y": -1721.2992126,
+            "id": "b16e77f406534dff-e29"
+          },
+          {
+            "number": "8",
+            "name": "VCAP",
+            "type": "Undefined",
+            "x": 190.70866142,
+            "y": -1731.2992126,
+            "id": "b16e77f406534dff-e33"
+          },
+          {
+            "number": "9",
+            "name": "AVCC/DVCC",
+            "type": "Undefined",
+            "x": 190.70866142,
+            "y": -1741.2992126,
+            "id": "b16e77f406534dff-e37"
+          },
+          {
+            "number": "10",
+            "name": "LVDIN1/P03",
+            "type": "Undefined",
+            "x": 190.70866142,
+            "y": -1751.2992126,
+            "id": "b16e77f406534dff-e41"
+          },
+          {
+            "number": "11",
+            "name": "P15",
+            "type": "Undefined",
+            "x": 470.70866142,
+            "y": -1751.2992126,
+            "id": "b16e77f406534dff-e45"
+          },
+          {
+            "number": "12",
+            "name": "P14",
+            "type": "Undefined",
+            "x": 470.70866142,
+            "y": -1741.2992126,
+            "id": "b16e77f406534dff-e49"
+          },
+          {
+            "number": "13",
+            "name": "P23/LVDIN2/VCIN0",
+            "type": "Undefined",
+            "x": 470.70866142,
+            "y": -1731.2992126,
+            "id": "b16e77f406534dff-e53"
+          },
+          {
+            "number": "14",
+            "name": "P24/AIN0",
+            "type": "Undefined",
+            "x": 470.70866142,
+            "y": -1721.2992126,
+            "id": "b16e77f406534dff-e57"
+          },
+          {
+            "number": "15",
+            "name": "P25/LVDIN3/VC1",
+            "type": "Undefined",
+            "x": 470.70866142,
+            "y": -1711.2992126,
+            "id": "b16e77f406534dff-e61"
+          },
+          {
+            "number": "16",
+            "name": "P26/AIN1",
+            "type": "Undefined",
+            "x": 470.70866142,
+            "y": -1701.2992126,
+            "id": "b16e77f406534dff-e65"
+          },
+          {
+            "number": "17",
+            "name": "P27/SWDIO",
+            "type": "Undefined",
+            "x": 470.70866142,
+            "y": -1691.2992126,
+            "id": "b16e77f406534dff-e69"
+          },
+          {
+            "number": "18",
+            "name": "P31/SWCLK",
+            "type": "Undefined",
+            "x": 470.70866142,
+            "y": -1681.2992126,
+            "id": "b16e77f406534dff-e73"
+          },
+          {
+            "number": "19",
+            "name": "P32/AIN2/VCIN2",
+            "type": "Undefined",
+            "x": 470.70866142,
+            "y": -1671.2992126,
+            "id": "b16e77f406534dff-e77"
+          },
+          {
+            "number": "20",
+            "name": "P33/AIN3/VCIN3",
+            "type": "Undefined",
+            "x": 470.70866142,
+            "y": -1661.2992126,
+            "id": "b16e77f406534dff-e81"
+          }
+        ]
+      },
+      {
+        "id": "dc4c316ff843b4e5",
+        "uniqueId": "gge23",
+        "designator": "C26",
+        "name": "={Value}",
+        "value": "",
+        "x": 407.48031496,
+        "y": -1362.00787402,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b9bf7cde621c4291",
+          "name": "CL10B102KB8NNNC"
+        },
+        "symbol": {
+          "uuid": "35e361f08321d40c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B102KB8NNNC"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 407.48031496,
+            "y": -1347.00787402,
+            "id": "dc4c316ff843b4e5-e5"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 407.48031496,
+            "y": -1377.00787402,
+            "id": "dc4c316ff843b4e5-e9"
+          }
+        ]
+      },
+      {
+        "id": "6f49767d68f1a6fd",
+        "uniqueId": "gge24",
+        "designator": "R26",
+        "name": "={Value}",
+        "value": "",
+        "x": 407.48031496,
+        "y": -1161.61417323,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "9c69ebd6262f64f6",
+          "name": "FRC0603F1001TS"
+        },
+        "symbol": {
+          "uuid": "aff354432c29a26f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F1001TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 407.48031496,
+            "y": -1181.61417323,
+            "id": "6f49767d68f1a6fd-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 407.48031496,
+            "y": -1141.61417323,
+            "id": "6f49767d68f1a6fd-e8"
+          }
+        ]
+      },
+      {
+        "id": "d4e7d4572902b618",
+        "uniqueId": "gge25",
+        "designator": "R23",
+        "name": "={Value}",
+        "value": "",
+        "x": 407.48031496,
+        "y": -961.22047244,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "86cd9b91454c4e82",
+          "name": "FRC0603F1003TS"
+        },
+        "symbol": {
+          "uuid": "5ad20aa402a61fd8",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F1003TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 407.48031496,
+            "y": -981.2204724399999,
+            "id": "d4e7d4572902b618-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 407.48031496,
+            "y": -941.2204724399999,
+            "id": "d4e7d4572902b618-e8"
+          }
+        ]
+      },
+      {
+        "id": "e28273c90e98ffd8",
+        "uniqueId": "gge26",
+        "designator": "R3",
+        "name": "={Value}",
+        "value": "",
+        "x": 440.94488189,
+        "y": -640.98425197,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "d7030197892f4edf",
+          "name": "0603WAF100JT5E"
+        },
+        "symbol": {
+          "uuid": "e98f7277cf33ef78",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF100JT5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 440.94488189000003,
+            "y": -660.98425197,
+            "id": "e28273c90e98ffd8-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 440.94488189000003,
+            "y": -620.98425197,
+            "id": "e28273c90e98ffd8-e7"
+          }
+        ]
+      },
+      {
+        "id": "41b705e9adc61de5",
+        "uniqueId": "gge27",
+        "designator": "R2",
+        "name": "={Value}",
+        "value": "",
+        "x": 440.94488189,
+        "y": -467.75590551,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "d7030197892f4edf",
+          "name": "0603WAF100JT5E"
+        },
+        "symbol": {
+          "uuid": "e98f7277cf33ef78",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF100JT5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 440.94488189000003,
+            "y": -487.75590551,
+            "id": "41b705e9adc61de5-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 440.94488189000003,
+            "y": -447.75590551,
+            "id": "41b705e9adc61de5-e7"
+          }
+        ]
+      },
+      {
+        "id": "37124f09d04464ab",
+        "uniqueId": "gge28",
+        "designator": "R5",
+        "name": "={Value}",
+        "value": "",
+        "x": 440.94488189,
+        "y": -294.52755906,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "d7030197892f4edf",
+          "name": "0603WAF100JT5E"
+        },
+        "symbol": {
+          "uuid": "e98f7277cf33ef78",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF100JT5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 440.9448818899999,
+            "y": -314.52755906,
+            "id": "37124f09d04464ab-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 440.9448818899999,
+            "y": -274.52755906,
+            "id": "37124f09d04464ab-e7"
+          }
+        ]
+      },
+      {
+        "id": "cc8d894a5d4a3d79",
+        "uniqueId": "gge29",
+        "designator": "TP6",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 488.18897638,
+        "y": -1751.2992126,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "456342b52546487b",
+          "name": "S2761-46R"
+        },
+        "symbol": {
+          "uuid": "1de82f477bef688f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2761-46R"
+        },
+        "footprint": {
+          "uuid": "de84ff422b608a17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TESTPOINT-SMD_L1.6-W0.8_RCU-0C"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 468.18897638,
+            "y": -1751.2992126,
+            "id": "cc8d894a5d4a3d79-e5"
+          }
+        ]
+      },
+      {
+        "id": "7f06e777106427d9",
+        "uniqueId": "gge30",
+        "designator": "TP3",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 488.18897638,
+        "y": -1701.2992126,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "456342b52546487b",
+          "name": "S2761-46R"
+        },
+        "symbol": {
+          "uuid": "1de82f477bef688f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2761-46R"
+        },
+        "footprint": {
+          "uuid": "de84ff422b608a17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TESTPOINT-SMD_L1.6-W0.8_RCU-0C"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 468.18897638,
+            "y": -1701.2992126,
+            "id": "7f06e777106427d9-e5"
+          }
+        ]
+      },
+      {
+        "id": "5b04a897840796fa",
+        "uniqueId": "gge31",
+        "designator": "C27",
+        "name": "={Value}",
+        "value": "",
+        "x": 501.41732283,
+        "y": -1362.00787402,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b9bf7cde621c4291",
+          "name": "CL10B102KB8NNNC"
+        },
+        "symbol": {
+          "uuid": "35e361f08321d40c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B102KB8NNNC"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 501.4173228299999,
+            "y": -1347.00787402,
+            "id": "5b04a897840796fa-e5"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 501.4173228299999,
+            "y": -1377.00787402,
+            "id": "5b04a897840796fa-e9"
+          }
+        ]
+      },
+      {
+        "id": "fb5e0a26c507a908",
+        "uniqueId": "gge32",
+        "designator": "R27",
+        "name": "={Value}",
+        "value": "",
+        "x": 501.41732283,
+        "y": -1161.61417323,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "9c69ebd6262f64f6",
+          "name": "FRC0603F1001TS"
+        },
+        "symbol": {
+          "uuid": "aff354432c29a26f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F1001TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 501.4173228299999,
+            "y": -1181.61417323,
+            "id": "fb5e0a26c507a908-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 501.4173228299999,
+            "y": -1141.61417323,
+            "id": "fb5e0a26c507a908-e8"
+          }
+        ]
+      },
+      {
+        "id": "f1a987e495fdde7b",
+        "uniqueId": "gge33",
+        "designator": "R24",
+        "name": "={Value}",
+        "value": "",
+        "x": 501.41732283,
+        "y": -961.22047244,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "86cd9b91454c4e82",
+          "name": "FRC0603F1003TS"
+        },
+        "symbol": {
+          "uuid": "5ad20aa402a61fd8",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F1003TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 501.4173228299999,
+            "y": -981.22047244,
+            "id": "f1a987e495fdde7b-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 501.4173228299999,
+            "y": -941.22047244,
+            "id": "f1a987e495fdde7b-e8"
+          }
+        ]
+      },
+      {
+        "id": "c95e2ed29c1b0eba",
+        "uniqueId": "gge34",
+        "designator": "R9",
+        "name": "={Value}",
+        "value": "",
+        "x": 503.93700787,
+        "y": -670.98425197,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "4795ea800451f1a3",
+          "name": "0603WAF2002T5E"
+        },
+        "symbol": {
+          "uuid": "cb034f8a7fcdb0d7",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF2002T5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 503.9370078699999,
+            "y": -690.98425197,
+            "id": "c95e2ed29c1b0eba-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 503.9370078699999,
+            "y": -650.98425197,
+            "id": "c95e2ed29c1b0eba-e7"
+          }
+        ]
+      },
+      {
+        "id": "84cc575d934c55f1",
+        "uniqueId": "gge35",
+        "designator": "R8",
+        "name": "={Value}",
+        "value": "",
+        "x": 503.93700787,
+        "y": -497.75590551,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "4795ea800451f1a3",
+          "name": "0603WAF2002T5E"
+        },
+        "symbol": {
+          "uuid": "cb034f8a7fcdb0d7",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF2002T5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 503.93700787000006,
+            "y": -517.75590551,
+            "id": "84cc575d934c55f1-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 503.93700787000006,
+            "y": -477.75590551,
+            "id": "84cc575d934c55f1-e7"
+          }
+        ]
+      },
+      {
+        "id": "e818d0f6c40ccffb",
+        "uniqueId": "gge36",
+        "designator": "R13",
+        "name": "={Value}",
+        "value": "",
+        "x": 503.93700787,
+        "y": -324.52755906,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "4795ea800451f1a3",
+          "name": "0603WAF2002T5E"
+        },
+        "symbol": {
+          "uuid": "cb034f8a7fcdb0d7",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF2002T5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 503.93700786999995,
+            "y": -344.52755906,
+            "id": "e818d0f6c40ccffb-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 503.93700786999995,
+            "y": -304.52755906,
+            "id": "e818d0f6c40ccffb-e7"
+          }
+        ]
+      },
+      {
+        "id": "5119abad0f76c9f2",
+        "uniqueId": "gge37",
+        "designator": "TP4",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 547.24409449,
+        "y": -1691.2992126,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "456342b52546487b",
+          "name": "S2761-46R"
+        },
+        "symbol": {
+          "uuid": "1de82f477bef688f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2761-46R"
+        },
+        "footprint": {
+          "uuid": "de84ff422b608a17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TESTPOINT-SMD_L1.6-W0.8_RCU-0C"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 527.24409449,
+            "y": -1691.2992126,
+            "id": "5119abad0f76c9f2-e5"
+          }
+        ]
+      },
+      {
+        "id": "9c36812b8ebe3cb8",
+        "uniqueId": "gge38",
+        "designator": "R28",
+        "name": "={Value}",
+        "value": "",
+        "x": 595.31496063,
+        "y": -1161.61417323,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "9c69ebd6262f64f6",
+          "name": "FRC0603F1001TS"
+        },
+        "symbol": {
+          "uuid": "aff354432c29a26f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F1001TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 595.3149606300001,
+            "y": -1181.61417323,
+            "id": "9c36812b8ebe3cb8-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 595.3149606300001,
+            "y": -1141.61417323,
+            "id": "9c36812b8ebe3cb8-e8"
+          }
+        ]
+      },
+      {
+        "id": "8f9683bf3efe0a23",
+        "uniqueId": "gge39",
+        "designator": "R25",
+        "name": "={Value}",
+        "value": "",
+        "x": 595.31496063,
+        "y": -961.22047244,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "86cd9b91454c4e82",
+          "name": "FRC0603F1003TS"
+        },
+        "symbol": {
+          "uuid": "5ad20aa402a61fd8",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F1003TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 595.3149606300001,
+            "y": -981.22047244,
+            "id": "8f9683bf3efe0a23-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 595.3149606300001,
+            "y": -941.22047244,
+            "id": "8f9683bf3efe0a23-e8"
+          }
+        ]
+      },
+      {
+        "id": "64f3b7881d560258",
+        "uniqueId": "gge40",
+        "designator": "Q4",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 606.2992126,
+        "y": -655.98425197,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "07421eb8bf5c9cab",
+          "name": "HYG053N10NS1C2"
+        },
+        "symbol": {
+          "uuid": "1203c2cbe9e7bf88",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "HYG053N10NS1C2"
+        },
+        "footprint": {
+          "uuid": "171caa8ca9fc7927",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "PDFN-8_L5.8-W5.0-P1.27-LS6.2-BL"
+        },
+        "pins": [
+          {
+            "number": "9",
+            "name": "D",
+            "type": "Undefined",
+            "x": 606.2992126,
+            "y": -625.98425197,
+            "id": "64f3b7881d560258-e3"
+          },
+          {
+            "number": "8",
+            "name": "D",
+            "type": "Undefined",
+            "x": 636.2992126,
+            "y": -645.98425197,
+            "id": "64f3b7881d560258-e8"
+          },
+          {
+            "number": "7",
+            "name": "D",
+            "type": "Undefined",
+            "x": 636.2992126,
+            "y": -655.98425197,
+            "id": "64f3b7881d560258-e12"
+          },
+          {
+            "number": "6",
+            "name": "D",
+            "type": "Undefined",
+            "x": 636.2992126,
+            "y": -665.98425197,
+            "id": "64f3b7881d560258-e16"
+          },
+          {
+            "number": "5",
+            "name": "D",
+            "type": "Undefined",
+            "x": 636.2992126,
+            "y": -675.98425197,
+            "id": "64f3b7881d560258-e20"
+          },
+          {
+            "number": "4",
+            "name": "G",
+            "type": "Undefined",
+            "x": 576.2992126,
+            "y": -675.98425197,
+            "id": "64f3b7881d560258-e24"
+          },
+          {
+            "number": "3",
+            "name": "S",
+            "type": "Undefined",
+            "x": 576.2992126,
+            "y": -665.98425197,
+            "id": "64f3b7881d560258-e28"
+          },
+          {
+            "number": "2",
+            "name": "S",
+            "type": "Undefined",
+            "x": 576.2992126,
+            "y": -655.98425197,
+            "id": "64f3b7881d560258-e32"
+          },
+          {
+            "number": "1",
+            "name": "S",
+            "type": "Undefined",
+            "x": 576.2992126,
+            "y": -645.98425197,
+            "id": "64f3b7881d560258-e36"
+          }
+        ]
+      },
+      {
+        "id": "6e79b4cc54abe363",
+        "uniqueId": "gge41",
+        "designator": "Q5",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 606.2992126,
+        "y": -482.75590551,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "07421eb8bf5c9cab",
+          "name": "HYG053N10NS1C2"
+        },
+        "symbol": {
+          "uuid": "1203c2cbe9e7bf88",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "HYG053N10NS1C2"
+        },
+        "footprint": {
+          "uuid": "171caa8ca9fc7927",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "PDFN-8_L5.8-W5.0-P1.27-LS6.2-BL"
+        },
+        "pins": [
+          {
+            "number": "9",
+            "name": "D",
+            "type": "Undefined",
+            "x": 606.2992126,
+            "y": -452.75590551,
+            "id": "6e79b4cc54abe363-e3"
+          },
+          {
+            "number": "8",
+            "name": "D",
+            "type": "Undefined",
+            "x": 636.2992126,
+            "y": -472.75590551,
+            "id": "6e79b4cc54abe363-e8"
+          },
+          {
+            "number": "7",
+            "name": "D",
+            "type": "Undefined",
+            "x": 636.2992126,
+            "y": -482.75590551,
+            "id": "6e79b4cc54abe363-e12"
+          },
+          {
+            "number": "6",
+            "name": "D",
+            "type": "Undefined",
+            "x": 636.2992126,
+            "y": -492.75590551,
+            "id": "6e79b4cc54abe363-e16"
+          },
+          {
+            "number": "5",
+            "name": "D",
+            "type": "Undefined",
+            "x": 636.2992126,
+            "y": -502.75590551,
+            "id": "6e79b4cc54abe363-e20"
+          },
+          {
+            "number": "4",
+            "name": "G",
+            "type": "Undefined",
+            "x": 576.2992126,
+            "y": -502.75590551,
+            "id": "6e79b4cc54abe363-e24"
+          },
+          {
+            "number": "3",
+            "name": "S",
+            "type": "Undefined",
+            "x": 576.2992126,
+            "y": -492.75590551,
+            "id": "6e79b4cc54abe363-e28"
+          },
+          {
+            "number": "2",
+            "name": "S",
+            "type": "Undefined",
+            "x": 576.2992126,
+            "y": -482.75590551,
+            "id": "6e79b4cc54abe363-e32"
+          },
+          {
+            "number": "1",
+            "name": "S",
+            "type": "Undefined",
+            "x": 576.2992126,
+            "y": -472.75590551,
+            "id": "6e79b4cc54abe363-e36"
+          }
+        ]
+      },
+      {
+        "id": "d50c023595477b1c",
+        "uniqueId": "gge42",
+        "designator": "Q3",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 606.2992126,
+        "y": -309.52755906,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "07421eb8bf5c9cab",
+          "name": "HYG053N10NS1C2"
+        },
+        "symbol": {
+          "uuid": "1203c2cbe9e7bf88",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "HYG053N10NS1C2"
+        },
+        "footprint": {
+          "uuid": "171caa8ca9fc7927",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "PDFN-8_L5.8-W5.0-P1.27-LS6.2-BL"
+        },
+        "pins": [
+          {
+            "number": "9",
+            "name": "D",
+            "type": "Undefined",
+            "x": 606.2992126,
+            "y": -279.52755906,
+            "id": "d50c023595477b1c-e3"
+          },
+          {
+            "number": "8",
+            "name": "D",
+            "type": "Undefined",
+            "x": 636.2992126,
+            "y": -299.52755906,
+            "id": "d50c023595477b1c-e8"
+          },
+          {
+            "number": "7",
+            "name": "D",
+            "type": "Undefined",
+            "x": 636.2992126,
+            "y": -309.52755906,
+            "id": "d50c023595477b1c-e12"
+          },
+          {
+            "number": "6",
+            "name": "D",
+            "type": "Undefined",
+            "x": 636.2992126,
+            "y": -319.52755906,
+            "id": "d50c023595477b1c-e16"
+          },
+          {
+            "number": "5",
+            "name": "D",
+            "type": "Undefined",
+            "x": 636.2992126,
+            "y": -329.52755906,
+            "id": "d50c023595477b1c-e20"
+          },
+          {
+            "number": "4",
+            "name": "G",
+            "type": "Undefined",
+            "x": 576.2992126,
+            "y": -329.52755906,
+            "id": "d50c023595477b1c-e24"
+          },
+          {
+            "number": "3",
+            "name": "S",
+            "type": "Undefined",
+            "x": 576.2992126,
+            "y": -319.52755906,
+            "id": "d50c023595477b1c-e28"
+          },
+          {
+            "number": "2",
+            "name": "S",
+            "type": "Undefined",
+            "x": 576.2992126,
+            "y": -309.52755906,
+            "id": "d50c023595477b1c-e32"
+          },
+          {
+            "number": "1",
+            "name": "S",
+            "type": "Undefined",
+            "x": 576.2992126,
+            "y": -299.52755906,
+            "id": "d50c023595477b1c-e36"
+          }
+        ]
+      },
+      {
+        "id": "739f68b0190e56c6",
+        "uniqueId": "gge43",
+        "designator": "C21",
+        "name": "={Value}",
+        "value": "",
+        "x": 689.2519685,
+        "y": -1161.61417323,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b9bf7cde621c4291",
+          "name": "CL10B102KB8NNNC"
+        },
+        "symbol": {
+          "uuid": "35e361f08321d40c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B102KB8NNNC"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 689.2519685,
+            "y": -1146.61417323,
+            "id": "739f68b0190e56c6-e5"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 689.2519685,
+            "y": -1176.61417323,
+            "id": "739f68b0190e56c6-e9"
+          }
+        ]
+      },
+      {
+        "id": "d1accc0c674343d9",
+        "uniqueId": "gge44",
+        "designator": "C24",
+        "name": "={Value}",
+        "value": "",
+        "x": 689.2519685,
+        "y": -961.22047244,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "446a5145cfa23060",
+          "name": "CC0603JRNPO9BN271"
+        },
+        "symbol": {
+          "uuid": "d5c28bec32eeb278",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CC0603JRNPO9BN271"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 689.2519685,
+            "y": -946.22047244,
+            "id": "d1accc0c674343d9-e5"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 689.2519685,
+            "y": -976.22047244,
+            "id": "d1accc0c674343d9-e9"
+          }
+        ]
+      },
+      {
+        "id": "6a3aa68c325aa3c4",
+        "uniqueId": "gge45",
+        "designator": "TP15",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 755.90551181,
+        "y": -1867.71653543,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "456342b52546487b",
+          "name": "S2761-46R"
+        },
+        "symbol": {
+          "uuid": "1de82f477bef688f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2761-46R"
+        },
+        "footprint": {
+          "uuid": "de84ff422b608a17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TESTPOINT-SMD_L1.6-W0.8_RCU-0C"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 735.90551181,
+            "y": -1867.71653543,
+            "id": "6a3aa68c325aa3c4-e5"
+          }
+        ]
+      },
+      {
+        "id": "d4015853018f7636",
+        "uniqueId": "gge46",
+        "designator": "TP8",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 755.90551181,
+        "y": -1777.16535433,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "456342b52546487b",
+          "name": "S2761-46R"
+        },
+        "symbol": {
+          "uuid": "1de82f477bef688f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2761-46R"
+        },
+        "footprint": {
+          "uuid": "de84ff422b608a17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TESTPOINT-SMD_L1.6-W0.8_RCU-0C"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 735.90551181,
+            "y": -1777.16535433,
+            "id": "d4015853018f7636-e5"
+          }
+        ]
+      },
+      {
+        "id": "e402104330b9a992",
+        "uniqueId": "gge47",
+        "designator": "TP1",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 755.90551181,
+        "y": -1682.67716535,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "456342b52546487b",
+          "name": "S2761-46R"
+        },
+        "symbol": {
+          "uuid": "1de82f477bef688f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2761-46R"
+        },
+        "footprint": {
+          "uuid": "de84ff422b608a17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TESTPOINT-SMD_L1.6-W0.8_RCU-0C"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 735.90551181,
+            "y": -1682.67716535,
+            "id": "e402104330b9a992-e5"
+          }
+        ]
+      },
+      {
+        "id": "4ce4360730e1ea2e",
+        "uniqueId": "gge48",
+        "designator": "C44",
+        "name": "={Value}",
+        "value": "",
+        "x": 850.39370079,
+        "y": -1588.18897638,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "29415c0175ee489e",
+          "name": "FCC0603B104K500CT"
+        },
+        "symbol": {
+          "uuid": "8593560617e7a582",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FCC0603B104K500CT"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 850.3937007900001,
+            "y": -1568.18897638,
+            "id": "4ce4360730e1ea2e-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 850.3937007900001,
+            "y": -1608.18897638,
+            "id": "4ce4360730e1ea2e-e10"
+          }
+        ]
+      },
+      {
+        "id": "5b93de9d43ab1150",
+        "uniqueId": "gge49",
+        "designator": "R41",
+        "name": "={Value}",
+        "value": "",
+        "x": 901.25984252,
+        "y": -1311.92913386,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "926548c082090d92",
+          "name": "0603WAF1002T5E"
+        },
+        "symbol": {
+          "uuid": "792c2d457a78af4c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1002T5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 901.2598425200001,
+            "y": -1331.92913386,
+            "id": "5b93de9d43ab1150-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 901.2598425200001,
+            "y": -1291.92913386,
+            "id": "5b93de9d43ab1150-e7"
+          }
+        ]
+      },
+      {
+        "id": "401d3fe4d8180e03",
+        "uniqueId": "gge50",
+        "designator": "R35",
+        "name": "={Value}",
+        "value": "",
+        "x": 901.25984252,
+        "y": -1011.33858268,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "33362ce4ab8fa630",
+          "name": "FRC0603F1000TS"
+        },
+        "symbol": {
+          "uuid": "faa749b87b437bab",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F1000TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 901.25984252,
+            "y": -1031.33858268,
+            "id": "401d3fe4d8180e03-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 901.25984252,
+            "y": -991.33858268,
+            "id": "401d3fe4d8180e03-e8"
+          }
+        ]
+      },
+      {
+        "id": "c6c51dae674c1beb",
+        "uniqueId": "gge51",
+        "designator": "C45",
+        "name": "={Value}",
+        "value": "",
+        "x": 944.88188976,
+        "y": -1588.18897638,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "0212d171efc822fd",
+          "name": "CL10A105KB8NNNC"
+        },
+        "symbol": {
+          "uuid": "d6ed0e9c717a6cf5",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10A105KB8NNNC"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 944.8818897600001,
+            "y": -1608.18897638,
+            "id": "c6c51dae674c1beb-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 944.8818897600001,
+            "y": -1568.18897638,
+            "id": "c6c51dae674c1beb-e10"
+          }
+        ]
+      },
+      {
+        "id": "9fdfc557e4aa76bf",
+        "uniqueId": "gge52",
+        "designator": "TP16",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 968.50393701,
+        "y": -1867.71653543,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "456342b52546487b",
+          "name": "S2761-46R"
+        },
+        "symbol": {
+          "uuid": "1de82f477bef688f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2761-46R"
+        },
+        "footprint": {
+          "uuid": "de84ff422b608a17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TESTPOINT-SMD_L1.6-W0.8_RCU-0C"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 948.50393701,
+            "y": -1867.71653543,
+            "id": "9fdfc557e4aa76bf-e5"
+          }
+        ]
+      },
+      {
+        "id": "a5571144d62546f5",
+        "uniqueId": "gge53",
+        "designator": "TP9",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 968.50393701,
+        "y": -1777.16535433,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "456342b52546487b",
+          "name": "S2761-46R"
+        },
+        "symbol": {
+          "uuid": "1de82f477bef688f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2761-46R"
+        },
+        "footprint": {
+          "uuid": "de84ff422b608a17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TESTPOINT-SMD_L1.6-W0.8_RCU-0C"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 948.50393701,
+            "y": -1777.16535433,
+            "id": "a5571144d62546f5-e5"
+          }
+        ]
+      },
+      {
+        "id": "131b69ba5bb2b874",
+        "uniqueId": "gge54",
+        "designator": "TP2",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 968.50393701,
+        "y": -1682.67716535,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "456342b52546487b",
+          "name": "S2761-46R"
+        },
+        "symbol": {
+          "uuid": "1de82f477bef688f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2761-46R"
+        },
+        "footprint": {
+          "uuid": "de84ff422b608a17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TESTPOINT-SMD_L1.6-W0.8_RCU-0C"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 948.50393701,
+            "y": -1682.67716535,
+            "id": "131b69ba5bb2b874-e5"
+          }
+        ]
+      },
+      {
+        "id": "317dfcc7ad0eaa1e",
+        "uniqueId": "gge55",
+        "designator": "R42",
+        "name": "={Value}",
+        "value": "",
+        "x": 1010.82677165,
+        "y": -1311.92913386,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "926548c082090d92",
+          "name": "0603WAF1002T5E"
+        },
+        "symbol": {
+          "uuid": "792c2d457a78af4c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1002T5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 1010.8267716499997,
+            "y": -1331.92913386,
+            "id": "317dfcc7ad0eaa1e-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 1010.8267716499997,
+            "y": -1291.92913386,
+            "id": "317dfcc7ad0eaa1e-e7"
+          }
+        ]
+      },
+      {
+        "id": "327603a73a9921d7",
+        "uniqueId": "gge56",
+        "designator": "R36",
+        "name": "={Value}",
+        "value": "",
+        "x": 1010.82677165,
+        "y": -1011.33858268,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "33362ce4ab8fa630",
+          "name": "FRC0603F1000TS"
+        },
+        "symbol": {
+          "uuid": "faa749b87b437bab",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F1000TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1010.82677165,
+            "y": -1031.33858268,
+            "id": "327603a73a9921d7-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1010.82677165,
+            "y": -991.33858268,
+            "id": "327603a73a9921d7-e8"
+          }
+        ]
+      },
+      {
+        "id": "b8fbe9610c286543",
+        "uniqueId": "gge57",
+        "designator": "U1",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 1062.99212598,
+        "y": -448.81889764,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "da48994ab6239f2c",
+          "name": "FD6288T"
+        },
+        "symbol": {
+          "uuid": "e1c013eeba173f6a",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FD6288"
+        },
+        "footprint": {
+          "uuid": "7807f990e1999885",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TSSOP-20_L6.5-W4.4-P0.65-LS6.4-BL"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "HIN1",
+            "type": "Undefined",
+            "x": 982.9921259800001,
+            "y": -478.81889764,
+            "id": "b8fbe9610c286543-e4"
+          },
+          {
+            "number": "2",
+            "name": "HIN2",
+            "type": "Undefined",
+            "x": 982.9921259800001,
+            "y": -428.81889764,
+            "id": "b8fbe9610c286543-e8"
+          },
+          {
+            "number": "3",
+            "name": "HIN3",
+            "type": "Undefined",
+            "x": 982.9921259800001,
+            "y": -378.81889764,
+            "id": "b8fbe9610c286543-e12"
+          },
+          {
+            "number": "4",
+            "name": "LIN1",
+            "type": "Undefined",
+            "x": 982.9921259800001,
+            "y": -488.81889764,
+            "id": "b8fbe9610c286543-e16"
+          },
+          {
+            "number": "5",
+            "name": "LIN2",
+            "type": "Undefined",
+            "x": 982.9921259800001,
+            "y": -438.81889764,
+            "id": "b8fbe9610c286543-e20"
+          },
+          {
+            "number": "6",
+            "name": "LIN3",
+            "type": "Undefined",
+            "x": 982.9921259800001,
+            "y": -388.81889764,
+            "id": "b8fbe9610c286543-e24"
+          },
+          {
+            "number": "7",
+            "name": "VCC",
+            "type": "Undefined",
+            "x": 982.9921259800001,
+            "y": -518.8188976399999,
+            "id": "b8fbe9610c286543-e28"
+          },
+          {
+            "number": "8",
+            "name": "COM",
+            "type": "Undefined",
+            "x": 1142.99212598,
+            "y": -528.8188976399999,
+            "id": "b8fbe9610c286543-e32"
+          },
+          {
+            "number": "9",
+            "name": "LO3",
+            "type": "Undefined",
+            "x": 1142.99212598,
+            "y": -408.81889764,
+            "id": "b8fbe9610c286543-e36"
+          },
+          {
+            "number": "10",
+            "name": "LO2",
+            "type": "Undefined",
+            "x": 1142.99212598,
+            "y": -458.81889764,
+            "id": "b8fbe9610c286543-e40"
+          },
+          {
+            "number": "11",
+            "name": "LO1",
+            "type": "Undefined",
+            "x": 1142.99212598,
+            "y": -508.81889764,
+            "id": "b8fbe9610c286543-e44"
+          },
+          {
+            "number": "12",
+            "name": "VS3",
+            "type": "Undefined",
+            "x": 1142.99212598,
+            "y": -398.81889764,
+            "id": "b8fbe9610c286543-e48"
+          },
+          {
+            "number": "13",
+            "name": "HO3",
+            "type": "Undefined",
+            "x": 1142.99212598,
+            "y": -388.81889764,
+            "id": "b8fbe9610c286543-e52"
+          },
+          {
+            "number": "14",
+            "name": "VB3",
+            "type": "Undefined",
+            "x": 1142.99212598,
+            "y": -378.81889764,
+            "id": "b8fbe9610c286543-e56"
+          },
+          {
+            "number": "15",
+            "name": "VS2",
+            "type": "Undefined",
+            "x": 1142.99212598,
+            "y": -448.81889764,
+            "id": "b8fbe9610c286543-e60"
+          },
+          {
+            "number": "16",
+            "name": "HO2",
+            "type": "Undefined",
+            "x": 1142.99212598,
+            "y": -438.81889764,
+            "id": "b8fbe9610c286543-e64"
+          },
+          {
+            "number": "17",
+            "name": "VB2",
+            "type": "Undefined",
+            "x": 1142.99212598,
+            "y": -428.81889764,
+            "id": "b8fbe9610c286543-e68"
+          },
+          {
+            "number": "18",
+            "name": "VS1",
+            "type": "Undefined",
+            "x": 1142.99212598,
+            "y": -498.81889764,
+            "id": "b8fbe9610c286543-e72"
+          },
+          {
+            "number": "19",
+            "name": "HO1",
+            "type": "Undefined",
+            "x": 1142.99212598,
+            "y": -488.81889764,
+            "id": "b8fbe9610c286543-e76"
+          },
+          {
+            "number": "20",
+            "name": "VB1",
+            "type": "Undefined",
+            "x": 1142.99212598,
+            "y": -478.81889764,
+            "id": "b8fbe9610c286543-e80"
+          }
+        ]
+      },
+      {
+        "id": "4ac1c58a299b69ec",
+        "uniqueId": "gge58",
+        "designator": "R43",
+        "name": "={Value}",
+        "value": "",
+        "x": 1120.39370079,
+        "y": -1311.92913386,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "926548c082090d92",
+          "name": "0603WAF1002T5E"
+        },
+        "symbol": {
+          "uuid": "792c2d457a78af4c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1002T5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 1120.3937007899997,
+            "y": -1331.92913386,
+            "id": "4ac1c58a299b69ec-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 1120.3937007899997,
+            "y": -1291.92913386,
+            "id": "4ac1c58a299b69ec-e7"
+          }
+        ]
+      },
+      {
+        "id": "821b52dd4e81e929",
+        "uniqueId": "gge59",
+        "designator": "R37",
+        "name": "={Value}",
+        "value": "",
+        "x": 1120.39370079,
+        "y": -1011.33858268,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "33362ce4ab8fa630",
+          "name": "FRC0603F1000TS"
+        },
+        "symbol": {
+          "uuid": "faa749b87b437bab",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F1000TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1120.3937007899997,
+            "y": -1031.33858268,
+            "id": "821b52dd4e81e929-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1120.3937007899997,
+            "y": -991.33858268,
+            "id": "821b52dd4e81e929-e8"
+          }
+        ]
+      },
+      {
+        "id": "2dd0163e74c64800",
+        "uniqueId": "gge60",
+        "designator": "TP17",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 1181.1023622,
+        "y": -1867.71653543,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "456342b52546487b",
+          "name": "S2761-46R"
+        },
+        "symbol": {
+          "uuid": "1de82f477bef688f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2761-46R"
+        },
+        "footprint": {
+          "uuid": "de84ff422b608a17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TESTPOINT-SMD_L1.6-W0.8_RCU-0C"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1161.1023622,
+            "y": -1867.71653543,
+            "id": "2dd0163e74c64800-e5"
+          }
+        ]
+      },
+      {
+        "id": "2d264abc19a4e5d9",
+        "uniqueId": "gge61",
+        "designator": "TP10",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 1181.1023622,
+        "y": -1777.16535433,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "456342b52546487b",
+          "name": "S2761-46R"
+        },
+        "symbol": {
+          "uuid": "1de82f477bef688f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2761-46R"
+        },
+        "footprint": {
+          "uuid": "de84ff422b608a17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TESTPOINT-SMD_L1.6-W0.8_RCU-0C"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1161.1023622,
+            "y": -1777.16535433,
+            "id": "2d264abc19a4e5d9-e5"
+          }
+        ]
+      },
+      {
+        "id": "f8449e533abadfdf",
+        "uniqueId": "gge62",
+        "designator": "R47",
+        "name": "={Value}",
+        "value": "",
+        "x": 1188.97637795,
+        "y": -1588.18897638,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "d59ba7e6d1d81b71",
+          "name": "FRC0603F0000TS"
+        },
+        "symbol": {
+          "uuid": "6510afda1950f36a",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F0000TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1188.9763779499997,
+            "y": -1608.18897638,
+            "id": "f8449e533abadfdf-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1188.9763779499997,
+            "y": -1568.18897638,
+            "id": "f8449e533abadfdf-e8"
+          }
+        ]
+      },
+      {
+        "id": "7bcdcf89bfda6fef",
+        "uniqueId": "gge63",
+        "designator": "R44",
+        "name": "={Value}",
+        "value": "",
+        "x": 1230,
+        "y": -1311.92913386,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "926548c082090d92",
+          "name": "0603WAF1002T5E"
+        },
+        "symbol": {
+          "uuid": "792c2d457a78af4c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1002T5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 1230.0000000000002,
+            "y": -1331.92913386,
+            "id": "7bcdcf89bfda6fef-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 1230.0000000000002,
+            "y": -1291.92913386,
+            "id": "7bcdcf89bfda6fef-e7"
+          }
+        ]
+      },
+      {
+        "id": "aa874059314420f1",
+        "uniqueId": "gge64",
+        "designator": "R38",
+        "name": "={Value}",
+        "value": "",
+        "x": 1230,
+        "y": -1011.33858268,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "33362ce4ab8fa630",
+          "name": "FRC0603F1000TS"
+        },
+        "symbol": {
+          "uuid": "faa749b87b437bab",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F1000TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1230.0000000000002,
+            "y": -1031.33858268,
+            "id": "aa874059314420f1-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1230.0000000000002,
+            "y": -991.33858268,
+            "id": "aa874059314420f1-e8"
+          }
+        ]
+      },
+      {
+        "id": "34094c62f25d4b76",
+        "uniqueId": "gge65",
+        "designator": "D3",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 1271.65354331,
+        "y": -527.55905512,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b9df5755cbb0d5c4",
+          "name": "ES1D_C18199158"
+        },
+        "symbol": {
+          "uuid": "fb1ce820531c03e1",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "ES1D_C18199158"
+        },
+        "footprint": {
+          "uuid": "c690ebd351739b13",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "SMA_L4.3-W2.6-LS5.0-RD"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "A",
+            "type": "Undefined",
+            "x": 1271.65354331,
+            "y": -547.55905512,
+            "id": "34094c62f25d4b76-e3"
+          },
+          {
+            "number": "1",
+            "name": "K",
+            "type": "Undefined",
+            "x": 1271.65354331,
+            "y": -507.55905512000004,
+            "id": "34094c62f25d4b76-e7"
+          }
+        ]
+      },
+      {
+        "id": "27f79b5c37e6d55e",
+        "uniqueId": "gge66",
+        "designator": "D2",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 1271.65354331,
+        "y": -401.57480315,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b9df5755cbb0d5c4",
+          "name": "ES1D_C18199158"
+        },
+        "symbol": {
+          "uuid": "fb1ce820531c03e1",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "ES1D_C18199158"
+        },
+        "footprint": {
+          "uuid": "c690ebd351739b13",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "SMA_L4.3-W2.6-LS5.0-RD"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "A",
+            "type": "Undefined",
+            "x": 1271.65354331,
+            "y": -421.57480315,
+            "id": "27f79b5c37e6d55e-e3"
+          },
+          {
+            "number": "1",
+            "name": "K",
+            "type": "Undefined",
+            "x": 1271.65354331,
+            "y": -381.57480315,
+            "id": "27f79b5c37e6d55e-e7"
+          }
+        ]
+      },
+      {
+        "id": "62bd3581525b7cf7",
+        "uniqueId": "gge67",
+        "designator": "D1",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 1271.65354331,
+        "y": -275.59055118,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b9df5755cbb0d5c4",
+          "name": "ES1D_C18199158"
+        },
+        "symbol": {
+          "uuid": "fb1ce820531c03e1",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "ES1D_C18199158"
+        },
+        "footprint": {
+          "uuid": "c690ebd351739b13",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "SMA_L4.3-W2.6-LS5.0-RD"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "A",
+            "type": "Undefined",
+            "x": 1271.65354331,
+            "y": -295.5905511799999,
+            "id": "62bd3581525b7cf7-e3"
+          },
+          {
+            "number": "1",
+            "name": "K",
+            "type": "Undefined",
+            "x": 1271.65354331,
+            "y": -255.59055117999992,
+            "id": "62bd3581525b7cf7-e7"
+          }
+        ]
+      },
+      {
+        "id": "884b4ad7e07aa883",
+        "uniqueId": "gge68",
+        "designator": "R45",
+        "name": "={Value}",
+        "value": "",
+        "x": 1339.56692913,
+        "y": -1311.92913386,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "926548c082090d92",
+          "name": "0603WAF1002T5E"
+        },
+        "symbol": {
+          "uuid": "792c2d457a78af4c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1002T5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 1339.5669291300003,
+            "y": -1331.92913386,
+            "id": "884b4ad7e07aa883-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 1339.5669291300003,
+            "y": -1291.92913386,
+            "id": "884b4ad7e07aa883-e7"
+          }
+        ]
+      },
+      {
+        "id": "1a14eed3ab3b2a74",
+        "uniqueId": "gge69",
+        "designator": "R39",
+        "name": "={Value}",
+        "value": "",
+        "x": 1339.56692913,
+        "y": -1011.33858268,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "33362ce4ab8fa630",
+          "name": "FRC0603F1000TS"
+        },
+        "symbol": {
+          "uuid": "faa749b87b437bab",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F1000TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1339.5669291300003,
+            "y": -1031.33858268,
+            "id": "1a14eed3ab3b2a74-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1339.5669291300003,
+            "y": -991.33858268,
+            "id": "1a14eed3ab3b2a74-e8"
+          }
+        ]
+      },
+      {
+        "id": "1ecd176901429650",
+        "uniqueId": "gge70",
+        "designator": "C7",
+        "name": "={Value}",
+        "value": "",
+        "x": 1374.01574803,
+        "y": -527.55905512,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "5cf2b52d54c54718",
+          "name": "CC0603KRX7R9BB474"
+        },
+        "symbol": {
+          "uuid": "e481c041cc535398",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CC0603KRX7R9BB474"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1374.01574803,
+            "y": -507.55905512000004,
+            "id": "1ecd176901429650-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1374.01574803,
+            "y": -547.55905512,
+            "id": "1ecd176901429650-e10"
+          }
+        ]
+      },
+      {
+        "id": "d5c6e26a48d4f17e",
+        "uniqueId": "gge71",
+        "designator": "C6",
+        "name": "={Value}",
+        "value": "",
+        "x": 1374.01574803,
+        "y": -401.57480315,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "5cf2b52d54c54718",
+          "name": "CC0603KRX7R9BB474"
+        },
+        "symbol": {
+          "uuid": "e481c041cc535398",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CC0603KRX7R9BB474"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1374.01574803,
+            "y": -381.57480315,
+            "id": "d5c6e26a48d4f17e-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1374.01574803,
+            "y": -421.57480315,
+            "id": "d5c6e26a48d4f17e-e10"
+          }
+        ]
+      },
+      {
+        "id": "458884a0eb1f3ede",
+        "uniqueId": "gge72",
+        "designator": "C5",
+        "name": "={Value}",
+        "value": "",
+        "x": 1374.01574803,
+        "y": -275.59055118,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "5cf2b52d54c54718",
+          "name": "CC0603KRX7R9BB474"
+        },
+        "symbol": {
+          "uuid": "e481c041cc535398",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CC0603KRX7R9BB474"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1374.01574803,
+            "y": -255.59055117999992,
+            "id": "458884a0eb1f3ede-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1374.01574803,
+            "y": -295.5905511799999,
+            "id": "458884a0eb1f3ede-e10"
+          }
+        ]
+      },
+      {
+        "id": "4d2c37cc7d3d5ceb",
+        "uniqueId": "gge73",
+        "designator": "TP18",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 1393.7007874,
+        "y": -1867.71653543,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "456342b52546487b",
+          "name": "S2761-46R"
+        },
+        "symbol": {
+          "uuid": "1de82f477bef688f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2761-46R"
+        },
+        "footprint": {
+          "uuid": "de84ff422b608a17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TESTPOINT-SMD_L1.6-W0.8_RCU-0C"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1373.7007874,
+            "y": -1867.71653543,
+            "id": "4d2c37cc7d3d5ceb-e5"
+          }
+        ]
+      },
+      {
+        "id": "bcae460d46b351cf",
+        "uniqueId": "gge74",
+        "designator": "TP11",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 1393.7007874,
+        "y": -1777.16535433,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "456342b52546487b",
+          "name": "S2761-46R"
+        },
+        "symbol": {
+          "uuid": "1de82f477bef688f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2761-46R"
+        },
+        "footprint": {
+          "uuid": "de84ff422b608a17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TESTPOINT-SMD_L1.6-W0.8_RCU-0C"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1373.7007874,
+            "y": -1777.16535433,
+            "id": "bcae460d46b351cf-e5"
+          }
+        ]
+      },
+      {
+        "id": "a97b0d44ecbbb0f0",
+        "uniqueId": "gge75",
+        "designator": "C1",
+        "name": "={Value}",
+        "value": "",
+        "x": 1405.51181102,
+        "y": -645.66929134,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "0212d171efc822fd",
+          "name": "CL10A105KB8NNNC"
+        },
+        "symbol": {
+          "uuid": "d6ed0e9c717a6cf5",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10A105KB8NNNC"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1405.51181102,
+            "y": -665.66929134,
+            "id": "a97b0d44ecbbb0f0-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1405.51181102,
+            "y": -625.66929134,
+            "id": "a97b0d44ecbbb0f0-e10"
+          }
+        ]
+      },
+      {
+        "id": "2f51b0038b4f9459",
+        "uniqueId": "gge76",
+        "designator": "R46",
+        "name": "={Value}",
+        "value": "",
+        "x": 1449.13385827,
+        "y": -1311.92913386,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "926548c082090d92",
+          "name": "0603WAF1002T5E"
+        },
+        "symbol": {
+          "uuid": "792c2d457a78af4c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1002T5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 1449.1338582700002,
+            "y": -1331.92913386,
+            "id": "2f51b0038b4f9459-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 1449.1338582700002,
+            "y": -1291.92913386,
+            "id": "2f51b0038b4f9459-e7"
+          }
+        ]
+      },
+      {
+        "id": "9be508de3af50f2d",
+        "uniqueId": "gge77",
+        "designator": "R40",
+        "name": "={Value}",
+        "value": "",
+        "x": 1449.13385827,
+        "y": -1011.33858268,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "33362ce4ab8fa630",
+          "name": "FRC0603F1000TS"
+        },
+        "symbol": {
+          "uuid": "faa749b87b437bab",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F1000TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1449.1338582700002,
+            "y": -1031.33858268,
+            "id": "9be508de3af50f2d-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1449.1338582700002,
+            "y": -991.33858268,
+            "id": "9be508de3af50f2d-e8"
+          }
+        ]
+      },
+      {
+        "id": "68fbaaad7f81a021",
+        "uniqueId": "gge78",
+        "designator": "C13",
+        "name": "={Value}",
+        "value": "",
+        "x": 1507.87401575,
+        "y": -645.66929134,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "29415c0175ee489e",
+          "name": "FCC0603B104K500CT"
+        },
+        "symbol": {
+          "uuid": "8593560617e7a582",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FCC0603B104K500CT"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1507.8740157499997,
+            "y": -625.66929134,
+            "id": "68fbaaad7f81a021-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1507.8740157499997,
+            "y": -665.66929134,
+            "id": "68fbaaad7f81a021-e10"
+          }
+        ]
+      },
+      {
+        "id": "af01a7ec62e3dcf4",
+        "uniqueId": "gge79",
+        "designator": "TP19",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 1606.2992126,
+        "y": -1867.71653543,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "456342b52546487b",
+          "name": "S2761-46R"
+        },
+        "symbol": {
+          "uuid": "1de82f477bef688f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2761-46R"
+        },
+        "footprint": {
+          "uuid": "de84ff422b608a17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TESTPOINT-SMD_L1.6-W0.8_RCU-0C"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1586.2992126,
+            "y": -1867.71653543,
+            "id": "af01a7ec62e3dcf4-e5"
+          }
+        ]
+      },
+      {
+        "id": "1223ac6899e75137",
+        "uniqueId": "gge80",
+        "designator": "TP12",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 1606.2992126,
+        "y": -1777.16535433,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "456342b52546487b",
+          "name": "S2761-46R"
+        },
+        "symbol": {
+          "uuid": "1de82f477bef688f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2761-46R"
+        },
+        "footprint": {
+          "uuid": "de84ff422b608a17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TESTPOINT-SMD_L1.6-W0.8_RCU-0C"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1586.2992126,
+            "y": -1777.16535433,
+            "id": "1223ac6899e75137-e5"
+          }
+        ]
+      },
+      {
+        "id": "2a19855b6c3b1934",
+        "uniqueId": "gge81",
+        "designator": "R32",
+        "name": "={Value}",
+        "value": "",
+        "x": 1653.54330709,
+        "y": -892.51968504,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "95a8f128a235f27b",
+          "name": "JER2512F3R003L"
+        },
+        "symbol": {
+          "uuid": "312cc0572e53c922",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "JER2512F3R003L"
+        },
+        "footprint": {
+          "uuid": "f53db23488d864b9",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R2512"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1653.5433070900003,
+            "y": -912.51968504,
+            "id": "2a19855b6c3b1934-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1653.5433070900003,
+            "y": -872.51968504,
+            "id": "2a19855b6c3b1934-e8"
+          }
+        ]
+      },
+      {
+        "id": "b5cdc03ea49afb2e",
+        "uniqueId": "gge82",
+        "designator": "R16",
+        "name": "={Value}",
+        "value": "",
+        "x": 1661.41732283,
+        "y": -716.53543307,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "763aef3b6582e16c",
+          "name": "FRC0603F1502TS"
+        },
+        "symbol": {
+          "uuid": "41f2ba6cfa654e4c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F1502TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1661.41732283,
+            "y": -736.53543307,
+            "id": "b5cdc03ea49afb2e-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1661.41732283,
+            "y": -696.53543307,
+            "id": "b5cdc03ea49afb2e-e8"
+          }
+        ]
+      },
+      {
+        "id": "fc6480c7a6ec04ee",
+        "uniqueId": "gge83",
+        "designator": "R10",
+        "name": "={Value}",
+        "value": "",
+        "x": 1661.41732283,
+        "y": -606.2992126,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "d466e0001947b27b",
+          "name": "RMC06038.66K1%N"
+        },
+        "symbol": {
+          "uuid": "e413bde7e41c3b29",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "RMC06038.66K1%N"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1661.41732283,
+            "y": -626.2992125999999,
+            "id": "fc6480c7a6ec04ee-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1661.41732283,
+            "y": -586.2992125999999,
+            "id": "fc6480c7a6ec04ee-e8"
+          }
+        ]
+      },
+      {
+        "id": "ce1098d4d9d190ef",
+        "uniqueId": "gge84",
+        "designator": "C8",
+        "name": "={Value}",
+        "value": "",
+        "x": 1661.41732283,
+        "y": -433.07086614,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "0212d171efc822fd",
+          "name": "CL10A105KB8NNNC"
+        },
+        "symbol": {
+          "uuid": "d6ed0e9c717a6cf5",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10A105KB8NNNC"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1661.41732283,
+            "y": -453.0708661399999,
+            "id": "ce1098d4d9d190ef-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1661.41732283,
+            "y": -413.0708661399999,
+            "id": "ce1098d4d9d190ef-e10"
+          }
+        ]
+      },
+      {
+        "id": "6bcbc0b78f408b9f",
+        "uniqueId": "gge85",
+        "designator": "U2",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 1692.91338583,
+        "y": -251.96850394,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "a54162ff5039bf8a",
+          "name": "XL7005A"
+        },
+        "symbol": {
+          "uuid": "1891e6c3e66e5266",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "XL7005A"
+        },
+        "footprint": {
+          "uuid": "6600889482ca4c04",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL-EP3.1-1"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "VIN",
+            "type": "Undefined",
+            "x": 1637.91338583,
+            "y": -221.96850394,
+            "id": "6bcbc0b78f408b9f-e3"
+          },
+          {
+            "number": "2",
+            "name": "SW",
+            "type": "Undefined",
+            "x": 1637.91338583,
+            "y": -241.96850394,
+            "id": "6bcbc0b78f408b9f-e7"
+          },
+          {
+            "number": "3",
+            "name": "FB",
+            "type": "Undefined",
+            "x": 1637.91338583,
+            "y": -261.96850394,
+            "id": "6bcbc0b78f408b9f-e11"
+          },
+          {
+            "number": "4",
+            "name": "EN",
+            "type": "Undefined",
+            "x": 1637.91338583,
+            "y": -281.96850394,
+            "id": "6bcbc0b78f408b9f-e15"
+          },
+          {
+            "number": "5",
+            "name": "GND",
+            "type": "Undefined",
+            "x": 1747.91338583,
+            "y": -281.96850394,
+            "id": "6bcbc0b78f408b9f-e19"
+          },
+          {
+            "number": "6",
+            "name": "GND",
+            "type": "Undefined",
+            "x": 1747.91338583,
+            "y": -261.96850394,
+            "id": "6bcbc0b78f408b9f-e23"
+          },
+          {
+            "number": "7",
+            "name": "GND",
+            "type": "Undefined",
+            "x": 1747.91338583,
+            "y": -241.96850394,
+            "id": "6bcbc0b78f408b9f-e27"
+          },
+          {
+            "number": "8",
+            "name": "GND",
+            "type": "Undefined",
+            "x": 1747.91338583,
+            "y": -221.96850394,
+            "id": "6bcbc0b78f408b9f-e31"
+          },
+          {
+            "number": "9",
+            "name": "9",
+            "type": "Undefined",
+            "x": 1692.91338583,
+            "y": -311.96850394,
+            "id": "6bcbc0b78f408b9f-e36"
+          }
+        ]
+      },
+      {
+        "id": "cb89bc1f40e0330b",
+        "uniqueId": "gge86",
+        "designator": "R48",
+        "name": "={Value}",
+        "value": "",
+        "x": 1723.74015748,
+        "y": -1198.50393701,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "9c69ebd6262f64f6",
+          "name": "FRC0603F1001TS"
+        },
+        "symbol": {
+          "uuid": "aff354432c29a26f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F1001TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1723.74015748,
+            "y": -1218.50393701,
+            "id": "cb89bc1f40e0330b-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1723.74015748,
+            "y": -1178.50393701,
+            "id": "cb89bc1f40e0330b-e8"
+          }
+        ]
+      },
+      {
+        "id": "376e7329ceeb8a1f",
+        "uniqueId": "R30",
+        "designator": "R30",
+        "name": "={Value}",
+        "value": "",
+        "x": 1723.74015748,
+        "y": -1153.85826772,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "fe67b279430268b7",
+          "name": "FRC0603F2203TS"
+        },
+        "symbol": {
+          "uuid": "e984f6e13dce85b1",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F2203TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1723.74015748,
+            "y": -1173.85826772,
+            "id": "376e7329ceeb8a1f-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1723.74015748,
+            "y": -1133.85826772,
+            "id": "376e7329ceeb8a1f-e8"
+          }
+        ]
+      },
+      {
+        "id": "28ec54aba112a447",
+        "uniqueId": "R34",
+        "designator": "R34",
+        "name": "={Value}",
+        "value": "",
+        "x": 1740.15748031,
+        "y": -955.51181102,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "d7030197892f4edf",
+          "name": "0603WAF100JT5E"
+        },
+        "symbol": {
+          "uuid": "e98f7277cf33ef78",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF100JT5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 1740.15748031,
+            "y": -975.51181102,
+            "id": "28ec54aba112a447-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 1740.15748031,
+            "y": -935.51181102,
+            "id": "28ec54aba112a447-e7"
+          }
+        ]
+      },
+      {
+        "id": "06eff903e0537d5a",
+        "uniqueId": "R33",
+        "designator": "R33",
+        "name": "={Value}",
+        "value": "",
+        "x": 1740.15748031,
+        "y": -892.51968504,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "d7030197892f4edf",
+          "name": "0603WAF100JT5E"
+        },
+        "symbol": {
+          "uuid": "e98f7277cf33ef78",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF100JT5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 1740.1574803100002,
+            "y": -912.51968504,
+            "id": "06eff903e0537d5a-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 1740.1574803100002,
+            "y": -872.51968504,
+            "id": "06eff903e0537d5a-e7"
+          }
+        ]
+      },
+      {
+        "id": "4d1c33b397e83688",
+        "uniqueId": "C29",
+        "designator": "C29",
+        "name": "={Value}",
+        "value": "",
+        "x": 1763.77952756,
+        "y": -716.53543307,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "29415c0175ee489e",
+          "name": "FCC0603B104K500CT"
+        },
+        "symbol": {
+          "uuid": "8593560617e7a582",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FCC0603B104K500CT"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1763.7795275600001,
+            "y": -696.53543307,
+            "id": "4d1c33b397e83688-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1763.7795275600001,
+            "y": -736.53543307,
+            "id": "4d1c33b397e83688-e10"
+          }
+        ]
+      },
+      {
+        "id": "b487e39a48053430",
+        "uniqueId": "R11",
+        "designator": "R11",
+        "name": "={Value}",
+        "value": "",
+        "x": 1763.77952756,
+        "y": -606.2992126,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "9c69ebd6262f64f6",
+          "name": "FRC0603F1001TS"
+        },
+        "symbol": {
+          "uuid": "aff354432c29a26f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F1001TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1763.7795275599997,
+            "y": -626.2992126000001,
+            "id": "b487e39a48053430-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1763.7795275599997,
+            "y": -586.2992126000001,
+            "id": "b487e39a48053430-e8"
+          }
+        ]
+      },
+      {
+        "id": "7557ffc73b3a0075",
+        "uniqueId": "C9",
+        "designator": "C9",
+        "name": "={Value}",
+        "value": "",
+        "x": 1763.77952756,
+        "y": -433.07086614,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "0212d171efc822fd",
+          "name": "CL10A105KB8NNNC"
+        },
+        "symbol": {
+          "uuid": "d6ed0e9c717a6cf5",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10A105KB8NNNC"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1763.7795275600001,
+            "y": -453.07086614000013,
+            "id": "7557ffc73b3a0075-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1763.7795275600001,
+            "y": -413.07086614000013,
+            "id": "7557ffc73b3a0075-e10"
+          }
+        ]
+      },
+      {
+        "id": "c7ceef1b30a13f22",
+        "uniqueId": "C47",
+        "designator": "C47",
+        "name": "={Value}",
+        "value": "",
+        "x": 1803.1496063,
+        "y": -251.96850394,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "f65a21aaee8467e3",
+          "name": "10uF(106) 50V"
+        },
+        "symbol": {
+          "uuid": "608af7db38ed1f37",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "10UF(106)-50V"
+        },
+        "footprint": {
+          "uuid": "c33e25df6364f61b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C1210"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1783.1496063000002,
+            "y": -251.96850394000012,
+            "id": "c7ceef1b30a13f22-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1823.1496063000002,
+            "y": -251.96850394000012,
+            "id": "c7ceef1b30a13f22-e10"
+          }
+        ]
+      },
+      {
+        "id": "57aa6b3f387198f4",
+        "uniqueId": "TP13",
+        "designator": "TP13",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 1818.8976378,
+        "y": -1777.16535433,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "456342b52546487b",
+          "name": "S2761-46R"
+        },
+        "symbol": {
+          "uuid": "1de82f477bef688f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2761-46R"
+        },
+        "footprint": {
+          "uuid": "de84ff422b608a17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TESTPOINT-SMD_L1.6-W0.8_RCU-0C"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1798.8976378,
+            "y": -1777.16535433,
+            "id": "57aa6b3f387198f4-e5"
+          }
+        ]
+      },
+      {
+        "id": "bab93742d921bf8f",
+        "uniqueId": "C10",
+        "designator": "C10",
+        "name": "={Value}",
+        "value": "",
+        "x": 1866.14173228,
+        "y": -433.07086614,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "0212d171efc822fd",
+          "name": "CL10A105KB8NNNC"
+        },
+        "symbol": {
+          "uuid": "d6ed0e9c717a6cf5",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10A105KB8NNNC"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1866.1417322799998,
+            "y": -453.07086614000013,
+            "id": "bab93742d921bf8f-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1866.1417322799998,
+            "y": -413.07086614000013,
+            "id": "bab93742d921bf8f-e10"
+          }
+        ]
+      },
+      {
+        "id": "3b2cad2e0fdd978f",
+        "uniqueId": "C31",
+        "designator": "C31",
+        "name": "={Value}",
+        "value": "",
+        "x": 1874.01574803,
+        "y": -892.51968504,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "29415c0175ee489e",
+          "name": "FCC0603B104K500CT"
+        },
+        "symbol": {
+          "uuid": "8593560617e7a582",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FCC0603B104K500CT"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1874.01574803,
+            "y": -872.51968504,
+            "id": "3b2cad2e0fdd978f-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1874.01574803,
+            "y": -912.51968504,
+            "id": "3b2cad2e0fdd978f-e10"
+          }
+        ]
+      },
+      {
+        "id": "f9c49dac28287b4f",
+        "uniqueId": "L1",
+        "designator": "L1",
+        "name": "={Value}",
+        "value": "",
+        "x": 1937.00787402,
+        "y": -212.5984252,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "bb1ae4684376b0a1",
+          "name": "PNR6045-470-M"
+        },
+        "symbol": {
+          "uuid": "41abb2738fa6aa0e",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "PNR6045-470-M"
+        },
+        "footprint": {
+          "uuid": "a4a09c84a51ed644",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "IND-SMD_L6.0-W6.0_LPS6225"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 1937.0078740200001,
+            "y": -232.59842520000007,
+            "id": "f9c49dac28287b4f-e0"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 1937.0078740200001,
+            "y": -192.59842520000007,
+            "id": "f9c49dac28287b4f-e4"
+          }
+        ]
+      },
+      {
+        "id": "681b7b17e154fb83",
+        "uniqueId": "C32",
+        "designator": "C32",
+        "name": "={Value}",
+        "value": "",
+        "x": 1942.91338583,
+        "y": -1198.50393701,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b9bf7cde621c4291",
+          "name": "CL10B102KB8NNNC"
+        },
+        "symbol": {
+          "uuid": "35e361f08321d40c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B102KB8NNNC"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 1942.91338583,
+            "y": -1183.50393701,
+            "id": "681b7b17e154fb83-e5"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 1942.91338583,
+            "y": -1213.50393701,
+            "id": "681b7b17e154fb83-e9"
+          }
+        ]
+      },
+      {
+        "id": "06f087dea5e54e3d",
+        "uniqueId": "R31",
+        "designator": "R31",
+        "name": "={Value}",
+        "value": "",
+        "x": 1942.91338583,
+        "y": -1153.85826772,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "926548c082090d92",
+          "name": "0603WAF1002T5E"
+        },
+        "symbol": {
+          "uuid": "792c2d457a78af4c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1002T5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 1942.91338583,
+            "y": -1173.85826772,
+            "id": "06f087dea5e54e3d-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 1942.91338583,
+            "y": -1133.85826772,
+            "id": "06f087dea5e54e3d-e7"
+          }
+        ]
+      },
+      {
+        "id": "5ee4938cbe6f53ff",
+        "uniqueId": "U3",
+        "designator": "U3",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 1948.81889764,
+        "y": -892.51968504,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "5cb2fee1514f937c",
+          "name": "INA181A2IDBVR"
+        },
+        "symbol": {
+          "uuid": "6e1e09f138adee7b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "INA181A2IDBVR"
+        },
+        "footprint": {
+          "uuid": "21b3f06e110e73a4",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "OUT",
+            "type": "Undefined",
+            "x": 1913.81889764,
+            "y": -882.51968504,
+            "id": "5ee4938cbe6f53ff-e5"
+          },
+          {
+            "number": "2",
+            "name": "GND",
+            "type": "Undefined",
+            "x": 1913.81889764,
+            "y": -892.51968504,
+            "id": "5ee4938cbe6f53ff-e9"
+          },
+          {
+            "number": "3",
+            "name": "IN+",
+            "type": "Undefined",
+            "x": 1913.81889764,
+            "y": -902.51968504,
+            "id": "5ee4938cbe6f53ff-e13"
+          },
+          {
+            "number": "4",
+            "name": "IN-",
+            "type": "Undefined",
+            "x": 1983.81889764,
+            "y": -902.51968504,
+            "id": "5ee4938cbe6f53ff-e17"
+          },
+          {
+            "number": "5",
+            "name": "REF",
+            "type": "Undefined",
+            "x": 1983.81889764,
+            "y": -892.51968504,
+            "id": "5ee4938cbe6f53ff-e21"
+          },
+          {
+            "number": "6",
+            "name": "VS",
+            "type": "Undefined",
+            "x": 1983.81889764,
+            "y": -882.51968504,
+            "id": "5ee4938cbe6f53ff-e25"
+          }
+        ]
+      },
+      {
+        "id": "234767b7fb5b98c4",
+        "uniqueId": "C11",
+        "designator": "C11",
+        "name": "={Value}",
+        "value": "",
+        "x": 1992.12598425,
+        "y": -433.07086614,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "e9cef5bc5aba7a3c",
+          "name": "ERG50V100M8X12"
+        },
+        "symbol": {
+          "uuid": "6f2a73496a084266",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "ERG50V100M8X12"
+        },
+        "footprint": {
+          "uuid": "b6dafbfeab360f70",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CAP-TH_BD8.0-P3.50-D0.5-FD"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 1992.1259842500003,
+            "y": -413.07086614000013,
+            "id": "234767b7fb5b98c4-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 1992.1259842500003,
+            "y": -453.07086614000013,
+            "id": "234767b7fb5b98c4-e8"
+          }
+        ]
+      },
+      {
+        "id": "f8d05beab190c471",
+        "uniqueId": "TP14",
+        "designator": "TP14",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 2031.49606299,
+        "y": -1777.16535433,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "456342b52546487b",
+          "name": "S2761-46R"
+        },
+        "symbol": {
+          "uuid": "1de82f477bef688f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2761-46R"
+        },
+        "footprint": {
+          "uuid": "de84ff422b608a17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TESTPOINT-SMD_L1.6-W0.8_RCU-0C"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 2011.49606299,
+            "y": -1777.16535433,
+            "id": "f8d05beab190c471-e5"
+          }
+        ]
+      },
+      {
+        "id": "922d86b4791a87a9",
+        "uniqueId": "TP7",
+        "designator": "TP7",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 2031.49606299,
+        "y": -1682.67716535,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "456342b52546487b",
+          "name": "S2761-46R"
+        },
+        "symbol": {
+          "uuid": "1de82f477bef688f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "S2761-46R"
+        },
+        "footprint": {
+          "uuid": "de84ff422b608a17",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "TESTPOINT-SMD_L1.6-W0.8_RCU-0C"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 2011.49606299,
+            "y": -1682.67716535,
+            "id": "922d86b4791a87a9-e5"
+          }
+        ]
+      },
+      {
+        "id": "423be2a7d44645e4",
+        "uniqueId": "D5",
+        "designator": "D5",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 2039.37007874,
+        "y": -212.5984252,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "15930a9be1a475c9",
+          "name": "SS110-LTP"
+        },
+        "symbol": {
+          "uuid": "471fc681528b14da",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "SS110-LTP"
+        },
+        "footprint": {
+          "uuid": "53858cd5a8df53ec",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "SMA_L4.3-W2.6-LS5.2-RD"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "C",
+            "type": "Undefined",
+            "x": 2039.3700787400003,
+            "y": -192.59842520000007,
+            "id": "423be2a7d44645e4-e4"
+          },
+          {
+            "number": "2",
+            "name": "A",
+            "type": "Undefined",
+            "x": 2039.3700787400003,
+            "y": -232.59842520000007,
+            "id": "423be2a7d44645e4-e8"
+          }
+        ]
+      },
+      {
+        "id": "12b61167ce2bb1d8",
+        "uniqueId": "C33",
+        "designator": "C33",
+        "name": "={Value}",
+        "value": "",
+        "x": 2086.61417323,
+        "y": -892.51968504,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "29415c0175ee489e",
+          "name": "FCC0603B104K500CT"
+        },
+        "symbol": {
+          "uuid": "8593560617e7a582",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FCC0603B104K500CT"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 2086.61417323,
+            "y": -872.51968504,
+            "id": "12b61167ce2bb1d8-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 2086.61417323,
+            "y": -912.51968504,
+            "id": "12b61167ce2bb1d8-e10"
+          }
+        ]
+      },
+      {
+        "id": "28fc0fccf43be4f9",
+        "uniqueId": "R49",
+        "designator": "R49",
+        "name": "={Value}",
+        "value": "",
+        "x": 2145.66929134,
+        "y": -892.51968504,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "9c69ebd6262f64f6",
+          "name": "FRC0603F1001TS"
+        },
+        "symbol": {
+          "uuid": "aff354432c29a26f",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F1001TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 2145.66929134,
+            "y": -912.51968504,
+            "id": "28fc0fccf43be4f9-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 2145.66929134,
+            "y": -872.51968504,
+            "id": "28fc0fccf43be4f9-e8"
+          }
+        ]
+      },
+      {
+        "id": "48b08a2b84f109dc",
+        "uniqueId": "C30",
+        "designator": "C30",
+        "name": "={Value}",
+        "value": "",
+        "x": 2162.08661417,
+        "y": -1153.85826772,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b9bf7cde621c4291",
+          "name": "CL10B102KB8NNNC"
+        },
+        "symbol": {
+          "uuid": "35e361f08321d40c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B102KB8NNNC"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 2162.08661417,
+            "y": -1138.85826772,
+            "id": "48b08a2b84f109dc-e5"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 2162.08661417,
+            "y": -1168.85826772,
+            "id": "48b08a2b84f109dc-e9"
+          }
+        ]
+      },
+      {
+        "id": "7530f97de1eb0a0d",
+        "uniqueId": "C12",
+        "designator": "C12",
+        "name": "={Value}",
+        "value": "",
+        "x": 2204.72440945,
+        "y": -433.07086614,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "29415c0175ee489e",
+          "name": "FCC0603B104K500CT"
+        },
+        "symbol": {
+          "uuid": "8593560617e7a582",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FCC0603B104K500CT"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 2204.72440945,
+            "y": -413.0708661399999,
+            "id": "7530f97de1eb0a0d-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 2204.72440945,
+            "y": -453.0708661399999,
+            "id": "7530f97de1eb0a0d-e10"
+          }
+        ]
+      },
+      {
+        "id": "21d6e884995ff5b7",
+        "uniqueId": "C34",
+        "designator": "C34",
+        "name": "={Value}",
+        "value": "",
+        "x": 2212.5984252,
+        "y": -892.51968504,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b9bf7cde621c4291",
+          "name": "CL10B102KB8NNNC"
+        },
+        "symbol": {
+          "uuid": "35e361f08321d40c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10B102KB8NNNC"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 2212.5984252,
+            "y": -877.51968504,
+            "id": "21d6e884995ff5b7-e5"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 2212.5984252,
+            "y": -907.51968504,
+            "id": "21d6e884995ff5b7-e9"
+          }
+        ]
+      },
+      {
+        "id": "e4bc3aea7763d98b",
+        "uniqueId": "R50",
+        "designator": "R50",
+        "name": "={Value}",
+        "value": "",
+        "x": 2244.09448819,
+        "y": -1619.68503937,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "926548c082090d92",
+          "name": "0603WAF1002T5E"
+        },
+        "symbol": {
+          "uuid": "792c2d457a78af4c",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "0603WAF1002T5E"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 2244.0944881899995,
+            "y": -1639.68503937,
+            "id": "e4bc3aea7763d98b-e3"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 2244.0944881899995,
+            "y": -1599.68503937,
+            "id": "e4bc3aea7763d98b-e7"
+          }
+        ]
+      },
+      {
+        "id": "8306bf2336f6b7eb",
+        "uniqueId": "U4",
+        "designator": "U4",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 2460.62992126,
+        "y": -892.51968504,
+        "rotation": 0,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "298406349c5f6b23",
+          "name": "AMS1117-3.3_C6186"
+        },
+        "symbol": {
+          "uuid": "8d2d95ea0390f512",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "AMS1117-3.3"
+        },
+        "footprint": {
+          "uuid": "fe7fc24f928957e2",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "GND",
+            "type": "Undefined",
+            "x": 2415.62992126,
+            "y": -882.51968504,
+            "id": "8306bf2336f6b7eb-e2"
+          },
+          {
+            "number": "2",
+            "name": "VOUT",
+            "type": "Undefined",
+            "x": 2415.62992126,
+            "y": -892.51968504,
+            "id": "8306bf2336f6b7eb-e6"
+          },
+          {
+            "number": "3",
+            "name": "VIN",
+            "type": "Undefined",
+            "x": 2415.62992126,
+            "y": -902.51968504,
+            "id": "8306bf2336f6b7eb-e10"
+          },
+          {
+            "number": "4",
+            "name": "VOUT",
+            "type": "Undefined",
+            "x": 2505.62992126,
+            "y": -892.51968504,
+            "id": "8306bf2336f6b7eb-e14"
+          }
+        ]
+      },
+      {
+        "id": "fd061dab37775aac",
+        "uniqueId": "R53",
+        "designator": "R53",
+        "name": "={Value}",
+        "value": "",
+        "x": 2570.86614173,
+        "y": -876.77165354,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "d59ba7e6d1d81b71",
+          "name": "FRC0603F0000TS"
+        },
+        "symbol": {
+          "uuid": "6510afda1950f36a",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F0000TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 2570.86614173,
+            "y": -896.77165354,
+            "id": "fd061dab37775aac-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 2570.86614173,
+            "y": -856.77165354,
+            "id": "fd061dab37775aac-e8"
+          }
+        ]
+      },
+      {
+        "id": "9370277a2c8d18b4",
+        "uniqueId": "C19",
+        "designator": "C19",
+        "name": "={Value}",
+        "value": "",
+        "x": 2595.47244094,
+        "y": -698.54330709,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "39c92a488174f705",
+          "name": "CL31B105KCHNNNE"
+        },
+        "symbol": {
+          "uuid": "07d82404c22b5b8b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL31B105KCHNNNE"
+        },
+        "footprint": {
+          "uuid": "b3a894bb809752fd",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C1206"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 2595.47244094,
+            "y": -678.5433070899999,
+            "id": "9370277a2c8d18b4-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 2595.47244094,
+            "y": -718.5433070899999,
+            "id": "9370277a2c8d18b4-e10"
+          }
+        ]
+      },
+      {
+        "id": "a4bf60a477f858ba",
+        "uniqueId": "C17",
+        "designator": "C17",
+        "name": "={Value}",
+        "value": "",
+        "x": 2595.47244094,
+        "y": -578.30708661,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "362678defd862653",
+          "name": "RV63V47M6X8"
+        },
+        "symbol": {
+          "uuid": "882a86c4c3f2e9ca",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "RV63V47M6X8"
+        },
+        "footprint": {
+          "uuid": "26a7336c1aadf39d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 2595.47244094,
+            "y": -558.3070866100002,
+            "id": "a4bf60a477f858ba-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 2595.47244094,
+            "y": -598.3070866100002,
+            "id": "a4bf60a477f858ba-e8"
+          }
+        ]
+      },
+      {
+        "id": "3b2d7f0595e05843",
+        "uniqueId": "C15",
+        "designator": "C15",
+        "name": "={Value}",
+        "value": "",
+        "x": 2595.47244094,
+        "y": -458.07086614,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "362678defd862653",
+          "name": "RV63V47M6X8"
+        },
+        "symbol": {
+          "uuid": "882a86c4c3f2e9ca",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "RV63V47M6X8"
+        },
+        "footprint": {
+          "uuid": "26a7336c1aadf39d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 2595.47244094,
+            "y": -438.0708661399999,
+            "id": "3b2d7f0595e05843-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 2595.47244094,
+            "y": -478.0708661399999,
+            "id": "3b2d7f0595e05843-e8"
+          }
+        ]
+      },
+      {
+        "id": "f2806adaad8ae48e",
+        "uniqueId": "C2",
+        "designator": "C2",
+        "name": "={Value}",
+        "value": "",
+        "x": 2595.47244094,
+        "y": -337.83464567,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "a3b9c5e6d4afa9a3",
+          "name": "CL21B104KCFNNNE"
+        },
+        "symbol": {
+          "uuid": "ac41ee7de96e9971",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL21B104KCFNNNE"
+        },
+        "footprint": {
+          "uuid": "b846ab14b988d989",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0805"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 2595.47244094,
+            "y": -322.8346456700001,
+            "id": "f2806adaad8ae48e-e5"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 2595.47244094,
+            "y": -352.8346456700001,
+            "id": "f2806adaad8ae48e-e9"
+          }
+        ]
+      },
+      {
+        "id": "ba06581293e8b807",
+        "uniqueId": "F1",
+        "designator": "F1",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 2595.47244094,
+        "y": -217.5984252,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b6b70a42e4818fca",
+          "name": "BSMD1206C-2150T"
+        },
+        "symbol": {
+          "uuid": "064f4953d5fa59ca",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "BSMD1206C-2150T"
+        },
+        "footprint": {
+          "uuid": "c4a5dabdf0ea0400",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "F1206"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 2595.47244094,
+            "y": -237.59842519999984,
+            "id": "ba06581293e8b807-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 2595.47244094,
+            "y": -197.59842519999984,
+            "id": "ba06581293e8b807-e8"
+          }
+        ]
+      },
+      {
+        "id": "94aa236864b11358",
+        "uniqueId": "R52",
+        "designator": "R52",
+        "name": "={Value}",
+        "value": "",
+        "x": 2681.1023622,
+        "y": -955.51181102,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "d59ba7e6d1d81b71",
+          "name": "FRC0603F0000TS"
+        },
+        "symbol": {
+          "uuid": "6510afda1950f36a",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0603F0000TS"
+        },
+        "footprint": {
+          "uuid": "00fb838ed620a970",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0603"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 2681.1023622,
+            "y": -975.5118110200001,
+            "id": "94aa236864b11358-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 2681.1023622,
+            "y": -935.5118110200001,
+            "id": "94aa236864b11358-e8"
+          }
+        ]
+      },
+      {
+        "id": "ebb0bf6474d4f298",
+        "uniqueId": "C40",
+        "designator": "C40",
+        "name": "={Value}",
+        "value": "",
+        "x": 2681.1023622,
+        "y": -876.77165354,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "ee4575c768c36ee7",
+          "name": "CL21A106KAYNNNE_C15850"
+        },
+        "symbol": {
+          "uuid": "82807394602e9017",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL21A106KAYNNNE"
+        },
+        "footprint": {
+          "uuid": "b846ab14b988d989",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0805"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 2681.1023622,
+            "y": -896.77165354,
+            "id": "ebb0bf6474d4f298-e4"
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 2681.1023622,
+            "y": -856.77165354,
+            "id": "ebb0bf6474d4f298-e10"
+          }
+        ]
+      },
+      {
+        "id": "01a2ecc05d8dc446",
+        "uniqueId": "C42",
+        "designator": "C42",
+        "name": "={Value}",
+        "value": "",
+        "x": 2846.45669291,
+        "y": -955.51181102,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "29415c0175ee489e",
+          "name": "FCC0603B104K500CT"
+        },
+        "symbol": {
+          "uuid": "8593560617e7a582",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FCC0603B104K500CT"
+        },
+        "footprint": {
+          "uuid": "198bd8cdd7ca728b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 2846.45669291,
+            "y": -935.5118110200001,
+            "id": "01a2ecc05d8dc446-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 2846.45669291,
+            "y": -975.5118110200001,
+            "id": "01a2ecc05d8dc446-e10"
+          }
+        ]
+      },
+      {
+        "id": "4f73ccde9250db50",
+        "uniqueId": "C41",
+        "designator": "C41",
+        "name": "={Value}",
+        "value": "",
+        "x": 2846.45669291,
+        "y": -876.77165354,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "77c3068f37983761",
+          "name": "CL21A226MOQNNNE"
+        },
+        "symbol": {
+          "uuid": "0bbcd84114af0efc",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL21A226MOQNNNE"
+        },
+        "footprint": {
+          "uuid": "b846ab14b988d989",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0805"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 2846.45669291,
+            "y": -861.77165354,
+            "id": "4f73ccde9250db50-e5"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 2846.45669291,
+            "y": -891.77165354,
+            "id": "4f73ccde9250db50-e9"
+          }
+        ]
+      },
+      {
+        "id": "dd808d7120694f77",
+        "uniqueId": "C20",
+        "designator": "C20",
+        "name": "={Value}",
+        "value": "",
+        "x": 3022.63779528,
+        "y": -698.54330709,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "39c92a488174f705",
+          "name": "CL31B105KCHNNNE"
+        },
+        "symbol": {
+          "uuid": "07d82404c22b5b8b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL31B105KCHNNNE"
+        },
+        "footprint": {
+          "uuid": "b3a894bb809752fd",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C1206"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 3022.6377952799994,
+            "y": -678.5433070899999,
+            "id": "dd808d7120694f77-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 3022.6377952799994,
+            "y": -718.5433070899999,
+            "id": "dd808d7120694f77-e10"
+          }
+        ]
+      },
+      {
+        "id": "d976782277430c4a",
+        "uniqueId": "C18",
+        "designator": "C18",
+        "name": "={Value}",
+        "value": "",
+        "x": 3022.63779528,
+        "y": -578.30708661,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "39c92a488174f705",
+          "name": "CL31B105KCHNNNE"
+        },
+        "symbol": {
+          "uuid": "07d82404c22b5b8b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL31B105KCHNNNE"
+        },
+        "footprint": {
+          "uuid": "b3a894bb809752fd",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C1206"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "Undefined",
+            "x": 3022.63779528,
+            "y": -558.3070866100002,
+            "id": "d976782277430c4a-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "Undefined",
+            "x": 3022.63779528,
+            "y": -598.3070866100002,
+            "id": "d976782277430c4a-e10"
+          }
+        ]
+      },
+      {
+        "id": "f357b808020e0f6f",
+        "uniqueId": "C16",
+        "designator": "C16",
+        "name": "={Value}",
+        "value": "",
+        "x": 3022.63779528,
+        "y": -458.07086614,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "362678defd862653",
+          "name": "RV63V47M6X8"
+        },
+        "symbol": {
+          "uuid": "882a86c4c3f2e9ca",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "RV63V47M6X8"
+        },
+        "footprint": {
+          "uuid": "26a7336c1aadf39d",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 3022.6377952800003,
+            "y": -438.0708661399999,
+            "id": "f357b808020e0f6f-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 3022.6377952800003,
+            "y": -478.0708661399999,
+            "id": "f357b808020e0f6f-e8"
+          }
+        ]
+      },
+      {
+        "id": "169f587fcb73c8a6",
+        "uniqueId": "C14",
+        "designator": "C14",
+        "name": "={Value}",
+        "value": "",
+        "x": 3022.63779528,
+        "y": -337.83464567,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "2fb3473300b1e46f",
+          "name": "JVJ50V100M6x8"
+        },
+        "symbol": {
+          "uuid": "2e9629e8effe6309",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "JVJ50V100M6X8"
+        },
+        "footprint": {
+          "uuid": "1261c6829070aa91",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD-H7.7"
+        },
+        "pins": [
+          {
+            "number": "1",
+            "name": "1",
+            "type": "IN",
+            "x": 3022.63779528,
+            "y": -317.8346456700001,
+            "id": "169f587fcb73c8a6-e4"
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "type": "IN",
+            "x": 3022.63779528,
+            "y": -357.8346456700001,
+            "id": "169f587fcb73c8a6-e8"
+          }
+        ]
+      },
+      {
+        "id": "f192c13310a516b0",
+        "uniqueId": "D4",
+        "designator": "D4",
+        "name": "={Manufacturer Part}",
+        "value": "",
+        "x": 3022.63779528,
+        "y": -217.5984252,
+        "rotation": 270,
+        "mirror": false,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "58315fa33445580a",
+          "name": "SMBJ33A_C224019"
+        },
+        "symbol": {
+          "uuid": "cf97ab98413634cf",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "SMBJ33A_C224019"
+        },
+        "footprint": {
+          "uuid": "47939c0c7969576b",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "SMB_L4.6-W3.6-LS5.3-RD"
+        },
+        "pins": [
+          {
+            "number": "2",
+            "name": "A",
+            "type": "Undefined",
+            "x": 3022.63779528,
+            "y": -237.59842519999984,
+            "id": "f192c13310a516b0-e3"
+          },
+          {
+            "number": "1",
+            "name": "C",
+            "type": "Undefined",
+            "x": 3022.63779528,
+            "y": -197.59842519999984,
+            "id": "f192c13310a516b0-e7"
+          }
+        ]
+      }
+    ]
+  },
+  "windowId": "5e7650bf-a1c9-4321-a647-f2a08fb64d16"
+}

@@ -1,0 +1,167 @@
+########## XL7005A-EN.pdf page 5 (LAYOUT) ##########
+                                                                                                         Datasheet
+
+ 0.4A 150KHz 100V Buck DC to DC Converter                                                                    XL7005A
+
+XL7005A Electrical Characteristics
+Ta = 25℃;unless otherwise specified.
+
+    Symbol          Parameter                      Test Condition                      Min.       Typ.      Max.      Unit
+
+ System parameters test circuit figure4
+
+      VFB          FB Voltage             Vin =20V to 80V, Vout=15V                   1.225       1.25     1.275        V
+                                                Iload=0.1A to 0.2A
+                    Efficiency                 Vin=36V ,Vout=15V                         -         86         -         %
+       η                                              Iout=0.2A
+
+                    Efficiency                 Vin=48V ,Vout=15V                         -         81         -         %
+       η                                              Iout=0.2A
+
+                    Efficiency                 Vin=60V ,Vout=15V                         -         75         -         %
+       η                                              Iout=0.2A
+
+
+Electrical Characteristics (DC Parameters)
+Vin = 48V, GND=0V, Vin & GND parallel connect a 33uf/100V capacitor; Iout=0.2A, Ta = 25℃;
+the others floating unless otherwise specified.
+
+           Parameters                   Symbol              Test Condition             Min.       Typ.      Max.       Unit
+
+ Input operation voltage                   Vin                                           5                   80         V
+
+ Shutdown Supply Current                    IS                  VEN=2V                             85        200       uA
+
+ Quiescent Supply Current                   I                   VEN=0V,                            2.5        5        mA
+                                             q
+                                                                VFB=2V
+
+ Oscillator Frequency                     Fosc                                          120       150        180       KHz
+
+ Switch Current Limit                       IL                  VFB=0V                             0.5                  A
+
+                                                        High (Regulator OFF)                       1.6
+ EN Pin Threshold                          VEN                                                                          V
+                                                        Low (Regulator ON)                         0.8
+
+ EN Pin Input Leakage                       IH             VEN=2.5V (OFF)                           6         20       uA
+
+ Current                                    IL              VEN=0.5V (ON)                           1         10       uA
+
+ Output Saturation Voltage                 V                    VFB=0V                            0.87                  V
+                                             CE
+                                                                Iout=0.4A
+
+ Max. Duty Cycle                          DMAX                  VFB=0V                             90                   %
+
+
+
+Rev 1.9                                                                                                                                                      www.xlsemi.com
+                                                              5
+########## XL7005A-CN.pdf page 5 (LAYOUT) ##########
+                                                                                              Datasheet
+
+ 0.4A 150KHz 100V降压型DC-DC转换器                                                                XL7005A
+
+XL7005A      电气特性
+Ta = 25℃；除非特别说明。
+
+   符号          参数                        条件                     最小值         典型值          最大值        单位
+
+ 图  4 的系统参数测量电路
+
+  VFB        反馈电压          Vin =20V   到  80V, Vout=15V          1.225        1.25        1.275        V
+                                Iload=0.1A   到  0.2A
+    η          效率               Vin=36V ,Vout=15V                 -           86            -        %
+                                     Iout=0.2A
+    η          效率               Vin=48V ,Vout=15V                 -            81           -        %
+                                     Iout=0.2A
+    η          效率               Vin=60V ,Vout=15V                 -           75            -        %
+                                     Iout=0.2A
+电气特性(直流参数)
+Vin = 48V，GND=0V，Vin与GND之间并联33uF/100V电容；Iout=200mA，Ta = 25℃；其
+他任意，除非特别说明。
+
+        参数              符号                 条件                最小值          典型值         最大值          单位
+
+ 输入电压                    Vin                                    5                       80          V
+
+ 关机电流                     IS              VEN=2V                            85         200         uA
+
+ 静态电源电流                   I              VEN=0V,                            2.5          5         mA
+                          q
+                                          VFB=2V
+
+ 振荡频率                   Fosc                                   120         150         180        KHz
+
+ 开关电流限值                   IL              VFB=0V                            0.5                     A
+
+                                           高(关)                             1.6
+ EN  脚阈值电压               VEN                                                                        V
+                                           低(开)                             0.8
+
+                          IH           VEN=2.5V (关)                          6          20         uA
+ EN  脚输入漏电流
+                          IL           VEN=0.5V (开)                          1          10         uA
+
+                                          VFB=0V
+ 饱和压降                    VCE             Iout=0.4A                         0.87                     V
+
+
+ 最大占空比                  DMAX              VFB=0V                            90                      %
+
+
+
+
+Rev 1.9                                                                                                                          www.xlsemi.com
+                                                    5
+########## XL7005A_lcsc.pdf page 5 (LAYOUT) ##########
+                                                                                                                                                                                    Datasheet
+
+  0.4A 150KHz 80V Buck DC to DC Converter                                                                                                          XL7005A
+
+XL7005A Electrical Characteristics
+Ta = 25 ℃;unless otherwise specified.
+       Symbol                   Parameter                                                         Test Condition                                        Min.                                 Typ.                Max.                Unit
+
+  System parameters test circuit figure4
+           VFB               FB Voltage                                                        Vin =20V to 80V                                                                                1.25               1.275                   V
+                                                                                             Iload=0.1A to 0.2A                                            1.225
+               ŋ            Efficiency                                                     Vin=36V ,Vout=15V
+                                                                                                        Iout=0.2A                                        -          85          -         %
+               ŋ            Efficiency                                                     Vin=48V ,Vout=15V
+                                                                                                        Iout=0.2A                                        -          81          -         %
+               ŋ            Efficiency                                                     Vin=60V ,Vout=15V
+                                                                                                        Iout=0.2A                                        -          75          -         %
+
+Electrical Characteristics (DC Parameters)
+Vin = 48V, GND=0V, Vin & GND parallel connect a 33uf/100V capacitor; Iout=0.2A, T                                                                                                                                                                                                      a =
+25℃; the others floating unless otherwise specified.
+                    Parameters                                 Symbol                                            Test Condition                              Min.                            Typ.                Max.                Unit
+  Input operation voltage                                                          Vin                                                         5                      80         V
+
+  Shutdown Supply Current                                                        ISTBY                     VEN=2V                                  85        200       uA
+
+  Quiescent Supply Current                                                           Iq                      VEN=0V,  VFB=Vin                                   2.5            5         mA
+
+  Oscillator Frequency                                                   Fosc                                                      120      150      180      KHz
+
+  Switch Current Limit                                              IL                    VFB=0                                 0.5                        A
+
+                                                                                                        High (Regulator OFF)                                                             1.6
+  EN Pin Threshold                                                VEN                                                                                                                                                                    V
+                                                                                                        Low (Regulator ON)                                                    0.8
+
+  EN Pin Input Leakage                                                              IH              VEN=2.5V (OFF)                                          6          20        uA
+  Current                                              IL             VEN=0.5V (ON)                                         1          10        uA
+
+  Output Saturation Voltage                                                       VCE                   VFB=0V Iout =0.4A                                     0.87                                                                 V
+
+  Max. Duty Cycle                         DMAX                   VFB=0V                                 100                    %
+
+
+
+
+
+Rev 1.0                                                                                                                                                                                                                                                                        www.xlsemi.com
+                                                                                                                          5

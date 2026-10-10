@@ -1,0 +1,66 @@
+0000788 I Loading C:\Users\limer\Desktop\motor-driver\02_�̼�\F005_Slave\build_pwmprobe\pwmprobe.hex [load_cmd]
+0000797 I Erasing... [loader]
+[---|---|---|---|---|---|---|---|---|----]
+[========================================]
+[---|---|---|---|---|---|---|---|---|----]
+0001427 I Programming... [loader]
+[========================================]
+0002420 I Erased 6144 bytes (12 sectors), programmed 6144 bytes (12 pages), identical 0 bytes (0 pages) at 3.70 kB/s [loader]
+0000817 I Loading C:\Users\limer\Desktop\motor-driver\02_�̼�\F005_Slave\build_gate\gate.hex [load_cmd]
+0000822 I Erasing... [loader]
+[---|---|---|---|---|---|---|---|---|----]
+[========================================]
+0001191 I Programming... [loader]
+[---|---|---|---|---|---|---|---|---|----]
+[========================================]
+0001716 I Erased 3072 bytes (6 sectors), programmed 3072 bytes (6 pages), identical 0 bytes (0 pages) at 3.36 kB/s [loader]
+[flash] build_pwmprobe\pwmprobe.hex
+magic @0x20000F00 = 0x005A5A07 (pwmprobe)
+probe finished: stage=255
+
+--- probe self-diagnostics ---
+  CNT at start               = 354
+  CNT 50us later             = 158
+  ADC vbus probe             = 153
+  UDF set in 32 probes       = 31
+  wait_valley timeouts       = 0
+  wait_offset timeouts       = 0
+  UDF still set after clear  = 0
+  adc timeouts               = 0
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+BUS NOT POWERED: the probe reads only 1.85 V on the bus.
+Every phase-node result below is meaningless - with no bus there
+is no rail for a high side to pull up to, so all three 'fail'.
+Power the 4S bus (15 V / current-limited) and run this again.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+--- high-side turn-on: SKIPPED, bus only 1.85 V ---
+
+GCMAR=300  points=121 x step=5 counts  sweeps=6 x 8 averages
+vbus=133 counts = 1.87 V   isense=1 counts = 0.004 A
+phase-A node, sweep 0: low=23 counts (0.24 V) high=27 counts (0.28 V)
+
+--- pulse geometry per sweep (offset counted from the triangle valley) ---
+sweep   high    low  first_hi  last_hi  width(cts)     duty
+    0     27     23         0      595         600   50.00%
+    1     27     23         0      595         600   50.00%
+    2     27     24         0      595         600   50.00%
+    3     27     24         0      595         600   50.00%
+    4     27     24         0      595         600   50.00%
+    5     27     23         0      595         600   50.00%
+
+[1] high-side rail: measured 0.28 V, bus would give 1.87 V
+    FAIL: the node never rises - the high side is not turning on
+
+[2] pulse position: high counts 0..595 of 0..600 in the up-count half
+    -> output goes HIGH at the triangle valley (PERCA = PeriodHigh acts at the valley, as the app note says)
+
+[3] duty: measured 50.00%  (firmware formula 'cmp = PERAR*duty/100' implies 25.00%; a duty of 50.00% was requested)
+    => pulse width == 2*GCMAR counts: the duty mapping is correct.
+
+[4] bootstrap droop (high level per sweep, ~150 ms apart):
+    s0=27  s1=27  s2=27  s3=27  s4=27  s5=27
+    width 600 -> 600 counts over the run (+0.0 %)
+    OK: the pulse holds up over ~1 s of continuous PWM
+[flash] build_gate\gate.hex

@@ -1,0 +1,255 @@
+### P01_SEL  (section line 6161)
+  6162: 偏移地址：0x04
+  6163: 复位值：0x0000 0000
+  6204: 31:3
+  6207: 2:0
+  6210: 000：GPIO P01
+  6211: 001：UART0_RXD  UART0 模块 RXD 信号
+  6212: 010：I2C_SDA      I2C 模块数据信号
+  6213: 011：UART1_TXD   UART1 模块 TXD 信号
+  6214: 100：TIM0_TOG    Timer0 模块翻转信号
+  6215: 101：TIM5_CHB    Advanced Timer 模块通道 1 B 信号
+  6216: 110：SPI_SCK      SPI 模块时钟信号
+  6217: 111：TIM2_EXT    Timer2 模块外部时钟输入信号
+  6230: 偏移地址：0x08
+  6231: 复位值：0x0000 0000
+
+### P02_SEL  (section line 6229)
+  6230: 偏移地址：0x08
+  6231: 复位值：0x0000 0000
+  6272: 31:3
+  6275: 2:0
+  6278: 000：GPIO P02
+  6279: 001： UART0_TXD   UART0 模块 TXD 信号
+  6280: 010：I2C_SCL       I2C 模块时钟信号
+  6281: 011：UART1_RXD   UART1 模块 RXD 信号
+  6282: 100：TIM0_TOGN   Timer0 模块翻转信号的反向信号
+  6283: 101：TIM6_CHA     Advanced Timer 模块通道 2 A 信号
+  6284: 110：SPI_CS        SP I 模块主机模式片选信号
+  6285: 111：TIM2_GATE    Timer2 模块门控信号
+  6298: 偏移地址：0x0C
+  6299: 复位值：0x0000 0000
+
+### P03_SEL  (section line 6297)
+  6298: 偏移地址：0x0C
+  6299: 复位值：0x0000 0000
+  6340: 31:3
+  6343: 2:0
+  6346: 000：GPIO P03
+  6347: 001：PCA_CH3     PCA 模块通道3 捕获/比较信号
+  6348: 010：SPI_CS       SPI 模块主机模式片选信号
+  6349: 011：TIM6_CHB    Advanced Timer 模块通道2 B 信号
+  6350: 100：Reserved     Reserved
+  6351: 101：Reserved     Reserved
+  6352: 110：PCA_ECI      PCA 模块外部时钟输入信号
+  6353: 111：VC0_OUT     VC0 模块输出
+  6364: 偏移地址：0x100
+  6365: 复位值：0xffff ffff
+
+### P14_SEL  (section line 7540)
+  7541: 偏移地址：0x50
+  7542: 复位值：0x0000 0000
+  7583: 31:3
+  7586: 2:0
+  7589: 000：GPIO P14
+  7590: 001：I2C_SCL         I2C 模块时钟信号
+  7591: 010：TIM2_TOGN     Timer2 模块翻转信号的反向信号
+  7592: 011：PCA_ECI        PCA 模块外部时钟输入信号
+  7593: 100：ADC_RDY      ADC 模块 RDY 信号
+  7594: 101：SPI_CS         SPI 模块主机模式片选信号
+  7595: 110：UART0_TXD    UART0 模块 TXD 信号
+  7596: 111：NC
+  7609: 偏移地址：0x54
+  7610: 复位值：0x0000 0000
+
+### P15_SEL  (section line 7608)
+  7609: 偏移地址：0x54
+  7610: 复位值：0x0000 0000
+  7651: 31:3
+  7654: 2:0
+  7657: 000：GPIO P15
+  7658: 001：I2C_SDA         I2C 模块数据信号
+  7659: 010：TIM2_TOG       Timer2 模块翻转信号
+  7660: 011：TIM4_CHB       Advanced Timer 模块通道 0 B 信号
+  7661: 100：Reserved        Reserved
+  7662: 101：SPI_SCK         SPI 模块时钟信号
+  7663: 110：UART0_RXD      UART0 模块 RXD 信号
+  7664: 111：LVD_OUT         LVD 模块输出信号
+  7675: 偏移地址：0x140
+  7676: 复位值：0xffff ffff
+
+### P23_SEL  (section line 8713)
+  8714: 偏移地址：0x8C
+  8715: 复位值：0x0000 0000
+  8756: 31:3
+  8759: 2:0
+  8762: 000：GPIO P23
+  8763: 001：TIM6_CHA        Advanced Timer 模块通道 2 A 信号
+  8764: 010：TIM4_CHB        Advanced Timer 模块通道 0 B 信号
+  8765: 011：TIM4_CHA        Advanced Timer 模块通道 0 A 信号
+  8766: 100：PCA_CH0         PCA 模块通道0 捕获/比较信号
+  8767: 101：SPI_MOSI        SPI 模块主机输入从机输出数据信号
+  8768: 110：UART1_TXD      UART1 模块 TXD 信号
+  8769: 111：IR_OUT          红外输出信号
+  8782: 偏移地址：0x90
+  8783: 复位值：0x0000 0000
+
+### P24_SEL  (section line 8781)
+  8782: 偏移地址：0x90
+  8783: 复位值：0x0000 0000
+  8824: 31:3
+  8827: 2:0
+  8830: 000：GPIO P24
+  8831: 001：TIM4_CHB        Advanced Timer 模块通道 0 B 信号
+  8832: 010：TIM5_CHB        Advanced Timer 模块通道 1 B 信号
+  8833: 011：HCLK_OUT       AHB 总线时钟输出信号
+  8834: 100：PCA_CH1         PCA 模块通道1 捕获/比较信号
+  8835: 101：SPI_MOSI        SPI 模块主机输出从机输入数据信号
+  8836: 110：UART1_RXD      UART1 模块 RXD 信号
+  8837: 111：VC1_OUT         VC1 模块输出
+  8850: 偏移地址：0x94
+  8851: 复位值：0x0000 0000
+
+### P25_SEL  (section line 8849)
+  8850: 偏移地址：0x94
+  8851: 复位值：0x0000 0000
+  8892: 31:3
+  8895: 2:0
+  8898: 000：GPIO P25
+  8899: 001：SPI_SCK         SPI 模块时钟信号
+  8900: 010：PCA_CH0        PCA 模块通道0 捕获/比较信号
+  8901: 011：TIM5_CHA       Advanced Timer 模块通道 1 A 信号
+  8902: 100：LVD_OUT        LVD 模块输出信号
+  8903: 101：Reserved        Reserved
+  8904: 110：I2C_SDA         I2C 模块数据信号
+  8905: 111：TIM1_GATE      Timer1 模块门控信号
+  8918: 偏移地址：0x98
+  8919: 复位值：0x0000 0000
+
+### P26_SEL  (section line 8917)
+  8918: 偏移地址：0x98
+  8919: 复位值：0x0000 0000
+  8960: 31:3
+  8963: 2:0
+  8966: 000：GPIO P26
+  8967: 001：SPI_MOSI        SPI 模块主机输出从机输入数据信号
+  8968: 010：TIM4_CHA       Advanced Timer 模块通道 0 A 信号
+  8969: 011：TIM5_CHB       Advanced Timer 模块通道 1 B 信号
+  8970: 100：PCA_CH2        PCA 模块通道2 捕获/比较信号
+  8971: 101：Reserved        Reserved
+  8972: 110：I2C_SCL         I2C 模块时钟信号
+  8973: 111：TIM1_EXT       Timer1 模块外部时钟输入信号
+  8986: 偏移地址：0x9C
+  8987: 复位值：0x0000 0000
+
+### P27_SEL  (section line 8985)
+  8986: 偏移地址：0x9C
+  8987: 复位值：0x0000 0000
+  9028: 31:3
+  9031: 2:0
+  9034: 000：GPIO P27
+  9035: 001：SPI_MOSI       SP I 模块主机输入从机输出数据信号
+  9036: 010：TIM5_CHA      Advanced Timer 模块通道 1 A 信号
+  9037: 011：TIM6_CHA      Advanced Timer 模块通道 2 A 信号
+  9038: 100：PCA_CH3       PCA 模块通道3 捕获/比较信号
+  9039: 101：UART0_RXD    UART0 模块 RXD 信号
+  9040: 110：RCH_OUT      内部 24M RC 时钟输出信号
+  9041: 111：XTH_OUT      外部 32M 晶振输出信号
+  9052: 偏移地址：0x180
+  9053: 复位值：0xffff ffff
+
+### P31_SEL  (section line 10433)
+  10434: 偏移地址：0xC4
+  10435: 复位值：0x0000 0000
+  10476: 31:3
+  10479: 2:0
+  10482: 000：GPIO P31
+  10483: 001：Reserved               Reserved
+  10484: 010：PCA_ECI                PCA 模块外部时钟输入信号
+  10485: 011：PCLK_OUT              APB 总线时钟输出信号
+  10486: 100：VC0_OUT               VC0 模块输出
+  10487: 101：UART0_TXD            UART0 模块 TXD 信号
+  10488: 110：RCL_OUT               内部 38K RC 时钟输出信号
+  10489: 111：HCLK_OUT             AHB 总线时钟输出信号
+  10502: 偏移地址：0xC8
+  10503: 复位值：0x0000 0000
+
+### P32_SEL  (section line 10501)
+  10502: 偏移地址：0xC8
+  10503: 复位值：0x0000 0000
+  10544: 31:3
+  10547: 2:0
+  10550: 000：GPIO P32
+  10551: 001：Reserved         Reserved
+  10552: 010：PCA_CH2         PCA 模块通道2 捕获/比较信号
+  10553: 011：TIM6_CHB        Advanced Timer 模块通道 2 B 信号
+  10554: 100：VC1_OUT         VC1 模块输出
+  10555: 101：UART1_TXD      UART1 模块 TXD 信号
+  10556: 110：PCA_CH4         PCA 模块通道4 捕获/比较信号
+  10557: 111：Reserved         Reserved
+  10570: 偏移地址：0xCC
+  10571: 复位值：0x0000 0000
+
+### P33_SEL  (section line 10569)
+  10570: 偏移地址：0xCC
+  10571: 复位值：0x0000 0000
+  10612: 31:3
+  10615: 2:0
+  10618: 000：GPIO P33
+  10619: 001：Reserved         Reserved
+  10620: 010：PCA_CH1         PCA 模块通道1 捕获/比较信号
+  10621: 011：TIM5_CHB        Advanced Timer 模块通道 1 B 信号
+  10622: 100：PCA_ECI          PCA 模块外部时钟输入信号
+  10623: 101：UART1_RXD      UART1 模块 RXD 信号
+  10624: 110：XTL_OUT         外部 32K 晶振输出信号
+  10625: 111：TIM1_TOGN       Timer1 模块翻转信号的反向信号
+  10638: 偏移地址：0xD0
+  10639: 复位值：0x0000 0000
+
+### P34_SEL  (section line 10637)
+  10638: 偏移地址：0xD0
+  10639: 复位值：0x0000 0000
+  10680: 31:3
+  10683: 2:0
+  10686: 000：GPIO P34
+  10687: 001：PCA_CH0         PCA 模块通道0 捕获/比较信号
+  10688: 010：Reserved         Reserved
+  10689: 011：TIM5_CHA        Advanced Timer 模块通道 1 A 信号
+  10690: 100：TIM0_EXT        Timer0 模块外部时钟输入信号
+  10691: 101：TIM4_CHA        Advanced Timer 模块通道 0 A 信号
+  10692: 110：Reserved         Reserved
+  10693: 111：TIM1_TOG        Timer1 模块翻转信号
+  10706: 偏移地址：0xD4
+  10707: 复位值：0x0000 0000
+
+### P35_SEL  (section line 10705)
+  10706: 偏移地址：0xD4
+  10707: 复位值：0x0000 0000
+  10748: 31:3
+  10751: 2:0
+  10754: 000：GPIO P35
+  10755: 001：UART1_TXD     UART1 模块 TXD 信号
+  10756: 010：TIM6_CHB       Advanced Timer 模块通道 2 B 信号
+  10757: 011：UART0_TXD     UART0 模块 TXD 信号
+  10758: 100：TIM0_GATE      Timer0 模块门控信号
+  10759: 101：TIM4_CHB       Advanced Timer 模块通道 0 B 信号
+  10760: 110：SPI_MOSI        SPI 模块主机输入从机输出数据信号
+  10761: 111：I2C_SDA         I2C 模块数据信号
+  10774: 偏移地址：0xD8
+  10775: 复位值：0x0000 0000
+
+### P36_SEL  (section line 10773)
+  10774: 偏移地址：0xD8
+  10775: 复位值：0x0000 0000
+  10816: 31:3
+  10819: 2:0
+  10822: 000：GPIO P36
+  10823: 001：UART1_RXD    UART1 模块 RXD 信号
+  10824: 010：TIM6_CHA      Advanced Time r 模块通道 2 A 信号
+  10825: 011：UART0_RXD    UART0 模块 RXD 信号
+  10826: 100：PCA_CH4       PCA 模块通道4 捕获/比较信号
+  10827: 101：TIM5_CHA      Advanced Timer 模块通道 1 A 信号
+  10828: 110：SPI_MOSI       SPI 模块主机输出从机输入数据信号
+  10829: 111：I2C_SCL        I2C 模块时钟信号
+  10842: 偏移地址：0x1C0
+  10843: 复位值：0xffff ffff

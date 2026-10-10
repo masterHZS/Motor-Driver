@@ -1,0 +1,6 @@
+---- SystemInit Matches (5 in 4 files) ----
+main in main.c (D:\Work\MCU\HDSC\application\hc32ddl-app\Project\hc32f005) : 	SystemInit();
+startup_hc32f005.s (D:\Work\MCU\HDSC\application\hc32ddl-app\Project\hc32f005\MDK) line 145 :                 IMPORT  SystemInit
+startup_hc32f005.s (D:\Work\MCU\HDSC\application\hc32ddl-app\Project\hc32f005\MDK) line 163 :                 LDR     R0, =SystemInit
+system_hc32f005.c (D:\Work\MCU\HDSC\application\hc32ddl-app\Project\hc32f005) line 86 : void SystemInit(void)
+system_hc32f005.h (D:\Work\MCU\HDSC\application\hc32ddl-app\Project\hc32f005) line 97 : extern void SystemInit (void);            // Initialize the system

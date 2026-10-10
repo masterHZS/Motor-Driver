@@ -1,4 +1,40 @@
+# ---- 构建产物（可重新生成，不要入库）----
 build/
+build_*/
+*.o
+*.elf
+*.hex
+*.bin
+*.map
+
+# ---- 明确保留的免编译发布镜像 ----
+!02_固件/F005_Slave/release/*.hex
+!02_固件/F005_Slave/release/*.bin
+*.su
+*.d
+
+# ---- 工具链（体积大，用 setup.ps1 重新拉取）----
+.toolchain/
+*.zip
+
+# ---- 编辑器 / 系统 / Python 缓存 ----
+.vscode/
 .vs/
-*.user
-*.suo
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.idea/
+Thumbs.db
+desktop.ini
+*.swp
+
+# ---- 临时调试输出（排查时生成，不入库）----
+dsh_*.txt
+~$*
+
+# ---- Git 元数据目录（内嵌仓库自身管理）----
+03_上位机/HostSoftware/.git/
+02_固件/asac-esc/.git/
+
+# ---- DSH: 排除上位机编译产物发布目录 ----
+03_上位机/release/
