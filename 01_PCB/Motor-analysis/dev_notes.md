@@ -504,3 +504,12 @@ cmp  r4, r2
 验证：现有 `test_step_sequence.py`、`test_protocol_vectors.py` 均通过，仅覆盖六步表及CRC向量，不验证PWM、实时性、自举或闭环。此次未改固件、未烧录、未执行带电机测试。
 
 **旧测试注意**：`tests/power_stage_probe.py` 会发送启动并halt内核，定时器仍输出，SysTick保护随内核停止；不能当作只读诊断执行。低速ADC快照不能代替PWM占空比/死区测量。
+
+### 11.7 2026-10-12 SWD 接入短测
+
+- `F072_MotorCtrl` 执行 `build.ps1 -BEMF -Direct` 成功（text 13324 B、data 12 B、bss 1180 B）。`test_protocol_vectors.py` 与 `test_step_sequence.py` 均通过；两项测试只覆盖协议帧与六步相序。
+- 初次连接时 `pyocd list --probes` 无探针；Windows 将 DAPLink 枚举为 `MAINTENANCE`，`DETAILS.TXT` 确认为 `Daplink Mode: Bootloader`。用户拔插并松开按键后，恢复为 `DAPLINK`，pyOCD 识别 `ARM CMSIS-DAP-v1-MuseLab`。
+- SWD 以 attach 模式读到 CPUID `0x410CC601`、DAP IDCODE `0x0BC11477`，内核运行中；板载 Flash `0x00000000` 起 13336 B 与本轮 `-BEMF -Direct` 构建的 `hc32f072.bin` **逐字节一致**。因镜像已经相同，本轮没有重复擦写/烧录。
+- DAPLink 虚拟串口为 COM5。只发送 Modbus `0x03` 读 10 个寄存器，回包 CRC 正确：`runState=0`、`startReq=0`、`throttle=0`、`duty=0`、`fault=0`、版本 `0x0100`。未发送启动、油门或 PWM 设置命令。
+- SWD 读取 ADTIM4/5/6 的 `PCONR` 均为 `0x1710`，其中 `OUTENA` 位为 1；源码 `Motor_ConfigurePwm()` 在初始化时设置 `bOutEn=TRUE`，停止态由 `Motor_AllOutputsOff()` 将六路引脚改成低电平 GPIO。**尚无 TP12–TP17 实测电平/波形，不能仅凭寄存器和状态回读判定功率级关断。**
+- 结合 §11.6 未修的 PWM 占空比换算、阻塞通信、自举补电和过零判据问题，目前**不能放行接电机**。先修复这些问题，断开电机验证 TP12–TP17 六路实际波形、死区、关断和自举供电，再进入限流低油门联调。本轮未运行电机。
