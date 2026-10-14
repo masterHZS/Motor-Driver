@@ -1,8 +1,0 @@
-# STM32CubeIDE
-Debug/
-Release/
-.settings/
-.project
-.cproject
-./.idea
-*.launch

@@ -1,1 +1,0 @@
-Device only sent 6696960 samples.
