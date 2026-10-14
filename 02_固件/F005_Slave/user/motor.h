@@ -6,7 +6,7 @@
  *
  * Control chain:
  *   normal:  ALIGN -> OPEN_LOOP (V/f) -> BEMF_CLOSED_LOOP -> FAULT/STOP
- *   direct:  ALIGN -> OPEN_LOOP, throttle directly drives duty/frequency
+ *   0x0002: target speed percentage; bounded startup then BEMF speed feedback
  ******************************************************************************/
 #ifndef F005_MOTOR_H
 #define F005_MOTOR_H
@@ -14,7 +14,7 @@
 #include "ddl.h"
 
 /* ---- firmware / protocol identity ---- */
-#define MOTOR_FW_VERSION                  (0x0201u)
+#define MOTOR_FW_VERSION                  (0x0202u)
 
 #ifndef MOTOR_BUILD_ID
 #define MOTOR_BUILD_ID                    (1u)
@@ -22,24 +22,14 @@
 
 /* ---- PWM ---- */
 #define MOTOR_PWM_DEFAULT_HZ              (20000u)
-#define MOTOR_PWM_PERIOD_COUNTS           (24u)     /* informational */
 
 /* Build-profile switch used by build_comms.ps1 for the temporary direct
  * HostSoftware -> F005 bench control loop.  0 keeps the sensorless project. */
 #ifndef MOTOR_DIRECT_THROTTLE_MODE
 #define MOTOR_DIRECT_THROTTLE_MODE        (0u)
 #endif
-
-/* In direct mode, 0x0002 = 0..100 is mapped to this open-loop electrical
- * commutation range while duty is independently limited by MOTOR_MAX_DUTY. */
-#ifndef MOTOR_DIRECT_MIN_MILLIHZ
-#define MOTOR_DIRECT_MIN_MILLIHZ          (10000u)  /* 10 Hz */
-#endif
-#ifndef MOTOR_DIRECT_MAX_MILLIHZ
-#define MOTOR_DIRECT_MAX_MILLIHZ          (120000u) /* 120 Hz */
-#endif
-#ifndef MOTOR_DIRECT_ACCEL_MILLIHZ_PER_SECOND
-#define MOTOR_DIRECT_ACCEL_MILLIHZ_PER_SECOND (120000u) /* +120 Hz/s */
+#if MOTOR_DIRECT_THROTTLE_MODE
+#error 持续开环带电机已禁止，请构建无感闭环版本
 #endif
 
 /* ---- duty limits ---- */
@@ -81,30 +71,15 @@
 #define MOTOR_OPEN_LOOP_MIN_STEPS         (36u)     /* six electrical revs */
 #endif
 
-/* ---- BEMF observer ----
- * All three phase dividers are loaded by the hardware VN star network.  During
- * active PWM, the electrical neutral is bus/2, so the zero-cross threshold in
- * phase-ADC counts is:
- *   th = Vbus_counts * K_phase / K_bus / 2
- * with K_phase ~= 0.0588 and K_bus ~= 0.04348 from the V3.1 netlist.
- */
-#ifndef MOTOR_PHASE_TO_BUS_THRESHOLD_NUM
-#define MOTOR_PHASE_TO_BUS_THRESHOLD_NUM  (676u)
-#endif
-#ifndef MOTOR_PHASE_TO_BUS_THRESHOLD_DEN
-#define MOTOR_PHASE_TO_BUS_THRESHOLD_DEN  (1000u)
-#endif
-#ifndef MOTOR_BEMF_FILTER_LEN
-#define MOTOR_BEMF_FILTER_LEN             (4u)
-#endif
+/* ---- BEMF观察器：实际VN采样，方向/消隐/时窗/连续确认 ---- */
 #ifndef MOTOR_BEMF_HYSTERESIS_COUNTS
 #define MOTOR_BEMF_HYSTERESIS_COUNTS      (3u)
 #endif
-#ifndef MOTOR_BEMF_BLANK_PWM_CYCLES
-#define MOTOR_BEMF_BLANK_PWM_CYCLES       (2u)
-#endif
+#define MOTOR_BEMF_LOCK_STEPS             (6u)
+#define MOTOR_STARTUP_TIMEOUT_MS          (8000u)
+#define MOTOR_ADC_MAX_FRAME_TICKS         (12u) /* 32 us，超时帧不参与过零 */
 #ifndef MOTOR_BEMF_DELAY_COMP_TICKS
-#define MOTOR_BEMF_DELAY_COMP_TICKS       (9u)      /* ~24 us at 375 kHz */
+#define MOTOR_BEMF_DELAY_COMP_TICKS       (0u) /* 未实测RC延迟，不写死24 us补偿 */
 #endif
 
 /* ---- communication timeout (kept for the Modbus-facing API) ---- */
@@ -168,6 +143,7 @@ typedef enum {
 #define MOTOR_FAULT_OVERVOLTAGE           (0x0010u)
 #define MOTOR_FAULT_STALL                 (0x0020u)
 #define MOTOR_FAULT_BEMF_LOST             (0x0040u)
+#define MOTOR_FAULT_ADC_TIMEOUT           (0x0080u)
 
 void     Motor_Init(void);
 void     Motor_Service(void);          /* call continuously from main() */

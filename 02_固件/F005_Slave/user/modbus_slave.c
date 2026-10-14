@@ -32,7 +32,7 @@
 #endif
 
 #ifndef MODBUS_SWD_RELEASE_MS
-#define MODBUS_SWD_RELEASE_MS    (5000u)
+#define MODBUS_SWD_RELEASE_MS    (10000u) /* 用户2026-10-14明确批准 */
 #endif
 
 static volatile uint16_t s_rxHead;
@@ -43,6 +43,10 @@ static uint16_t s_frameLen;
 static uint32_t s_lastByteTick;
 static uint32_t s_releaseTick;
 static boolean_t s_ready;
+static uint8_t s_txFrame[27];
+static uint16_t s_txLength;
+static uint16_t s_txIndex;
+static boolean_t s_txInFlight;
 
 static uint16_t Modbus_Crc16(const uint8_t *data, uint16_t length);
 static void Modbus_UartInit(void);
@@ -50,8 +54,9 @@ static void Modbus_PushRx(uint8_t value);
 static uint8_t Modbus_PopRx(uint8_t *value);
 static void Modbus_ProcessFrame(void);
 static void Modbus_SendException(uint8_t function, uint8_t exceptionCode);
-static void Modbus_SendResponse(const uint8_t *data, uint16_t length);
+static void __attribute__((noinline)) Modbus_SendResponse(const uint8_t *data, uint16_t length);
 static void Modbus_InvalidCommandFault(void);
+static void __attribute__((noinline)) Modbus_TxService(void);
 
 void Modbus_Init(void)
 {
@@ -61,6 +66,8 @@ void Modbus_Init(void)
     s_lastByteTick = Motor_GetTickMs();
     s_releaseTick = s_lastByteTick + MODBUS_SWD_RELEASE_MS;
     s_ready = FALSE;
+    s_txLength = s_txIndex = 0u;
+    s_txInFlight = FALSE;
 }
 
 boolean_t Modbus_IsReady(void)
@@ -83,6 +90,7 @@ void Modbus_Poll(void)
     }
 
     now = Motor_GetTickMs();
+    Modbus_TxService();
     while (Modbus_PopRx(&value) != 0u) {
         if (s_frameLen < MODBUS_RX_SIZE) {
             s_frame[s_frameLen++] = value;
@@ -316,11 +324,33 @@ static void Modbus_SendResponse(const uint8_t *data, uint16_t length)
     uint16_t i;
     uint16_t crc = Modbus_Crc16(data, length);
 
-    for (i = 0u; i < length; i++) {
-        (void)Uart_SendDataPoll(M0P_UART0, data[i]);
+    if (s_txLength != 0u || length > sizeof(s_txFrame) - 2u) {
+        Motor_RecordCommError();
+        return;
     }
-    (void)Uart_SendDataPoll(M0P_UART0, (uint8_t)(crc & 0xFFu));
-    (void)Uart_SendDataPoll(M0P_UART0, (uint8_t)(crc >> 8));
+    for (i = 0u; i < length; i++) { s_txFrame[i] = data[i]; }
+    s_txFrame[length] = (uint8_t)crc;
+    s_txFrame[length + 1u] = (uint8_t)(crc >> 8);
+    s_txIndex = 0u;
+    s_txLength = length + 2u;
+    Modbus_TxService();
+}
+
+static void Modbus_TxService(void)
+{
+    if (s_txLength == 0u) { return; }
+    if (s_txInFlight) {
+        if (!Uart_GetStatus(M0P_UART0, UartTC)) { return; }
+        Uart_ClrStatus(M0P_UART0, UartTC);
+        s_txInFlight = FALSE;
+    }
+    if (s_txIndex == s_txLength) {
+        s_txLength = s_txIndex = 0u;
+        return;
+    }
+    Uart_ClrStatus(M0P_UART0, UartTC);
+    M0P_UART0->SBUF = s_txFrame[s_txIndex++];
+    s_txInFlight = TRUE;
 }
 
 static uint16_t Modbus_Crc16(const uint8_t *data, uint16_t length)

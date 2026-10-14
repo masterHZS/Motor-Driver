@@ -40,6 +40,7 @@ class CCommManager : public QObject
     Q_PROPERTY(int motorSpeedPercent READ motorSpeedPercent NOTIFY statusUpdated)
     Q_PROPERTY(int dutyPercent READ dutyPercent NOTIFY statusUpdated)
     Q_PROPERTY(int pwmFreqHz READ pwmFreqHz NOTIFY statusUpdated)
+    Q_PROPERTY(int electricalHz READ electricalHz NOTIFY statusUpdated)
     Q_PROPERTY(int firmwareVersion READ firmwareVersion NOTIFY statusUpdated)
     Q_PROPERTY(int commOkCount READ commOkCount NOTIFY statusUpdated)
     Q_PROPERTY(int commErrCount READ commErrCount NOTIFY statusUpdated)
@@ -64,6 +65,7 @@ public:
     int motorSpeedPercent() const;
     int dutyPercent() const;
     int pwmFreqHz() const;
+    int electricalHz() const;
     int firmwareVersion() const;
     int commOkCount() const;
     int commErrCount() const;
@@ -137,6 +139,7 @@ private:
 
     // 解析后的状态快照
     int m_motorSpeedPercent = 0;
+    int m_requestedSpeedPercent = 0;
     int m_dutyPercent = 0;
     int m_pwmFreqHz = 20000;
 

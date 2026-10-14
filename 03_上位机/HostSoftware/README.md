@@ -418,3 +418,15 @@ F005 的接线、烧录保护窗口和直接油门参数见：
 - `src/CCommManager.h/cpp`：Modbus-RTU 主机、CRC16、响应解析、串口热插拔和 500 ms 超时。
 - `qml/Main.qml`：复用现有启停、油门和仪表控件；串口选项固定为 9600/8。
 - `../F005_Slave`：HC32F005 从站、20 kHz PWM、直接油门开环控制和通信超时保护。
+
+## 2026-10-14 F005无感调速联动
+
+新版配套005固件0x0202：点击启动自动开启控制，先写当前目标0x0002，再写0x0001；启动中/闭环后可拖动油门调目标，0停车，停止清除积压命令。拖动目标合并并保持状态轮询。速度表改为0x0006的BEMF反馈电Hz；未闭环为0，不再显示“油门×700”的虚构RPM。极对数确认后才能换算机械转速。
+
+本机路径为F:/QT/6.8.3/msvc2022_64、F:/VS/VS system。脚本自动发现工具，用临时ASCII盘符避免中文路径问题；本机Qt CMake/Ninja输出到build_ascii/Release。
+
+```powershell
+.\scripts\build-vs.ps1 -Configuration Release -RunTests
+```
+
+HostControlTests不打开串口，只验证启动目标、实时目标合并、反馈读取、轮询与停止优先级；同时完成offscreen加载检查。尚未完成与真实005连接、烧录及带电机联调。实际MCU接线/故障位以 ../../02_固件/F005_Slave/F005_COMMS.md 为准；旧“非零油门隐式启动”和模拟RPM说明不适用于此版本。

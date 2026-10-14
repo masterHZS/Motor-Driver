@@ -8,6 +8,8 @@ Item {
     property real minValue: 0
     property real maxValue: 70000
     property string unit: "rpm"
+    property string title: "转速表"
+    property real scaleDivisor: 1000
 
     implicitWidth: 420
     implicitHeight: 300
@@ -92,7 +94,7 @@ Item {
             const labelRadius = outerRadius + ctx.lineWidth * 2 + 16
             for (let i = 0; i < labelCount; ++i) {
                 const angle = startAngle + sweepAngle * i / (labelCount - 1)
-                const scaledValue = Math.round(root.maxValue * i / (labelCount - 1) / 1000)
+                const scaledValue = Math.round(root.maxValue * i / (labelCount - 1) / root.scaleDivisor)
                 ctx.fillText(String(scaledValue),
                              centerX + Math.cos(angle) * labelRadius,
                              centerY + Math.sin(angle) * labelRadius)
@@ -123,7 +125,7 @@ Item {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
         anchors.topMargin: 8
-        text: "转速表"
+        text: root.title
         font.pixelSize: 18
         font.bold: true
         color: theme.textPrimary
@@ -133,7 +135,7 @@ Item {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
         anchors.topMargin: 30
-        text: "x1000 rpm"
+        text: (root.scaleDivisor === 1 ? "" : "x" + root.scaleDivisor + " ") + root.unit
         font.pixelSize: 14
         color: theme.textMuted
     }
@@ -151,7 +153,7 @@ Item {
 
         Text {
             anchors.centerIn: parent
-            text: Math.round(root.targetValue) + " rpm"
+            text: Math.round(root.targetValue) + " " + root.unit
             color: theme.lcdText
             font.family: "Arial"
             font.pixelSize: Math.max(16, Math.min(28, parent.height * 0.62))

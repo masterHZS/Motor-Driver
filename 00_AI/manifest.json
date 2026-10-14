@@ -1,9 +1,8 @@
 {
   "schema": "ai-entry/1",
-  "snapshot_date": "2026-10-10",
+  "snapshot_date": "2026-10-14",
   "language": "zh-CN",
   "purpose": "让 AI 在不遍历全仓库的前提下建立项目认知；只做导航与现状快照，不复制权威内容。",
-
   "project": {
     "name": "motor-driver",
     "summary": "HC32F005/072 单板三相无刷电机驱动（无感六步换相 + BEMF 过零检测）",
@@ -21,9 +20,11 @@
     "gate_driver": "FD6288T",
     "host_software": "Qt 6.8.3 + C++/QML, Modbus-RTU 主站",
     "file_count_approx": 4800,
-    "size_mb_approx": 480
+    "size_mb_approx": 480,
+    "next_controller": "HC32F005C6PA，用户决定后续开发主线；未确认装回",
+    "f005_validation_state": "0x0202/build9无感六步/VN采样与上位机速度调节，离线构建和回归通过；未烧录、未带电机",
+    "f005_vn_flywire": "用户批准C24的VN端→P34/AIN4，第1脚；未确认焊接"
   },
-
   "read_order": [
     "00_AI/START_HERE.md",
     "00_AI/02_当前状态.md",
@@ -35,33 +36,93 @@
     "<顶层目录>\\00_索引.md",
     "<主题权威文件>"
   ],
-
   "hard_rules": [
-    { "id": 1, "rule": "禁止用开环固件带电机；带电机必须 BEMF 闭环", "reason": "2026-10-08 开环带电机剧烈震动事故" },
-    { "id": 2, "rule": "带电机必须限流 12.0-16.8V/5A，首转 14.5-15.0V，低油门起步", "reason": "外接 F072 不读 AIN_VBUS/AIN_ISENSE，无软件欠压过流保护" },
-    { "id": 3, "rule": "应用固件绝不可驱动 P27/P31", "reason": "板上唯一 SWD 烧录口，锁死后无 nRESET 可恢复" },
-    { "id": 4, "rule": "不要把外接 F072 的 3.3V/5V 并到 V3.1 的 VDD_3V3/VBUS；12V 不可接任何 GPIO", "reason": "双电源互灌/器件击穿" },
-    { "id": 5, "rule": "改硬件前必读 01_PCB/说明.md 与 01_PCB/Motor-project/V3.1_升级说明.md", "reason": "设计妥协与已验证的返修点" },
-    { "id": 6, "rule": "元器件封装必须来自嘉立创官方库（器件选型规范.md R0 白名单）", "reason": "用户硬性要求，check-design.mjs 硬拦截" }
+    {
+      "id": 1,
+      "rule": "禁止用开环固件带电机；带电机必须 BEMF 闭环",
+      "reason": "2026-10-08 开环带电机剧烈震动事故"
+    },
+    {
+      "id": 2,
+      "rule": "带电机必须限流 12.0-16.8V/5A，首转 14.5-15.0V，低油门起步",
+      "reason": "外接 F072 不读 AIN_VBUS/AIN_ISENSE，无软件欠压过流保护"
+    },
+    {
+      "id": 3,
+      "rule": "应用固件绝不可驱动 P27/P31",
+      "reason": "板上唯一 SWD 烧录口，锁死后无 nRESET 可恢复",
+      "exception": "用户2026-10-14明确指定：005复位前10秒保留SWD，之后P27转UART0_RXD；P31不作外设输出。"
+    },
+    {
+      "id": 4,
+      "rule": "不要把外接 F072 的 3.3V/5V 并到 V3.1 的 VDD_3V3/VBUS；12V 不可接任何 GPIO",
+      "reason": "双电源互灌/器件击穿"
+    },
+    {
+      "id": 5,
+      "rule": "改硬件前必读 01_PCB/说明.md 与 01_PCB/Motor-project/V3.1_升级说明.md",
+      "reason": "设计妥协与已验证的返修点"
+    },
+    {
+      "id": 6,
+      "rule": "元器件封装必须来自嘉立创官方库（器件选型规范.md R0 白名单）",
+      "reason": "用户硬性要求，check-design.mjs 硬拦截"
+    }
   ],
-
   "current_chain": {
     "path": "HostSoftware -> USB-TTL/DAPLink（9600-8N1，Modbus-RTU 从站 1）-> 外接 HC32F072JATA（F072_MotorCtrl -Direct/-BEMF）-> TP12-TP17 -> V3.1 FD6288T -> 电机",
     "mapping": [
-      { "mcu_pin": "PB2", "testpoint": "TP12", "net": "PWM_AH", "fd6288t": "HIN1" },
-      { "mcu_pin": "PA7", "testpoint": "TP13", "net": "PWM_AL", "fd6288t": "LIN1" },
-      { "mcu_pin": "PA4", "testpoint": "TP14", "net": "PWM_BH", "fd6288t": "HIN2" },
-      { "mcu_pin": "PB0", "testpoint": "TP15", "net": "PWM_BL", "fd6288t": "LIN2" },
-      { "mcu_pin": "PB12", "testpoint": "TP16", "net": "PWM_CH", "fd6288t": "HIN3" },
-      { "mcu_pin": "PB1", "testpoint": "TP17", "net": "PWM_CL", "fd6288t": "LIN3" },
-      { "mcu_pin": "GND", "testpoint": "TP2", "net": "AGND", "fd6288t": "COM位于PGND（TP19），AGND经R47连接PGND" }
+      {
+        "mcu_pin": "PB2",
+        "testpoint": "TP12",
+        "net": "PWM_AH",
+        "fd6288t": "HIN1"
+      },
+      {
+        "mcu_pin": "PA7",
+        "testpoint": "TP13",
+        "net": "PWM_AL",
+        "fd6288t": "LIN1"
+      },
+      {
+        "mcu_pin": "PA4",
+        "testpoint": "TP14",
+        "net": "PWM_BH",
+        "fd6288t": "HIN2"
+      },
+      {
+        "mcu_pin": "PB0",
+        "testpoint": "TP15",
+        "net": "PWM_BL",
+        "fd6288t": "LIN2"
+      },
+      {
+        "mcu_pin": "PB12",
+        "testpoint": "TP16",
+        "net": "PWM_CH",
+        "fd6288t": "HIN3"
+      },
+      {
+        "mcu_pin": "PB1",
+        "testpoint": "TP17",
+        "net": "PWM_CL",
+        "fd6288t": "LIN3"
+      },
+      {
+        "mcu_pin": "GND",
+        "testpoint": "TP2",
+        "net": "AGND",
+        "fd6288t": "COM位于PGND（TP19），AGND经R47连接PGND"
+      }
     ]
   },
-
   "protocol": {
     "uart": "9600-8N1",
     "modbus_slave_address": 1,
-    "function_codes": ["0x03", "0x06"],
+    "function_codes": [
+      "0x03",
+      "0x06"
+    ],
     "poll_period_ms": 250,
     "response_timeout_ms": 500,
     "registers": {
@@ -77,55 +138,180 @@
       "0x0009": "R  通信成功计数"
     }
   },
-
   "topics": [
-    { "topic": "板级总览/测试点/实板状态/设计妥协", "authoritative": "01_PCB/说明.md", "derived": [] },
-    { "topic": "V3.1 差异与实板记录", "authoritative": "01_PCB/Motor-project/V3.1_升级说明.md", "derived": [] },
-    { "topic": "电气计算与设计规格", "authoritative": "01_PCB/Motor-project/V3.0_设计规格与计算书.md", "derived": [] },
-    { "topic": "原理图源文件", "authoritative": "01_PCB/Motor-project/motor-driver-V3.1.kicad_sch", "derived": ["motor-driver-V3.1.svg", "motor-driver-V3.1.png", "motor-driver-V3.1.pdf"] },
-    { "topic": "网表", "authoritative": "01_PCB/Motor-analysis/kicad_netlist_V3.1.net", "derived": ["01_PCB/Motor-project/motor-driver-V3.1.net", "01_PCB/Motor-project/netlist_V3.1.txt"] },
-    { "topic": "ERC", "authoritative": "01_PCB/Motor-analysis/kicad_erc_V3.1.rpt", "note": "Errors 0 / Warnings 682，warning 均为预期内" },
-    { "topic": "BOM", "authoritative": "01_PCB/Motor-project/BOM_V3.1.csv", "derived": ["01_PCB/Motor-project/BOM_V3.1.md", "05_采购清单/采购/BOM_V3.1.md"], "note": "行数 38 / 数量 126；125/126 已绑定 LCSC 货号，C47 待绑定" },
-    { "topic": "器件选型规则/封装白名单", "authoritative": "01_PCB/Motor-project/器件选型规范.md", "derived": [] },
-    { "topic": "引脚分配", "authoritative": "01_PCB/Motor-analysis/HC32F005_引脚分配.md", "derived": [] },
-    { "topic": "原理图审核结论", "authoritative": "01_PCB/Motor-analysis/V3.0_原理图最终审核报告.md", "derived": [] },
-    { "topic": "原理图生成器", "authoritative": "01_PCB/Motor-project/_生成器_V3.1/design.mjs", "entry_script": "_生成器_V3.1/build.mjs" },
-    { "topic": "当前固件（外接 F072 直驱）", "authoritative": "02_固件/F072_MotorCtrl/README.md", "code": "02_固件/F072_MotorCtrl/user/" },
-    { "topic": "BEMF 闭环控制器", "authoritative": "02_固件/F072_MotorCtrl/user/motor_bemf.c" },
-    { "topic": "F005 从机（已拆板，留参考）", "authoritative": "02_固件/F005_Slave/F005_COMMS.md", "code": "02_固件/F005_Slave/user/" },
-    { "topic": "上位机 HostSoftware", "authoritative": "03_上位机/HostSoftware/README.md", "code": "03_上位机/HostSoftware/src/", "release": "03_上位机/release/HostSoftware/HostSoftware.exe" },
-    { "topic": "调试与代码记忆 / Bug 追踪 #1-#21", "authoritative": "01_PCB/Motor-analysis/dev_notes.md" },
-    { "topic": "图文与原理图分析记忆", "authoritative": "01_PCB/Motor-analysis/analysis_notes.md" },
-    { "topic": "实测波形与调试日志", "authoritative": "04_工作区/" },
-    { "topic": "Gerber/铺铜/焊盘/过孔/装配审核", "authoritative": "04_工作区/pcb_review/" },
-    { "topic": "芯片知识库", "authoritative": "06_参考资料/芯片知识库/" },
-    { "topic": "官方数据手册", "authoritative": "06_参考资料/芯片知识库/_datasheet/" },
-    { "topic": "电机参数", "authoritative": "06_参考资料/电机参数.md" },
-    { "topic": "用户工作方式要求（五阶段）", "authoritative": "工作流程.txt" }
+    {
+      "topic": "板级总览/测试点/实板状态/设计妥协",
+      "authoritative": "01_PCB/说明.md",
+      "derived": []
+    },
+    {
+      "topic": "V3.1 差异与实板记录",
+      "authoritative": "01_PCB/Motor-project/V3.1_升级说明.md",
+      "derived": []
+    },
+    {
+      "topic": "电气计算与设计规格",
+      "authoritative": "01_PCB/Motor-project/V3.0_设计规格与计算书.md",
+      "derived": []
+    },
+    {
+      "topic": "原理图源文件",
+      "authoritative": "01_PCB/Motor-project/motor-driver-V3.1.kicad_sch",
+      "derived": [
+        "motor-driver-V3.1.svg",
+        "motor-driver-V3.1.png",
+        "motor-driver-V3.1.pdf"
+      ]
+    },
+    {
+      "topic": "网表",
+      "authoritative": "01_PCB/Motor-analysis/kicad_netlist_V3.1.net",
+      "derived": [
+        "01_PCB/Motor-project/motor-driver-V3.1.net",
+        "01_PCB/Motor-project/netlist_V3.1.txt"
+      ]
+    },
+    {
+      "topic": "ERC",
+      "authoritative": "01_PCB/Motor-analysis/kicad_erc_V3.1.rpt",
+      "note": "Errors 0 / Warnings 682，warning 均为预期内"
+    },
+    {
+      "topic": "BOM",
+      "authoritative": "01_PCB/Motor-project/BOM_V3.1.csv",
+      "derived": [
+        "01_PCB/Motor-project/BOM_V3.1.md",
+        "05_采购清单/采购/BOM_V3.1.md"
+      ],
+      "note": "行数 38 / 数量 126；125/126 已绑定 LCSC 货号，C47 待绑定"
+    },
+    {
+      "topic": "器件选型规则/封装白名单",
+      "authoritative": "01_PCB/Motor-project/器件选型规范.md",
+      "derived": []
+    },
+    {
+      "topic": "引脚分配",
+      "authoritative": "01_PCB/Motor-analysis/HC32F005_引脚分配.md",
+      "derived": []
+    },
+    {
+      "topic": "原理图审核结论",
+      "authoritative": "01_PCB/Motor-analysis/V3.0_原理图最终审核报告.md",
+      "derived": []
+    },
+    {
+      "topic": "原理图生成器",
+      "authoritative": "01_PCB/Motor-project/_生成器_V3.1/design.mjs",
+      "entry_script": "_生成器_V3.1/build.mjs"
+    },
+    {
+      "topic": "当前固件（外接 F072 直驱）",
+      "authoritative": "02_固件/F072_MotorCtrl/README.md",
+      "code": "02_固件/F072_MotorCtrl/user/"
+    },
+    {
+      "topic": "BEMF 闭环控制器",
+      "authoritative": "02_固件/F072_MotorCtrl/user/motor_bemf.c"
+    },
+    {
+      "topic": "F005 从机（已拆板，留参考）",
+      "authoritative": "02_固件/F005_Slave/F005_COMMS.md",
+      "code": "02_固件/F005_Slave/user/"
+    },
+    {
+      "topic": "上位机 HostSoftware",
+      "authoritative": "03_上位机/HostSoftware/README.md",
+      "code": "03_上位机/HostSoftware/src/",
+      "release": "03_上位机/release/HostSoftware/HostSoftware.exe"
+    },
+    {
+      "topic": "调试与代码记忆 / Bug 追踪 #1-#21",
+      "authoritative": "01_PCB/Motor-analysis/dev_notes.md"
+    },
+    {
+      "topic": "图文与原理图分析记忆",
+      "authoritative": "01_PCB/Motor-analysis/analysis_notes.md"
+    },
+    {
+      "topic": "实测波形与调试日志",
+      "authoritative": "04_工作区/"
+    },
+    {
+      "topic": "Gerber/铺铜/焊盘/过孔/装配审核",
+      "authoritative": "04_工作区/pcb_review/"
+    },
+    {
+      "topic": "芯片知识库",
+      "authoritative": "06_参考资料/芯片知识库/"
+    },
+    {
+      "topic": "官方数据手册",
+      "authoritative": "06_参考资料/芯片知识库/_datasheet/"
+    },
+    {
+      "topic": "电机参数",
+      "authoritative": "06_参考资料/电机参数.md"
+    },
+    {
+      "topic": "用户工作方式要求（五阶段）",
+      "authoritative": "工作流程.txt"
+    }
   ],
-
   "commands": {
     "pcb_regenerate": {
       "cwd": "01_PCB/Motor-project",
-      "steps": ["node \"_生成器_V3.1\\check-design.mjs\"", "node \"_生成器_V3.1\\build.mjs\"", "node \"_生成器_V3.1\\render.mjs\"", "node \"_生成器_V3.1\\raster.mjs\" \"motor-driver-V3.1.svg\" \"motor-driver-V3.1.png\" 2000"],
+      "steps": [
+        "node \"_生成器_V3.1\\check-design.mjs\"",
+        "node \"_生成器_V3.1\\build.mjs\"",
+        "node \"_生成器_V3.1\\render.mjs\"",
+        "node \"_生成器_V3.1\\raster.mjs\" \"motor-driver-V3.1.svg\" \"motor-driver-V3.1.png\" 2000"
+      ],
       "acceptance": "build.mjs 结尾 ERC Errors 必须为 0"
     },
     "firmware_f072": {
       "cwd": "02_固件/F072_MotorCtrl",
-      "examples": [".\\build.ps1 -Direct", ".\\build.ps1 -Direct -Flash", ".\\build.ps1 -BEMF -Direct", ".\\build.ps1 -Clean"],
-      "outputs": ["build/hc32f072.elf", "build/hc32f072.hex", "build/hc32f072.bin"],
+      "examples": [
+        ".\\build.ps1 -Direct",
+        ".\\build.ps1 -Direct -Flash",
+        ".\\build.ps1 -BEMF -Direct",
+        ".\\build.ps1 -Clean"
+      ],
+      "outputs": [
+        "build/hc32f072.elf",
+        "build/hc32f072.hex",
+        "build/hc32f072.bin"
+      ],
       "test": "python .\\tests\\test_protocol_vectors.py"
     },
     "firmware_f005": {
       "cwd": "02_固件/F005_Slave",
-      "examples": [".\\build_comms.ps1", ".\\build_comms.ps1 -Flash", ".\\flash_under_reset.ps1 -Image .\\build_comms\\comms.hex"],
-      "outputs": ["build_comms/comms.hex"],
-      "defaults": { "MaxDuty": 25, "MinVbusMv": 13000, "SwdReleaseMs": 5000, "DirectMinHz": 10, "DirectMaxHz": 120 }
+      "examples": [
+        ".\\build_comms.ps1",
+        ".\\build_comms.ps1 -Flash",
+        ".\\flash_under_reset.ps1 -Image .\\build_comms\\comms.hex"
+      ],
+      "outputs": [
+        "build_comms/comms.hex"
+      ],
+      "defaults": {
+        "MaxDuty": 25,
+        "MinVbusMv": 13000,
+        "SwdReleaseMs": 5000,
+        "DirectMinHz": 10,
+        "DirectMaxHz": 120
+      }
     },
     "host_software": {
       "cwd": "03_上位机/HostSoftware",
-      "examples": ["powershell -ExecutionPolicy Bypass -File .\\scripts\\build-vs.ps1 -Configuration Debug", "cmake --preset msvc-debug && cmake --build --preset debug"],
-      "outputs": ["build/Debug/HostSoftware.exe", "build/Release/HostSoftware.exe"]
+      "examples": [
+        "powershell -ExecutionPolicy Bypass -File .\\scripts\\build-vs.ps1 -Configuration Debug",
+        "cmake --preset msvc-debug && cmake --build --preset debug"
+      ],
+      "outputs": [
+        "build/Debug/HostSoftware.exe",
+        "build/Release/HostSoftware.exe"
+      ]
     },
     "toolchain_paths": {
       "arm_gcc": "C:\\Users\\limer\\.toolchain-arm\\xpack-arm-none-eabi-gcc-12.3.1-1.1\\bin",
@@ -136,18 +322,40 @@
       "flash": "python -m pyocd (DAPLink)"
     }
   },
-
   "open_items": [
-    { "item": "欠压门限 vs 母线窗口不匹配（13000 mV 会让 12V 母线误报）", "status": "待用户拍板" },
-    { "item": "U4返修验收及设计源脚号闭合", "status": "用户确认U4已返修、R52/R53接回；输出电压待测，设计源U4.1/U4.3连接问题未闭合" },
-    { "item": "电机极对数 2 还是 3", "status": "待确认（按 2 出图，不影响 PCB）" },
-    { "item": "相电阻 / 相电感", "status": "未知（影响电流环与消隐时间）" },
-    { "item": "C47 立创货号", "status": "待绑定（10uF/50V/C1210）" },
-    { "item": "FD6288T UVLO 阈值实测", "status": "待实测" },
-    { "item": "死区基准时钟分频", "status": "需查参考手册 ADT 章节" },
-    { "item": "电机带载验证（BEMF 闭环）", "status": "未完成" }
+    {
+      "item": "欠压门限 vs 母线窗口不匹配（13000 mV 会让 12V 母线误报）",
+      "status": "待用户拍板"
+    },
+    {
+      "item": "U4返修验收及设计源脚号闭合",
+      "status": "用户确认U4已返修、R52/R53接回；输出电压待测，设计源U4.1/U4.3连接问题未闭合"
+    },
+    {
+      "item": "电机极对数 2 还是 3",
+      "status": "待确认（按 2 出图，不影响 PCB）"
+    },
+    {
+      "item": "相电阻 / 相电感",
+      "status": "未知（影响电流环与消隐时间）"
+    },
+    {
+      "item": "C47 立创货号",
+      "status": "待绑定（10uF/50V/C1210）"
+    },
+    {
+      "item": "FD6288T UVLO 阈值实测",
+      "status": "待实测"
+    },
+    {
+      "item": "死区基准时钟分频",
+      "status": "需查参考手册 ADT 章节"
+    },
+    {
+      "item": "电机带载验证（BEMF 闭环）",
+      "status": "未完成"
+    }
   ],
-
   "ignore_globs": [
     "**/build*/**",
     "**/debug/**",
@@ -172,14 +380,12 @@
     "*.vcd",
     "*.jsonl"
   ],
-
   "read_with_rg": [
     "01_PCB/Motor-analysis/dev_notes.md",
     "06_参考资料/芯片知识库/HC32F005_引脚与复用.md",
     "06_参考资料/芯片知识库/HC32F005_ADT.md",
     "06_参考资料/芯片知识库/HC32F005_QFN24_引脚与AF表.md"
   ],
-
   "renamed_paths": {
     "01_PCB/01_工程/": "01_PCB/Motor-project/",
     "01_PCB/03_审核/": "01_PCB/Motor-analysis/",
@@ -187,7 +393,6 @@
     "04_调试实况/": "04_工作区/",
     "02_固件/F005_COMMS.md": "02_固件/F005_Slave/F005_COMMS.md"
   },
-
   "known_doc_issues": [
     "03_上位机/HostSoftware/README.md 末节仍描述 F005 直连，实际链路为外接 F072 直连（帧格式/寄存器一致）",
     "02_固件/F072_MotorCtrl/README.md §4 只写台架开环，未提 -BEMF 闭环",
@@ -196,7 +401,6 @@
     "多处历史文档使用旧目录名 01_工程/ 与 03_审核/；build.mjs 内 ../03_审核 为残留字面量",
     "上位机文档/脚本内绝对路径仍写作 ...\\Desktop\\motor-drive(1)\\..."
   ],
-
   "where_to_write_findings": {
     "chip_params": "06_参考资料/芯片知识库/[型号].md（增量追加）",
     "motor_params": "06_参考资料/电机参数.md",
@@ -206,5 +410,7 @@
     "design_change": "01_PCB/Motor-project/_生成器_V3.1/design.mjs 后重跑 build.mjs",
     "status_change": "先改权威文件，再更新 00_AI/02_当前状态.md",
     "history": "99_归档/"
-  }
+  },
+  "f005_reference": "06_参考资料/开源参考工程/AM32_算法对照/对照说明.md",
+  "f005_authority": "02_固件/F005_Slave/F005_COMMS.md"
 }

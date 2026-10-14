@@ -23,6 +23,8 @@
  ******************************************************************************/
 
 #include "motor.h"
+#include "bemf_observer.h"
+#include "speed_control.h"
 
 #include "adc.h"
 #include "adt.h"
@@ -50,6 +52,9 @@
 #define MOTOR_ADC_CH_PHASE_A      (AdcExInputCH0)   /* P24 / AIN0 */
 #define MOTOR_ADC_CH_PHASE_B      (AdcExInputCH3)   /* P33 / AIN3 */
 #define MOTOR_ADC_CH_PHASE_C      (AdcExInputCH8)   /* P02 / AIN8 */
+#define MOTOR_ADC_CH_NEUTRAL      (AdcExInputCH4)   /* VN飞线 -> P34，第1脚 */
+#define MOTOR_ADC_SAMPLE_COMPARE  (300u) /* 三角波下降段，高边已关断 */
+#define MOTOR_ADC_ACQUIRE_GUARD    (80u)  /* 4 ADC clocks + software margin */
 
 #define MOTOR_DEADTIME_COUNTS     (24u)   /* 1 us at PCLK0 = 24 MHz */
 #define MOTOR_ADC_CURRENT_EVERY   (4u)
@@ -117,6 +122,8 @@ typedef enum {
 typedef enum {
     MOTOR_ADC_NONE = 0u,
     MOTOR_ADC_BEMF,
+    MOTOR_ADC_NEUTRAL_FIRST,
+    MOTOR_ADC_NEUTRAL_LAST,
     MOTOR_ADC_CURRENT,
     MOTOR_ADC_VBUS
 } motor_adc_kind_t;
@@ -127,9 +134,7 @@ typedef enum {
 static volatile motor_state_t s_state;
 static volatile uint16_t s_startRequest;
 static volatile uint16_t s_throttlePercent;
-#if MOTOR_DIRECT_THROTTLE_MODE
 static volatile uint16_t s_throttleRequestPercent;
-#endif
 static volatile uint16_t s_actualDuty;
 static volatile uint16_t s_fault;
 static volatile uint16_t s_commOk;
@@ -152,6 +157,9 @@ static volatile uint32_t s_stepCount;
 static volatile uint16_t s_openLoopCommutationCount;
 static volatile uint8_t  s_pendingStep;
 static volatile boolean_t s_stepPending;
+static volatile boolean_t s_dutyPending;
+static volatile uint16_t s_pendingDutyCompare;
+static volatile uint16_t s_pendingDutyPercent;
 
 /* TIM2 is a free-running 32-bit time base at 375 kHz. TIM1 is the one-shot
  * commutation timer at the same rate; TIM0 is reserved for UART0 baud. */
@@ -160,20 +168,28 @@ static volatile uint32_t s_lastStepTicks;
 static volatile boolean_t s_commutationScheduled;
 
 /* BEMF observer. */
-static volatile uint16_t s_bemfSamples[MOTOR_BEMF_FILTER_LEN];
-static volatile uint8_t  s_bemfSampleIndex;
-static volatile uint8_t  s_bemfSampleCount;
-static volatile uint32_t s_bemfSum;
-static volatile int8_t   s_bemfPreviousSign;
-static volatile uint8_t  s_bemfBlankCycles;
 static volatile uint16_t s_bemfCounts;
 static volatile uint16_t s_bemfThresholdCounts;
 static volatile uint32_t s_zeroCrossCount;
+static bemf_observer_t s_observer;
+static volatile uint8_t s_lockSteps;
+static volatile uint32_t s_lastZeroCrossTick;
+static volatile boolean_t s_zeroCrossValid;
+static speed_control_t s_speedControl;
+static volatile uint16_t s_closedDutyPermille;
 
 /* ADC sharing between BEMF, current and bus protection. */
 static volatile motor_adc_kind_t s_adcKind;
 static volatile boolean_t s_adcPending;
 static volatile uint32_t s_pwmCycle;
+static volatile uint8_t s_adcStep;
+static volatile uint32_t s_adcTick;
+static volatile uint32_t s_adcFrameTick;
+static volatile uint32_t s_adcNeutralFirstTick;
+static volatile uint32_t s_adcPhaseTick;
+static volatile uint16_t s_adcNeutralFirst;
+static volatile uint16_t s_adcPhase;
+static volatile uint32_t s_currentSampleCycle;
 
 /* Protection / diagnostics. */
 static volatile uint16_t s_vbusCounts;
@@ -188,7 +204,6 @@ static volatile uint32_t s_adcOverrunCount;
 static void Motor_AdcInit(void);
 static void Motor_AdcStartChannel(uint8_t channel);
 static void Motor_UpdateAdcResult(void);
-static void Motor_SetBemfThreshold(void);
 
 static void Motor_SysTickInit(void);
 static void Motor_CommTimerInit(void);
@@ -209,23 +224,19 @@ static void Motor_UpdateDuty(void);
 static uint16_t Motor_ClampDutyPercent(uint16_t dutyPercent);
 static uint16_t Motor_DutyToCompare(uint16_t dutyPercent);
 static uint8_t  Motor_MapPhase(uint8_t phase);
-#if MOTOR_DIRECT_THROTTLE_MODE
 static void     Motor_BeginStartup(void);
 static uint16_t Motor_ThrottleToDutyPercent(uint16_t percent);
-static uint32_t Motor_ThrottleToMilliHz(uint16_t percent);
-#endif
 
 static void Motor_FaultNow(uint16_t fault);
 static void Motor_BemfReset(void);
 static void Motor_BemfProcess(uint16_t raw);
-static void Motor_OnZeroCross(void);
+static void __attribute__((noinline)) Motor_OnZeroCross(uint32_t crossingTick);
 static void Motor_CommutationIrq(void);
 static void Motor_AdcTriggerFromPwm(void);
+static boolean_t Motor_AdcOffWindowAvailable(void);
+static void Motor_PrepareCurrentForPeak(void);
 static uint32_t Motor_StepTicksFromMilliHz(uint32_t milliHz);
 static uint32_t Motor_MilliHzFromStepTicks(uint32_t stepTicks);
-#if !MOTOR_DIRECT_THROTTLE_MODE
-static int32_t  Motor_Abs32(int32_t value);
-#endif
 
 /* --------------------------------------------------------------------------
  * ADC
@@ -255,6 +266,9 @@ static void Motor_AdcInit(void)
     norm.enAdcNormModeCh = MOTOR_ADC_CH_PHASE_A;
     norm.bAdcResultAccEn = FALSE;
     (void)Adc_ConfigNormMode(&cfg, &norm);
+    Adc_ClrContIrqState();
+    Adc_EnableIrq();
+    EnableNvic(ADC_IRQn, IrqLevel1, TRUE);
 }
 
 static void Motor_AdcStartChannel(uint8_t channel)
@@ -262,29 +276,10 @@ static void Motor_AdcStartChannel(uint8_t channel)
     /* Direct register writes keep the 20 kHz PWM ISR short. */
     M0P_ADC->CR1_f.CT = 0u;                 /* single conversion mode */
     M0P_ADC->CR0_f.SEL = ((uint32_t)channel & 0x0Fu);
-    Adc_Start();
-}
-
-static void Motor_SetBemfThreshold(void)
-{
-    uint32_t threshold;
-
-    if (!s_vbusValid) {
-        s_bemfThresholdCounts = 0u;
-        return;
-    }
-
-    /* The 150k/1nF phase divider averages the 20 kHz carrier, so the ADC
-     * sees duty*Vbus/2 + BEMF rather than Vbus/2 + BEMF.  Scale the
-     * threshold by the instantaneous duty (measured failing otherwise,
-     * 2026-09-30). */
-    threshold = ((uint32_t)s_vbusCounts * MOTOR_PHASE_TO_BUS_THRESHOLD_NUM) /
-                MOTOR_PHASE_TO_BUS_THRESHOLD_DEN;
-    threshold = (threshold * (uint32_t)s_actualDuty) / 100u;
-    if (threshold > 4095u) {
-        threshold = 4095u;
-    }
-    s_bemfThresholdCounts = (uint16_t)threshold;
+    M0P_ADC->ICLR = ~(1u << 3);
+    s_adcTick = Motor_NowTicks();
+    s_adcPending = TRUE;
+    M0P_ADC->CR0_f.START = 1u;
 }
 
 static void Motor_UpdateAdcResult(void)
@@ -292,18 +287,41 @@ static void Motor_UpdateAdcResult(void)
     uint16_t raw = 0u;
     uint32_t mv;
 
-    if ((s_adcPending == 0u) || (Adc_PollBusyState() != FALSE)) {
+    if ((s_adcPending == 0u) || M0P_ADC->CR0_f.START) {
         return;
     }
 
-    if (Adc_GetResult(&raw) != Ok) {
-        s_adcPending = 0u;
-        return;
-    }
+    raw = (uint16_t)M0P_ADC->RESULT_f.RESULT;
+    s_adcPending = FALSE;
+    if (s_adcKind == MOTOR_ADC_CURRENT) { M0P_ADC->CR1_f.TRIGS0 = AdcTrigDisable; }
 
     switch (s_adcKind) {
+    case MOTOR_ADC_NEUTRAL_FIRST:
+        s_adcNeutralFirst = raw;
+        s_adcNeutralFirstTick = s_adcTick;
+        if (s_adcStep != s_stepIndex || s_stepPending ||
+            !Motor_AdcOffWindowAvailable()) { break; }
+        s_adcKind = MOTOR_ADC_BEMF;
+        Motor_AdcStartChannel(s_phaseAdcChannel[Motor_MapPhase(s_step[s_adcStep].floating)]);
+        return;
+
     case MOTOR_ADC_BEMF:
-        Motor_BemfProcess(raw);
+        s_adcPhase = raw;
+        s_adcPhaseTick = s_adcTick;
+        if (s_adcStep != s_stepIndex || s_stepPending ||
+            !Motor_AdcOffWindowAvailable()) { break; }
+        s_adcKind = MOTOR_ADC_NEUTRAL_LAST;
+        Motor_AdcStartChannel((uint8_t)MOTOR_ADC_CH_NEUTRAL);
+        return;
+
+    case MOTOR_ADC_NEUTRAL_LAST:
+        if (s_adcStep == s_stepIndex && !s_stepPending &&
+            (s_adcTick - s_adcFrameTick) <= MOTOR_ADC_MAX_FRAME_TICKS) {
+            s_bemfThresholdCounts = Bemf_InterpolateNeutral(
+                s_adcNeutralFirst, raw, s_adcNeutralFirstTick,
+                s_adcPhaseTick, s_adcTick);
+            Motor_BemfProcess(s_adcPhase);
+        }
         break;
 
     case MOTOR_ADC_CURRENT:
@@ -320,13 +338,15 @@ static void Motor_UpdateAdcResult(void)
         s_vbusCounts = raw;
         if (raw >= MOTOR_VBUS_MIN_COUNTS) {
             s_vbusValid = TRUE;
-            Motor_SetBemfThreshold();
-            mv = (uint32_t)((float)raw * MOTOR_VBUS_MV_PER_COUNT);
+            mv = ((uint32_t)raw * 14038u + 500u) / 1000u;
             if ((s_selftestRunning != 0u) && (mv < MOTOR_VBUS_MIN_MV)) {
                 Motor_FaultNow(MOTOR_FAULT_UNDERVOLTAGE);
             } else if ((s_selftestRunning != 0u) && (mv > MOTOR_VBUS_MAX_MV)) {
                 Motor_FaultNow(MOTOR_FAULT_OVERVOLTAGE);
             }
+        } else {
+            s_vbusValid = FALSE;
+            if (s_selftestRunning) { Motor_FaultNow(MOTOR_FAULT_UNDERVOLTAGE); }
         }
         break;
 
@@ -334,7 +354,16 @@ static void Motor_UpdateAdcResult(void)
         break;
     }
 
-    s_adcPending = 0u;
+    s_adcKind = MOTOR_ADC_NONE;
+    Motor_PrepareCurrentForPeak();
+}
+
+void Adc_IRQHandler(void)
+{
+    if (M0P_ADC->IFR_f.CONT_INTF) {
+        M0P_ADC->ICLR = ~(1u << 3);
+        Motor_UpdateAdcResult();
+    }
 }
 
 /* --------------------------------------------------------------------------
@@ -432,6 +461,7 @@ static void Motor_AdtInit(void)
 
         (void)Adt_Init(t, &base);
         (void)Adt_SetPeriod(t, MOTOR_PERAR);
+        (void)Adt_SetCompareValue(t, AdtCompareD, MOTOR_ADC_SAMPLE_COMPARE);
 
         /* All three timers start in a defined float state.  PCONR fields are
          * installed before the counters are synchronously released; the board
@@ -456,6 +486,7 @@ static void Motor_AdtInit(void)
 
     Adt_ClearAllIrqFlag(M0P_ADTIM4);
     (void)Adt_CfgIrq(M0P_ADTIM4, AdtUDFIrq, TRUE);
+    (void)Adt_CfgIrq(M0P_ADTIM4, AdtCMDIrq, TRUE);
     EnableNvic(ADTIM4_IRQn, IrqLevel1, TRUE);
 
     DDL_ZERO_STRUCT(sync);
@@ -606,7 +637,14 @@ static uint16_t Motor_DutyToCompare(uint16_t dutyPercent)
     return (uint16_t)cmp;
 }
 
-#if MOTOR_DIRECT_THROTTLE_MODE
+static uint16_t Motor_ClosedDutyToCompare(void)
+{
+    uint32_t duty = s_closedDutyPermille;
+    uint32_t maximum = MOTOR_MAX_DUTY_PERCENT * 10u;
+    if (duty > maximum) { duty = maximum; }
+    return (uint16_t)(MOTOR_PERAR - (MOTOR_PERAR * duty + 500u) / 1000u);
+}
+
 static uint16_t Motor_ThrottleToDutyPercent(uint16_t percent)
 {
     uint32_t duty;
@@ -625,22 +663,6 @@ static uint16_t Motor_ThrottleToDutyPercent(uint16_t percent)
     return Motor_ClampDutyPercent((uint16_t)duty);
 }
 
-static uint32_t Motor_ThrottleToMilliHz(uint16_t percent)
-{
-    uint32_t range;
-
-    if (percent > 100u) {
-        percent = 100u;
-    }
-    if (percent == 0u) {
-        return (uint32_t)MOTOR_DIRECT_MIN_MILLIHZ;
-    }
-
-    range = (uint32_t)MOTOR_DIRECT_MAX_MILLIHZ - MOTOR_DIRECT_MIN_MILLIHZ;
-    return (uint32_t)MOTOR_DIRECT_MIN_MILLIHZ +
-           ((range * (uint32_t)percent) / 100u);
-}
-
 static void Motor_BeginStartup(void)
 {
     s_startRequest      = 1u;
@@ -655,10 +677,19 @@ static void Motor_BeginStartup(void)
     s_openLoopCommutationCount = 0u;
     s_rampAccumulatorMs = 0u;
     s_commutationScheduled = FALSE;
+    s_lastStepTicks = Motor_StepTicksFromMilliHz(MOTOR_OPEN_LOOP_START_MILLIHZ);
+    s_lastCommutationTick = Motor_NowTicks();
+    s_lockSteps = 0u;
+    s_zeroCrossValid = FALSE;
+    s_stepPending = FALSE;
+    s_dutyPending = FALSE;
+    s_throttlePercent = Motor_ThrottleToDutyPercent(s_throttleRequestPercent);
+    if (s_throttlePercent > MOTOR_ALIGN_DUTY_PERCENT) {
+        s_throttlePercent = MOTOR_ALIGN_DUTY_PERCENT;
+    }
     Motor_StopCommutationTimer();
     Motor_AllOutputsOff();
 }
-#endif
 
 static const uint8_t s_phaseMap[6][3] = {
     { MOTOR_PHASE_A, MOTOR_PHASE_B, MOTOR_PHASE_C },
@@ -688,6 +719,20 @@ static void Motor_ApplyStepAtValley(uint8_t step)
     uint8_t fl = Motor_MapPhase(s_step[step].floating);
     uint16_t duty = Motor_ClampDutyPercent(s_throttlePercent);
     uint16_t cmp = Motor_DutyToCompare(duty);
+    if (s_state == MOTOR_STATE_CLOSED_LOOP) {
+        duty = (s_closedDutyPermille + 5u) / 10u;
+        cmp = Motor_ClosedDutyToCompare();
+    }
+    if (s_state == MOTOR_STATE_STOPPED || s_state == MOTOR_STATE_FAULT) { return; }
+    if (s_state == MOTOR_STATE_OPEN_LOOP) {
+        if (!s_observer.emitted) {
+            s_lockSteps = 0u;
+            s_zeroCrossValid = FALSE;
+        }
+        s_lastStepTicks = Motor_StepTicksFromMilliHz(s_electricalMilliHz);
+        if (s_openLoopCommutationCount < 0xFFFFu) { s_openLoopCommutationCount++; }
+    }
+    s_stepIndex = step;
 
     /* The ADT PCONR/DCONR registers must only be changed while their counters
      * are stopped.  Stop all three timers at the valley, install the new
@@ -706,24 +751,36 @@ static void Motor_ApplyStepAtValley(uint8_t step)
 
     s_actualDuty = duty;
     s_stepCount++;
+    s_lastCommutationTick = Motor_NowTicks();
     Motor_BemfReset();
+    if (s_state == MOTOR_STATE_OPEN_LOOP) {
+        Motor_ArmCommutationDelay(s_lastStepTicks);
+        s_commutationScheduled = TRUE;
+    }
 }
 
 static void Motor_UpdateDuty(void)
 {
-    uint8_t hi;
     uint16_t duty = Motor_ClampDutyPercent(s_throttlePercent);
     uint16_t cmp = Motor_DutyToCompare(duty);
+    if (s_state == MOTOR_STATE_CLOSED_LOOP) {
+        duty = (s_closedDutyPermille + 5u) / 10u;
+        cmp = Motor_ClosedDutyToCompare();
+    }
 
-    if (duty == s_actualDuty) {
+    if (duty == s_actualDuty && s_state != MOTOR_STATE_CLOSED_LOOP) {
         return;
     }
 
-    hi = Motor_MapPhase(s_step[s_stepIndex].highSide);
-    (void)Adt_SetCompareValue(s_phase[hi].timer, AdtCompareA, cmp);
-    (void)Adt_SetCompareValue(s_phase[hi].timer, AdtCompareC, cmp);
-    s_actualDuty = duty;
-    Motor_SetBemfThreshold();
+    /* 1ms时基只发布请求；寄存器与回读占空比在谷点一起提交。 */
+    {
+        uint32_t irqMask = __get_PRIMASK();
+        __disable_irq();
+        s_pendingDutyCompare = cmp;
+        s_pendingDutyPercent = duty;
+        s_dutyPending = TRUE;
+        __set_PRIMASK(irqMask);
+    }
 }
 
 /* --------------------------------------------------------------------------
@@ -731,137 +788,74 @@ static void Motor_UpdateDuty(void)
  * ----------------------------------------------------------------------- */
 static void Motor_BemfReset(void)
 {
-    uint8_t i;
-
-    for (i = 0u; i < MOTOR_BEMF_FILTER_LEN; i++) {
-        s_bemfSamples[i] = 0u;
-    }
-    s_bemfSampleIndex = 0u;
-    s_bemfSampleCount = 0u;
-    s_bemfSum = 0u;
-    s_bemfPreviousSign = 0;
-    s_bemfBlankCycles = MOTOR_BEMF_BLANK_PWM_CYCLES;
-}
-
-#if !MOTOR_DIRECT_THROTTLE_MODE
-static int32_t Motor_Abs32(int32_t value)
-{
-    return (value < 0) ? -value : value;
-}
-#endif
-
-static void Motor_OnZeroCross(void)
-{
-#if MOTOR_DIRECT_THROTTLE_MODE
-    /* Direct mode deliberately stays open-loop: throttle owns both the duty
-     * and the commanded electrical frequency. */
-    return;
-#else
-    uint32_t now = Motor_NowTicks();
-    uint32_t halfStep;
-    int32_t delta;
-    uint32_t tolerance;
-
-    if ((s_state != MOTOR_STATE_OPEN_LOOP) &&
-        (s_state != MOTOR_STATE_CLOSED_LOOP)) {
-        return;
-    }
-
-    if (s_state == MOTOR_STATE_OPEN_LOOP) {
-        if (s_openLoopCommutationCount < MOTOR_OPEN_LOOP_MIN_STEPS) {
-            return;
-        }
-
-        tolerance = s_lastStepTicks / 4u;
-        if (tolerance < 20u) {
-            tolerance = 20u;
-        }
-        delta = (int32_t)(now - (s_lastCommutationTick + (s_lastStepTicks / 2u)));
-        if (Motor_Abs32(delta) > (int32_t)tolerance) {
-            return;
-        }
-
-        s_state = MOTOR_STATE_CLOSED_LOOP;
-    }
-
-    if (s_commutationScheduled != 0u) {
-        return;
-    }
-
-    halfStep = s_lastStepTicks / 2u;
-    if (halfStep > MOTOR_BEMF_DELAY_COMP_TICKS) {
-        halfStep -= MOTOR_BEMF_DELAY_COMP_TICKS;
-    } else {
-        halfStep = 1u;
-    }
-
-    Motor_ArmCommutationDelay(halfStep);
-    s_commutationScheduled = TRUE;
-    s_zeroCrossCount++;
-#endif
-}
-
-static void Motor_BemfProcess(uint16_t raw)
-{
-    uint16_t average;
-    int8_t side;
-    int8_t expected;
-
-    if (s_bemfSampleCount < MOTOR_BEMF_FILTER_LEN) {
-        s_bemfSamples[s_bemfSampleIndex] = raw;
-        s_bemfSum += raw;
-        s_bemfSampleCount++;
-    } else {
-        s_bemfSum -= s_bemfSamples[s_bemfSampleIndex];
-        s_bemfSamples[s_bemfSampleIndex] = raw;
-        s_bemfSum += raw;
-    }
-    s_bemfSampleIndex++;
-    if (s_bemfSampleIndex >= MOTOR_BEMF_FILTER_LEN) {
-        s_bemfSampleIndex = 0u;
-    }
-
-    if (s_bemfSampleCount == 0u) {
-        return;
-    }
-    average = (uint16_t)(s_bemfSum / s_bemfSampleCount);
-    s_bemfCounts = average;
-
-    if ((s_state != MOTOR_STATE_OPEN_LOOP) &&
-        (s_state != MOTOR_STATE_CLOSED_LOOP)) {
-        return;
-    }
-
-    if (s_bemfBlankCycles != 0u) {
-        s_bemfPreviousSign = 0;
-        return;
-    }
-
-    if (s_bemfThresholdCounts == 0u) {
-        return;
-    }
-
-    if (average > (uint16_t)(s_bemfThresholdCounts + MOTOR_BEMF_HYSTERESIS_COUNTS)) {
-        side = 1;
-    } else if (average < (uint16_t)(s_bemfThresholdCounts - MOTOR_BEMF_HYSTERESIS_COUNTS)) {
-        side = -1;
-    } else {
-        side = s_bemfPreviousSign;
-    }
-
-    if (side == 0) {
-        return;
-    }
-
-    expected = s_step[s_stepIndex].bemfSignBeforeCross;
+    int8_t expected = s_step[s_stepIndex].bemfSignBeforeCross;
+    uint32_t blank = s_lastStepTicks / 8u;
 #if MOTOR_COMMUTATION_REVERSE
     expected = (int8_t)-expected;
 #endif
     expected = (int8_t)(expected * MOTOR_BEMF_SIGN_MULTIPLIER);
-    if ((s_bemfPreviousSign == expected) && (side == -expected)) {
-        Motor_OnZeroCross();
+    if (blank < 38u) { blank = 38u; } /* 至少约100 us，且不超过有效检测窗 */
+    Bemf_Reset(&s_observer, s_stepIndex, s_lastCommutationTick,
+               s_lastStepTicks, blank, expected, MOTOR_BEMF_HYSTERESIS_COUNTS);
+}
+
+static void Motor_OnZeroCross(uint32_t crossingTick)
+{
+    uint32_t interval = s_lastStepTicks;
+    uint32_t now = Motor_NowTicks();
+    uint32_t deadline;
+    int32_t delay;
+    if (s_state != MOTOR_STATE_OPEN_LOOP && s_state != MOTOR_STATE_CLOSED_LOOP) {
+        return;
     }
-    s_bemfPreviousSign = side;
+    if (s_zeroCrossValid) {
+        uint32_t measured = crossingTick - s_lastZeroCrossTick;
+        if (measured < interval / 2u || measured > interval + interval / 2u) {
+            s_lockSteps = 0u;
+            s_zeroCrossValid = FALSE;
+            return;
+        }
+        interval = (interval * 3u + measured) / 4u;
+    }
+    s_lastZeroCrossTick = crossingTick;
+    s_zeroCrossValid = TRUE;
+    s_zeroCrossCount++;
+    if (s_state == MOTOR_STATE_OPEN_LOOP) {
+        if (s_openLoopCommutationCount < MOTOR_OPEN_LOOP_MIN_STEPS) {
+            s_lockSteps = 0u;
+            return;
+        }
+        if (++s_lockSteps < MOTOR_BEMF_LOCK_STEPS) { return; }
+        /* 先撤销启动换相定时，再建立由真实过零决定的定时。 */
+        Motor_StopCommutationTimer();
+        s_state = MOTOR_STATE_CLOSED_LOOP;
+        s_closedDutyPermille = s_actualDuty * 10u;
+        Speed_Reset(&s_speedControl, s_closedDutyPermille,
+                     Motor_MilliHzFromStepTicks(interval));
+    } else if (s_commutationScheduled) {
+        return;
+    }
+    s_lastStepTicks = interval;
+    deadline = crossingTick + interval / 2u - MOTOR_BEMF_DELAY_COMP_TICKS;
+    delay = (int32_t)(deadline - now);
+    if (delay <= 0 || delay > 65535) {
+        Motor_FaultNow(MOTOR_FAULT_BEMF_LOST);
+        return;
+    }
+    Motor_ArmCommutationDelay((uint32_t)delay);
+    s_commutationScheduled = TRUE;
+}
+
+static void Motor_BemfProcess(uint16_t raw)
+{
+    uint32_t crossingTick;
+    s_bemfCounts = raw;
+    if ((s_state != MOTOR_STATE_OPEN_LOOP && s_state != MOTOR_STATE_CLOSED_LOOP) ||
+        !s_vbusValid || s_stepPending) { return; }
+    if (Bemf_Sample(&s_observer, s_adcStep, s_adcPhaseTick,
+                    (int16_t)((int32_t)raw - s_bemfThresholdCounts), &crossingTick)) {
+        Motor_OnZeroCross(crossingTick);
+    }
 }
 
 /* --------------------------------------------------------------------------
@@ -884,83 +878,103 @@ void Tim1_IRQHandler(void)
 
 static void Motor_CommutationIrq(void)
 {
-    uint32_t now = Motor_NowTicks();
-    uint32_t delta = now - s_lastCommutationTick;
-
-    if (delta != 0u) {
-        s_lastStepTicks = delta;
+    uint8_t next;
+    if (s_state != MOTOR_STATE_OPEN_LOOP && s_state != MOTOR_STATE_CLOSED_LOOP) {
+        return;
     }
-    s_lastCommutationTick = now;
     s_commutationScheduled = FALSE;
-
 #if MOTOR_COMMUTATION_REVERSE
-    s_stepIndex = (uint8_t)((s_stepIndex + MOTOR_STEP_COUNT - 1u) % MOTOR_STEP_COUNT);
+    next = (uint8_t)((s_stepIndex + MOTOR_STEP_COUNT - 1u) % MOTOR_STEP_COUNT);
 #else
-    s_stepIndex = (uint8_t)((s_stepIndex + 1u) % MOTOR_STEP_COUNT);
+    next = (uint8_t)((s_stepIndex + 1u) % MOTOR_STEP_COUNT);
 #endif
-    Motor_RequestStep(s_stepIndex);
-
-    if (s_state == MOTOR_STATE_OPEN_LOOP) {
-        if (s_openLoopCommutationCount < 0xFFFFu) {
-            s_openLoopCommutationCount++;
-        }
-        Motor_ArmCommutationDelay(Motor_StepTicksFromMilliHz(s_electricalMilliHz));
-        s_commutationScheduled = TRUE;
-    }
+    Motor_RequestStep(next);
 }
 
 void Tim4_IRQHandler(void)
 {
-    if (Adt_GetIrqFlag(M0P_ADTIM4, AdtUDFIrq) != FALSE) {
+    if (Adt_GetIrqFlag(M0P_ADTIM4, AdtUDFIrq)) {
         (void)Adt_ClearIrqFlag(M0P_ADTIM4, AdtUDFIrq);
-
-        if (s_stepPending != FALSE) {
+        s_pwmCycle++;
+        if (s_stepPending) {
+            uint8_t step = s_pendingStep;
             s_stepPending = FALSE;
-            Motor_ApplyStepAtValley(s_pendingStep);
+            Motor_ApplyStepAtValley(step);
+            s_dutyPending = FALSE;
+        } else if (s_dutyPending && (s_state == MOTOR_STATE_ALIGN ||
+                    s_state == MOTOR_STATE_OPEN_LOOP || s_state == MOTOR_STATE_CLOSED_LOOP)) {
+            uint8_t hi = Motor_MapPhase(s_step[s_stepIndex].highSide);
+            s_dutyPending = FALSE;
+            (void)Adt_SetCompareValue(s_phase[hi].timer, AdtCompareA, s_pendingDutyCompare);
+            (void)Adt_SetCompareValue(s_phase[hi].timer, AdtCompareC, s_pendingDutyCompare);
+            s_actualDuty = s_pendingDutyPercent;
         }
-
-        Motor_AdcTriggerFromPwm();
+        Motor_PrepareCurrentForPeak();
     }
+    if (Adt_GetIrqFlag(M0P_ADTIM4, AdtCMDIrq)) {
+        (void)Adt_ClearIrqFlag(M0P_ADTIM4, AdtCMDIrq);
+        /* DIRF=0是下降计数，仅在高边关断后的固定相位采样一次。 */
+        if (M0P_ADTIM4->STFLR_f.DIRF == 0u) { Motor_AdcTriggerFromPwm(); }
+    }
+}
+
+static boolean_t Motor_AdcOffWindowAvailable(void)
+{
+    M0P_ADTIM_TypeDef *t = s_phase[Motor_MapPhase(s_step[s_stepIndex].highSide)].timer;
+    uint32_t count = t->CNTER;
+    uint32_t compare = t->GCMAR;
+    uint32_t remaining;
+    if (s_state != MOTOR_STATE_OPEN_LOOP && s_state != MOTOR_STATE_CLOSED_LOOP) {
+        return FALSE;
+    }
+    if (count >= compare) { return FALSE; }
+    remaining = t->STFLR_f.DIRF ? compare - count : compare + count;
+    return (remaining > MOTOR_ADC_ACQUIRE_GUARD) ? TRUE : FALSE;
 }
 
 static void Motor_AdcTriggerFromPwm(void)
 {
     uint8_t channel;
-    motor_adc_kind_t kind;
-
-    s_pwmCycle++;
-    if (s_bemfBlankCycles != 0u) {
-        s_bemfBlankCycles--;
-    }
-
-    if ((s_adcPending != 0u) || (Adc_PollBusyState() != FALSE)) {
+    if (s_adcPending || Adc_PollBusyState()) {
         s_adcOverrunCount++;
+        if (s_selftestRunning && (Motor_NowTicks() - s_adcFrameTick) > 75u) {
+            Motor_FaultNow(MOTOR_FAULT_ADC_TIMEOUT);
+        }
         return;
     }
-
-    if (!s_selftestRunning) {
-        if ((s_pwmCycle % MOTOR_ADC_VBUS_EVERY) == 0u) {
-            kind = MOTOR_ADC_VBUS;
-            channel = (uint8_t)MOTOR_ADC_CH_VBUS;
-        } else if ((s_pwmCycle % 8u) == 0u) {
-            kind = MOTOR_ADC_CURRENT;
-            channel = (uint8_t)MOTOR_ADC_CH_ISENSE;
-        } else {
-            return;
-        }
-    } else if ((s_pwmCycle % MOTOR_ADC_VBUS_EVERY) == 0u) {
-        kind = MOTOR_ADC_VBUS;
+    s_adcFrameTick = Motor_NowTicks();
+    s_adcStep = s_stepIndex;
+    if ((s_pwmCycle % MOTOR_ADC_VBUS_EVERY) == 0u) {
+        s_adcKind = MOTOR_ADC_VBUS;
         channel = (uint8_t)MOTOR_ADC_CH_VBUS;
-    } else if ((s_pwmCycle % MOTOR_ADC_CURRENT_EVERY) == 0u) {
-        kind = MOTOR_ADC_CURRENT;
-        channel = (uint8_t)MOTOR_ADC_CH_ISENSE;
+    } else if (s_state != MOTOR_STATE_OPEN_LOOP && s_state != MOTOR_STATE_CLOSED_LOOP) {
+        return;
     } else {
-        kind = MOTOR_ADC_BEMF;
-        channel = s_phaseAdcChannel[s_step[s_stepIndex].floating];
+        if (!Motor_AdcOffWindowAvailable() || s_stepPending) { return; }
+        s_adcKind = MOTOR_ADC_NEUTRAL_FIRST;
+        channel = (uint8_t)MOTOR_ADC_CH_NEUTRAL;
     }
-
-    s_adcKind = kind;
     Motor_AdcStartChannel(channel);
+}
+
+static void Motor_PrepareCurrentForPeak(void)
+{
+    if (s_adcPending || M0P_ADC->CR0_f.START ||
+        s_currentSampleCycle == s_pwmCycle ||
+        (s_pwmCycle % MOTOR_ADC_CURRENT_EVERY) != 0u ||
+        M0P_ADTIM4->STFLR_f.DIRF == 0u) { return; }
+    /* 母线电流只在PWM导通区采样；谷点/OFF采样可能只看到续流零母线电流。
+     * ADC由TIM4峰点硬件触发，软件只在之前配置通道。低占空比下有效
+     * ON窗口仍可能不足，软件读数不能代替外部5 A限流电源。 */
+    s_currentSampleCycle = s_pwmCycle;
+    s_adcKind = MOTOR_ADC_CURRENT;
+    s_adcStep = s_stepIndex;
+    s_adcFrameTick = Motor_NowTicks();
+    s_adcTick = s_adcFrameTick;
+    M0P_ADC->CR0_f.SEL = (uint32_t)MOTOR_ADC_CH_ISENSE;
+    M0P_ADC->ICLR = ~(1u << 3);
+    M0P_ADC->CR1_f.TRIGS0 = AdcTrigTimer4;
+    M0P_ADTIM4->CR_f.OVFE = 1u;
     s_adcPending = TRUE;
 }
 
@@ -969,7 +983,10 @@ static void Motor_AdcTriggerFromPwm(void)
  * ----------------------------------------------------------------------- */
 static void Motor_FaultNow(uint16_t fault)
 {
+    s_state = MOTOR_STATE_FAULT;
     Motor_StopCommutationTimer();
+    s_stepPending = FALSE;
+    s_dutyPending = FALSE;
     s_fault |= fault;
     s_startRequest = 0u;
     s_state = MOTOR_STATE_FAULT;
@@ -1007,9 +1024,7 @@ void Motor_Init(void)
     s_state              = MOTOR_STATE_STOPPED;
     s_startRequest       = 0u;
     s_throttlePercent    = 0u;
-#if MOTOR_DIRECT_THROTTLE_MODE
     s_throttleRequestPercent = 0u;
-#endif
     s_actualDuty         = 0u;
     s_fault              = MOTOR_FAULT_NONE;
     s_commOk             = 0u;
@@ -1032,17 +1047,18 @@ void Motor_Init(void)
     s_stepPending = FALSE;
 
     s_lastCommutationTick = 0u;
+    s_dutyPending = FALSE;
     s_lastStepTicks       = 0u;
     s_commutationScheduled = FALSE;
 
-    s_bemfSampleIndex = 0u;
-    s_bemfSampleCount = 0u;
-    s_bemfSum = 0u;
-    s_bemfPreviousSign = 0;
-    s_bemfBlankCycles = 0u;
     s_bemfCounts = 0u;
     s_bemfThresholdCounts = 0u;
     s_zeroCrossCount = 0u;
+    s_lockSteps = 0u;
+    s_zeroCrossValid = FALSE;
+    s_lastZeroCrossTick = 0u;
+    s_closedDutyPermille = 0u;
+    Speed_Reset(&s_speedControl, 0u, 0u);
 
     s_adcKind = MOTOR_ADC_NONE;
     s_adcPending = FALSE;
@@ -1052,6 +1068,7 @@ void Motor_Init(void)
     s_isenseCounts = 0u;
     s_isensePeakCounts = 0u;
     s_adcOverrunCount = 0u;
+    s_currentSampleCycle = 0xFFFFFFFFu;
 
     Sysctrl_SetPeripheralGate(SysctrlPeripheralGpio, TRUE);
 
@@ -1074,6 +1091,7 @@ void Motor_Init(void)
     (void)Gpio_SetAnalogMode(GpioPort0, GpioPin2);   /* AIN8 phase C */
     (void)Gpio_SetAnalogMode(GpioPort3, GpioPin5);   /* AIN5 current */
     (void)Gpio_SetAnalogMode(GpioPort0, GpioPin1);   /* AIN7 bus */
+    (void)Gpio_SetAnalogMode(GpioPort3, GpioPin4);   /* AIN4，VN飞线 */
 
     Motor_AdcInit();
     Motor_TimeTimerInit();
@@ -1085,7 +1103,7 @@ void Motor_Init(void)
 
 void Motor_Service(void)
 {
-    Motor_UpdateAdcResult();
+    /* ADC结果/过零只在ADC中断处理；主循环通信不能暂停观察器。 */
 }
 
 void Motor_SelfTestStart(void)
@@ -1128,9 +1146,7 @@ boolean_t Motor_SelfTestFinished(void)
 
 void Motor_Tick1ms(void)
 {
-#if !MOTOR_DIRECT_THROTTLE_MODE
     uint32_t openLoopDuty;
-#endif
 
     s_tickMs++;
 
@@ -1165,6 +1181,10 @@ void Motor_Tick1ms(void)
     if (s_state == MOTOR_STATE_HOLD) {
         Motor_AllOutputsOff();
         if (s_selftestElapsedMs >= MOTOR_HOLD_MS) {
+            if (!s_vbusValid) {
+                Motor_FaultNow(MOTOR_FAULT_UNDERVOLTAGE);
+                return;
+            }
             s_state = MOTOR_STATE_PRECHARGE;
         }
         return;
@@ -1183,15 +1203,10 @@ void Motor_Tick1ms(void)
 
     if (s_state == MOTOR_STATE_ALIGN) {
         if (!s_alignStepApplied) {
-#if MOTOR_DIRECT_THROTTLE_MODE
-            s_throttlePercent = Motor_ThrottleToDutyPercent(
-                                    s_throttleRequestPercent);
+            s_throttlePercent = Motor_ThrottleToDutyPercent(s_throttleRequestPercent);
             if (s_throttlePercent > MOTOR_ALIGN_DUTY_PERCENT) {
                 s_throttlePercent = MOTOR_ALIGN_DUTY_PERCENT;
             }
-#else
-            s_throttlePercent = MOTOR_ALIGN_DUTY_PERCENT;
-#endif
             s_stepIndex = 0u;
             Motor_RequestStep(s_stepIndex);
             s_alignStepApplied = TRUE;
@@ -1201,19 +1216,13 @@ void Motor_Tick1ms(void)
 
         if (s_selftestElapsedMs >= (MOTOR_HOLD_MS + MOTOR_PRECHARGE_MS + MOTOR_ALIGN_MS)) {
             s_state = MOTOR_STATE_OPEN_LOOP;
-#if MOTOR_DIRECT_THROTTLE_MODE
-            s_electricalMilliHz = MOTOR_DIRECT_MIN_MILLIHZ;
-            s_throttlePercent = Motor_ThrottleToDutyPercent(
-                                    s_throttleRequestPercent);
-#else
             s_electricalMilliHz = MOTOR_OPEN_LOOP_START_MILLIHZ;
-            s_throttlePercent = MOTOR_ALIGN_DUTY_PERCENT;
-#endif
             s_openLoopCommutationCount = 0u;
             s_rampAccumulatorMs = 0u;
             s_lastCommutationTick = Motor_NowTicks();
             s_lastStepTicks = Motor_StepTicksFromMilliHz(s_electricalMilliHz);
             Motor_UpdateDuty();
+            Motor_BemfReset();
             Motor_ArmCommutationDelay(s_lastStepTicks);
             s_commutationScheduled = TRUE;
         }
@@ -1221,40 +1230,27 @@ void Motor_Tick1ms(void)
     }
 
     if (s_state == MOTOR_STATE_OPEN_LOOP) {
-#if MOTOR_DIRECT_THROTTLE_MODE
-        uint32_t targetMilliHz = Motor_ThrottleToMilliHz(
-                                     s_throttleRequestPercent);
-        uint32_t step = MOTOR_DIRECT_ACCEL_MILLIHZ_PER_SECOND / 10u;
-
-        Motor_UpdateDuty();
-        s_rampAccumulatorMs += 1u;
-        if (s_rampAccumulatorMs >= 100u) {
-            s_rampAccumulatorMs -= 100u;
-            if (s_electricalMilliHz < targetMilliHz) {
-                s_electricalMilliHz += step;
-                if (s_electricalMilliHz > targetMilliHz) {
-                    s_electricalMilliHz = targetMilliHz;
-                }
-            } else if (s_electricalMilliHz > targetMilliHz) {
-                if ((s_electricalMilliHz - targetMilliHz) > step) {
-                    s_electricalMilliHz -= step;
-                } else {
-                    s_electricalMilliHz = targetMilliHz;
-                }
-            }
+        if (s_selftestElapsedMs > MOTOR_HOLD_MS + MOTOR_PRECHARGE_MS +
+                                 MOTOR_ALIGN_MS + MOTOR_STARTUP_TIMEOUT_MS) {
+            Motor_FaultNow(MOTOR_FAULT_BEMF_LOST);
+            return;
         }
-        return;
-#else
         s_rampAccumulatorMs += 1u;
         if (s_rampAccumulatorMs >= 100u) {
+            uint32_t targetHz = Speed_TargetMilliHz(s_throttleRequestPercent);
             s_rampAccumulatorMs -= 100u;
+            if (targetHz > MOTOR_OPEN_LOOP_MAX_MILLIHZ) { targetHz = MOTOR_OPEN_LOOP_MAX_MILLIHZ; }
 
-            if (s_electricalMilliHz < MOTOR_OPEN_LOOP_MAX_MILLIHZ) {
+            if (s_electricalMilliHz < targetHz) {
                 s_electricalMilliHz +=
                     MOTOR_OPEN_LOOP_ACCEL_MILLIHZ_PER_SECOND / 10u;
-                if (s_electricalMilliHz > MOTOR_OPEN_LOOP_MAX_MILLIHZ) {
-                    s_electricalMilliHz = MOTOR_OPEN_LOOP_MAX_MILLIHZ;
+                if (s_electricalMilliHz > targetHz) {
+                    s_electricalMilliHz = targetHz;
                 }
+            } else if (s_electricalMilliHz > targetHz) {
+                uint32_t amount = MOTOR_OPEN_LOOP_ACCEL_MILLIHZ_PER_SECOND / 10u;
+                s_electricalMilliHz = s_electricalMilliHz - targetHz > amount ?
+                                     s_electricalMilliHz - amount : targetHz;
             }
 
             if (s_electricalMilliHz > MOTOR_OPEN_LOOP_START_MILLIHZ) {
@@ -1264,24 +1260,28 @@ void Motor_Tick1ms(void)
                 if (openLoopDuty > MOTOR_OPEN_LOOP_MAX_DUTY_PERCENT) {
                     openLoopDuty = MOTOR_OPEN_LOOP_MAX_DUTY_PERCENT;
                 }
+                if (openLoopDuty > Motor_ThrottleToDutyPercent(s_throttleRequestPercent)) {
+                    openLoopDuty = Motor_ThrottleToDutyPercent(s_throttleRequestPercent);
+                }
                 s_throttlePercent = (uint16_t)openLoopDuty;
                 Motor_UpdateDuty();
             }
         }
         return;
-#endif
     }
 
     if (s_state == MOTOR_STATE_CLOSED_LOOP) {
         uint32_t timeoutTicks;
-
+        if ((s_tickMs % 10u) == 0u) {
+            s_closedDutyPermille = Speed_Update10ms(&s_speedControl,
+                s_throttleRequestPercent, Motor_MilliHzFromStepTicks(s_lastStepTicks),
+                MOTOR_MAX_DUTY_PERCENT * 10u);
+        }
         Motor_UpdateDuty();
 
-        if (s_commutationScheduled == 0u) {
-            timeoutTicks = s_lastStepTicks + (s_lastStepTicks / 2u);
-            if ((Motor_NowTicks() - s_lastCommutationTick) > timeoutTicks) {
-                Motor_FaultNow(MOTOR_FAULT_BEMF_LOST);
-            }
+        timeoutTicks = s_lastStepTicks + (s_lastStepTicks / 2u) + 38u;
+        if ((Motor_NowTicks() - s_lastCommutationTick) > timeoutTicks) {
+            Motor_FaultNow(MOTOR_FAULT_BEMF_LOST);
         }
         return;
     }
@@ -1289,93 +1289,43 @@ void Motor_Tick1ms(void)
 
 void Motor_CommandStart(void)
 {
-    if (s_state == MOTOR_STATE_FAULT) {
-        return;
-    }
-
-#if MOTOR_DIRECT_THROTTLE_MODE
-    if (s_throttleRequestPercent == 0u) {
-        s_startRequest = 1u;
-        s_selftestRunning = FALSE;
-        s_selftestDone = TRUE;
-        s_continuousRun = FALSE;
-        s_state = MOTOR_STATE_STOPPED;
-        Motor_StopCommutationTimer();
-        Motor_AllOutputsOff();
-        return;
-    }
-    Motor_BeginStartup();
-#else
+    if (s_state == MOTOR_STATE_FAULT) { return; }
     s_startRequest = 1u;
-    s_selftestRunning = TRUE;
-    s_selftestDone = FALSE;
-    s_continuousRun = TRUE;
-    s_selftestElapsedMs = 0u;
-    s_prechargeApplied = FALSE;
-    s_alignStepApplied = FALSE;
-    s_state = MOTOR_STATE_HOLD;
-    if (s_throttlePercent == 0u) {
-        s_throttlePercent = MOTOR_ALIGN_DUTY_PERCENT;
+    if (s_throttleRequestPercent != 0u && s_state == MOTOR_STATE_STOPPED) {
+        Motor_BeginStartup();
     }
-    Motor_StopCommutationTimer();
-    Motor_AllOutputsOff();
-#endif
 }
 
 void Motor_CommandStop(void)
 {
+    s_state = MOTOR_STATE_STOPPED;
     Motor_StopCommutationTimer();
+    s_stepPending = FALSE;
+    s_dutyPending = FALSE;
     s_startRequest = 0u;
     s_actualDuty = 0u;
     s_electricalMilliHz = 0u;
-#if MOTOR_DIRECT_THROTTLE_MODE
     s_throttleRequestPercent = 0u;
     s_throttlePercent = 0u;
-#endif
     s_selftestRunning = FALSE;
     s_selftestDone = TRUE;
     s_continuousRun = FALSE;
     s_commRequired = FALSE;
-    s_state = MOTOR_STATE_STOPPED;
+    s_lockSteps = 0u;
+    s_zeroCrossValid = FALSE;
     Motor_AllOutputsOff();
 }
 
 void Motor_SetThrottle(uint16_t percent)
 {
-    if (percent > 100u) {
-        percent = 100u;
-    }
-
-#if MOTOR_DIRECT_THROTTLE_MODE
+    if (percent > 100u) { percent = 100u; }
     s_throttleRequestPercent = percent;
-    s_throttlePercent = Motor_ThrottleToDutyPercent(percent);
-
-    if (percent == 0u) {
-        Motor_CommandStop();
-        return;
-    }
-    if (s_state == MOTOR_STATE_FAULT) {
-        return;
-    }
-
-    /* A non-zero throttle is also an implicit start command.  This lets the
-     * HostSoftware throttle control start the bench motor without requiring a
-     * separate start click first.  The explicit stop still disables it. */
-    s_commRequired = TRUE;
-    if ((s_selftestRunning == FALSE) ||
-        (s_state == MOTOR_STATE_STOPPED) ||
-        (s_state == MOTOR_STATE_HOLD)) {
+    if (percent == 0u) { Motor_CommandStop(); return; }
+    if (s_state == MOTOR_STATE_FAULT) { return; }
+    if (s_startRequest && s_state == MOTOR_STATE_STOPPED) {
         Motor_BeginStartup();
-    } else {
-        Motor_UpdateDuty();
     }
-#else
-    s_throttlePercent = Motor_ClampDutyPercent(percent);
-
-    if (percent == 0u) {
-        Motor_CommandStop();
-    }
-#endif
+    /* 非零油门只设目标；必须显式启动，闭环运行在1ms时基更新功率。 */
 }
 
 void Motor_CommHeartbeat(void)
@@ -1395,24 +1345,14 @@ uint16_t Motor_GetRunState(void)
 }
 
 uint16_t Motor_GetStartRequest(void)       { return s_startRequest; }
-uint16_t Motor_GetThrottlePercent(void)
-{
-#if MOTOR_DIRECT_THROTTLE_MODE
-    return s_throttleRequestPercent;
-#else
-    return s_throttlePercent;
-#endif
-}
+uint16_t Motor_GetThrottlePercent(void) { return s_throttleRequestPercent; }
 uint16_t Motor_GetActualDuty(void)         { return s_actualDuty; }
 
 uint16_t Motor_GetElectricalHz(void)
 {
-    uint32_t mHz = Motor_MilliHzFromStepTicks(s_lastStepTicks);
-
-    if (s_state == MOTOR_STATE_OPEN_LOOP) {
-        mHz = s_electricalMilliHz;
-    }
-    return (uint16_t)(mHz / 1000u);
+    /* 启动强制节拍不等于转子转速；仅闭环返回BEMF估计电频率。 */
+    if (s_state != MOTOR_STATE_CLOSED_LOOP || !s_zeroCrossValid) { return 0u; }
+    return (uint16_t)(Motor_MilliHzFromStepTicks(s_lastStepTicks) / 1000u);
 }
 
 uint16_t Motor_GetFault(void)              { return s_fault; }

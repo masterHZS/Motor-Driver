@@ -39,9 +39,7 @@ ApplicationWindow {
     property real simulatedSpeed: 15000
     property real simulatedExhaustTemp: 660
     property real simulatedEcuTemp: 62
-    property real displaySpeed: (commManager.controlEngaged && commManager.connected)
-        ? commManager.motorSpeedPercent * 700
-        : root.simulatedSpeed
+    property real displaySpeed: commManager.electricalHz
 
     Timer {
         id: simulationTimer
@@ -293,6 +291,7 @@ ApplicationWindow {
                             pressedColor: theme.buttonGreenPressed
                             onClicked: {
                                 root.stateMode = "start"
+                                root.controlClosed = true
                                 commManager.sendStart()
                             }
                         }
@@ -394,6 +393,10 @@ ApplicationWindow {
 
                         SpeedGauge {
                             id: speedGauge
+                            maxValue: 300
+                            unit: "电Hz"
+                            title: "电机反馈频率"
+                            scaleDivisor: 1
                             Layout.fillWidth: true
                             Layout.fillHeight: true
                             value: root.displaySpeed

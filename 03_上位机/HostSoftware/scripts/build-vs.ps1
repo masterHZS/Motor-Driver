@@ -1,9 +1,37 @@
 param(
     [ValidateSet("Debug", "Release")]
-    [string]$Configuration = "Debug"
+    [string]$Configuration = "Debug",
+    [string]$QtPrefix = "",
+    [string]$Generator = "",
+    [string]$CMakeExecutable = "",
+    [switch]$RunTests
 )
 
 $ErrorActionPreference = "Stop"
+
+function Invoke-BuildProcess {
+    param([string]$Executable, [string[]]$ArgumentVector, [string]$WorkingDirectory)
+    # 捕获两路输出并明确指定ASCII工作目录，避免中文目录/原生输出编码干扰。
+    $info = New-Object System.Diagnostics.ProcessStartInfo
+    $info.FileName = $Executable
+    $info.Arguments = ($ArgumentVector | ForEach-Object { '"' + $_.Replace('\', '/').Replace('"', '\"') + '"' }) -join ' '
+    $info.WorkingDirectory = $WorkingDirectory
+    $info.UseShellExecute = $false
+    $info.CreateNoWindow = $true
+    $info.RedirectStandardOutput = $true
+    $info.RedirectStandardError = $true
+    $process = New-Object System.Diagnostics.Process
+    $process.StartInfo = $info
+    [void]$process.Start()
+    $output = $process.StandardOutput.ReadToEndAsync()
+    $errors = $process.StandardError.ReadToEndAsync()
+    $process.WaitForExit()
+    Write-Host $output.Result
+    if ($errors.Result) { Write-Host $errors.Result }
+    $result = $process.ExitCode
+    $process.Dispose()
+    return $result
+}
 
 function Set-NormalizedPathEnvironment {
     param([string]$Value)
@@ -83,7 +111,7 @@ $mappedDrive = $null
 
 # Qt qmlimportscanner breaks when the source path contains parentheses.
 # Map the project to a temporary clean drive letter for that path shape.
-if ($root -match '[()]') {
+if ($root -match '[()]|[^\x00-\x7F]') {
     foreach ($letter in @('R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z')) {
         $candidateDrive = "${letter}:"
         if (-not (Test-Path -LiteralPath "${candidateDrive}\")) {
@@ -97,14 +125,32 @@ if ($root -match '[()]') {
     }
 }
 $buildDir = Join-Path $sourceRoot "build"
-$qtPrefix = "D:/Qt/6.8.3/msvc2022_64"
+$qtPrefix = $QtPrefix
+if (-not $qtPrefix) {
+    foreach ($candidate in @("F:/QT/6.8.3/msvc2022_64", "D:/Qt/6.8.3/msvc2022_64")) {
+        if (Test-Path -LiteralPath "$candidate/lib/cmake/Qt6/Qt6Config.cmake") {
+            $qtPrefix = $candidate
+            break
+        }
+    }
+}
 $qtConfig = Join-Path $qtPrefix "lib/cmake/Qt6/Qt6Config.cmake"
 if (-not (Test-Path -LiteralPath $qtConfig)) {
     throw "Qt 6.8.3 MSVC 2022 64-bit was not found at $qtPrefix. Install 'MSVC 2022 64-bit' with Qt MaintenanceTool first."
 }
 
 $vsRoot = Get-VisualStudioRoot
-$cmake = Get-CMakeExecutable $vsRoot
+if (-not $CMakeExecutable -and (Test-Path -LiteralPath 'F:/QT/Tools/CMake_64/bin/cmake.exe')) {
+    $CMakeExecutable = 'F:/QT/Tools/CMake_64/bin/cmake.exe'
+    if (-not $Generator) { $Generator = 'Ninja Multi-Config' }
+}
+if (-not $Generator) {
+    $devenv = Join-Path $vsRoot 'Common7/IDE/devenv.exe'
+    $vsMajor = if (Test-Path -LiteralPath $devenv) { (Get-Item -LiteralPath $devenv).VersionInfo.FileMajorPart } else { 17 }
+    $Generator = if ($vsMajor -ge 18) { 'Visual Studio 18 2026' } else { 'Visual Studio 17 2022' }
+}
+$cmake = if ($CMakeExecutable) { $CMakeExecutable } else { Get-CMakeExecutable $vsRoot }
+if ($Generator -match '^Ninja') { $buildDir = Join-Path $sourceRoot 'build_ascii' }
 $vcvars64 = Join-Path $vsRoot "VC\Auxiliary\Build\vcvars64.bat"
 if (-not (Test-Path -LiteralPath $vcvars64)) {
     throw "MSVC x64 environment script was not found: $vcvars64"
@@ -155,15 +201,20 @@ if (Test-Path -LiteralPath $cacheFile) {
 
 $exitCode = 0
 try {
-    & $cmake -S $sourceRoot -B $buildDir `
-        -G "Visual Studio 17 2022" `
-        -A x64 `
-        "-DCMAKE_PREFIX_PATH=$qtPrefix"
-    if ($LASTEXITCODE -ne 0) {
-        $exitCode = $LASTEXITCODE
-    } else {
-        & $cmake --build $buildDir --config $Configuration --parallel
-        $exitCode = $LASTEXITCODE
+    $configureArgs = @('-S', $sourceRoot, '-B', $buildDir, '-G', $Generator, "-DCMAKE_PREFIX_PATH=$qtPrefix")
+    $configureArgs += if ($RunTests) { '-DHOST_BUILD_TESTS=ON' } else { '-DHOST_BUILD_TESTS=OFF' }
+    if ($Generator -match '^Visual Studio') { $configureArgs += @('-A', 'x64') }
+    elseif ($Generator -match '^Ninja' -and (Test-Path -LiteralPath 'F:/QT/Tools/Ninja/ninja.exe')) {
+        $configureArgs += '-DCMAKE_MAKE_PROGRAM=F:/QT/Tools/Ninja/ninja.exe'
+    }
+    $exitCode = Invoke-BuildProcess $cmake $configureArgs $sourceRoot
+    if ($exitCode -eq 0) {
+        $exitCode = Invoke-BuildProcess $cmake @('--build', $buildDir, '--config', $Configuration, '--parallel', '4') $sourceRoot
+        if ($exitCode -eq 0 -and $RunTests) {
+            $testExe = Join-Path $buildDir "$Configuration/HostControlTests.exe"
+            $env:PATH = "$qtPrefix/bin;$env:PATH"
+            $exitCode = Invoke-BuildProcess $testExe @() $sourceRoot
+        }
     }
 } finally {
     if ($mappedDrive) {

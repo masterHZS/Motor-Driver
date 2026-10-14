@@ -12,7 +12,8 @@ ENTRY(Reset_Handler)
 MEMORY
 {
     FLASH (rx)  : ORIGIN = 0x00000000, LENGTH = 32K
-    RAM   (rwx) : ORIGIN = 0x20000000, LENGTH = 4K
+    RAM   (rwx) : ORIGIN = 0x20000000, LENGTH = 0xF00
+    DEBUG (rw)  : ORIGIN = 0x20000F00, LENGTH = 0x100
 }
 
 /* Stack & Heap sizes (4K RAM is tight - keep them small) */
@@ -29,6 +30,8 @@ PROVIDE(_estack = __StackTop);
 
 SECTIONS
 {
+    /* 与main.c的SWD marker一致，避免诊断写入破坏栈顶。 */
+    .debug_marker (NOLOAD) : { . = . + 0x100; } > DEBUG
     /* Vector table, placed at address 0 */
     .isr_vector :
     {

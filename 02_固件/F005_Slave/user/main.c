@@ -2,11 +2,11 @@
  * main.c - HC32F005C6PA Hall-less BLDC self test
  *
  * The motor is a three-phase 2216-730KV pump with no Hall sensors.  Motor_Init()
- * configures six-step PWM, the 20 kHz PWM-valley ADC service, the BEMF observer,
- * and the microsecond commutation scheduler.  Motor_Service() must be called
- * continuously: it drains ADC results and advances the BEMF state machine.
+ * 配置互补PWM、谷点换相与固定OFF窗口VN/浮空相ADC采样。
+ * ADC中断处理过零，TIM1/TIM4安排换相，1ms时基执行启动与速度环。
+ * 主循环只处理通信和监控，不能成为过零采样的执行时基。
  *
- * SWD result block (top of RAM, survives without touching .bss):
+ * SWD结果区（链接脚本独立保留，位于栈顶之外）：
  *   0x20000F00  reset magic
  *   0x20000F04  main entered magic
  *   0x20000F08  run-state boolean

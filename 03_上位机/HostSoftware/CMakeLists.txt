@@ -36,6 +36,19 @@ qt_add_qml_module(HostSoftware
 
 target_link_libraries(HostSoftware PRIVATE Qt6::Core Qt6::Quick Qt6::SerialPort)
 
+option(HOST_BUILD_TESTS "构建不连接设备的上位机控制回归" OFF)
+if(HOST_BUILD_TESTS)
+    add_executable(HostControlTests tests/test_control.cpp src/CCommManager.h)
+    target_include_directories(HostControlTests PRIVATE src)
+    target_link_libraries(HostControlTests PRIVATE Qt6::Core Qt6::SerialPort)
+    # Release也必须执行断言，不能因NDEBUG而跳过验证。
+    if(MSVC)
+        target_compile_options(HostControlTests PRIVATE /UNDEBUG)
+    else()
+        target_compile_options(HostControlTests PRIVATE -UNDEBUG)
+    endif()
+endif()
+
 find_program(WINDEPLOYQT_EXECUTABLE windeployqt
     HINTS "${Qt6_DIR}/../../.."
     PATH_SUFFIXES bin

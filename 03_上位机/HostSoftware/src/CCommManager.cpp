@@ -108,6 +108,7 @@ bool CCommManager::controlEngaged() const { return m_controlEngaged; }
 int CCommManager::engineState() const { return m_regs[0]; }
 int CCommManager::faultCode() const { return m_regs[5]; }
 int CCommManager::motorSpeedPercent() const { return m_motorSpeedPercent; }
+int CCommManager::electricalHz() const { return m_connected && m_hasStatus ? m_regs[6] : 0; }
 int CCommManager::dutyPercent() const { return m_dutyPercent; }
 int CCommManager::pwmFreqHz() const { return m_pwmFreqHz; }
 int CCommManager::firmwareVersion() const { return m_regs[7]; }
@@ -481,8 +482,11 @@ void CCommManager::markCommError(const QString &reason)
  * ==========================================================================*/
 void CCommManager::pollStatus()
 {
-    if (m_connected && !m_awaitingResponse && m_requestQueue.isEmpty())
-        queueRequest(buildReadPdu(0x0000, 10));
+    if (!m_connected)
+        return;
+    const QByteArray read = buildReadPdu(0x0000, 10);
+    if (m_pendingPdu != read && !m_requestQueue.contains(read))
+        queueRequest(read);
 }
 
 void CCommManager::requestStatus()
@@ -492,27 +496,38 @@ void CCommManager::requestStatus()
 
 void CCommManager::sendStart()
 {
+    setControlEngaged(true);
+    queueRequest(buildWriteSinglePdu(0x0002, static_cast<quint16>(m_requestedSpeedPercent)));
     queueRequest(buildWriteSinglePdu(0x0001, 1));
 }
 
 void CCommManager::sendStop()
 {
+    m_requestQueue.clear();
     queueRequest(buildWriteSinglePdu(0x0001, 0));
 }
 
 void CCommManager::setSpeedPercent(int percent)
 {
     percent = qBound(0, percent, 100);
+    m_requestedSpeedPercent = percent;
     m_motorSpeedPercent = percent;
+    emit statusUpdated();
     if (!m_controlEngaged || !m_connected)
         return;
+    if (percent == 0) {
+        sendStop();
+        return;
+    }
     queueRequest(buildWriteSinglePdu(0x0002, static_cast<quint16>(percent)));
 }
 
 void CCommManager::setThrottlePercent(int percent)
 {
     percent = qBound(0, percent, 100);
+    m_requestedSpeedPercent = percent;
     m_motorSpeedPercent = percent;
+    emit statusUpdated();
     debugLog(QStringLiteral("setThrottlePercent(%1) engaged=%2 connected=%3 lastSent=%4")
                  .arg(percent).arg(m_controlEngaged).arg(m_connected).arg(m_lastSentSpeed));
 
@@ -527,15 +542,27 @@ void CCommManager::setThrottlePercent(int percent)
         m_lastSentSpeed = percent;
         return;
     }
+    if (percent == 0) {
+        m_lastSentSpeed = 0;
+        sendStop();
+        return;
+    }
 
     m_lastSentSpeed = percent;
     m_throttleClock.restart();
+    // 拖动时只保留最新目标，避免9600波特率下积压旧速度命令。
+    for (int i = m_requestQueue.size() - 1; i >= 0; --i) {
+        const QByteArray &pdu = m_requestQueue.at(i);
+        if (pdu.size() == 5 && static_cast<quint8>(pdu.at(0)) == 0x06
+            && pdu.at(1) == 0 && pdu.at(2) == 2)
+            m_requestQueue.removeAt(i);
+    }
     queueRequest(buildWriteSinglePdu(0x0002, static_cast<quint16>(percent)));
 }
 
 void CCommManager::applyThrottleNow()
 {
-    setThrottlePercent(m_motorSpeedPercent);
+    setThrottlePercent(m_requestedSpeedPercent);
 }
 
 void CCommManager::setPwmFrequency(int hz)
