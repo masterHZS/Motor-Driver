@@ -1,0 +1,594 @@
+{
+ "1": {
+  "name": "VBAT",
+  "af": [],
+  "raw": "S - - - - - - 2 2 C5 2 B1 2 7"
+ },
+ "2": {
+  "name": "PC13",
+  "af": [
+   "EVENTOUT",
+   "OSC32_IN",
+   "OSC32_OUT",
+   "RTC_OUT1",
+   "RTC_TAMP1",
+   "RTC_TS",
+   "TIM1_BKIN",
+   "TIM1_CH1N",
+   "TIM8_CH4N",
+   "WKUP2"
+  ],
+  "raw": "I/O FT (2) (3) TIM1_BKIN, TIM1_CH1N, TIM8_CH4N, EVENTOUT WKUP2, RTC_TAMP1, RTC_TS, RTC_OUT1 - - 3 3 C7 3 C1 3 8 PC14- OSC32_IN I/O FT (2) (3) EVENTOUT OSC32_IN - - 4 4 D7 4 D1 4 9 PC15- OSC32_OUT"
+ },
+ "5": {
+  "name": "PF0-OSC_IN",
+  "af": [
+   "ADC1_IN10",
+   "ADC2_IN10",
+   "COMP3_INM",
+   "EVENTOUT",
+   "I2C2_SDA",
+   "OSC_IN",
+   "OSC_OUT",
+   "SPI2_NSS",
+   "SPI2_SCK",
+   "TIM1_CH3N"
+  ],
+  "raw": "I/O FT_fa - I2C2_SDA, SPI2_NSS/ I2S2_WS, TIM1_CH3N, EVENTOUT ADC1_IN10, OSC_IN 3 3 6 6 E6 6 F1 6 13 PF1- OSC_OUT I/O FT_a - SPI2_SCK/ I2S2_CK, EVENTOUT ADC2_IN10, COMP3_INM, OSC_OUT 4 4 7 7 C6 7 D2 7 "
+ },
+ "7": {
+  "name": "PG10-NRST",
+  "af": [],
+  "raw": "I/O"
+ },
+ "8": {
+  "name": "PC0",
+  "af": [
+   "COMP3_INM",
+   "EVENTOUT",
+   "LPUART1_RX",
+   "TIM1_CH1"
+  ],
+  "raw": "I/O FT_a - LPTIM1_IN1, TIM1_CH1, LPUART1_RX, EVENTOUT ADC12_IN6, COMP3_INM - - - - - 9 C3 9 16"
+ },
+ "9": {
+  "name": "PC1",
+  "af": [
+   "COMP3_INP",
+   "EVENTOUT",
+   "LPUART1_TX",
+   "TIM1_CH2"
+  ],
+  "raw": "I/O TT_a - LPTIM1_OUT, TIM1_CH2, LPUART1_TX, SAI1_SD_A, EVENTOUT ADC12_IN7, COMP3_INP - - - - - 10 D3 10 17"
+ },
+ "10": {
+  "name": "PC2",
+  "af": [
+   "COMP3_OUT",
+   "EVENTOUT",
+   "TIM1_CH3"
+  ],
+  "raw": "I/O FT_a - LPTIM1_IN2, TIM1_CH3, COMP3_OUT, EVENTOUT ADC12_IN8 - - - - - 11 G1 11 18"
+ },
+ "11": {
+  "name": "PC3",
+  "af": [
+   "EVENTOUT",
+   "TIM1_BKIN2",
+   "TIM1_CH4",
+   "TIM1_ETR"
+  ],
+  "raw": "I/O FT_a - LPTIM1_ETR, TIM1_CH4, SAI1_D1, TIM1_BKIN2, SAI1_SD_A, EVENTOUT ADC12_IN9 - - - - - - - - 19"
+ },
+ "12": {
+  "name": "PA0",
+  "af": [
+   "COMP1_INM",
+   "COMP1_OUT",
+   "COMP3_INP",
+   "EVENTOUT",
+   "RTC_TAMP2",
+   "TIM2_CH1",
+   "TIM2_ETR",
+   "TIM8_BKIN",
+   "TIM8_ETR",
+   "USART2_CTS",
+   "WKUP1"
+  ],
+  "raw": "I/O TT_a - TIM2_CH1, USART2_CTS, COMP1_OUT, TIM8_BKIN, TIM8_ETR, TIM2_ETR, EVENTOUT ADC12_IN1, COMP1_INM, COMP3_INP, RTC_TAMP2, WKUP1 6 6 9 9 D6 13 E3 13 21"
+ },
+ "13": {
+  "name": "PA1",
+  "af": [
+   "COMP1_INP",
+   "EVENTOUT",
+   "OPAMP1_VINP",
+   "OPAMP3_VINP",
+   "RTC_REFIN",
+   "TIM15_CH1N",
+   "TIM2_CH2",
+   "USART2_RTS_DE"
+  ],
+  "raw": "I/O TT_a - RTC_REFIN, TIM2_CH2, USART2_RTS_DE, TIM15_CH1N, EVENTOUT ADC12_IN2, COMP1_INP, OPAMP1_VINP, OPAMP3_VINP 7 7 10 10 F6 14 F3 14 22"
+ },
+ "14": {
+  "name": "PA2",
+  "af": [
+   "ADC1_IN3",
+   "COMP2_INM",
+   "COMP2_OUT",
+   "EVENTOUT",
+   "LPUART1_TX",
+   "OPAMP1_VOUT",
+   "TIM15_CH1",
+   "TIM2_CH3",
+   "USART2_TX",
+   "WKUP4"
+  ],
+  "raw": "I/O TT_a - TIM2_CH3, USART2_TX, COMP2_OUT, TIM15_CH1, LPUART1_TX, UCPD1_FRSTX, EVENTOUT ADC1_IN3, COMP2_INM, OPAMP1_VOUT, WKUP4/ LSCO - - - - - 15 G2 15 23"
+ },
+ "15": {
+  "name": "VSS",
+  "af": [],
+  "raw": "S - - - - - - - - - 16 H1 16 24"
+ },
+ "18": {
+  "name": "PA4",
+  "af": [
+   "ADC2_IN17",
+   "COMP1_INM",
+   "DAC1_OUT1",
+   "EVENTOUT",
+   "SPI1_NSS",
+   "SPI3_NSS",
+   "TIM3_CH2",
+   "USART2_CK"
+  ],
+  "raw": "I/O TT_a - TIM3_CH2, SPI1_NSS, SPI3_NSS/ I2S3_WS, USART2_CK, SAI1_FS_B, EVENTOUT ADC2_IN17, DAC1_OUT1, COMP1_INM 10 10 13 13 F5 19 E4 19 27"
+ },
+ "19": {
+  "name": "PA5",
+  "af": [
+   "ADC2_IN13",
+   "COMP2_INM",
+   "DAC1_OUT2",
+   "EVENTOUT",
+   "OPAMP2_VINM",
+   "SPI1_SCK",
+   "TIM2_CH1",
+   "TIM2_ETR"
+  ],
+  "raw": "I/O TT_a - TIM2_CH1, TIM2_ETR, SPI1_SCK, UCPD1_FRSTX, EVENTOUT ADC2_IN13, DAC1_OUT2, COMP2_INM, OPAMP2_VINM 11 11 14 14 G6 20 G3 20 28"
+ },
+ "20": {
+  "name": "PA6",
+  "af": [
+   "ADC2_IN3",
+   "COMP1_OUT",
+   "EVENTOUT",
+   "LPUART1_CTS",
+   "OPAMP2_VOUT",
+   "SPI1_MISO",
+   "TIM16_CH1",
+   "TIM1_BKIN",
+   "TIM3_CH1",
+   "TIM8_BKIN"
+  ],
+  "raw": "I/O TT_a - TIM16_CH1, TIM3_CH1, TIM8_BKIN, SPI1_MISO, TIM1_BKIN, COMP1_OUT, LPUART1_CTS, EVENTOUT ADC2_IN3, OPAMP2_VOUT 12 12 15 15 D5 21 H3 21 29"
+ },
+ "22": {
+  "name": "PC4",
+  "af": [
+   "ADC2_IN5",
+   "EVENTOUT",
+   "I2C2_SCL",
+   "TIM1_ETR",
+   "USART1_TX"
+  ],
+  "raw": "I/O FT_fa - TIM1_ETR, I2C2_SCL, USART1_TX, EVENTOUT ADC2_IN5 - - - - - 23 F4 23 31"
+ },
+ "23": {
+  "name": "PC5",
+  "af": [
+   "ADC2_IN11",
+   "EVENTOUT",
+   "OPAMP1_VINM",
+   "OPAMP2_VINM",
+   "TIM15_BKIN",
+   "TIM1_CH4N",
+   "USART1_RX",
+   "WKUP5"
+  ],
+  "raw": "I/O TT_a - TIM15_BKIN, SAI1_D3, TIM1_CH4N, USART1_RX, EVENTOUT ADC2_IN11, OPAMP1_VINM, OPAMP2_VINM, WKUP5 13 13 17 16 G5 24 E5 24 32"
+ },
+ "24": {
+  "name": "PB0",
+  "af": [
+   "ADC1_IN15",
+   "COMP4_INP",
+   "EVENTOUT",
+   "OPAMP2_VINP",
+   "OPAMP3_VINP",
+   "TIM1_CH2N",
+   "TIM3_CH3",
+   "TIM8_CH2N"
+  ],
+  "raw": "I/O TT_a - TIM3_CH3, TIM8_CH2N, TIM1_CH2N, UCPD1_FRSTX, EVENTOUT ADC1_IN15, COMP4_INP, OPAMP2_VINP, OPAMP3_VINP - - 18 17 E4 25 F5 25 33"
+ },
+ "25": {
+  "name": "PB1",
+  "af": [
+   "ADC1_IN12",
+   "COMP1_INP",
+   "COMP4_OUT",
+   "EVENTOUT",
+   "LPUART1_RTS_DE",
+   "OPAMP3_VOUT",
+   "TIM1_CH3N",
+   "TIM3_CH4",
+   "TIM8_CH3N"
+  ],
+  "raw": "I/O TT_a - TIM3_CH4, TIM8_CH3N, TIM1_CH3N, COMP4_OUT, LPUART1_RTS_DE, EVENTOUT ADC1_IN12, COMP1_INP, OPAMP3_VOUT - - 19 18 F4 26 H4 26 34"
+ },
+ "27": {
+  "name": "VSSA",
+  "af": [],
+  "raw": "S - - - - - - 20 20 F3 28 G5 28 36"
+ },
+ "28": {
+  "name": "VREF+",
+  "af": [],
+  "raw": "S - - - VREFBUF_OUT - - 21 21 G3 29 H5 29 37"
+ },
+ "31": {
+  "name": "VSS",
+  "af": [],
+  "raw": "S - - - - 17 17 23 24 G1 32 H8 41 49"
+ },
+ "34": {
+  "name": "PB12",
+  "af": [
+   "ADC1_IN11",
+   "EVENTOUT",
+   "I2C2_SMBA",
+   "LPUART1_RTS_DE",
+   "SPI2_NSS",
+   "TIM1_BKIN",
+   "USART3_CK"
+  ],
+  "raw": "I/O FT_a - I2C2_SMBA, SPI2_NSS/ I2S2_WS, TIM1_BKIN, USART3_CK, LPUART1_RTS_DE, EVENTOUT ADC1_IN11 - - 26 27 E2 35 G6 44 52"
+ },
+ "35": {
+  "name": "PB13",
+  "af": [
+   "EVENTOUT",
+   "LPUART1_CTS",
+   "OPAMP3_VINP",
+   "SPI2_SCK",
+   "TIM1_CH1N",
+   "USART3_CTS"
+  ],
+  "raw": "I/O TT_a - SPI2_SCK/I2S2_CK, TIM1_CH1N, USART3_CTS, LPUART1_CTS, EVENTOUT OPAMP3_VINP - - 27 28 D3 36 F8 45 53"
+ },
+ "36": {
+  "name": "PB14",
+  "af": [
+   "ADC1_IN5",
+   "COMP4_OUT",
+   "EVENTOUT",
+   "OPAMP2_VINP",
+   "SPI2_MISO",
+   "TIM15_CH1",
+   "TIM1_CH2N",
+   "USART3_RTS_DE"
+  ],
+  "raw": "I/O TT_a - TIM15_CH1, SPI2_MISO, TIM1_CH2N, USART3_RTS_DE, COMP4_OUT, EVENTOUT ADC1_IN5, OPAMP2_VINP - - 28 29 E1 37 F7 46 54"
+ },
+ "37": {
+  "name": "PB15",
+  "af": [
+   "ADC2_IN15",
+   "COMP3_OUT",
+   "EVENTOUT",
+   "RTC_REFIN",
+   "SPI2_MOSI",
+   "TIM15_CH1N",
+   "TIM15_CH2",
+   "TIM1_CH3N"
+  ],
+  "raw": "I/O FT_a - RTC_REFIN, TIM15_CH2, TIM15_CH1N, COMP3_OUT, TIM1_CH3N, SPI2_MOSI/ I2S2_SD, EVENTOUT ADC2_IN15 - - - - - - - 47 55"
+ },
+ "38": {
+  "name": "PC6",
+  "af": [
+   "EVENTOUT",
+   "TIM3_CH1",
+   "TIM8_CH1"
+  ],
+  "raw": "I/O FT - TIM3_CH1, TIM8_CH1, I2S2_MCK, EVENTOUT - - - - - - 39 E7 53 66"
+ },
+ "39": {
+  "name": "PC7",
+  "af": [
+   "EVENTOUT",
+   "TIM3_CH2",
+   "TIM8_CH2"
+  ],
+  "raw": "I/O FT - TIM3_CH2, TIM8_CH2, I2S3_MCK, EVENTOUT - - - - - - 40 F6 54 67"
+ },
+ "40": {
+  "name": "PC8",
+  "af": [
+   "EVENTOUT",
+   "I2C3_SCL",
+   "TIM3_CH3",
+   "TIM8_CH3"
+  ],
+  "raw": "I/O FT_f - TIM3_CH3, TIM8_CH3, I2C3_SCL, EVENTOUT - - - - - - 41 D8 55 68"
+ },
+ "41": {
+  "name": "PC9",
+  "af": [
+   "EVENTOUT",
+   "I2C3_SDA",
+   "TIM3_CH4",
+   "TIM8_BKIN2",
+   "TIM8_CH4"
+  ],
+  "raw": "I/O FT_f - TIM3_CH4, TIM8_CH4, I2SCKIN, TIM8_BKIN2, I2C3_SDA, EVENTOUT - 18 18 30 30 D2 42 E6 56 69"
+ },
+ "42": {
+  "name": "PA8",
+  "af": [
+   "EVENTOUT",
+   "I2C2_SDA",
+   "I2C3_SCL",
+   "MCO",
+   "TIM1_CH1",
+   "TIM4_ETR",
+   "USART1_CK"
+  ],
+  "raw": "I/O FT_f - MCO, I2C3_SCL, I2C2_SDA, I2S2_MCK, TIM1_CH1, USART1_CK, TIM4_ETR, SAI1_CK2, SAI1_SCK_A, EVENTOUT - 19 19 31 31 C3 43 D7 57 70"
+ },
+ "43": {
+  "name": "PA9",
+  "af": [
+   "EVENTOUT",
+   "I2C2_SCL",
+   "I2C3_SMBA",
+   "TIM15_BKIN",
+   "TIM1_CH2",
+   "TIM2_CH3",
+   "USART1_TX"
+  ],
+  "raw": "I/O FT_fd - I2C3_SMBA, I2C2_SCL, I2S3_MCK, TIM1_CH2, USART1_TX, TIM15_BKIN, TIM2_CH3, SAI1_FS_A, EVENTOUT UCPD1_DBCC1 20 20 32 32 C2 44 D6 58 71"
+ },
+ "44": {
+  "name": "PA10",
+  "af": [
+   "EVENTOUT",
+   "I2C2_SMBA",
+   "SPI2_MISO",
+   "TIM17_BKIN",
+   "TIM1_CH3",
+   "TIM2_CH4",
+   "TIM8_BKIN",
+   "USART1_RX"
+  ],
+  "raw": "I/O FT_d a - TIM17_BKIN, USB_CRS_SYNC, I2C2_SMBA, SPI2_MISO, TIM1_CH3, USART1_RX, TIM2_CH4, TIM8_BKIN, SAI1_D1, SAI1_SD_A, EVENTOUT UCPD1_DBCC2 21 21 33 33 C1 45 C8 59 72"
+ },
+ "45": {
+  "name": "PA11",
+  "af": [
+   "COMP1_OUT",
+   "EVENTOUT",
+   "FDCAN1_RX",
+   "SPI2_MOSI",
+   "TIM1_BKIN2",
+   "TIM1_CH1N",
+   "TIM1_CH4",
+   "TIM4_CH1",
+   "USART1_CTS",
+   "USB_DM"
+  ],
+  "raw": "I/O FT_u - SPI2_MOSI/ I2S2_SD, TIM1_CH1N, USART1_CTS, COMP1_OUT, FDCAN1_RX, TIM4_CH1, TIM1_CH4, TIM1_BKIN2, EVENTOUT USB_DM"
+ },
+ "46": {
+  "name": "PA12",
+  "af": [
+   "COMP2_OUT",
+   "EVENTOUT",
+   "FDCAN1_TX",
+   "TIM16_CH1",
+   "TIM1_CH2N",
+   "TIM1_ETR",
+   "TIM4_CH2",
+   "USART1_RTS_DE",
+   "USB_DP"
+  ],
+  "raw": "I/O FT_u - TIM16_CH1, I2SCKIN, TIM1_CH2N, USART1_RTS_DE, COMP2_OUT, FDCAN1_TX, TIM4_CH2, TIM1_ETR, EVENTOUT USB_DP - - - 35 - 47 B7 61 74"
+ },
+ "47": {
+  "name": "VSS",
+  "af": [],
+  "raw": "S - - - - - - 35 36 - 48 A8 62 75"
+ },
+ "48": {
+  "name": "VDD",
+  "af": [],
+  "raw": "S - - - - 23 23 36 37 B2 49 C7 63 76"
+ },
+ "49": {
+  "name": "PA13",
+  "af": [
+   "EVENTOUT",
+   "I2C1_SCL",
+   "SWDIO",
+   "TIM16_CH1N",
+   "TIM4_CH3",
+   "USART3_CTS"
+  ],
+  "raw": "I/O FT_f (5) SWDIO-JTMS, TIM16_CH1N, I2C1_SCL, IR_OUT, USART3_CTS, TIM4_CH3, SAI1_SD_B, EVENTOUT - 24 24 37 38 B3 50 C6 64 77"
+ },
+ "50": {
+  "name": "PA14",
+  "af": [
+   "EVENTOUT",
+   "I2C1_SDA",
+   "SWCLK",
+   "TIM1_BKIN",
+   "TIM8_CH2",
+   "USART2_TX"
+  ],
+  "raw": "I/O FT_f (5) SWCLK-JTCK, LPTIM1_OUT, I2C1_SDA, TIM8_CH2, TIM1_BKIN, USART2_TX, SAI1_FS_B, EVENTOUT - 25 25 38 39 A1 51 A7 65 78"
+ },
+ "51": {
+  "name": "PA15",
+  "af": [
+   "EVENTOUT",
+   "I2C1_SCL",
+   "SPI1_NSS",
+   "SPI3_NSS",
+   "TIM1_BKIN",
+   "TIM2_CH1",
+   "TIM2_ETR",
+   "TIM8_CH1",
+   "USART2_RX"
+  ],
+  "raw": "I/O FT_f (5) JTDI, TIM2_CH1, TIM8_CH1, I2C1_SCL, SPI1_NSS, SPI3_NSS/ I2S3_WS, USART2_RX, UART4_RTS_DE, TIM1_BKIN, TIM2_ETR, EVENTOUT - - - 39 - - 52 C5 66 79"
+ },
+ "52": {
+  "name": "PC10",
+  "af": [
+   "EVENTOUT",
+   "SPI3_SCK",
+   "TIM8_CH1N",
+   "UART4_TX",
+   "USART3_TX"
+  ],
+  "raw": "I/O FT - TIM8_CH1N, UART4_TX, SPI3_SCK/ I2S3_CK, USART3_TX, EVENTOUT - - - 40 - A2 53 B6 67 80"
+ },
+ "53": {
+  "name": "PC11",
+  "af": [
+   "EVENTOUT",
+   "I2C3_SDA",
+   "SPI3_MISO",
+   "TIM8_CH2N",
+   "UART4_RX",
+   "USART3_RX"
+  ],
+  "raw": "I/O FT_f - TIM8_CH2N, UART4_RX, SPI3_MISO, USART3_RX, I2C3_SDA, EVENTOUT -"
+ },
+ "54": {
+  "name": "PC12",
+  "af": [
+   "EVENTOUT",
+   "SPI3_MOSI",
+   "TIM8_CH3N",
+   "USART3_CK"
+  ],
+  "raw": "I/O FT - TIM8_CH3N, SPI3_MOSI/ I2S3_SD, USART3_CK, UCPD1_FRSTX, EVENTOUT - - - - - - - - 69 82"
+ },
+ "55": {
+  "name": "PD2",
+  "af": [
+   "EVENTOUT",
+   "TIM3_ETR",
+   "TIM8_BKIN"
+  ],
+  "raw": "I/O FT - TIM3_ETR, TIM8_BKIN, EVENTOUT - - - - - - - - - 85"
+ },
+ "56": {
+  "name": "PB3",
+  "af": [
+   "EVENTOUT",
+   "SPI1_SCK",
+   "SPI3_SCK",
+   "TIM2_CH2",
+   "TIM3_ETR",
+   "TIM4_ETR",
+   "TIM8_CH1N",
+   "USART2_TX"
+  ],
+  "raw": "I/O FT (5) JTDO-TRACESWO, TIM2_CH2, TIM4_ETR, USB_CRS_SYNC, TIM8_CH1N, SPI1_SCK, SPI3_SCK/ I2S3_CK, USART2_TX, TIM3_ETR, SAI1_SCK_B, EVENTOUT -"
+ },
+ "57": {
+  "name": "PB4",
+  "af": [
+   "EVENTOUT",
+   "SPI1_MISO",
+   "SPI3_MISO",
+   "TIM16_CH1",
+   "TIM17_BKIN",
+   "TIM3_CH1",
+   "TIM8_CH2N",
+   "USART2_RX"
+  ],
+  "raw": "I/O FT_c (5) (6) JTRST, TIM16_CH1, TIM3_CH1, TIM8_CH2N, SPI1_MISO, SPI3_MISO, USART2_RX, TIM17_BKIN, SAI1_MCLK_B, EVENTOUT UCPD1_CC2 28 28 43 42 A43 58 B4 74 92"
+ },
+ "59": {
+  "name": "PB6",
+  "af": [
+   "COMP4_OUT",
+   "EVENTOUT",
+   "TIM16_CH1N",
+   "TIM1_ETR",
+   "TIM4_CH1",
+   "TIM8_BKIN2",
+   "TIM8_CH1",
+   "TIM8_ETR",
+   "USART1_TX"
+  ],
+  "raw": "I/O FT_c (6) TIM16_CH1N, TIM4_CH1, TIM8_CH1, TIM8_ETR, USART1_TX, COMP4_OUT, TIM8_BKIN2, LPTIM1_ETR, SAI1_FS_B, EVENTOUT UCPD1_CC1 30 30 45 44 A5 60 A3 76 94"
+ },
+ "60": {
+  "name": "PB7",
+  "af": [
+   "COMP3_OUT",
+   "EVENTOUT",
+   "I2C1_SDA",
+   "TIM17_CH1N",
+   "TIM3_CH4",
+   "TIM4_CH2",
+   "TIM8_BKIN",
+   "USART1_RX"
+  ],
+  "raw": "I/O FT_f - TIM17_CH1N, TIM4_CH2, I2C1_SDA, TIM8_BKIN, USART1_RX, COMP3_OUT, TIM3_CH4, LPTIM1_IN2, UART4_CTS, EVENTOUT PVD_IN 31 31 46 45 B5 61 B3 77 95"
+ },
+ "61": {
+  "name": "PB8-BOOT0",
+  "af": [
+   "COMP1_OUT",
+   "EVENTOUT",
+   "FDCAN1_RX",
+   "I2C1_SCL",
+   "TIM16_CH1",
+   "TIM1_BKIN",
+   "TIM4_CH3",
+   "TIM8_CH2",
+   "USART3_RX"
+  ],
+  "raw": "I/O FT_f (7) TIM16_CH1, TIM4_CH3, SAI1_CK1, I2C1_SCL, USART3_RX, COMP1_OUT, FDCAN1_RX, TIM8_CH2, TIM1_BKIN, SAI1_MCLK_A, EVENTOUT -"
+ },
+ "62": {
+  "name": "PB9",
+  "af": [
+   "COMP2_OUT",
+   "EVENTOUT",
+   "FDCAN1_TX",
+   "I2C1_SDA",
+   "TIM17_CH1",
+   "TIM1_CH3N",
+   "TIM4_CH4",
+   "TIM8_CH3",
+   "USART3_TX"
+  ],
+  "raw": "I/O FT_f - TIM17_CH1, TIM4_CH4, SAI1_D2, I2C1_SDA, IR_OUT, USART3_TX, COMP2_OUT, FDCAN1_TX, TIM8_CH3, TIM1_CH3N, SAI1_FS_A, EVENTOUT - - - - - - - - - 97"
+ },
+ "63": {
+  "name": "VSS",
+  "af": [],
+  "raw": "S - - - - 1 1 48 48 A7 64 A1 80 100"
+ }
+}

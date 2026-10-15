@@ -58,3 +58,7 @@ dsh_*.txt
 04_工作区/
 # 原始图纸解析产物（可从图纸重新生成）
 01_PCB/Motor-analysis/原始图纸解析/
+# 临时分析目录（PDF/图片提取物、一次性脚本；可复用的脚本已复制进 01_PCB/DRV控制板/tools/measure/）
+tmp/
+# 生成物：DRV 控制板的构建产物（可由 node tools/build.mjs 重建）
+01_PCB/DRV控制板/tools/build/

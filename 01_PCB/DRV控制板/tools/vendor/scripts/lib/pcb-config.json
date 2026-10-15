@@ -1,0 +1,2071 @@
+[
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"ALL\"]",
+  "body": {
+   "display": true,
+   "pick": false
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"COMPONENT\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"PROPERTY\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"TRACK\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"FPC_STIFFENER\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"TESTPOINT\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"PAD\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"VIA\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"SUTUREHOLE\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"TEXT\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"IMAGE\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"PICTURE\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"DIMENSION\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"BOARDOUTLINE\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"SLOTREGION\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"COPPEROUTLINE\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"COPPERFILLED\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"FILLREGIEN\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"PROHIBITEDREGION\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"LINE\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"CONSTRAINT\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"PADSPAIR\"]",
+  "body": {
+   "display": true,
+   "pick": false
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"NETWORK\"]",
+  "body": {
+   "display": true,
+   "pick": false
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"TEARDROP\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",null]",
+  "body": {
+   "display": true,
+   "pick": false
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"GROUP\"]",
+  "body": {
+   "display": true,
+   "pick": false
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"LOCKED\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"UNLOCKED\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"SHELL\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"BOSS\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"CREASE\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"SIDESHELLCUT\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"TOPSHELLCUT\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"TOPBOTTOMENTITY\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"SIDEENTITY\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"D3BODY\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "CANVAS",
+  "id": "CANVAS",
+  "body": {
+   "originX": 0,
+   "originY": 0,
+   "unit": "mil",
+   "gridXSize": 5,
+   "gridYSize": 5,
+   "snapXSize": 5,
+   "snapYSize": 5,
+   "altSnapXSize": 1,
+   "altSnapYSize": 1,
+   "gridType": "OUTLETS",
+   "multiGridType": "NONE",
+   "multiGridRatio": 5,
+   "highlightValue": 0.5,
+   "layerBrightness": "NORMAL"
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",1]",
+  "body": {
+   "layerId": 1,
+   "layerType": "TOP",
+   "layerName": "Top Layer",
+   "use": true,
+   "show": true,
+   "locked": false,
+   "activeColor": "#ff0000",
+   "activateTransparency": 1,
+   "inactiveColor": "#7f0000",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",2]",
+  "body": {
+   "layerId": 2,
+   "layerType": "BOTTOM",
+   "layerName": "Bottom Layer",
+   "use": true,
+   "show": true,
+   "locked": false,
+   "activeColor": "#0000ff",
+   "activateTransparency": 1,
+   "inactiveColor": "#00007f",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",3]",
+  "body": {
+   "layerId": 3,
+   "layerType": "TOP_SILK",
+   "layerName": "Top Silkscreen Layer",
+   "use": true,
+   "show": true,
+   "locked": false,
+   "activeColor": "#ffcc00",
+   "activateTransparency": 1,
+   "inactiveColor": "#7f6600",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",4]",
+  "body": {
+   "layerId": 4,
+   "layerType": "BOT_SILK",
+   "layerName": "Bottom Silkscreen Layer",
+   "use": true,
+   "show": true,
+   "locked": false,
+   "activeColor": "#66cc33",
+   "activateTransparency": 1,
+   "inactiveColor": "#336619",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",5]",
+  "body": {
+   "layerId": 5,
+   "layerType": "TOP_SOLDER_MASK",
+   "layerName": "Top Solder Mask Layer",
+   "use": true,
+   "show": true,
+   "locked": false,
+   "activeColor": "#800080",
+   "activateTransparency": 0.7,
+   "inactiveColor": "#400040",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",6]",
+  "body": {
+   "layerId": 6,
+   "layerType": "BOT_SOLDER_MASK",
+   "layerName": "Bottom Solder Mask Layer",
+   "use": true,
+   "show": true,
+   "locked": false,
+   "activeColor": "#aa00ff",
+   "activateTransparency": 0.7,
+   "inactiveColor": "#55007f",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",7]",
+  "body": {
+   "layerId": 7,
+   "layerType": "TOP_PASTE_MASK",
+   "layerName": "Top Paste Mask Layer",
+   "use": true,
+   "show": true,
+   "locked": false,
+   "activeColor": "#808080",
+   "activateTransparency": 1,
+   "inactiveColor": "#404040",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",8]",
+  "body": {
+   "layerId": 8,
+   "layerType": "BOT_PASTE_MASK",
+   "layerName": "Bottom Paste Mask Layer",
+   "use": true,
+   "show": true,
+   "locked": false,
+   "activeColor": "#800000",
+   "activateTransparency": 1,
+   "inactiveColor": "#400000",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",9]",
+  "body": {
+   "layerId": 9,
+   "layerType": "TOP_ASSEMBLY",
+   "layerName": "Top Assembly Layer",
+   "use": true,
+   "show": true,
+   "locked": false,
+   "activeColor": "#33cc99",
+   "activateTransparency": 1,
+   "inactiveColor": "#19664c",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",10]",
+  "body": {
+   "layerId": 10,
+   "layerType": "BOT_ASSEMBLY",
+   "layerName": "Bottom Assembly Layer",
+   "use": true,
+   "show": true,
+   "locked": false,
+   "activeColor": "#5555ff",
+   "activateTransparency": 1,
+   "inactiveColor": "#2a2a7f",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",11]",
+  "body": {
+   "layerId": 11,
+   "layerType": "OUTLINE",
+   "layerName": "Board Outline Layer",
+   "use": true,
+   "show": true,
+   "locked": false,
+   "activeColor": "#ff00ff",
+   "activateTransparency": 1,
+   "inactiveColor": "#7f007f",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",12]",
+  "body": {
+   "layerId": 12,
+   "layerType": "MULTI",
+   "layerName": "Multi-Layer",
+   "use": true,
+   "show": true,
+   "locked": false,
+   "activeColor": "#c0c0c0",
+   "activateTransparency": 1,
+   "inactiveColor": "#606060",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",13]",
+  "body": {
+   "layerId": 13,
+   "layerType": "DOCUMENT",
+   "layerName": "Document Layer",
+   "use": true,
+   "show": true,
+   "locked": false,
+   "activeColor": "#ffffff",
+   "activateTransparency": 1,
+   "inactiveColor": "#7f7f7f",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",14]",
+  "body": {
+   "layerId": 14,
+   "layerType": "MECHANICAL",
+   "layerName": "Mechanical Layer",
+   "use": true,
+   "show": true,
+   "locked": false,
+   "activeColor": "#f022f0",
+   "activateTransparency": 1,
+   "inactiveColor": "#781178",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",15]",
+  "body": {
+   "layerId": 15,
+   "layerType": "SIGNAL",
+   "layerName": "Inner1",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#999966",
+   "activateTransparency": 1,
+   "inactiveColor": "#4c4c33",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",16]",
+  "body": {
+   "layerId": 16,
+   "layerType": "SIGNAL",
+   "layerName": "Inner2",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#008000",
+   "activateTransparency": 1,
+   "inactiveColor": "#004000",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",17]",
+  "body": {
+   "layerId": 17,
+   "layerType": "SIGNAL",
+   "layerName": "Inner3",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#00ff00",
+   "activateTransparency": 1,
+   "inactiveColor": "#007f00",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",18]",
+  "body": {
+   "layerId": 18,
+   "layerType": "SIGNAL",
+   "layerName": "Inner4",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#bc8e00",
+   "activateTransparency": 1,
+   "inactiveColor": "#5e4700",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",19]",
+  "body": {
+   "layerId": 19,
+   "layerType": "SIGNAL",
+   "layerName": "Inner5",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#70dbfa",
+   "activateTransparency": 1,
+   "inactiveColor": "#386d7d",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",20]",
+  "body": {
+   "layerId": 20,
+   "layerType": "SIGNAL",
+   "layerName": "Inner6",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#00cc66",
+   "activateTransparency": 1,
+   "inactiveColor": "#006633",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",21]",
+  "body": {
+   "layerId": 21,
+   "layerType": "SIGNAL",
+   "layerName": "Inner7",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#9966ff",
+   "activateTransparency": 1,
+   "inactiveColor": "#4c337f",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",22]",
+  "body": {
+   "layerId": 22,
+   "layerType": "SIGNAL",
+   "layerName": "Inner8",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#800080",
+   "activateTransparency": 1,
+   "inactiveColor": "#400040",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",23]",
+  "body": {
+   "layerId": 23,
+   "layerType": "SIGNAL",
+   "layerName": "Inner9",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#008080",
+   "activateTransparency": 1,
+   "inactiveColor": "#004040",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",24]",
+  "body": {
+   "layerId": 24,
+   "layerType": "SIGNAL",
+   "layerName": "Inner10",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#15935f",
+   "activateTransparency": 1,
+   "inactiveColor": "#15935f",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",25]",
+  "body": {
+   "layerId": 25,
+   "layerType": "SIGNAL",
+   "layerName": "Inner11",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#000080",
+   "activateTransparency": 1,
+   "inactiveColor": "#000040",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",26]",
+  "body": {
+   "layerId": 26,
+   "layerType": "SIGNAL",
+   "layerName": "Inner12",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#00b400",
+   "activateTransparency": 1,
+   "inactiveColor": "#005a00",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",27]",
+  "body": {
+   "layerId": 27,
+   "layerType": "SIGNAL",
+   "layerName": "Inner13",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#2e4756",
+   "activateTransparency": 1,
+   "inactiveColor": "#17232b",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",28]",
+  "body": {
+   "layerId": 28,
+   "layerType": "SIGNAL",
+   "layerName": "Inner14",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#99842f",
+   "activateTransparency": 1,
+   "inactiveColor": "#4c4217",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",29]",
+  "body": {
+   "layerId": 29,
+   "layerType": "SIGNAL",
+   "layerName": "Inner15",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#ffffaa",
+   "activateTransparency": 1,
+   "inactiveColor": "#7f7f55",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",30]",
+  "body": {
+   "layerId": 30,
+   "layerType": "SIGNAL",
+   "layerName": "Inner16",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#99842f",
+   "activateTransparency": 1,
+   "inactiveColor": "#4c4217",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",31]",
+  "body": {
+   "layerId": 31,
+   "layerType": "SIGNAL",
+   "layerName": "Inner17",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#2e4756",
+   "activateTransparency": 1,
+   "inactiveColor": "#17232b",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",32]",
+  "body": {
+   "layerId": 32,
+   "layerType": "SIGNAL",
+   "layerName": "Inner18",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#3535ff",
+   "activateTransparency": 1,
+   "inactiveColor": "#1a1a7f",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",33]",
+  "body": {
+   "layerId": 33,
+   "layerType": "SIGNAL",
+   "layerName": "Inner19",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#8000bc",
+   "activateTransparency": 1,
+   "inactiveColor": "#40005e",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",34]",
+  "body": {
+   "layerId": 34,
+   "layerType": "SIGNAL",
+   "layerName": "Inner20",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#43ae5f",
+   "activateTransparency": 1,
+   "inactiveColor": "#21572f",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",35]",
+  "body": {
+   "layerId": 35,
+   "layerType": "SIGNAL",
+   "layerName": "Inner21",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#c3ecce",
+   "activateTransparency": 1,
+   "inactiveColor": "#617667",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",36]",
+  "body": {
+   "layerId": 36,
+   "layerType": "SIGNAL",
+   "layerName": "Inner22",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#728978",
+   "activateTransparency": 1,
+   "inactiveColor": "#39443c",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",37]",
+  "body": {
+   "layerId": 37,
+   "layerType": "SIGNAL",
+   "layerName": "Inner23",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#39503f",
+   "activateTransparency": 1,
+   "inactiveColor": "#1c281f",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",38]",
+  "body": {
+   "layerId": 38,
+   "layerType": "SIGNAL",
+   "layerName": "Inner24",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#0c715d",
+   "activateTransparency": 1,
+   "inactiveColor": "#06382e",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",39]",
+  "body": {
+   "layerId": 39,
+   "layerType": "SIGNAL",
+   "layerName": "Inner25",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#5a8a80",
+   "activateTransparency": 1,
+   "inactiveColor": "#2d4540",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",40]",
+  "body": {
+   "layerId": 40,
+   "layerType": "SIGNAL",
+   "layerName": "Inner26",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#2b937e",
+   "activateTransparency": 1,
+   "inactiveColor": "#15493f",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",41]",
+  "body": {
+   "layerId": 41,
+   "layerType": "SIGNAL",
+   "layerName": "Inner27",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#23999d",
+   "activateTransparency": 1,
+   "inactiveColor": "#114c4e",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",42]",
+  "body": {
+   "layerId": 42,
+   "layerType": "SIGNAL",
+   "layerName": "Inner28",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#45b4e3",
+   "activateTransparency": 1,
+   "inactiveColor": "#225a71",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",43]",
+  "body": {
+   "layerId": 43,
+   "layerType": "SIGNAL",
+   "layerName": "Inner29",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#215da1",
+   "activateTransparency": 1,
+   "inactiveColor": "#102e50",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",44]",
+  "body": {
+   "layerId": 44,
+   "layerType": "SIGNAL",
+   "layerName": "Inner30",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#4564d7",
+   "activateTransparency": 1,
+   "inactiveColor": "#22326b",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",45]",
+  "body": {
+   "layerId": 45,
+   "layerType": "SIGNAL",
+   "layerName": "Inner31",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#6969e9",
+   "activateTransparency": 1,
+   "inactiveColor": "#343474",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",46]",
+  "body": {
+   "layerId": 46,
+   "layerType": "SIGNAL",
+   "layerName": "Inner32",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#9069e9",
+   "activateTransparency": 1,
+   "inactiveColor": "#483474",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",47]",
+  "body": {
+   "layerId": 47,
+   "layerType": "HOLE",
+   "layerName": "Hole Layer",
+   "use": true,
+   "show": true,
+   "locked": false,
+   "activeColor": "#222222",
+   "activateTransparency": 1,
+   "inactiveColor": "#111111",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",48]",
+  "body": {
+   "layerId": 48,
+   "layerType": "COMPONENT_SHAPE",
+   "layerName": "Component Shape Layer",
+   "use": true,
+   "show": false,
+   "locked": false,
+   "activeColor": "#00cccc",
+   "activateTransparency": 1,
+   "inactiveColor": "#006666",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",49]",
+  "body": {
+   "layerId": 49,
+   "layerType": "COMPONENT_MARKING",
+   "layerName": "Component Marking Layer",
+   "use": true,
+   "show": false,
+   "locked": false,
+   "activeColor": "#66ffcc",
+   "activateTransparency": 1,
+   "inactiveColor": "#337f66",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",50]",
+  "body": {
+   "layerId": 50,
+   "layerType": "PIN_SOLDERING",
+   "layerName": "Pin Soldering Layer",
+   "use": true,
+   "show": false,
+   "locked": false,
+   "activeColor": "#cc9999",
+   "activateTransparency": 1,
+   "inactiveColor": "#664c4c",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",51]",
+  "body": {
+   "layerId": 51,
+   "layerType": "PIN_FLOATING",
+   "layerName": "Pin Floating Layer",
+   "use": true,
+   "show": false,
+   "locked": false,
+   "activeColor": "#ff99ff",
+   "activateTransparency": 1,
+   "inactiveColor": "#7f4c7f",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",52]",
+  "body": {
+   "layerId": 52,
+   "layerType": "COMPONENT_MODEL",
+   "layerName": "Component Model Layer",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#ffffff",
+   "activateTransparency": 1,
+   "inactiveColor": "#7f7f7f",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",53]",
+  "body": {
+   "layerId": 53,
+   "layerType": "3D_SHELL_OUTLINE",
+   "layerName": "3D Shell Outline Layer",
+   "use": true,
+   "show": true,
+   "locked": false,
+   "activeColor": "#66ff99",
+   "activateTransparency": 1,
+   "inactiveColor": "#337f4c",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",54]",
+  "body": {
+   "layerId": 54,
+   "layerType": "3D_SHELL_TOP",
+   "layerName": "3D Top Layer",
+   "use": true,
+   "show": true,
+   "locked": false,
+   "activeColor": "#ffccff",
+   "activateTransparency": 1,
+   "inactiveColor": "#7f667f",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",55]",
+  "body": {
+   "layerId": 55,
+   "layerType": "3D_SHELL_BOTTOM",
+   "layerName": "3D Bottom Layer",
+   "use": true,
+   "show": true,
+   "locked": false,
+   "activeColor": "#0066cc",
+   "activateTransparency": 1,
+   "inactiveColor": "#003366",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",56]",
+  "body": {
+   "layerId": 56,
+   "layerType": "DRILL_DRAWING",
+   "layerName": "Drill Drawing Layer",
+   "use": true,
+   "show": true,
+   "locked": false,
+   "activeColor": "#99ffff",
+   "activateTransparency": 1,
+   "inactiveColor": "#004040",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",57]",
+  "body": {
+   "layerId": 57,
+   "layerType": "OTHER",
+   "layerName": "Ratline Layer",
+   "use": true,
+   "show": true,
+   "locked": true,
+   "activeColor": "#6464ff",
+   "activateTransparency": 1,
+   "inactiveColor": "#32327f",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",58]",
+  "body": {
+   "layerId": 58,
+   "layerType": "TOP_STIFFENER",
+   "layerName": "Top Stiffener Layer",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#eee666",
+   "activateTransparency": 1,
+   "inactiveColor": "#777333",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",59]",
+  "body": {
+   "layerId": 59,
+   "layerType": "BOTTOM_STIFFENER",
+   "layerName": "Bottom Stiffener Layer",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#ccff00",
+   "activateTransparency": 1,
+   "inactiveColor": "#667f00",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER",
+  "id": "[\"LAYER\",361]",
+  "body": {
+   "layerId": 361,
+   "layerType": "SUBSTRATE",
+   "layerName": "Dielectric1",
+   "use": false,
+   "show": false,
+   "locked": false,
+   "activeColor": "#000000",
+   "activateTransparency": 1,
+   "inactiveColor": "#000000",
+   "inactiveTransparency": 1
+  }
+ },
+ {
+  "type": "LAYER_PHYS",
+  "id": "[\"LAYER_PHYS\",3]",
+  "body": {
+   "material": null,
+   "thickness": 0,
+   "permittivity": null,
+   "lossTangent": null,
+   "isKeepIsland": true,
+   "zIndex": 1
+  }
+ },
+ {
+  "type": "LAYER_PHYS",
+  "id": "[\"LAYER_PHYS\",7]",
+  "body": {
+   "material": null,
+   "thickness": 0,
+   "permittivity": null,
+   "lossTangent": null,
+   "isKeepIsland": true,
+   "zIndex": 2
+  }
+ },
+ {
+  "type": "LAYER_PHYS",
+  "id": "[\"LAYER_PHYS\",5]",
+  "body": {
+   "material": "",
+   "thickness": 0.394,
+   "permittivity": 3.3,
+   "lossTangent": 0.02,
+   "isKeepIsland": true,
+   "zIndex": 3
+  }
+ },
+ {
+  "type": "LAYER_PHYS",
+  "id": "[\"LAYER_PHYS\",1]",
+  "body": {
+   "material": null,
+   "thickness": 1.379,
+   "permittivity": null,
+   "lossTangent": null,
+   "isKeepIsland": true,
+   "zIndex": 1000
+  }
+ },
+ {
+  "type": "LAYER_PHYS",
+  "id": "[\"LAYER_PHYS\",361]",
+  "body": {
+   "material": "FR4",
+   "thickness": 59.449,
+   "permittivity": 4.5,
+   "lossTangent": 0,
+   "isKeepIsland": true,
+   "zIndex": 1001
+  }
+ },
+ {
+  "type": "LAYER_PHYS",
+  "id": "[\"LAYER_PHYS\",2]",
+  "body": {
+   "material": null,
+   "thickness": 1.378,
+   "permittivity": null,
+   "lossTangent": null,
+   "isKeepIsland": true,
+   "zIndex": 9000
+  }
+ },
+ {
+  "type": "LAYER_PHYS",
+  "id": "[\"LAYER_PHYS\",6]",
+  "body": {
+   "material": "",
+   "thickness": 0.394,
+   "permittivity": 3.3,
+   "lossTangent": 0.02,
+   "isKeepIsland": true,
+   "zIndex": 10000
+  }
+ },
+ {
+  "type": "LAYER_PHYS",
+  "id": "[\"LAYER_PHYS\",8]",
+  "body": {
+   "material": null,
+   "thickness": 0,
+   "permittivity": null,
+   "lossTangent": null,
+   "isKeepIsland": true,
+   "zIndex": 10001
+  }
+ },
+ {
+  "type": "LAYER_PHYS",
+  "id": "[\"LAYER_PHYS\",4]",
+  "body": {
+   "material": null,
+   "thickness": 0,
+   "permittivity": null,
+   "lossTangent": null,
+   "isKeepIsland": true,
+   "zIndex": 10002
+  }
+ },
+ {
+  "type": "ACTIVE_LAYER",
+  "id": "ACTIVE_LAYER",
+  "body": {
+   "layerId": 1
+  }
+ },
+ {
+  "type": "RULE_TEMPLATE",
+  "id": "RULE_TEMPLATE",
+  "body": {
+   "name": "JLCPCB Capability(Two Layers Board)"
+  }
+ },
+ {
+  "type": "RULE",
+  "id": "[\"RULE\",\"SAFE\",\"copperThickness1oz\"]",
+  "body": {
+   "ruleState": "DEFAULT",
+   "ruleContext": {
+    "unit": "mm",
+    "isForAll": "ALL",
+    "safeSpacing": [
+     {
+      "layerId": 1,
+      "isOpen": true,
+      "content": [
+       [
+        4.0157
+       ],
+       [
+        5.9843,
+        5.9843
+       ],
+       [
+        5.9843,
+        5.9843,
+        5.9843
+       ],
+       [
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843
+       ],
+       [
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843
+       ],
+       [
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843
+       ],
+       [
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843
+       ],
+       [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+       ],
+       [
+        11.811,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        10,
+        6
+       ],
+       [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        10,
+        11.811,
+        6
+       ],
+       [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        10,
+        6,
+        6,
+        6
+       ],
+       [
+        11.8,
+        11.8,
+        11.8,
+        11.8,
+        11.8,
+        11.8,
+        11.8,
+        10,
+        11.8,
+        11.8,
+        11.8
+       ],
+       [
+        6.929,
+        6.929,
+        6.929,
+        6.929,
+        6.929,
+        6.929,
+        6.929,
+        10,
+        6.929,
+        6.929,
+        6.929,
+        6.929
+       ]
+      ],
+      "columnNames": []
+     }
+    ]
+   }
+  }
+ },
+ {
+  "type": "RULE",
+  "id": "[\"RULE\",\"SAFE\",\"copperThickness2oz\"]",
+  "body": {
+   "ruleState": "NORMAL",
+   "ruleContext": {
+    "unit": "mm",
+    "isForAll": "ALL",
+    "safeSpacing": [
+     {
+      "layerId": 1,
+      "isOpen": true,
+      "content": [
+       [
+        7.9921
+       ],
+       [
+        5.9843,
+        5.9843
+       ],
+       [
+        5.9843,
+        5.9843,
+        5.9843
+       ],
+       [
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843
+       ],
+       [
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843
+       ],
+       [
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843
+       ],
+       [
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843
+       ],
+       [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+       ],
+       [
+        11.811,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        10,
+        5.9843
+       ],
+       [
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        10,
+        5.9843,
+        5.9843
+       ],
+       [
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        5.9843,
+        10,
+        5.9843,
+        5.9843,
+        5.9843
+       ],
+       [
+        11.811,
+        11.811,
+        11.811,
+        11.811,
+        11.811,
+        11.811,
+        11.811,
+        10,
+        11.811,
+        11.811,
+        11.811
+       ],
+       [
+        6.929,
+        6.929,
+        6.929,
+        6.929,
+        6.929,
+        6.929,
+        6.929,
+        10,
+        6.929,
+        6.929,
+        6.929,
+        6.929
+       ]
+      ],
+      "columnNames": []
+     }
+    ]
+   }
+  }
+ },
+ {
+  "type": "RULE",
+  "id": "[\"RULE\",\"OTHER\",\"otherClearance\"]",
+  "body": {
+   "ruleState": "DEFAULT",
+   "ruleContext": {
+    "unit": "mm",
+    "deviceClearance": 0,
+    "thru2SmdClearance": 0,
+    "holeClearance": 11.811
+   }
+  }
+ },
+ {
+  "type": "RULE",
+  "id": "[\"RULE\",\"CREEPAGE\",\"creepage\"]",
+  "body": {
+   "ruleState": "DEFAULT",
+   "ruleContext": {
+    "unit": "mm",
+    "creepageDistance": 0,
+    "ignoreLayer": true
+   }
+  }
+ },
+ {
+  "type": "RULE",
+  "id": "[\"RULE\",\"TRACK\",\"copperThickness1oz\"]",
+  "body": {
+   "ruleState": "DEFAULT",
+   "ruleContext": {
+    "unit": "mm",
+    "track": {
+     "isOpen": true,
+     "content": [
+      {
+       "layerId": 1,
+       "stroMin": 5,
+       "stroDef": 10,
+       "stroMax": 100
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "type": "RULE",
+  "id": "[\"RULE\",\"TRACK\",\"copperThickness2oz\"]",
+  "body": {
+   "ruleState": "NORMAL",
+   "ruleContext": {
+    "unit": "mm",
+    "track": {
+     "isOpen": true,
+     "content": [
+      {
+       "layerId": 1,
+       "stroMin": 7.9921,
+       "stroDef": 10,
+       "stroMax": 100
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "type": "RULE",
+  "id": "[\"RULE\",\"NET_LENGTH\",\"netLength\"]",
+  "body": {
+   "ruleState": "DEFAULT",
+   "ruleContext": {
+    "unit": "mm",
+    "netLenMin": 0,
+    "netLenMax": 0
+   }
+  }
+ },
+ {
+  "type": "RULE",
+  "id": "[\"RULE\",\"NET_LENGTH_TOLERANCE\",\"netLengthTolerance\"]",
+  "body": {
+   "ruleState": "DEFAULT",
+   "ruleContext": {
+    "unit": "mm",
+    "netLengthTolerance": 1000
+   }
+  }
+ },
+ {
+  "type": "RULE",
+  "id": "[\"RULE\",\"DIFFER_ENTAIL\",\"differentialPair\"]",
+  "body": {
+   "ruleState": "DEFAULT",
+   "ruleContext": {
+    "unit": "mm",
+    "stroWidth": {
+     "isOpen": true,
+     "content": [
+      {
+       "layerId": 1,
+       "stroMin": 5,
+       "stroMax": 100,
+       "stroDef": 10
+      }
+     ]
+    },
+    "spacing": {
+     "isOpen": true,
+     "content": [
+      {
+       "layerId": 1,
+       "spacMin": 6,
+       "spacDef": 6
+      }
+     ]
+    },
+    "differPairLenTolerMax": 10,
+    "toleranceUnit": "mm"
+   }
+  }
+ },
+ {
+  "type": "RULE",
+  "id": "[\"RULE\",\"BLIND\",\"blindVia\"]",
+  "body": {
+   "ruleState": "DEFAULT",
+   "ruleContext": {
+    "blinds": {
+     "content": []
+    }
+   }
+  }
+ },
+ {
+  "type": "RULE",
+  "id": "[\"RULE\",\"RADIUS\",\"viaSize\"]",
+  "body": {
+   "ruleState": "DEFAULT",
+   "ruleContext": {
+    "unit": "mm",
+    "minRadius": 9.8425,
+    "defRadius": 12.0079,
+    "maxRadius": 196.8504,
+    "minInner": 5.9055,
+    "defInner": 6.0039,
+    "maxInner": 124.0157
+   }
+  }
+ },
+ {
+  "type": "RULE",
+  "id": "[\"RULE\",\"PLANE\",\"innerPlane\"]",
+  "body": {
+   "ruleState": "DEFAULT",
+   "ruleContext": {
+    "unit": "mm",
+    "mulPad": {
+     "isOpen": true,
+     "content": [
+      {
+       "layerId": 1,
+       "connType": "DIVERGENCE",
+       "spoSpac": 10,
+       "spoWidth": 10,
+       "spoAng": 90
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "type": "RULE",
+  "id": "[\"RULE\",\"COPPER\",\"copperRegion\"]",
+  "body": {
+   "ruleState": "DEFAULT",
+   "ruleContext": {
+    "unit": "mm",
+    "sglPad": {
+     "isOpen": true,
+     "content": [
+      {
+       "layerId": 1,
+       "connType": "DIVERGENCE",
+       "spoSpac": 10,
+       "spoWidth": 10,
+       "spoAng": 90
+      }
+     ]
+    },
+    "mulPad": {
+     "isOpen": true,
+     "content": [
+      {
+       "layerId": 1,
+       "connType": "DIVERGENCE",
+       "spoSpac": 10,
+       "spoWidth": 10,
+       "spoAng": 90
+      }
+     ]
+    },
+    "track": {
+     "isOpen": true,
+     "content": [
+      {
+       "layerId": 1,
+       "connType": "DIRECT"
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "type": "RULE",
+  "id": "[\"RULE\",\"PASTE\",\"pasteMaskExpansion\"]",
+  "body": {
+   "ruleState": "DEFAULT",
+   "ruleContext": {
+    "unit": "mm",
+    "padTopExpan": 0,
+    "padBotExpan": 0,
+    "testPointTopExpan": -1000,
+    "testPointBotExpan": -1000
+   }
+  }
+ },
+ {
+  "type": "RULE",
+  "id": "[\"RULE\",\"SOLDER\",\"solderMaskExpansion\"]",
+  "body": {
+   "ruleState": "DEFAULT",
+   "ruleContext": {
+    "unit": "mm",
+    "padTopExpan": 2,
+    "padBotExpan": 2,
+    "viaTopExpan": -1000,
+    "viaBotExpan": -1000,
+    "testPointTopExpan": 2,
+    "testPointBotExpan": 2
+   }
+  }
+ },
+ {
+  "type": "RULE",
+  "id": "[\"RULE\",\"AUTO_ROUTER\",\"Common\"]",
+  "body": {
+   "ruleState": "DEFAULT",
+   "ruleContext": {
+    "routingCorner": "L45",
+    "isKeep": 1,
+    "viaQuantity": "LESS",
+    "routingEffectPriority": "COMPLETION_FIRST",
+    "layers": [
+     1,
+     2,
+     12
+    ],
+    "ignoreNets": []
+   }
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"COMPONENTSILK\"]",
+  "body": {
+   "display": true,
+   "pick": true
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"RATLINE\"]",
+  "body": {
+   "display": false,
+   "pick": false
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"PLANE\"]",
+  "body": {
+   "display": false,
+   "pick": false,
+   "transparency": 0.35
+  }
+ },
+ {
+  "type": "PRIMITIVE",
+  "id": "[\"PRIMITIVE\",\"PARTITION\"]",
+  "body": {
+   "display": false,
+   "pick": false,
+   "transparency": 1
+  }
+ },
+ {
+  "type": "SILK_OPTS",
+  "id": "[\"SILK_OPTS\",3]",
+  "body": {
+   "defaultColor": "#000000",
+   "baseColor": "#FFFFFF"
+  }
+ },
+ {
+  "type": "SILK_OPTS",
+  "id": "[\"SILK_OPTS\",4]",
+  "body": {
+   "defaultColor": "#000000",
+   "baseColor": "#FFFFFF"
+  }
+ },
+ {
+  "type": "D3_ATTRIBUTE",
+  "id": "D3_ATTRIBUTE",
+  "body": {
+   "materials": "substrate_yellow",
+   "silkTechnology": "standardSilk",
+   "backgroundColor": "#000000",
+   "boardColor": "blue",
+   "sprayColor": "gold",
+   "layerExpose": 0,
+   "substrateHeight": 0
+  }
+ },
+ {
+  "type": "PREFERENCE",
+  "id": "PREFERENCE",
+  "body": {
+   "startTrackWidthFollowLast": false,
+   "lastTrackWidth": 10,
+   "startViaSizeFollowLast": false,
+   "lastViaInnerDiameter": 12.0078,
+   "lastViaDiameter": 24.0158,
+   "snap": true,
+   "routingMode": "SURROUND",
+   "routingCorner": "L45",
+   "removeLoop": true,
+   "rotatingObject": false,
+   "trackFollow": false,
+   "stretchTrackMinCorner": 1,
+   "realTimeUpdateUnusedLayers": false,
+   "unusedPadRange": "VIA",
+   "pushVia": "OPTIMIZA_OPEN",
+   "pathOptimization4BePushed": "SINGLE",
+   "currentPathOptimization4BePushed": "OPTIMIZA_WEAK",
+   "removeCircuitsContainingVias": true,
+   "removeAntenna": true
+  }
+ },
+ {
+  "type": "PANELIZE",
+  "id": "PANELIZE",
+  "body": {
+   "on": false,
+   "row": 1,
+   "column": 1,
+   "rowSpacing": 0,
+   "columnSpacing": 0,
+   "onlyOutline": true,
+   "horizontalStamp": {
+    "on": false,
+    "stampHoleGroupQuantity": 1,
+    "stampHoleDiameter": 21.6535,
+    "stampHoleQuantityPerGroup": 8,
+    "stampHoleSpacing": 33.4646,
+    "center_percent": null
+   },
+   "verticalStamp": {
+    "on": false,
+    "stampHoleGroupQuantity": 1,
+    "stampHoleDiameter": 21.6535,
+    "stampHoleQuantityPerGroup": 8,
+    "stampHoleSpacing": 33.4646,
+    "center_percent": null
+   },
+   "horizontalSize": {
+    "direction": 0,
+    "on": false,
+    "sideHeight": 236.2205,
+    "positionHoleDiameter": 78.7402,
+    "markDiameter": 39.3701,
+    "markExpansion": 19.685,
+    "borderRadius": 39.3701
+   },
+   "verticalSize": {
+    "direction": 1,
+    "on": true,
+    "sideHeight": 236.2205,
+    "positionHoleDiameter": 78.7402,
+    "markDiameter": 39.3701,
+    "markExpansion": 19.685,
+    "borderRadius": 39.3701
+   },
+   "mirrorBoard": false,
+   "mirrorEvenRow": false,
+   "mirrorEvenCol": false,
+   "evenRowRotation": 0,
+   "evenColRotation": 0,
+   "showVCutIndicator": true,
+   "vCutLayer": 13,
+   "markPosition": null,
+   "positionHolePosition": null,
+   "panelizeVersion": "1.1"
+  }
+ }
+]
